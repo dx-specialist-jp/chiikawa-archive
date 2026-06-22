@@ -13,7 +13,7 @@ export interface Post {
   publishedAt: string;
   category: PostCategory;
   tags: string[];
-  summary: string;
+  summary?: string;
   characters: string[];
 }
 

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 
 interface TwitterEmbedProps {
   tweetId: string;
+  url?: string;
   className?: string;
 }
 
@@ -17,7 +18,8 @@ declare global {
   }
 }
 
-export default function TwitterEmbed({ tweetId, className }: TwitterEmbedProps) {
+export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedProps) {
+  const tweetUrl = url ?? `https://x.com/i/web/status/${tweetId}`;
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -49,7 +51,7 @@ export default function TwitterEmbed({ tweetId, className }: TwitterEmbedProps) 
         data-theme="light"
       >
         <a
-          href={`https://x.com/i/web/status/${tweetId}`}
+          href={tweetUrl}
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,52 +1,129 @@
 {
-  "lastUpdated": "2026-06-22T09:00:00+09:00",
-  "totalPosts": 3,
+  "lastUpdated": "2026-06-22T10:00:00+09:00",
+  "totalPosts": 12,
   "posts": [
     {
-      "id": "post-001",
-      "tweetId": "1935000000000000001",
-      "url": "https://x.com/ngnchiikawa/status/1935000000000000001",
-      "publishedAt": "2026-06-22T08:00:00+09:00",
-      "category": "manga",
-      "tags": ["ちいかわ", "漫画", "日常"],
-      "summary": "ちいかわとハチワレが一緒にお昼ごはんを食べているお話。ほっこりする日常シーン。",
-      "characters": ["ちいかわ", "ハチワレ"]
+      "id": "post-2050152389471302131",
+      "tweetId": "2050152389471302131",
+      "url": "https://x.com/ngnchiikawa/status/2050152389471302131",
+      "publishedAt": "2026-05-01T18:56:34+09:00",
+      "category": "event",
+      "tags": [],
+      "characters": []
     },
     {
-      "id": "post-002",
-      "tweetId": "1934000000000000002",
-      "url": "https://x.com/ngnchiikawa/status/1934000000000000002",
-      "publishedAt": "2026-06-21T09:30:00+09:00",
+      "id": "post-1904569813667827876",
+      "tweetId": "1904569813667827876",
+      "url": "https://x.com/ngnchiikawa/status/1904569813667827876",
+      "publishedAt": "2025-03-26T01:23:23+09:00",
       "category": "goods",
-      "tags": ["グッズ", "新商品", "ぬいぐるみ"],
-      "summary": "新作ぬいぐるみの情報が公開されました。ちいかわ・ハチワレ・うさぎの3種展開。",
-      "characters": ["ちいかわ", "ハチワレ", "うさぎ"]
+      "tags": [],
+      "characters": []
     },
     {
-      "id": "post-003",
-      "tweetId": "1933000000000000003",
-      "url": "https://x.com/ngnchiikawa/status/1933000000000000003",
-      "publishedAt": "2026-06-20T10:00:00+09:00",
+      "id": "post-1886716976690847758",
+      "tweetId": "1886716976690847758",
+      "url": "https://x.com/ngnchiikawa/status/1886716976690847758",
+      "publishedAt": "2025-02-04T19:02:35+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1872208154676879403",
+      "tweetId": "1872208154676879403",
+      "url": "https://x.com/ngnchiikawa/status/1872208154676879403",
+      "publishedAt": "2024-12-26T18:09:42+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1825805683717189874",
+      "tweetId": "1825805683717189874",
+      "url": "https://x.com/ngnchiikawa/status/1825805683717189874",
+      "publishedAt": "2024-08-20T17:02:51+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1771158835811811804",
+      "tweetId": "1771158835811811804",
+      "url": "https://x.com/ngnchiikawa/status/1771158835811811804",
+      "publishedAt": "2024-03-22T21:55:47+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1712082961724747950",
+      "tweetId": "1712082961724747950",
+      "url": "https://x.com/ngnchiikawa/status/1712082961724747950",
+      "publishedAt": "2023-10-11T21:29:21+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1697237826772050152",
+      "tweetId": "1697237826772050152",
+      "url": "https://x.com/ngnchiikawa/status/1697237826772050152",
+      "publishedAt": "2023-08-31T22:20:05+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1694697485464395881",
+      "tweetId": "1694697485464395881",
+      "url": "https://x.com/ngnchiikawa/status/1694697485464395881",
+      "publishedAt": "2023-08-24T22:05:41+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1679491779073306626",
+      "tweetId": "1679491779073306626",
+      "url": "https://x.com/ngnchiikawa/status/1679491779073306626",
+      "publishedAt": "2023-07-13T23:03:38+09:00",
+      "category": "manga",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1630241893895540737",
+      "tweetId": "1630241893895540737",
+      "url": "https://x.com/ngnchiikawa/status/1630241893895540737",
+      "publishedAt": "2023-02-28T01:22:10+09:00",
       "category": "anime",
-      "tags": ["アニメ", "放送情報"],
-      "summary": "アニメの次回放送予告。新キャラクターの登場が示唆されています。",
-      "characters": ["ちいかわ"]
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-1610237912507125761",
+      "tweetId": "1610237912507125761",
+      "url": "https://x.com/ngnchiikawa/status/1610237912507125761",
+      "publishedAt": "2023-01-03T20:33:29+09:00",
+      "category": "goods",
+      "tags": [],
+      "characters": []
     }
   ],
   "calendarData": [
-    { "date": "2026-06-22", "count": 1, "categories": ["manga"] },
-    { "date": "2026-06-21", "count": 1, "categories": ["goods"] },
-    { "date": "2026-06-20", "count": 1, "categories": ["anime"] },
-    { "date": "2026-06-19", "count": 2, "categories": ["manga", "collab"] },
-    { "date": "2026-06-18", "count": 1, "categories": ["manga"] },
-    { "date": "2026-06-17", "count": 3, "categories": ["manga", "goods", "event"] },
-    { "date": "2026-06-16", "count": 1, "categories": ["manga"] },
-    { "date": "2026-06-15", "count": 0, "categories": [] },
-    { "date": "2026-06-14", "count": 2, "categories": ["manga", "anime"] },
-    { "date": "2026-06-13", "count": 1, "categories": ["manga"] },
-    { "date": "2026-06-12", "count": 1, "categories": ["goods"] },
-    { "date": "2026-06-11", "count": 2, "categories": ["manga", "collab"] },
-    { "date": "2026-06-10", "count": 1, "categories": ["manga"] }
+    { "date": "2026-05-01", "count": 1, "categories": ["event"] },
+    { "date": "2025-03-26", "count": 1, "categories": ["goods"] },
+    { "date": "2025-02-04", "count": 1, "categories": ["manga"] },
+    { "date": "2024-12-26", "count": 1, "categories": ["manga"] },
+    { "date": "2024-08-20", "count": 1, "categories": ["manga"] },
+    { "date": "2024-03-22", "count": 1, "categories": ["manga"] },
+    { "date": "2023-10-11", "count": 1, "categories": ["manga"] },
+    { "date": "2023-08-31", "count": 1, "categories": ["manga"] },
+    { "date": "2023-08-24", "count": 1, "categories": ["manga"] },
+    { "date": "2023-07-13", "count": 1, "categories": ["manga"] },
+    { "date": "2023-02-28", "count": 1, "categories": ["anime"] },
+    { "date": "2023-01-03", "count": 1, "categories": ["goods"] }
   ],
   "chiikawaIndex": {
     "score": 72,

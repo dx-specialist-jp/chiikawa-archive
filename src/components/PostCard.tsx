@@ -1,6 +1,6 @@
-import Link from "next/link";
 import type { Post } from "@/types";
 import CategoryBadge from "./CategoryBadge";
+import TwitterEmbed from "./TwitterEmbed";
 
 interface PostCardProps {
   post: Post;
@@ -23,47 +23,40 @@ export default function PostCard({ post, showEmbed = false }: PostCardProps) {
       </div>
 
       {showEmbed ? (
-        <div className="mb-3">
-          <a
-            href={post.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-mint-500 hover:underline"
-          >
-            Xで投稿を見る ↗
-          </a>
-        </div>
-      ) : null}
-
-      <p className="text-sm text-warm-text leading-relaxed mb-3">{post.summary}</p>
-
-      <div className="flex flex-wrap items-center gap-2">
-        {post.characters.map((char) => (
-          <span
-            key={char}
-            className="text-xs bg-lavender-100 text-lavender-400 px-2 py-0.5 rounded-full"
-          >
-            {char}
-          </span>
-        ))}
-        {post.tags.map((tag) => (
-          <span key={tag} className="text-xs text-warm-muted">
-            #{tag}
-          </span>
-        ))}
-      </div>
-
-      <div className="mt-3 pt-3 border-t border-warm-border flex items-center justify-between">
-        <a
-          href={post.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-mint-500 hover:underline flex items-center gap-1"
-        >
-          <span>🐦</span>
-          公式Xで見る
-        </a>
-      </div>
+        <TwitterEmbed tweetId={post.tweetId} url={post.url} className="mb-3" />
+      ) : (
+        <>
+          {post.summary && (
+            <p className="text-sm text-warm-text leading-relaxed mb-3">{post.summary}</p>
+          )}
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            {post.characters.map((char) => (
+              <span
+                key={char}
+                className="text-xs bg-lavender-100 text-lavender-400 px-2 py-0.5 rounded-full"
+              >
+                {char}
+              </span>
+            ))}
+            {post.tags.map((tag) => (
+              <span key={tag} className="text-xs text-warm-muted">
+                #{tag}
+              </span>
+            ))}
+          </div>
+          <div className="pt-3 border-t border-warm-border">
+            <a
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-mint-500 hover:underline flex items-center gap-1"
+            >
+              <span>🐦</span>
+              公式Xで見る
+            </a>
+          </div>
+        </>
+      )}
     </article>
   );
 }
