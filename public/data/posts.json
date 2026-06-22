@@ -1,0 +1,69 @@
+{
+  "lastUpdated": "2026-06-22T09:00:00+09:00",
+  "totalPosts": 3,
+  "todayPosts": [
+    {
+      "id": "post-001",
+      "tweetId": "1935000000000000001",
+      "url": "https://x.com/ngnchiikawa/status/1935000000000000001",
+      "publishedAt": "2026-06-22T08:00:00+09:00",
+      "category": "manga",
+      "tags": ["ちいかわ", "漫画", "日常"],
+      "summary": "ちいかわとハチワレが一緒にお昼ごはんを食べているお話。ほっこりする日常シーン。",
+      "characters": ["ちいかわ", "ハチワレ"]
+    }
+  ],
+  "recentPosts": [
+    {
+      "id": "post-001",
+      "tweetId": "1935000000000000001",
+      "url": "https://x.com/ngnchiikawa/status/1935000000000000001",
+      "publishedAt": "2026-06-22T08:00:00+09:00",
+      "category": "manga",
+      "tags": ["ちいかわ", "漫画", "日常"],
+      "summary": "ちいかわとハチワレが一緒にお昼ごはんを食べているお話。ほっこりする日常シーン。",
+      "characters": ["ちいかわ", "ハチワレ"]
+    },
+    {
+      "id": "post-002",
+      "tweetId": "1934000000000000002",
+      "url": "https://x.com/ngnchiikawa/status/1934000000000000002",
+      "publishedAt": "2026-06-21T09:30:00+09:00",
+      "category": "goods",
+      "tags": ["グッズ", "新商品", "ぬいぐるみ"],
+      "summary": "新作ぬいぐるみの情報が公開されました。ちいかわ・ハチワレ・うさぎの3種展開。",
+      "characters": ["ちいかわ", "ハチワレ", "うさぎ"]
+    },
+    {
+      "id": "post-003",
+      "tweetId": "1933000000000000003",
+      "url": "https://x.com/ngnchiikawa/status/1933000000000000003",
+      "publishedAt": "2026-06-20T10:00:00+09:00",
+      "category": "anime",
+      "tags": ["アニメ", "放送情報"],
+      "summary": "アニメの次回放送予告。新キャラクターの登場が示唆されています。",
+      "characters": ["ちいかわ"]
+    }
+  ],
+  "calendarData": [
+    { "date": "2026-06-22", "count": 1, "categories": ["manga"] },
+    { "date": "2026-06-21", "count": 1, "categories": ["goods"] },
+    { "date": "2026-06-20", "count": 1, "categories": ["anime"] },
+    { "date": "2026-06-19", "count": 2, "categories": ["manga", "collab"] },
+    { "date": "2026-06-18", "count": 1, "categories": ["manga"] },
+    { "date": "2026-06-17", "count": 3, "categories": ["manga", "goods", "event"] },
+    { "date": "2026-06-16", "count": 1, "categories": ["manga"] },
+    { "date": "2026-06-15", "count": 0, "categories": [] },
+    { "date": "2026-06-14", "count": 2, "categories": ["manga", "anime"] },
+    { "date": "2026-06-13", "count": 1, "categories": ["manga"] },
+    { "date": "2026-06-12", "count": 1, "categories": ["goods"] },
+    { "date": "2026-06-11", "count": 2, "categories": ["manga", "collab"] },
+    { "date": "2026-06-10", "count": 1, "categories": ["manga"] }
+  ],
+  "chiikawaIndex": {
+    "score": 72,
+    "mood": "happy",
+    "label": "ほっこり",
+    "description": "今日のちいかわはおだやかな日常モード。癒し成分多めです。"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "episodes": [
+    {
+      "id": "ep-001",
+      "number": 1,
+      "title": "はじまりの話",
+      "tweetId": "1500000000000000001",
+      "url": "https://x.com/ngnchiikawa/status/1500000000000000001",
+      "publishedAt": "2020-01-29T00:00:00+09:00",
+      "characters": ["ちいかわ"],
+      "keywords": ["日常", "はじまり"],
+      "relatedEpisodes": [],
+      "tags": ["第1話", "日常系"],
+      "summary": "ちいかわのはじまりのお話。小さくてかわいいちいかわが登場します。"
+    },
+    {
+      "id": "ep-002",
+      "number": 2,
+      "title": "ハチワレとの出会い",
+      "tweetId": "1500000000000000002",
+      "url": "https://x.com/ngnchiikawa/status/1500000000000000002",
+      "publishedAt": "2020-02-05T00:00:00+09:00",
+      "characters": ["ちいかわ", "ハチワレ"],
+      "keywords": ["友達", "出会い", "ハチワレ"],
+      "relatedEpisodes": [1],
+      "tags": ["ハチワレ登場", "友情"],
+      "summary": "ハチワレが登場するお話。ちいかわとハチワレの友情の始まり。"
+    },
+    {
+      "id": "ep-003",
+      "number": 3,
+      "title": "うさぎ登場",
+      "tweetId": "1500000000000000003",
+      "url": "https://x.com/ngnchiikawa/status/1500000000000000003",
+      "publishedAt": "2020-02-12T00:00:00+09:00",
+      "characters": ["ちいかわ", "ハチワレ", "うさぎ"],
+      "keywords": ["うさぎ", "個性的", "仲間"],
+      "relatedEpisodes": [1, 2],
+      "tags": ["うさぎ登場", "トリオ結成"],
+      "summary": "個性豊かなうさぎが登場するお話。3人のトリオが揃います。"
+    }
+  ]
+}

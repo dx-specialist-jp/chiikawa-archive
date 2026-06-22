@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FEFCF7;
+    color: #3A3530;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-3xl shadow-card border border-warm-border;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-manga {
+    @apply badge bg-mint-100 text-mint-500;
+  }
+
+  .badge-goods {
+    @apply badge bg-peach-100 text-peach-400;
+  }
+
+  .badge-anime {
+    @apply badge bg-lavender-100 text-lavender-500;
+  }
+
+  .badge-collab {
+    @apply badge bg-honey-100 text-yellow-600;
+  }
+
+  .badge-event {
+    @apply badge bg-peach-100 text-peach-400;
+  }
+
+  .badge-other {
+    @apply badge bg-cream-200 text-warm-muted;
+  }
+
+  .section-title {
+    @apply text-lg font-bold text-warm-text flex items-center gap-2;
+  }
+
+  .btn-primary {
+    @apply bg-mint-400 text-white px-4 py-2 rounded-2xl font-medium
+           hover:bg-mint-500 transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-cream-200 text-warm-text px-4 py-2 rounded-2xl font-medium
+           hover:bg-cream-300 transition-colors duration-200;
+  }
+}
+
+/* Twitter embed override */
+.twitter-tweet {
+  margin: 0 !important;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF0DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8E8DC;
+  border-radius: 3px;
+}
