@@ -1,19 +1,7 @@
 {
   "lastUpdated": "2026-06-22T09:00:00+09:00",
   "totalPosts": 3,
-  "todayPosts": [
-    {
-      "id": "post-001",
-      "tweetId": "1935000000000000001",
-      "url": "https://x.com/ngnchiikawa/status/1935000000000000001",
-      "publishedAt": "2026-06-22T08:00:00+09:00",
-      "category": "manga",
-      "tags": ["ちいかわ", "漫画", "日常"],
-      "summary": "ちいかわとハチワレが一緒にお昼ごはんを食べているお話。ほっこりする日常シーン。",
-      "characters": ["ちいかわ", "ハチワレ"]
-    }
-  ],
-  "recentPosts": [
+  "posts": [
     {
       "id": "post-001",
       "tweetId": "1935000000000000001",

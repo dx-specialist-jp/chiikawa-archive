@@ -13,13 +13,22 @@ async function getSiteData(): Promise<SiteData> {
   return JSON.parse(raw) as SiteData;
 }
 
+function getTodayJst(): string {
+  return new Date().toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
+}
+
 export default async function HomePage() {
   const data = await getSiteData();
+  const todayStr = getTodayJst();
+  const todayPosts = data.posts.filter((p) =>
+    new Date(p.publishedAt).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" }) === todayStr
+  );
+  const recentPosts = data.posts.slice(0, 5);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <HeroSection
-        todayCount={data.todayPosts.length}
+        todayCount={todayPosts.length}
         totalPosts={data.totalPosts}
         lastUpdated={data.lastUpdated}
       />
@@ -34,14 +43,14 @@ export default async function HomePage() {
               <span>今日の公式更新</span>
             </div>
 
-            {data.todayPosts.length === 0 ? (
+            {todayPosts.length === 0 ? (
               <div className="card p-8 text-center text-warm-muted">
                 <p className="text-2xl mb-2">🌙</p>
                 <p className="text-sm">本日はまだ更新がありません</p>
               </div>
             ) : (
               <div className="space-y-3">
-                {data.todayPosts.map((post) => (
+                {todayPosts.map((post) => (
                   <PostCard key={post.id} post={post} showEmbed />
                 ))}
               </div>
@@ -55,7 +64,7 @@ export default async function HomePage() {
               <span>最近の更新</span>
             </div>
             <div className="space-y-3">
-              {data.recentPosts.slice(0, 5).map((post) => (
+              {recentPosts.map((post) => (
                 <PostCard key={post.id} post={post} />
               ))}
             </div>

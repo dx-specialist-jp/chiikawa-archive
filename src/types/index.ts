@@ -34,9 +34,7 @@ export interface Episode {
 export interface SiteData {
   lastUpdated: string;
   totalPosts: number;
-  todayPosts: Post[];
-  recentPosts: Post[];
-  episodes: Episode[];
+  posts: Post[];
   calendarData: CalendarDay[];
   chiikawaIndex: ChiikawaIndex;
 }

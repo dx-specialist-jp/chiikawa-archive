@@ -2,8 +2,8 @@ name: Update Data
 
 on:
   schedule:
-    # 毎日 JST 9:00 (UTC 0:00) に実行
-    - cron: "0 0 * * *"
+    # 毎日 JST 0:00 (UTC 15:00) に実行
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 permissions:
