@@ -1,12 +1,9 @@
 /**
- * ちいかわ公式Xの投稿を取得してJSONを更新するスクリプト
+ * RSSHub 経由で ngnchiikawa の公式X投稿を取得し posts.json を更新する
  *
- * 必要な環境変数:
- *   X_BEARER_TOKEN - X API v2 のベアラートークン
- *
- * 動作モード:
- *   - 通常実行 (既存データあり): 前回取得ID以降の新着投稿を追加
- *   - 初回実行 (既存データなし): 全履歴をページネーションで一括取得
+ * 環境変数:
+ *   RSSHUB_URL        - RSSHub のベース URL（省略時: https://rsshub.app）
+ *   RSSHUB_ACCESS_KEY - RSSHub の ACCESS_KEY（省略可）
  */
 
 import { writeFile, readFile } from "fs/promises";
@@ -17,12 +14,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
 const OFFICIAL_X_USERNAME = "ngnchiikawa";
 
-// カテゴリ判定キーワード（ルールベース）
+const RSSHUB_BASE = (process.env.RSSHUB_URL ?? "https://rsshub.app").replace(/\/$/, "");
+const RSSHUB_ACCESS_KEY = process.env.RSSHUB_ACCESS_KEY ?? "";
+
 const CATEGORY_KEYWORDS = {
-  manga: ["漫画", "まんが", "コミック", "#ちいかわ"],
+  manga: ["漫画", "まんが", "コミック", "#ちいかわ", "更新"],
   goods: ["グッズ", "商品", "発売", "販売", "限定", "コラボ商品", "ぬいぐるみ", "フィギュア"],
-  anime: ["アニメ", "放送", "配信", "TVアニメ", "OVA"],
-  collab: ["コラボ", "タイアップ", "×", "コラボレーション"],
+  anime: ["アニメ", "放送", "配信", "映画", "劇場"],
+  collab: ["コラボ", "×", "✕"],
   event: ["イベント", "展示", "ポップアップ", "フェア", "期間限定"],
 };
 
@@ -52,129 +51,123 @@ function toJstDateStr(isoStr) {
   return new Date(isoStr).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
 }
 
-async function fetchUserId(username, bearerToken) {
-  const res = await fetch(
-    `https://api.twitter.com/2/users/by/username/${username}`,
-    { headers: { Authorization: `Bearer ${bearerToken}` } }
+// CDATA・HTML エンティティ・タグを除去してテキストを抽出
+function extractXmlText(xml, tag) {
+  const regex = new RegExp(
+    `<${tag}[^>]*>(?:<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>|([^<]*))<\\/${tag}>`,
+    "s"
   );
-  if (!res.ok) throw new Error(`ユーザーID取得失敗: ${res.status}`);
-  const data = await res.json();
-  return data.data.id;
+  const match = xml.match(regex);
+  if (!match) return "";
+  return (match[1] ?? match[2] ?? "")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/<[^>]+>/g, "")
+    .trim();
 }
 
-// 1ページ分のタイムラインを取得
-async function fetchTimelinePage(userId, bearerToken, { sinceId, paginationToken } = {}) {
-  const params = new URLSearchParams({
-    max_results: "100",
-    "tweet.fields": "created_at,text",
-    exclude: "retweets,replies",
+function buildFeedUrl(username) {
+  const path = `${RSSHUB_BASE}/twitter/user/${username}`;
+  return RSSHUB_ACCESS_KEY ? `${path}?key=${RSSHUB_ACCESS_KEY}` : path;
+}
+
+async function fetchRssFeed(username) {
+  const url = buildFeedUrl(username);
+  console.log(`📡 RSS 取得中: ${RSSHUB_BASE}/twitter/user/${username}`);
+
+  const res = await fetch(url, {
+    headers: { "User-Agent": "chiikawa-archive/1.0" },
+    signal: AbortSignal.timeout(20000),
   });
-  if (sinceId) params.set("since_id", sinceId);
-  if (paginationToken) params.set("pagination_token", paginationToken);
 
-  const res = await fetch(
-    `https://api.twitter.com/2/users/${userId}/tweets?${params}`,
-    { headers: { Authorization: `Bearer ${bearerToken}` } }
-  );
   if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`X API エラー ${res.status}: ${body}`);
+    throw new Error(`RSSHub 応答エラー: ${res.status} ${res.statusText}`);
   }
-  return res.json();
+
+  return parseRssItems(await res.text());
 }
 
-// 全件取得（初回：ページネーションあり / 増分：sinceId指定）
-async function fetchAllNewTweets(userId, bearerToken, sinceId) {
-  const tweets = [];
-  let paginationToken = null;
-  const isInitial = !sinceId;
+function parseRssItems(xml) {
+  const items = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+  let match;
 
-  do {
-    const data = await fetchTimelinePage(userId, bearerToken, {
-      sinceId,
-      paginationToken,
-    });
+  while ((match = itemRegex.exec(xml)) !== null) {
+    const itemXml = match[1];
 
-    if (!data.data || data.data.length === 0) break;
-    tweets.push(...data.data);
-    paginationToken = data.meta?.next_token ?? null;
+    const linkMatch =
+      itemXml.match(/<link><!\[CDATA\[([^\]]+)\]\]><\/link>/) ??
+      itemXml.match(/<link>([^<]+)<\/link>/);
+    const link = linkMatch?.[1]?.trim() ?? "";
 
-    if (paginationToken) {
-      const mode = isInitial ? "初回取得" : "増分取得";
-      console.log(`  ${mode}: ${tweets.length}件 取得済み（続きあり）`);
-      // レート制限を考慮して少し待機
-      await new Promise((r) => setTimeout(r, 1500));
-    }
-  } while (paginationToken && isInitial); // 初回のみ全ページ取得
+    const tweetIdMatch = link.match(/\/status\/(\d+)/);
+    if (!tweetIdMatch) continue;
 
-  return tweets;
+    const pubDateStr = extractXmlText(itemXml, "pubDate");
+    const title = extractXmlText(itemXml, "title");
+    const description = extractXmlText(itemXml, "description");
+    const text = title || description;
+
+    const publishedAt = new Date(pubDateStr).toISOString();
+    if (isNaN(Date.parse(publishedAt))) continue;
+
+    items.push({ tweetId: tweetIdMatch[1], link, text, publishedAt });
+  }
+
+  return items;
 }
 
 function buildCalendarData(posts) {
-  const calendarMap = {};
+  const map = {};
   for (const p of posts) {
     const date = toJstDateStr(p.publishedAt);
-    if (!calendarMap[date]) calendarMap[date] = { date, count: 0, categories: [] };
-    calendarMap[date].count++;
-    if (!calendarMap[date].categories.includes(p.category)) {
-      calendarMap[date].categories.push(p.category);
+    if (!map[date]) map[date] = { date, count: 0, categories: [] };
+    map[date].count++;
+    if (!map[date].categories.includes(p.category)) {
+      map[date].categories.push(p.category);
     }
   }
-  return Object.values(calendarMap).sort((a, b) => b.date.localeCompare(a.date));
+  return Object.values(map).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 async function main() {
-  const bearerToken = process.env.X_BEARER_TOKEN;
-  if (!bearerToken) {
-    console.warn("⚠️  X_BEARER_TOKEN が未設定です。データを更新しません。");
-    process.exit(0);
-  }
-
   const existingRaw = await readFile(join(DATA_DIR, "posts.json"), "utf-8");
   const existing = JSON.parse(existingRaw);
   const existingPosts = existing.posts ?? [];
-  const latestId = existingPosts[0]?.tweetId ?? null;
-  const isInitial = existingPosts.length === 0;
+  const existingIds = new Set(existingPosts.map((p) => p.tweetId));
 
-  console.log(`📡 X API からデータを取得中... (${isInitial ? "初回一括" : "増分"})`);
+  const rssItems = await fetchRssFeed(OFFICIAL_X_USERNAME);
+  console.log(`📋 RSS から ${rssItems.length} 件取得`);
 
-  const userId = await fetchUserId(OFFICIAL_X_USERNAME, bearerToken);
-  console.log(`👤 ユーザーID: ${userId}`);
+  const newPosts = rssItems
+    .filter((item) => !existingIds.has(item.tweetId))
+    .map((item) => ({
+      id: `post-${item.tweetId}`,
+      tweetId: item.tweetId,
+      url: item.link,
+      publishedAt: item.publishedAt,
+      category: detectCategory(item.text),
+      tags: [...item.text.matchAll(/#(\w+)/g)].map((m) => m[1]),
+      characters: extractCharacters(item.text),
+    }));
 
-  const rawTweets = await fetchAllNewTweets(userId, bearerToken, latestId);
-
-  if (rawTweets.length === 0) {
+  if (newPosts.length === 0) {
     console.log("✅ 新規投稿なし");
     return;
   }
 
-  console.log(`📨 ${rawTweets.length} 件の新規投稿を取得`);
+  console.log(`✨ ${newPosts.length} 件の新着を追加`);
 
-  const newPosts = rawTweets.map((tweet) => ({
-    id: `post-${tweet.id}`,
-    tweetId: tweet.id,
-    url: `https://x.com/${OFFICIAL_X_USERNAME}/status/${tweet.id}`,
-    publishedAt: tweet.created_at,
-    category: detectCategory(tweet.text),
-    tags: ["ちいかわ"],
-    summary: tweet.text.slice(0, 100),
-    characters: extractCharacters(tweet.text),
-  }));
-
-  // 新着を先頭に追加（重複排除）
-  const existingIds = new Set(existingPosts.map((p) => p.tweetId));
-  const merged = [
-    ...newPosts.filter((p) => !existingIds.has(p.tweetId)),
-    ...existingPosts,
-  ];
-
-  const calendarData = buildCalendarData(merged);
+  const merged = [...newPosts, ...existingPosts];
 
   const updated = {
     lastUpdated: new Date().toISOString(),
     totalPosts: merged.length,
     posts: merged,
-    calendarData,
+    calendarData: buildCalendarData(merged),
     chiikawaIndex: existing.chiikawaIndex,
   };
 

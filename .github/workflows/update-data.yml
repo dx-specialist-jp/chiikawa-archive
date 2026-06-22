@@ -25,9 +25,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch latest posts
+      - name: Fetch latest posts via RSSHub
         env:
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          RSSHUB_URL: ${{ vars.RSSHUB_URL }}
+          RSSHUB_ACCESS_KEY: ${{ secrets.RSSHUB_ACCESS_KEY }}
         run: node scripts/fetch-posts.mjs
 
       - name: Check for changes
