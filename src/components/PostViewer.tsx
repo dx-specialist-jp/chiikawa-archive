@@ -17,19 +17,17 @@ const CATEGORY_EMOJIS: Record<PostCategory, string> = {
 
 const ALL_CATEGORIES: PostCategory[] = ["manga", "goods", "anime", "collab", "event", "other"];
 
-function getPostDateJst(publishedAt: string): string {
-  return new Date(publishedAt).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
+// ちいかわ連載開始月（これより前には遡れない）
+const MIN_YM = "2020-01";
+
+function getJstDate(isoStr: string): string {
+  return new Date(isoStr).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
 }
 
-function getCellStyle(count: number, isSelected: boolean, isToday: boolean): string {
-  const base = "w-4 h-4 rounded-sm transition-all";
-  if (isSelected) return `${base} bg-mint-500 ring-2 ring-mint-600 ring-offset-1`;
-  if (count === 0) return `${base} bg-cream-200 cursor-default ${isToday ? "ring-1 ring-mint-300 ring-offset-1" : ""}`;
-  const color =
-    count === 1 ? "bg-mint-200 hover:bg-mint-300" :
-    count === 2 ? "bg-mint-300 hover:bg-mint-400" :
-    "bg-mint-400 hover:bg-mint-500";
-  return `${base} ${color} cursor-pointer ${isToday ? "ring-1 ring-mint-400 ring-offset-1" : ""}`;
+function addMonths(ym: string, delta: number): string {
+  const [y, m] = ym.split("-").map(Number);
+  const d = new Date(y, m - 1 + delta, 1);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
 }
 
 interface PostViewerProps {
@@ -38,114 +36,168 @@ interface PostViewerProps {
 }
 
 export default function PostViewer({ posts, calendarData }: PostViewerProps) {
+  const todayJst = new Date().toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
+  const currentYM = todayJst.slice(0, 7);
+
+  const [viewYM, setViewYM] = useState(currentYM);
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<PostCategory | "all">("all");
 
-  const today = new Date().toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
+  const dataMap = useMemo(
+    () => Object.fromEntries(calendarData.map((d) => [d.date, d])),
+    [calendarData]
+  );
 
-  // Build 90-day calendar grid
-  const { weeks, dataMap } = useMemo(() => {
-    const map = Object.fromEntries(calendarData.map((d) => [d.date, d]));
+  const calendarRows = useMemo(() => {
+    const [y, m] = viewYM.split("-").map(Number);
+    const firstDow = new Date(y, m - 1, 1).getDay();
+    const daysInMonth = new Date(y, m, 0).getDate();
 
-    const endDate = new Date();
-    endDate.setHours(0, 0, 0, 0);
-    const startDate = new Date(endDate);
-    startDate.setDate(startDate.getDate() - 90);
-
-    const days: CalendarDay[] = [];
-    for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
-      const dateStr = d.toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
-      days.push(map[dateStr] ?? { date: dateStr, count: 0, categories: [] });
+    const cells: ({ date: string; count: number } | null)[] = Array(firstDow).fill(null);
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateStr = `${viewYM}-${String(d).padStart(2, "0")}`;
+      cells.push({ date: dateStr, count: dataMap[dateStr]?.count ?? 0 });
     }
+    while (cells.length % 7 !== 0) cells.push(null);
 
-    const firstDow = new Date(days[0].date).getDay();
-    const padded: (CalendarDay | null)[] = [...Array(firstDow).fill(null), ...days];
-    const wks: (CalendarDay | null)[][] = [];
-    for (let i = 0; i < padded.length; i += 7) wks.push(padded.slice(i, i + 7));
+    const rows: ({ date: string; count: number } | null)[][] = [];
+    for (let i = 0; i < cells.length; i += 7) rows.push(cells.slice(i, i + 7));
+    return rows;
+  }, [viewYM, dataMap]);
 
-    return { weeks: wks, dataMap: map };
-  }, [calendarData]);
+  const monthPostCount = useMemo(
+    () => calendarData.filter((d) => d.date.startsWith(viewYM)).reduce((s, d) => s + d.count, 0),
+    [calendarData, viewYM]
+  );
+
+  function handleDayClick(date: string, count: number) {
+    if (count === 0) return;
+    setSelectedDate((prev) => (prev === date ? null : date));
+  }
 
   const filtered = useMemo(() => {
     return posts
       .filter((p) => {
-        if (selectedDate && getPostDateJst(p.publishedAt) !== selectedDate) return false;
+        const d = getJstDate(p.publishedAt);
+        if (selectedDate ? d !== selectedDate : !d.startsWith(viewYM)) return false;
         if (selectedCategory !== "all" && p.category !== selectedCategory) return false;
         return true;
       })
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-  }, [posts, selectedDate, selectedCategory]);
+  }, [posts, selectedDate, viewYM, selectedCategory]);
 
-  function handleDateClick(date: string) {
-    const entry = dataMap[date];
-    if (!entry || entry.count === 0) return;
-    setSelectedDate((prev) => (prev === date ? null : date));
-  }
+  const [vYear, vMonth] = viewYM.split("-").map(Number);
+  const viewMonthLabel = new Date(vYear, vMonth - 1, 1).toLocaleDateString("ja-JP", {
+    year: "numeric",
+    month: "long",
+  });
 
-  const resultLabel = useMemo(() => {
-    const parts: string[] = [];
-    if (selectedDate) {
-      parts.push(
-        new Date(selectedDate).toLocaleDateString("ja-JP", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-          timeZone: "Asia/Tokyo",
-        })
-      );
-    }
-    if (selectedCategory !== "all") parts.push(CATEGORY_LABELS[selectedCategory]);
-    return parts.length > 0 ? parts.join(" ・ ") : "すべての投稿";
-  }, [selectedDate, selectedCategory]);
+  const resultLabel = selectedDate
+    ? new Date(selectedDate + "T00:00:00+09:00").toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "Asia/Tokyo",
+      })
+    : viewMonthLabel;
+
+  const DOW = ["日", "月", "火", "水", "木", "金", "土"];
 
   return (
     <div className="space-y-6">
-      {/* Calendar */}
+      {/* Month Calendar */}
       <div className="card p-4">
-        <div className="section-title mb-3">
-          <span>📅</span>
-          <span>更新カレンダー</span>
-          <span className="text-xs font-normal text-warm-muted ml-1">
-            投稿のある日をクリックで絞り込み（過去90日）
-          </span>
-        </div>
-
-        <div className="overflow-x-auto">
-          <div className="flex gap-1 min-w-max">
-            {weeks.map((week, wi) => (
-              <div key={wi} className="flex flex-col gap-1">
-                {week.map((day, di) => {
-                  if (!day) return <div key={di} className="w-4 h-4" />;
-                  return (
-                    <button
-                      key={di}
-                      type="button"
-                      title={`${day.date}：${day.count}件`}
-                      onClick={() => handleDateClick(day.date)}
-                      className={getCellStyle(day.count, day.date === selectedDate, day.date === today)}
-                    />
-                  );
-                })}
-              </div>
-            ))}
+        <div className="flex items-center justify-between mb-4">
+          <button
+            onClick={() => { setViewYM(addMonths(viewYM, -1)); setSelectedDate(null); }}
+            disabled={viewYM <= MIN_YM}
+            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-cream-200 disabled:opacity-30 disabled:cursor-not-allowed text-warm-text text-xl font-bold"
+            aria-label="前の月"
+          >
+            ‹
+          </button>
+          <div className="text-center">
+            <p className="text-base font-bold text-warm-text">{viewMonthLabel}</p>
+            <p className="text-xs text-warm-muted mt-0.5">
+              {monthPostCount > 0 ? `${monthPostCount}件の投稿` : "投稿なし"}
+            </p>
           </div>
+          <button
+            onClick={() => { setViewYM(addMonths(viewYM, 1)); setSelectedDate(null); }}
+            disabled={viewYM >= currentYM}
+            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-cream-200 disabled:opacity-30 disabled:cursor-not-allowed text-warm-text text-xl font-bold"
+            aria-label="次の月"
+          >
+            ›
+          </button>
         </div>
 
-        <div className="flex items-center gap-2 mt-3">
-          <span className="text-xs text-warm-muted">少</span>
-          {["bg-cream-200", "bg-mint-200", "bg-mint-300", "bg-mint-400"].map((c, i) => (
-            <div key={i} className={`w-4 h-4 rounded-sm ${c}`} />
+        <div className="grid grid-cols-7 mb-1">
+          {DOW.map((label, i) => (
+            <div
+              key={label}
+              className={`text-center text-xs py-1 font-medium ${
+                i === 0 ? "text-red-400" : i === 6 ? "text-blue-400" : "text-warm-muted"
+              }`}
+            >
+              {label}
+            </div>
           ))}
-          <span className="text-xs text-warm-muted">多</span>
-          {selectedDate && (
+        </div>
+
+        <div className="space-y-1">
+          {calendarRows.map((row, ri) => (
+            <div key={ri} className="grid grid-cols-7 gap-1">
+              {row.map((cell, ci) => {
+                if (!cell) return <div key={ci} className="h-9" />;
+                const dayNum = parseInt(cell.date.slice(-2));
+                const isToday = cell.date === todayJst;
+                const isSelected = cell.date === selectedDate;
+                const hasPost = cell.count > 0;
+                return (
+                  <button
+                    key={ci}
+                    type="button"
+                    onClick={() => handleDayClick(cell.date, cell.count)}
+                    disabled={!hasPost}
+                    title={hasPost ? `${cell.date}：${cell.count}件` : cell.date}
+                    className={[
+                      "h-9 rounded-lg flex flex-col items-center justify-center relative text-sm transition-colors select-none",
+                      isSelected
+                        ? "bg-mint-500 text-white"
+                        : hasPost
+                        ? "bg-mint-100 hover:bg-mint-200 text-mint-700 cursor-pointer"
+                        : "text-warm-muted cursor-default",
+                      isToday && !isSelected ? "ring-2 ring-mint-400 ring-offset-1" : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                  >
+                    <span className="leading-none text-sm">{dayNum}</span>
+                    {hasPost && (
+                      <span
+                        className={`absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${
+                          isSelected ? "bg-white" : "bg-mint-400"
+                        }`}
+                      />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+
+        {selectedDate && (
+          <div className="mt-3 text-center">
             <button
               onClick={() => setSelectedDate(null)}
-              className="ml-auto text-xs text-warm-muted hover:text-warm-text underline"
+              className="text-xs text-warm-muted hover:text-warm-text underline"
             >
-              日付の絞り込みを解除
+              月全体を表示
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Category filter */}
@@ -192,7 +244,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
         {filtered.length === 0 ? (
           <div className="card p-8 text-center text-warm-muted">
             <p className="text-2xl mb-2">🌙</p>
-            <p className="text-sm">該当する投稿がありません</p>
+            <p className="text-sm">この月の投稿はまだアーカイブされていません</p>
           </div>
         ) : (
           <div className="space-y-4">
