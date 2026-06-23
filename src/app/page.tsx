@@ -76,7 +76,7 @@ export default async function HomePage() {
             </div>
             <div className="space-y-3">
               {recentPosts.map((post) => (
-                <PostCard key={post.id} post={post} />
+                <PostCard key={post.id} post={post} showEmbed />
               ))}
             </div>
           </section>
