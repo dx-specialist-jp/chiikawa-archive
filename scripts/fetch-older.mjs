@@ -4,7 +4,6 @@
  * 環境変数（GitHub Secrets に設定）:
  *   TWITTER_AUTH_TOKEN  - auth_token クッキー
  *   TWITTER_CSRF_TOKEN  - ct0 クッキー
- *     取得方法: x.com を開き DevTools > Application > Cookies > ct0 の値
  */
 
 import { writeFile, readFile } from "fs/promises";
@@ -21,11 +20,7 @@ const USERNAME = "ngnchiikawa";
 const BEARER =
   "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA";
 
-// Twitter の GraphQL クエリID（変更される場合は DevTools > Network > UserTweets で確認）
-const QID_USER = "qW5u-DAuXpMEG0za1nNbgA";
-const QID_TWEETS = "E3opETHurmVJflFsUBVuUQ";
-
-const FEATURES_USER = {
+const GQL_FEATURES_USER = {
   hidden_profile_likes_enabled: true,
   hidden_profile_subscriptions_enabled: true,
   responsive_web_graphql_exclude_directive_enabled: true,
@@ -38,7 +33,7 @@ const FEATURES_USER = {
   responsive_web_graphql_timeline_navigation_enabled: true,
 };
 
-const FEATURES_TWEETS = {
+const GQL_FEATURES_TWEETS = {
   rweb_lists_timeline_redesign_enabled: true,
   responsive_web_graphql_exclude_directive_enabled: true,
   verified_phone_label_enabled: false,
@@ -57,17 +52,6 @@ const FEATURES_TWEETS = {
   longform_notetweets_rich_text_read_enabled: true,
   longform_notetweets_inline_media_enabled: false,
   responsive_web_enhance_cards_enabled: false,
-};
-
-const HEADERS = {
-  Authorization: `Bearer ${BEARER}`,
-  Cookie: `auth_token=${AUTH_TOKEN}; ct0=${CSRF_TOKEN}`,
-  "x-csrf-token": CSRF_TOKEN,
-  "x-twitter-active-user": "yes",
-  "x-twitter-auth-type": "OAuth2Session",
-  "x-twitter-client-language": "ja",
-  "User-Agent":
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
 };
 
 const CATEGORY_KEYWORDS = {
@@ -115,8 +99,21 @@ function buildCalendarData(posts) {
   return Object.values(map).sort((a, b) => b.date.localeCompare(a.date));
 }
 
+function authHeaders() {
+  return {
+    Authorization: `Bearer ${BEARER}`,
+    Cookie: `auth_token=${AUTH_TOKEN}; ct0=${CSRF_TOKEN}`,
+    "x-csrf-token": CSRF_TOKEN,
+    "x-twitter-active-user": "yes",
+    "x-twitter-auth-type": "OAuth2Session",
+    "x-twitter-client-language": "ja",
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+  };
+}
+
 async function gqlGet(url) {
-  const resp = await fetch(url, { headers: HEADERS });
+  const resp = await fetch(url, { headers: authHeaders() });
   if (resp.status === 429) {
     const reset = resp.headers.get("x-rate-limit-reset");
     const waitSec = reset ? Math.max(5, parseInt(reset) - Math.floor(Date.now() / 1000) + 5) : 60;
@@ -131,24 +128,99 @@ async function gqlGet(url) {
   return resp.json();
 }
 
-async function getUserId(screenName) {
+// Twitter の JS バンドルから最新のクエリ ID を動的に取得
+async function discoverQueryIds() {
+  console.log("🔍 クエリIDを Twitter の JS バンドルから取得中...");
+
+  const pageResp = await fetch(`https://x.com/${USERNAME}`, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      Cookie: `auth_token=${AUTH_TOKEN}; ct0=${CSRF_TOKEN}`,
+      "Accept-Language": "ja,en;q=0.9",
+    },
+    redirect: "follow",
+  });
+
+  if (!pageResp.ok) throw new Error(`プロフィールページ取得失敗: HTTP ${pageResp.status}`);
+  const html = await pageResp.text();
+
+  // JS バンドルの URL を抽出
+  const scriptUrls = [...html.matchAll(/src="(https:\/\/abs\.twimg\.com\/[^"]+\.js[^"]*)"/g)]
+    .map((m) => m[1])
+    .filter((u) => !u.includes("emoji") && !u.includes("moment"));
+
+  if (scriptUrls.length === 0) {
+    throw new Error("JSバンドルのURLが見つかりません。auth_token / ct0 が正しいか確認してください。");
+  }
+
+  console.log(`  ${scriptUrls.length}件のJSバンドルを検索中...`);
+
+  const ids = {};
+  const targets = ["UserByScreenName", "UserTweets"];
+
+  for (const url of scriptUrls) {
+    if (targets.every((t) => ids[t])) break;
+
+    let js;
+    try {
+      const r = await fetch(url, {
+        headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" },
+      });
+      if (!r.ok) continue;
+      js = await r.text();
+    } catch {
+      continue;
+    }
+
+    for (const target of targets) {
+      if (ids[target]) continue;
+      // パターン1: queryId:"xxx",operationName:"UserTweets"
+      let match = js.match(new RegExp(`queryId:"([^"]+)",operationName:"${target}"`));
+      // パターン2: operationName:"UserTweets",queryId:"xxx"
+      if (!match) match = js.match(new RegExp(`operationName:"${target}",queryId:"([^"]+)"`));
+      if (match) {
+        ids[target] = match[1];
+        console.log(`  ✓ ${target}: ${match[1]}`);
+      }
+    }
+  }
+
+  const missing = targets.filter((t) => !ids[t]);
+  if (missing.length > 0) {
+    throw new Error(
+      `クエリIDが見つかりませんでした: ${missing.join(", ")}\n` +
+        "auth_token / ct0 の期限が切れているかもしれません。値を更新してください。"
+    );
+  }
+
+  return ids;
+}
+
+async function getUserId(queryId, screenName) {
   const vars = encodeURIComponent(
     JSON.stringify({ screen_name: screenName, withSafetyModeUserFields: true })
   );
-  const feats = encodeURIComponent(JSON.stringify(FEATURES_USER));
-  const url = `https://api.twitter.com/graphql/${QID_USER}/UserByScreenName?variables=${vars}&features=${feats}`;
+  const feats = encodeURIComponent(JSON.stringify(GQL_FEATURES_USER));
+  const url = `https://api.twitter.com/graphql/${queryId}/UserByScreenName?variables=${vars}&features=${feats}`;
   const data = await gqlGet(url);
   const userId = data?.data?.user?.result?.rest_id;
-  if (!userId) throw new Error(`ユーザーID取得失敗。QID_USER の更新が必要かもしれません。\n${JSON.stringify(data)}`);
+  if (!userId) throw new Error(`ユーザーID取得失敗: ${JSON.stringify(data)}`);
   return userId;
 }
 
-async function fetchTweetPage(userId, cursor) {
-  const variables = { userId, count: 40, includePromotedContent: true, withVoice: true, withV2Timeline: true };
+async function fetchTweetPage(queryId, userId, cursor) {
+  const variables = {
+    userId,
+    count: 40,
+    includePromotedContent: true,
+    withVoice: true,
+    withV2Timeline: true,
+  };
   if (cursor) variables.cursor = cursor;
   const vars = encodeURIComponent(JSON.stringify(variables));
-  const feats = encodeURIComponent(JSON.stringify(FEATURES_TWEETS));
-  const url = `https://api.twitter.com/graphql/${QID_TWEETS}/UserTweets?variables=${vars}&features=${feats}`;
+  const feats = encodeURIComponent(JSON.stringify(GQL_FEATURES_TWEETS));
+  const url = `https://api.twitter.com/graphql/${queryId}/UserTweets?variables=${vars}&features=${feats}`;
   return gqlGet(url);
 }
 
@@ -162,17 +234,17 @@ function parsePage(data) {
     if (instr.type !== "TimelineAddEntries") continue;
     for (const entry of instr.entries ?? []) {
       const content = entry.content ?? {};
-      // カーソル
-      if (content.entryType === "TimelineTimelineCursor" && content.cursorType === "Bottom") {
+      if (
+        content.entryType === "TimelineTimelineCursor" &&
+        content.cursorType === "Bottom"
+      ) {
         nextCursor = content.value;
         continue;
       }
-      // ツイート
       const tweetResult = content.itemContent?.tweet_results?.result;
       if (!tweetResult) continue;
       const legacy = (tweetResult.tweet ?? tweetResult).legacy;
-      if (!legacy) continue;
-      if (legacy.retweeted_status_id_str) continue; // RTを除外
+      if (!legacy || legacy.retweeted_status_id_str) continue;
       tweets.push(legacy);
     }
   }
@@ -192,9 +264,13 @@ async function main() {
   const allPosts = new Map(existingPosts.map((p) => [p.tweetId, p]));
 
   console.log(`📚 現在のアーカイブ: ${allPosts.size}件`);
-  console.log(`🔍 @${USERNAME} のユーザーID を取得中...`);
 
-  const userId = await getUserId(USERNAME);
+  // クエリID を動的に取得
+  const qids = await discoverQueryIds();
+
+  // ユーザーID を取得
+  console.log(`🔍 @${USERNAME} のユーザーIDを取得中...`);
+  const userId = await getUserId(qids.UserByScreenName, USERNAME);
   console.log(`✅ userId: ${userId}`);
 
   let cursor = null;
@@ -202,7 +278,7 @@ async function main() {
   let totalAdded = 0;
 
   while (true) {
-    const data = await fetchTweetPage(userId, cursor);
+    const data = await fetchTweetPage(qids.UserTweets, userId, cursor);
     const { tweets, nextCursor } = parsePage(data);
     pageCount++;
 
@@ -223,19 +299,24 @@ async function main() {
       totalAdded++;
     }
 
-    const oldestInPage = tweets.reduce(
-      (a, b) => (new Date(a.created_at) < new Date(b.created_at) ? a : b),
-      tweets[0]
+    const oldestInPage = tweets.length
+      ? tweets.reduce((a, b) =>
+          new Date(a.created_at) < new Date(b.created_at) ? a : b
+        )
+      : null;
+    const oldestDate = oldestInPage
+      ? toJstDateStr(new Date(oldestInPage.created_at).toISOString())
+      : "?";
+
+    console.log(
+      `  ページ ${pageCount}: ${addedThisPage}件追加 / 最古 ${oldestDate} / 累計 ${allPosts.size}件`
     );
-    const oldestDate = oldestInPage ? toJstDateStr(new Date(oldestInPage.created_at).toISOString()) : "?";
-    console.log(`  ページ ${pageCount}: ${addedThisPage}件追加 / 最古 ${oldestDate} / 累計 ${allPosts.size}件`);
 
     if (!nextCursor || tweets.length === 0) {
       console.log("✅ 全件取得完了");
       break;
     }
     cursor = nextCursor;
-
     await new Promise((r) => setTimeout(r, 800));
   }
 
