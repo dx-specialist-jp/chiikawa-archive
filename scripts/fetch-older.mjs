@@ -121,44 +121,20 @@ async function main() {
 
   console.log(`📚 現在のアーカイブ: ${allPosts.size}件`);
 
-  // 認証方法を確定（アプリ認証で試し、失敗したらユーザー認証）
-  let useUserAuth = false;
-  {
-    const testResp = await fetchBatch(null, false);
-    if (testResp.status === 401 || testResp.status === 403) {
-      if (!AUTH_TOKEN || !CSRF_TOKEN) {
-        console.error(`❌ アプリ認証失敗 (HTTP ${testResp.status})`);
-        console.error("   TWITTER_CSRF_TOKEN を GitHub Secrets に追加してください");
-        console.error("   取得: x.com を開き DevTools > Application > Cookies > ct0 の値");
-        process.exit(1);
-      }
-      console.log("ℹ️  ユーザー認証を使用します");
-      useUserAuth = true;
-    } else if (!testResp.ok) {
-      const body = await testResp.text();
-      throw new Error(`初回リクエスト失敗: HTTP ${testResp.status}: ${body}`);
-    } else {
-      const firstBatch = await testResp.json();
-      console.log(`✅ アプリ認証OK（${Array.isArray(firstBatch) ? firstBatch.length : 0}件取得）`);
-      // 最初のバッチを処理
-      if (Array.isArray(firstBatch)) {
-        for (const t of firstBatch) {
-          if (!allPosts.has(t.id_str)) {
-            const text = t.full_text ?? t.text ?? "";
-            allPosts.set(t.id_str, {
-              id: `post-${t.id_str}`,
-              tweetId: t.id_str,
-              url: `https://x.com/${USERNAME}/status/${t.id_str}`,
-              publishedAt: new Date(t.created_at).toISOString(),
-              category: detectCategory(text),
-              tags: [],
-              characters: extractCharacters(text),
-            });
-          }
-        }
-      }
-    }
+  // TWITTER_AUTH_TOKEN がある → ユーザー認証を使う（X の制限でアプリ認証は動作しないことが多い）
+  if (!AUTH_TOKEN) {
+    console.error("❌ TWITTER_AUTH_TOKEN が未設定です");
+    console.error("   GitHub Secrets に追加してください（RSSHub の Render 設定とは別に必要です）");
+    process.exit(1);
   }
+  if (!CSRF_TOKEN) {
+    console.error("❌ TWITTER_CSRF_TOKEN (ct0) が未設定です");
+    console.error("   取得方法: x.com を開き DevTools > Application > Cookies > ct0 の値をコピー");
+    console.error("   GitHub Secrets に TWITTER_CSRF_TOKEN として追加してください");
+    process.exit(1);
+  }
+  const useUserAuth = true;
+  console.log("✅ ユーザー認証で開始します");
 
   // 最古 ID から遡って全件取得
   let pageCount = 1;
