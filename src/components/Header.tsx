@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "観測所" },
+  { href: "/news", label: "ニュース" },
   { href: "/archive", label: "アーカイブ" },
   { href: "/episodes", label: "図書館" },
   { href: "/rights", label: "権利者様へ" },
@@ -52,7 +53,7 @@ export default function Header() {
         </nav>
 
         <nav className="sm:hidden flex items-center gap-0.5">
-          {navItems.slice(0, 3).map((item) => {
+          {navItems.slice(0, 4).map((item) => {
             const isActive =
               item.href === "/"
                 ? pathname === "/"

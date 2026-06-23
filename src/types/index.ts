@@ -69,3 +69,20 @@ export const CATEGORY_COLORS: Record<PostCategory, string> = {
   event: "peach",
   other: "cream",
 };
+
+export interface NewsArticle {
+  id: string;
+  title: string;
+  url: string;
+  source: string;
+  publishedAt: string;
+  summary: string;
+  category: PostCategory;
+  tags: string[];
+}
+
+export interface NewsData {
+  lastUpdated: string;
+  totalArticles: number;
+  articles: NewsArticle[];
+}

@@ -19,6 +19,8 @@ export default function Footer() {
             <div className="font-semibold text-warm-text text-sm mb-3">コンテンツ</div>
             <ul className="space-y-1.5 text-xs text-warm-muted">
               <li><Link href="/" className="hover:text-mint-500 transition-colors">観測所トップ</Link></li>
+              <li><Link href="/news" className="hover:text-mint-500 transition-colors">最新ニュース</Link></li>
+              <li><Link href="/archive" className="hover:text-mint-500 transition-colors">投稿アーカイブ</Link></li>
               <li><Link href="/episodes" className="hover:text-mint-500 transition-colors">エピソード図書館</Link></li>
               <li><Link href="/contact" className="hover:text-mint-500 transition-colors">お問い合わせ</Link></li>
             </ul>
