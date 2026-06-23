@@ -2,8 +2,6 @@ import { promises as fs } from "fs";
 import path from "path";
 import type { SiteData, NewsData } from "@/types";
 import HeroSection from "@/components/HeroSection";
-import CategoryGrid from "@/components/CategoryGrid";
-import ChiikawaIndex from "@/components/ChiikawaIndex";
 import UpdateCalendar from "@/components/UpdateCalendar";
 import PostCard from "@/components/PostCard";
 import CategoryBadge from "@/components/CategoryBadge";
@@ -120,8 +118,6 @@ export default async function HomePage() {
             </section>
           )}
 
-          <CategoryGrid />
-          <ChiikawaIndex data={data.chiikawaIndex} />
           <UpdateCalendar data={data.calendarData} />
 
           {/* 注意書き */}

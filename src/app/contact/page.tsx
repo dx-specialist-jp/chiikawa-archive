@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "お問い合わせ",
-  description: "ちいかわ観測所へのお問い合わせページ。権利侵害の報告・ご意見はこちらから。",
+  description: "ちいかわ観測所へのお問い合わせ。権利侵害の報告・ご意見はGitHub Issuesよりお送りください。",
 };
 
 export default function ContactPage() {
@@ -14,113 +15,63 @@ export default function ContactPage() {
           お問い合わせ
         </h1>
         <p className="text-sm text-warm-muted">
-          権利侵害のご報告・ご意見・ご質問はこちらからお送りください。
+          ご意見・権利侵害のご報告は GitHub Issues よりお送りください。
         </p>
       </div>
 
-      <div className="card p-6 mb-5">
-        <div className="bg-mint-100 border border-mint-200 rounded-2xl p-3 mb-5 text-xs text-mint-500 leading-relaxed">
-          <p className="font-semibold mb-1">権利者様へ</p>
-          <p>
-            著作権・商標権等の権利侵害に関するご報告は優先的に対応いたします。
-            具体的なURL・投稿IDをご記載いただくと迅速な対応が可能です。
+      <div className="space-y-4">
+        <div className="card p-6 bg-gradient-to-br from-lavender-100 to-cream-100">
+          <h2 className="font-bold text-warm-text mb-3">権利者様・緊急のご連絡</h2>
+          <p className="text-sm text-warm-muted leading-relaxed mb-4">
+            著作権・商標権等の権利侵害に関するご報告は GitHub Issues より
+            ご連絡ください。内容確認後、速やかに対応いたします。
+          </p>
+          <a
+            href="https://github.com/dx-specialist-jp/chiikawa-archive/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2 text-sm"
+          >
+            <span>🐙</span>
+            GitHub Issues を開く ↗
+          </a>
+        </div>
+
+        <div className="card p-6">
+          <h2 className="font-bold text-warm-text mb-3">お問い合わせの種類</h2>
+          <ul className="space-y-3 text-sm text-warm-muted">
+            {[
+              { icon: "⚖️", text: "権利侵害のご報告" },
+              { icon: "🔧", text: "掲載情報の誤りについて" },
+              { icon: "💡", text: "機能・コンテンツのご要望" },
+              { icon: "📌", text: "その他のご意見・ご質問" },
+            ].map((item) => (
+              <li key={item.text} className="flex items-center gap-2">
+                <span>{item.icon}</span>
+                <span>{item.text}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs text-warm-muted mt-4 leading-relaxed">
+            いずれの内容も上記の GitHub Issues よりご連絡いただけます。
           </p>
         </div>
 
-        {/* 問い合わせ種別 */}
-        <div className="space-y-4">
-          <div>
-            <label className="text-sm font-semibold text-warm-text block mb-1.5">
-              お問い合わせ種別 <span className="text-peach-400">*</span>
-            </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {[
-                { value: "rights", label: "⚖️ 権利侵害のご報告", priority: true },
-                { value: "error", label: "🔧 情報の誤りについて", priority: false },
-                { value: "request", label: "💡 機能・コンテンツのご要望", priority: false },
-                { value: "other", label: "📌 その他", priority: false },
-              ].map((item) => (
-                <label
-                  key={item.value}
-                  className={`flex items-center gap-2 p-3 rounded-xl border cursor-pointer transition-colors
-                    ${item.priority
-                      ? "border-lavender-300 bg-lavender-50 hover:bg-lavender-100"
-                      : "border-warm-border bg-cream-50 hover:bg-cream-100"
-                    }`}
-                >
-                  <input
-                    type="radio"
-                    name="type"
-                    value={item.value}
-                    className="accent-mint-400"
-                    defaultChecked={item.value === "other"}
-                  />
-                  <span className="text-sm text-warm-text">{item.label}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <label className="text-sm font-semibold text-warm-text block mb-1.5">
-              お名前またはご連絡先
-              <span className="text-xs font-normal text-warm-muted ml-2">（任意）</span>
-            </label>
-            <input
-              type="text"
-              placeholder="例：権利者名・メールアドレス等"
-              className="w-full bg-cream-50 border border-warm-border rounded-xl px-3 py-2 text-sm
-                         text-warm-text placeholder-warm-muted/50 outline-none
-                         focus:border-mint-300 focus:ring-2 focus:ring-mint-100 transition-colors"
-            />
-          </div>
-
-          <div>
-            <label className="text-sm font-semibold text-warm-text block mb-1.5">
-              対象URL・投稿ID
-              <span className="text-xs font-normal text-warm-muted ml-2">（権利侵害報告の場合は必須）</span>
-            </label>
-            <input
-              type="url"
-              placeholder="https://..."
-              className="w-full bg-cream-50 border border-warm-border rounded-xl px-3 py-2 text-sm
-                         text-warm-text placeholder-warm-muted/50 outline-none
-                         focus:border-mint-300 focus:ring-2 focus:ring-mint-100 transition-colors"
-            />
-          </div>
-
-          <div>
-            <label className="text-sm font-semibold text-warm-text block mb-1.5">
-              お問い合わせ内容 <span className="text-peach-400">*</span>
-            </label>
-            <textarea
-              rows={6}
-              placeholder="詳細をご記載ください..."
-              className="w-full bg-cream-50 border border-warm-border rounded-xl px-3 py-2 text-sm
-                         text-warm-text placeholder-warm-muted/50 outline-none resize-none
-                         focus:border-mint-300 focus:ring-2 focus:ring-mint-100 transition-colors"
-            />
-          </div>
-
-          <div className="bg-cream-100 rounded-xl p-3 text-xs text-warm-muted leading-relaxed">
-            ※ 当フォームはデモ版です。実際の送信機能は準備中です。
-            緊急のご連絡は GitHub Issues よりお願いいたします。
-          </div>
-
-          <button
-            type="button"
-            className="btn-primary w-full flex items-center justify-center gap-2 py-3"
-            disabled
-          >
-            <span>✉️</span>
-            送信する（準備中）
-          </button>
+        <div className="bg-cream-100 border border-warm-border rounded-2xl p-4 text-xs text-warm-muted leading-relaxed">
+          <p className="font-semibold text-warm-text mb-1">⚠️ このサイトについて</p>
+          <p>
+            当サイトはファンによる非公式サイトです。
+            権利者様からのご連絡は原則24時間以内に対応いたします。
+          </p>
+          <p className="mt-1">
+            詳しくは
+            <Link href="/rights" className="text-mint-500 hover:underline mx-1">
+              権利者様へ
+            </Link>
+            のページをご確認ください。
+          </p>
         </div>
       </div>
-
-      <p className="text-xs text-warm-muted text-center leading-relaxed">
-        権利者様からのご連絡は内容確認後、原則24時間以内にご対応いたします。
-      </p>
     </div>
   );
 }
