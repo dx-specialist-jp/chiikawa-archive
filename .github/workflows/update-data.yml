@@ -29,6 +29,7 @@ jobs:
         run: npm ci
 
       - name: Fetch latest posts via RSSHub
+        continue-on-error: true
         env:
           RSSHUB_URL: ${{ vars.RSSHUB_URL }}
           RSSHUB_ACCESS_KEY: ${{ secrets.RSSHUB_ACCESS_KEY }}
