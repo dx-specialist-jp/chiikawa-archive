@@ -224,9 +224,35 @@ async function fetchTweetPage(queryId, userId, cursor) {
   return gqlGet(url);
 }
 
-function parsePage(data) {
+function parsePage(data, debugFirst = false) {
+  // timeline_v2 と timeline の両方を試みる
+  const userResult = data?.data?.user?.result;
   const instructions =
-    data?.data?.user?.result?.timeline_v2?.timeline?.instructions ?? [];
+    userResult?.timeline_v2?.timeline?.instructions ??
+    userResult?.timeline?.timeline?.instructions ??
+    [];
+
+  if (debugFirst) {
+    // 構造をデバッグ出力（値は省略しキー名のみ）
+    const summarize = (obj, depth = 0) => {
+      if (depth > 3 || obj === null || obj === undefined) return String(obj);
+      if (Array.isArray(obj)) return `[Array(${obj.length})]`;
+      if (typeof obj === "object") {
+        const keys = Object.keys(obj);
+        if (depth >= 2) return `{${keys.join(",")}}`;
+        return `{${keys.map((k) => `${k}:${summarize(obj[k], depth + 1)}`).join(", ")}}`;
+      }
+      return typeof obj === "string" ? `"${obj.slice(0, 30)}"` : String(obj);
+    };
+    console.log("  [DEBUG] レスポンス構造:", summarize(data));
+    console.log("  [DEBUG] instructions 件数:", instructions.length);
+    if (instructions.length > 0) {
+      instructions.forEach((instr, i) => {
+        console.log(`  [DEBUG] instruction[${i}]: type=${instr.type}, entries=${instr.entries?.length ?? "n/a"}`);
+      });
+    }
+  }
+
   const tweets = [];
   let nextCursor = null;
 
@@ -234,6 +260,8 @@ function parsePage(data) {
     if (instr.type !== "TimelineAddEntries") continue;
     for (const entry of instr.entries ?? []) {
       const content = entry.content ?? {};
+
+      // カーソル（Bottom）
       if (
         content.entryType === "TimelineTimelineCursor" &&
         content.cursorType === "Bottom"
@@ -241,7 +269,9 @@ function parsePage(data) {
         nextCursor = content.value;
         continue;
       }
-      const tweetResult = content.itemContent?.tweet_results?.result;
+      // ツイート（TimelineTimelineItem または TimelineTimelineModule 内）
+      const itemContent = content.itemContent ?? content;
+      const tweetResult = itemContent?.tweet_results?.result;
       if (!tweetResult) continue;
       const legacy = (tweetResult.tweet ?? tweetResult).legacy;
       if (!legacy || legacy.retweeted_status_id_str) continue;
@@ -279,7 +309,7 @@ async function main() {
 
   while (true) {
     const data = await fetchTweetPage(qids.UserTweets, userId, cursor);
-    const { tweets, nextCursor } = parsePage(data);
+    const { tweets, nextCursor } = parsePage(data, pageCount === 0);
     pageCount++;
 
     let addedThisPage = 0;
