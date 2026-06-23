@@ -97,11 +97,10 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
   const yearOptions = Array.from({ length: curYear - minYear + 1 }, (_, i) => minYear + i);
 
   function handleYearChange(newYear: number) {
-    const clampedMonth = Math.min(
-      Math.max(vMonth, newYear === minYear ? minMonth : 1),
-      newYear === curYear ? curMonth : 12
-    );
-    setViewYM(`${newYear}-${String(clampedMonth).padStart(2, "0")}`);
+    let month = vMonth;
+    if (newYear === minYear && month < minMonth) month = minMonth;
+    if (newYear === curYear && month > curMonth) month = curMonth;
+    setViewYM(`${newYear}-${String(month).padStart(2, "0")}`);
     setSelectedDate(null);
   }
 

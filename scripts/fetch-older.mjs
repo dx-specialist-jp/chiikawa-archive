@@ -342,7 +342,7 @@ async function main() {
       `  ページ ${pageCount}: ${addedThisPage}件追加 / 最古 ${oldestDate} / 累計 ${allPosts.size}件`
     );
 
-    if (!nextCursor || tweets.length === 0) {
+    if (!nextCursor) {
       console.log("✅ 全件取得完了");
       break;
     }
