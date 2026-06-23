@@ -92,6 +92,27 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
     month: "long",
   });
 
+  const [minYear, minMonth] = MIN_YM.split("-").map(Number);
+  const [curYear, curMonth] = currentYM.split("-").map(Number);
+  const yearOptions = Array.from({ length: curYear - minYear + 1 }, (_, i) => minYear + i);
+
+  function handleYearChange(newYear: number) {
+    const clampedMonth = Math.min(
+      Math.max(vMonth, newYear === minYear ? minMonth : 1),
+      newYear === curYear ? curMonth : 12
+    );
+    setViewYM(`${newYear}-${String(clampedMonth).padStart(2, "0")}`);
+    setSelectedDate(null);
+  }
+
+  function handleMonthChange(newMonth: number) {
+    setViewYM(`${vYear}-${String(newMonth).padStart(2, "0")}`);
+    setSelectedDate(null);
+  }
+
+  const selectClass =
+    "bg-cream-100 border border-warm-border rounded-lg px-2 py-1 text-sm font-medium text-warm-text cursor-pointer hover:bg-cream-200 focus:outline-none focus:ring-2 focus:ring-mint-300";
+
   const resultLabel = selectedDate
     ? new Date(selectedDate + "T00:00:00+09:00").toLocaleDateString("ja-JP", {
         year: "numeric",
@@ -116,12 +137,40 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
           >
             ‹
           </button>
-          <div className="text-center">
-            <p className="text-base font-bold text-warm-text">{viewMonthLabel}</p>
-            <p className="text-xs text-warm-muted mt-0.5">
+
+          <div className="flex flex-col items-center gap-1">
+            <div className="flex items-center gap-1">
+              <select
+                value={vYear}
+                onChange={(e) => handleYearChange(Number(e.target.value))}
+                className={selectClass}
+                aria-label="年を選択"
+              >
+                {yearOptions.map((y) => (
+                  <option key={y} value={y}>{y}年</option>
+                ))}
+              </select>
+              <select
+                value={vMonth}
+                onChange={(e) => handleMonthChange(Number(e.target.value))}
+                className={selectClass}
+                aria-label="月を選択"
+              >
+                {Array.from({ length: 12 }, (_, i) => i + 1)
+                  .filter((m) => {
+                    const ym = `${vYear}-${String(m).padStart(2, "0")}`;
+                    return ym >= MIN_YM && ym <= currentYM;
+                  })
+                  .map((m) => (
+                    <option key={m} value={m}>{m}月</option>
+                  ))}
+              </select>
+            </div>
+            <p className="text-xs text-warm-muted">
               {monthPostCount > 0 ? `${monthPostCount}件の投稿` : "投稿なし"}
             </p>
           </div>
+
           <button
             onClick={() => { setViewYM(addMonths(viewYM, 1)); setSelectedDate(null); }}
             disabled={viewYM >= currentYM}
