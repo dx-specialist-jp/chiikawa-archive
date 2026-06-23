@@ -209,19 +209,18 @@ async function main() {
 
   const merged = [...newArticles, ...(existing.articles ?? [])];
   merged.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-  const trimmed = merged.slice(0, 500);
 
   await writeFile(
     newsPath,
     JSON.stringify(
-      { lastUpdated: new Date().toISOString(), totalArticles: trimmed.length, articles: trimmed },
+      { lastUpdated: new Date().toISOString(), totalArticles: merged.length, articles: merged },
       null,
       2
     ),
     "utf-8"
   );
 
-  console.log(`✅ 更新完了（${newArticles.length} 件追加、合計 ${trimmed.length} 件）`);
+  console.log(`✅ 更新完了（${newArticles.length} 件追加、合計 ${merged.length} 件）`);
 }
 
 main().catch((err) => {
