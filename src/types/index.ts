@@ -17,39 +17,17 @@ export interface Post {
   characters: string[];
 }
 
-export interface Episode {
-  id: string;
-  number: number;
-  title: string;
-  tweetId: string;
-  url: string;
-  publishedAt: string;
-  characters: string[];
-  keywords: string[];
-  relatedEpisodes: number[];
-  tags: string[];
-  summary: string;
-}
-
 export interface SiteData {
   lastUpdated: string;
   totalPosts: number;
   posts: Post[];
   calendarData: CalendarDay[];
-  chiikawaIndex: ChiikawaIndex;
 }
 
 export interface CalendarDay {
   date: string;
   count: number;
   categories: PostCategory[];
-}
-
-export interface ChiikawaIndex {
-  score: number;
-  mood: "happy" | "sad" | "exciting" | "calm" | "mixed";
-  label: string;
-  description: string;
 }
 
 export const CATEGORY_LABELS: Record<PostCategory, string> = {
@@ -59,15 +37,6 @@ export const CATEGORY_LABELS: Record<PostCategory, string> = {
   collab: "コラボ",
   event: "イベント",
   other: "その他",
-};
-
-export const CATEGORY_COLORS: Record<PostCategory, string> = {
-  manga: "mint",
-  goods: "peach",
-  anime: "lavender",
-  collab: "honey",
-  event: "peach",
-  other: "cream",
 };
 
 export interface NewsArticle {
