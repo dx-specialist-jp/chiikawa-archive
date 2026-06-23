@@ -12,6 +12,9 @@ on:
           - 'false'
           - 'true'
 
+permissions:
+  contents: write
+
 jobs:
   import:
     runs-on: ubuntu-latest
