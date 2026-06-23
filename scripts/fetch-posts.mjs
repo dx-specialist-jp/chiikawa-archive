@@ -80,7 +80,7 @@ async function fetchRssFeed(username) {
 
   const res = await fetch(url, {
     headers: { "User-Agent": "chiikawa-archive/1.0" },
-    signal: AbortSignal.timeout(20000),
+    signal: AbortSignal.timeout(90000),
   });
 
   if (!res.ok) {
