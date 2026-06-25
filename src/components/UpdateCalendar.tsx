@@ -12,7 +12,7 @@ function getIntensity(count: number): string {
 }
 
 export default function UpdateCalendar({ data }: UpdateCalendarProps) {
-  const today = new Date().toISOString().split("T")[0];
+  const today = new Date().toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
 
   const weeks: (CalendarDay | null)[][] = [];
   const sortedData = [...data].sort(

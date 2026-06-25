@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: {
@@ -16,9 +17,6 @@ export const metadata: Metadata = {
     description: "ちいかわの公式情報を整理・検索しやすくする非公式ナレッジサイト",
     locale: "ja_JP",
     type: "website",
-  },
-  other: {
-    "google-site-verification": "",
   },
 };
 
@@ -45,6 +43,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

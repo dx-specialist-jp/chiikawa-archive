@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import type { Post, CalendarDay, PostCategory } from "@/types";
 import { CATEGORY_LABELS } from "@/types";
 import TwitterEmbed from "./TwitterEmbed";
@@ -42,6 +42,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
   const [viewYM, setViewYM] = useState(currentYM);
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<PostCategory | "all">("all");
+  const postListRef = useRef<HTMLDivElement>(null);
 
   const dataMap = useMemo(
     () => Object.fromEntries(calendarData.map((d) => [d.date, d])),
@@ -72,7 +73,14 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
 
   function handleDayClick(date: string, count: number) {
     if (count === 0) return;
-    setSelectedDate((prev) => (prev === date ? null : date));
+    setSelectedDate((prev) => {
+      if (prev !== date) {
+        setTimeout(() => {
+          postListRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 50);
+      }
+      return prev === date ? null : date;
+    });
   }
 
   const filtered = useMemo(() => {
@@ -282,7 +290,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
       </div>
 
       {/* Post list */}
-      <div>
+      <div ref={postListRef}>
         <div className="section-title mb-3">
           <span>📋</span>
           <span>{resultLabel}</span>
