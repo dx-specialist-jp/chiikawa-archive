@@ -1,7 +1,13 @@
 import { promises as fs } from "fs";
 import path from "path";
+import type { Metadata } from "next";
 import type { NewsData } from "@/types";
 import NewsViewer from "@/components/NewsViewer";
+
+export const metadata: Metadata = {
+  title: "Latest News",
+  description: "ちいかわ関連の最新ニュースをお届けする CHIIKAWA ARCHIVE のニュースページです。",
+};
 
 async function getNewsData(): Promise<NewsData> {
   try {
@@ -19,20 +25,15 @@ export default async function NewsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <div className="mb-6 animate-fade-in-up">
-        <h1 className="text-2xl font-bold text-warm-text flex items-center gap-2 mb-1">
-          <span>📰</span>
-          ちいかわ最新ニュース
-        </h1>
+        <h1 className="text-xl font-serif text-warm-text tracking-wide mb-1">Latest News</h1>
         <p className="text-sm text-warm-muted">
           Google アラートで収集したちいかわ関連の最新情報をお届けします。毎日自動更新。
         </p>
       </div>
 
-      <div className="bg-honey-100 border border-yellow-200 rounded-2xl p-3 mb-6 text-xs text-yellow-700 flex items-start gap-2 animate-fade-in-up" style={{ animationDelay: "60ms" }}>
-        <span>ℹ️</span>
-        <span>
-          各記事は外部サイトへのリンクです。記事内容は各メディアが執筆したものです。
-        </span>
+      <div className="bg-cream-200 border border-warm-border rounded-2xl p-3 mb-6 text-xs text-warm-muted flex items-start gap-2 animate-fade-in-up" style={{ animationDelay: "60ms" }}>
+        <span>ℹ</span>
+        <span>各記事は外部サイトへのリンクです。記事内容は各メディアが執筆したものです。</span>
       </div>
 
       <div className="animate-fade-in-up" style={{ animationDelay: "120ms" }}>

@@ -35,7 +35,7 @@ export default function NewsViewer({ articles }: NewsViewerProps) {
             onClick={() => setCategory(f.value)}
             className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${
               category === f.value
-                ? "bg-mint-300 text-mint-600"
+                ? "bg-mint-300 text-mint-500"
                 : "bg-cream-200 text-warm-muted hover:bg-cream-300"
             }`}
           >

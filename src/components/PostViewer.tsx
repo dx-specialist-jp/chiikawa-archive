@@ -222,7 +222,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
                       isSelected
                         ? "bg-mint-500 text-white"
                         : hasPost
-                        ? "bg-mint-100 hover:bg-mint-200 text-mint-700 cursor-pointer"
+                        ? "bg-mint-100 hover:bg-mint-200 text-mint-500 cursor-pointer"
                         : "text-warm-muted cursor-default",
                       isToday && !isSelected ? "ring-2 ring-mint-400 ring-offset-1" : "",
                     ]
@@ -267,7 +267,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
             onClick={() => setSelectedCategory("all")}
             className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${
               selectedCategory === "all"
-                ? "bg-mint-200 text-mint-600"
+                ? "bg-mint-200 text-mint-500"
                 : "bg-cream-100 text-warm-muted hover:bg-cream-200"
             }`}
           >
@@ -279,7 +279,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
               onClick={() => setSelectedCategory(cat === selectedCategory ? "all" : cat)}
               className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${
                 selectedCategory === cat
-                  ? "bg-mint-200 text-mint-600"
+                  ? "bg-mint-200 text-mint-500"
                   : "bg-cream-100 text-warm-muted hover:bg-cream-200"
               }`}
             >
