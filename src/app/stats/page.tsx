@@ -115,21 +115,25 @@ export default async function StatsPage() {
         {/* 月別推移 */}
         <div className="card p-6">
           <div className="section-title mb-5">Monthly Trend</div>
-          <div className="flex items-end gap-0.5 h-40">
+          <div className="flex items-end gap-0.5 h-40 border-b border-warm-border">
             {sortedMonths.map(([ym, count]) => {
               const pct = Math.round((count / maxMonthly) * 100);
+              return (
+                <div
+                  key={ym}
+                  title={`${ym}: ${count}件`}
+                  className="flex-1 bg-mint-200 hover:bg-mint-400 transition-colors rounded-t"
+                  style={{ height: `${pct}%`, minHeight: count > 0 ? "3px" : "0" }}
+                />
+              );
+            })}
+          </div>
+          <div className="flex gap-0.5 mt-1">
+            {sortedMonths.map(([ym]) => {
               const month = ym.slice(5);
               const isLabelYear = month === "01";
               return (
-                <div key={ym} className="flex-1 flex flex-col items-center gap-1 group">
-                  <span className="text-[8px] text-warm-muted opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                    {count}
-                  </span>
-                  <div
-                    title={`${ym}: ${count}件`}
-                    className="w-full bg-mint-200 hover:bg-mint-400 transition-colors rounded-t"
-                    style={{ height: `${pct}%`, minHeight: count > 0 ? "3px" : "0" }}
-                  />
+                <div key={ym} className="flex-1 text-center">
                   <span className={`text-[9px] leading-none ${isLabelYear ? "text-mint-500 font-medium" : "text-warm-muted"}`}>
                     {isLabelYear ? ym.slice(2, 4) : month}
                   </span>
@@ -167,19 +171,26 @@ export default async function StatsPage() {
           {/* 曜日別 */}
           <div className="card p-6">
             <div className="section-title mb-5">Day of Week</div>
-            <div className="flex items-end gap-2 h-32">
+            <div className="flex items-end gap-2 h-32 border-b border-warm-border">
               {dowMap.map((count, i) => {
                 const pct = Math.round((count / maxDow) * 100);
                 const colorBar = i === 0 ? "bg-red-200 hover:bg-red-300" : i === 6 ? "bg-lavender-200 hover:bg-lavender-300" : "bg-mint-200 hover:bg-mint-300";
+                return (
+                  <div
+                    key={i}
+                    title={`${DOW_LABELS[i]}: ${count}件`}
+                    className={`flex-1 rounded-t transition-colors ${colorBar}`}
+                    style={{ height: `${pct}%`, minHeight: count > 0 ? "3px" : "0" }}
+                  />
+                );
+              })}
+            </div>
+            <div className="flex gap-2 mt-1.5">
+              {DOW_LABELS.map((label, i) => {
                 const colorLabel = i === 0 ? "text-red-400" : i === 6 ? "text-lavender-400" : "text-warm-muted";
                 return (
-                  <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
-                    <div
-                      title={`${DOW_LABELS[i]}: ${count}件`}
-                      className={`w-full rounded-t transition-colors ${colorBar}`}
-                      style={{ height: `${pct}%`, minHeight: count > 0 ? "3px" : "0" }}
-                    />
-                    <span className={`text-xs font-medium ${colorLabel}`}>{DOW_LABELS[i]}</span>
+                  <div key={i} className="flex-1 text-center">
+                    <span className={`text-xs font-medium ${colorLabel}`}>{label}</span>
                   </div>
                 );
               })}

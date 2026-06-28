@@ -6,15 +6,6 @@ import { CATEGORY_LABELS } from "@/types";
 import TwitterEmbed from "./TwitterEmbed";
 import CategoryBadge from "./CategoryBadge";
 
-const CATEGORY_EMOJIS: Record<PostCategory, string> = {
-  manga: "📖",
-  goods: "🛍️",
-  anime: "📺",
-  collab: "🤝",
-  event: "🎪",
-  other: "📌",
-};
-
 const ALL_CATEGORIES: PostCategory[] = ["manga", "goods", "anime", "collab", "event", "other"];
 
 // ちいかわ連載開始月（これより前には遡れない）
@@ -280,7 +271,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
                   : "bg-cream-100 text-warm-muted hover:bg-cream-200"
               }`}
             >
-              {CATEGORY_EMOJIS[cat]} {CATEGORY_LABELS[cat]}
+              {CATEGORY_LABELS[cat]}
             </button>
           ))}
         </div>
