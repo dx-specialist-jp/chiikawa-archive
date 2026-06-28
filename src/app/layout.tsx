@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import GrassBackground from "@/components/GrassBackground";
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +40,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-warm-bg">
+      <body className="min-h-screen flex flex-col">
+        <GrassBackground />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

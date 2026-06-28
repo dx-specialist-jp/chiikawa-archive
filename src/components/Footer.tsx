@@ -21,6 +21,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-mint-400 transition-colors">Archive Top</Link></li>
               <li><Link href="/news" className="hover:text-mint-400 transition-colors">Latest News</Link></li>
               <li><Link href="/archive" className="hover:text-mint-400 transition-colors">Post Archive</Link></li>
+              <li><Link href="/search" className="hover:text-mint-400 transition-colors">Search</Link></li>
               <li><Link href="/stats" className="hover:text-mint-400 transition-colors">Stats</Link></li>
               <li><Link href="/contact" className="hover:text-mint-400 transition-colors">Contact</Link></li>
             </ul>

@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    background-color: #E4DCD2; /* fallback for fixed bg layer */
+  }
+
   body {
-    background-color: #F5F2EC;
     color: #1A1714;
     font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
     font-weight: 300;
