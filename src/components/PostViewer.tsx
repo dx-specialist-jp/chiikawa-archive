@@ -258,10 +258,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
 
       {/* Category filter */}
       <div className="card p-4">
-        <div className="section-title mb-3">
-          <span>🗂️</span>
-          <span>カテゴリ</span>
-        </div>
+        <div className="section-title mb-3">Category</div>
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedCategory("all")}
@@ -291,10 +288,9 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
 
       {/* Post list */}
       <div ref={postListRef}>
-        <div className="section-title mb-3">
-          <span>📋</span>
+        <div className="section-title mb-3 flex items-center gap-2">
           <span>{resultLabel}</span>
-          <span className="text-xs font-normal text-warm-muted ml-1">{filtered.length}件</span>
+          <span className="font-normal normal-case text-warm-muted">{filtered.length}件</span>
         </div>
 
         {filtered.length === 0 ? (

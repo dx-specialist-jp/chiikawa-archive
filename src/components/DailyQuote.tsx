@@ -49,10 +49,7 @@ export default function DailyQuote() {
 
   return (
     <div className="card p-4 animate-fade-in">
-      <div className="section-title mb-3">
-        <span>💬</span>
-        <span>今日の一言</span>
-      </div>
+      <div className="section-title mb-3">Daily Quote</div>
       <div className="bg-cream-50 rounded-2xl p-3 border border-warm-border">
         <p className="text-sm text-warm-text font-medium leading-relaxed">
           「{quote.text}」
