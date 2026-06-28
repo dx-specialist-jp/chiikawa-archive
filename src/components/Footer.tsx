@@ -49,6 +49,10 @@ export default function Footer() {
           <p className="text-xs text-warm-muted font-light">
             © 2026 CHIIKAWA ARCHIVE（非公式）｜ちいかわ / ナガノ先生 に関する著作権・商標権はすべて権利者に帰属します。
           </p>
+          <p className="text-[10px] text-warm-muted font-light opacity-60">
+            Background photo by{" "}
+            <a href="https://unsplash.com/photos/1475656106224-d72c2ab53e8d" target="_blank" rel="noopener noreferrer" className="hover:text-mint-400 transition-colors">Unsplash</a>
+          </p>
         </div>
       </div>
     </footer>
