@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import UpdateCalendar from "@/components/UpdateCalendar";
 import PostCard from "@/components/PostCard";
 import CategoryBadge from "@/components/CategoryBadge";
+import DailyQuote from "@/components/DailyQuote";
 import Link from "next/link";
 
 async function getSiteData(): Promise<SiteData> {
@@ -117,6 +118,8 @@ export default async function HomePage() {
               </div>
             </section>
           )}
+
+          <DailyQuote />
 
           <UpdateCalendar data={data.calendarData} />
 

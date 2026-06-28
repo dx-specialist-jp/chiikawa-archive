@@ -51,7 +51,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "Noto Sans JP",
+          "M PLUS Rounded 1c",
+          "Hiragino Maru Gothic ProN",
           "Hiragino Kaku Gothic ProN",
           "sans-serif",
         ],
