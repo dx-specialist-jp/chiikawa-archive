@@ -57,9 +57,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "Noto Sans JP",
-          "Hiragino Kaku Gothic ProN",
-          "sans-serif",
+          "Noto Serif JP",
+          "Hiragino Mincho ProN",
+          "serif",
         ],
         serif: [
           "Noto Serif JP",
