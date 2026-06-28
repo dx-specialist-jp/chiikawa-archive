@@ -1,5 +1,4 @@
 import Link from "next/link";
-import MobCharacter from "./MobCharacter";
 
 export default function Footer() {
   return (
@@ -38,11 +37,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        {/* キャラクター */}
-        <div className="flex justify-center my-8">
-          <MobCharacter size={48} />
         </div>
 
         <div className="border-t border-warm-border pt-6 space-y-2">
