@@ -6,15 +6,15 @@ import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: {
-    default: "ちいかわ観測所",
-    template: "%s | ちいかわ観測所",
+    default: "CHIIKAWA ARCHIVE",
+    template: "%s | CHIIKAWA ARCHIVE",
   },
   description:
-    "ちいかわ（nagano）の公式X（旧Twitter）情報を整理・検索しやすくする非公式ナレッジサイトです。漫画、グッズ、アニメ、コラボ情報をカテゴリ別に分類してお届けします。",
-  keywords: ["ちいかわ", "chiikawa", "ナガノ", "非公式", "ファンサイト", "X", "Twitter"],
+    "ちいかわ（nagano）の公式X（旧Twitter）情報を整理・検索しやすくする非公式ファンアーカイブです。漫画、グッズ、アニメ、コラボ情報をカテゴリ別に分類してお届けします。",
+  keywords: ["ちいかわ", "chiikawa", "ナガノ", "非公式", "ファンサイト", "archive", "X", "Twitter"],
   openGraph: {
-    title: "ちいかわ観測所",
-    description: "ちいかわの公式情報を整理・検索しやすくする非公式ナレッジサイト",
+    title: "CHIIKAWA ARCHIVE",
+    description: "ちいかわの公式情報を整理・検索しやすくする非公式ファンアーカイブ",
     locale: "ja_JP",
     type: "website",
   },
@@ -35,7 +35,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>

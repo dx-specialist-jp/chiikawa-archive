@@ -4,19 +4,29 @@
 
 @layer base {
   body {
-    background-color: #FEFCF7;
-    color: #3A3530;
-    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #F5F2EC;
+    color: #1A1714;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
   }
 
-  h1, h2, h3 {
-    font-weight: 700;
+  h1, h2 {
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+
+  h3 {
+    font-weight: 500;
+    letter-spacing: 0.03em;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-white rounded-3xl shadow-card border border-warm-border;
+    @apply bg-white rounded-2xl shadow-card border border-warm-border;
   }
 
   .card-hover {
@@ -24,73 +34,42 @@
   }
 
   .section-title {
-    @apply text-lg font-bold text-warm-text flex items-center gap-2;
+    @apply text-xs font-normal text-warm-muted flex items-center gap-2 tracking-widest uppercase;
   }
 
   .btn-primary {
-    @apply bg-mint-400 text-white px-4 py-2 rounded-2xl font-medium
+    @apply bg-mint-400 text-white px-5 py-2 rounded-xl text-xs font-medium tracking-widest uppercase
            hover:bg-mint-500 transition-colors duration-200;
   }
 
   .btn-secondary {
-    @apply bg-cream-200 text-warm-text px-4 py-2 rounded-2xl font-medium
+    @apply bg-cream-200 text-warm-text px-5 py-2 rounded-xl text-xs font-medium tracking-wide
            hover:bg-cream-300 transition-colors duration-200;
   }
 }
 
 /* ===== Animations ===== */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
-
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.5s ease-out both;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.4s ease-out both;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.3s ease-out both;
-}
+.animate-fade-in-up { animation: fadeInUp 0.55s ease-out both; }
+.animate-fade-in    { animation: fadeIn  0.4s  ease-out both; }
+.animate-scale-in   { animation: scaleIn 0.22s ease-out both; }
 
 /* Twitter embed override */
-.twitter-tweet {
-  margin: 0 !important;
-}
+.twitter-tweet { margin: 0 !important; }
 
-/* Scrollbar style */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #FAF0DC;
-}
-::-webkit-scrollbar-thumb {
-  background: #B8E8DC;
-  border-radius: 3px;
-}
+/* Refined scrollbar */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: #EEE6D9; }
+::-webkit-scrollbar-thumb { background: #B8956A; border-radius: 2px; }

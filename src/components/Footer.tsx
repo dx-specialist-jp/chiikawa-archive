@@ -3,61 +3,55 @@ import MobCharacter from "./MobCharacter";
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-warm-border bg-cream-100">
-      <div className="max-w-5xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+    <footer className="mt-20 border-t border-warm-border bg-cream-100">
+      <div className="max-w-5xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10">
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl" role="img" aria-label="望遠鏡">🔭</span>
-              <span className="font-bold text-warm-text">ちいかわ観測所</span>
+            <div className="mb-4">
+              <div className="font-serif text-sm tracking-[0.16em] text-warm-text">CHIIKAWA ARCHIVE</div>
+              <div className="text-[10px] tracking-widest text-warm-muted mt-0.5 font-light">UNOFFICIAL FAN ARCHIVE</div>
             </div>
-            <p className="text-xs text-warm-muted leading-relaxed">
+            <p className="text-xs text-warm-muted leading-relaxed font-light">
               ちいかわの公式情報を整理・検索しやすくする非公式ナレッジサイトです。
             </p>
           </div>
 
           <div>
-            <div className="font-semibold text-warm-text text-sm mb-3">コンテンツ</div>
-            <ul className="space-y-1.5 text-xs text-warm-muted">
-              <li><Link href="/" className="hover:text-mint-500 transition-colors">観測所トップ</Link></li>
-              <li><Link href="/news" className="hover:text-mint-500 transition-colors">最新ニュース</Link></li>
-              <li><Link href="/archive" className="hover:text-mint-500 transition-colors">投稿アーカイブ</Link></li>
-              <li><Link href="/contact" className="hover:text-mint-500 transition-colors">お問い合わせ</Link></li>
+            <div className="text-[10px] tracking-widest text-warm-muted mb-4 font-light">CONTENTS</div>
+            <ul className="space-y-2 text-xs text-warm-muted font-light">
+              <li><Link href="/" className="hover:text-mint-400 transition-colors">Archive Top</Link></li>
+              <li><Link href="/news" className="hover:text-mint-400 transition-colors">Latest News</Link></li>
+              <li><Link href="/archive" className="hover:text-mint-400 transition-colors">Post Archive</Link></li>
+              <li><Link href="/contact" className="hover:text-mint-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
-            <div className="font-semibold text-warm-text text-sm mb-3">法的情報</div>
-            <ul className="space-y-1.5 text-xs text-warm-muted">
-              <li><Link href="/rights" className="hover:text-mint-500 transition-colors">権利者様へ</Link></li>
+            <div className="text-[10px] tracking-widest text-warm-muted mb-4 font-light">LEGAL</div>
+            <ul className="space-y-2 text-xs text-warm-muted font-light">
+              <li><Link href="/rights" className="hover:text-mint-400 transition-colors">Rights &amp; Credits</Link></li>
               <li>
-                <a
-                  href="https://x.com/ngnchiikawa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-mint-500 transition-colors"
-                >
-                  公式X（旧Twitter）↗
+                <a href="https://x.com/ngnchiikawa" target="_blank" rel="noopener noreferrer"
+                   className="hover:text-mint-400 transition-colors">
+                  Official X ↗
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="flex justify-center mb-6">
-          <MobCharacter size={56} />
+        {/* キャラクター */}
+        <div className="flex justify-center my-8">
+          <MobCharacter size={48} />
         </div>
 
-        <div className="border-t border-warm-border pt-6 space-y-3">
-          <p className="text-xs text-warm-muted leading-relaxed">
-            当サイトはファンによる非公式ナレッジサイトです。掲載される著作物・商標・画像・動画等の権利は各権利者に帰属します。
-            当サイトでは公式X（旧Twitter）の埋め込み機能を利用して情報を表示しています。
+        <div className="border-t border-warm-border pt-6 space-y-2">
+          <p className="text-xs text-warm-muted leading-relaxed font-light">
+            当サイトはファンによる非公式サイトです。掲載される著作物・商標・画像・動画等の権利は各権利者に帰属します。
+            公式X（旧Twitter）の埋め込み機能を利用して情報を表示しています。
           </p>
-          <p className="text-xs text-warm-muted leading-relaxed">
-            権利者様からのご連絡があった場合は内容を確認のうえ迅速に対応し、必要に応じて該当ページ・記事を削除または修正いたします。
-          </p>
-          <p className="text-xs text-warm-muted">
-            © 2026 ちいかわ観測所（非公式）｜ちいかわ / ナガノ先生 に関する著作権・商標権はすべて権利者に帰属します。
+          <p className="text-xs text-warm-muted font-light">
+            © 2026 CHIIKAWA ARCHIVE（非公式）｜ちいかわ / ナガノ先生 に関する著作権・商標権はすべて権利者に帰属します。
           </p>
         </div>
       </div>

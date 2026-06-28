@@ -9,50 +9,55 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // 背景・カード用の温かな紙トーン
         cream: {
-          50: "#FEFDF9",
-          100: "#FDF8F0",
-          200: "#FAF0DC",
-          300: "#F5E4C0",
-          400: "#EDD8A4",
+          50:  "#FDFBF7",
+          100: "#F8F4ED",
+          200: "#EEE6D9",
+          300: "#E2D6C4",
+          400: "#D4C4AE",
         },
+        // プライマリアクセント → ウォームゴールド（ブランドカラー）
         mint: {
-          100: "#DFF5EF",
-          200: "#B8E8DC",
-          300: "#8DD5C5",
-          400: "#5FBFAC",
-          500: "#3DA896",
+          100: "#F5EDD6",
+          200: "#E8D5A4",
+          300: "#D0B872",
+          400: "#B8956A",   // メインゴールド
+          500: "#8E6E46",   // ダークゴールド
         },
+        // セカンダリ → ディープスレート（シャコール）
         lavender: {
-          100: "#EDE8F8",
-          200: "#D4CAF0",
-          300: "#B6A8E6",
-          400: "#9986DB",
-          500: "#7C64D0",
+          100: "#E8EAEC",
+          200: "#C4CAD0",
+          300: "#8E98A4",
+          400: "#546070",
+          500: "#344050",
         },
+        // アクセント補助
         peach: {
-          100: "#FDF0EB",
-          200: "#F9D6C8",
-          300: "#F4B8A4",
-          400: "#EF9A82",
+          100: "#F2EBE4",
+          200: "#E2D3C5",
+          300: "#C8B4A0",
+          400: "#B09080",
         },
+        // サブアクセント（ストリークバッジ等）
         honey: {
-          100: "#FEF7E0",
-          200: "#FCEDB8",
-          300: "#F9E090",
-          400: "#F5D168",
+          100: "#F5EDD6",
+          200: "#E8D5A4",
+          300: "#CEB878",
+          400: "#B09050",
         },
+        // テキスト・ボーダー基調色
         warm: {
-          text: "#3A3530",
-          muted: "#7A7068",
-          border: "#E8DDD0",
-          bg: "#FEFCF7",
+          text:   "#1A1714",
+          muted:  "#5C544A",
+          border: "#DDD4C4",
+          bg:     "#F5F2EC",
         },
       },
       fontFamily: {
         sans: [
-          "M PLUS Rounded 1c",
-          "Hiragino Maru Gothic ProN",
+          "Noto Sans JP",
           "Hiragino Kaku Gothic ProN",
           "sans-serif",
         ],
@@ -63,14 +68,17 @@ const config: Config = {
         ],
       },
       boxShadow: {
-        soft: "0 2px 12px rgba(100, 80, 60, 0.08)",
-        card: "0 4px 20px rgba(100, 80, 60, 0.10)",
-        "card-hover": "0 6px 28px rgba(100, 80, 60, 0.15)",
+        soft:        "0 1px 6px rgba(26, 23, 20, 0.05)",
+        card:        "0 2px 14px rgba(26, 23, 20, 0.06)",
+        "card-hover":"0 4px 24px rgba(26, 23, 20, 0.10)",
       },
       borderRadius: {
-        "2xl": "1rem",
-        "3xl": "1.5rem",
-        "4xl": "2rem",
+        "2xl": "0.625rem",
+        "3xl": "1rem",
+        "4xl": "1.375rem",
+      },
+      letterSpacing: {
+        widest: "0.14em",
       },
     },
   },

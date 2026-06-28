@@ -51,8 +51,7 @@ export default async function HomePage() {
           {/* 今日の公式更新 */}
           <section>
             <div className="section-title mb-3">
-              <span>📡</span>
-              <span>今日の公式更新</span>
+              Today&apos;s Update
             </div>
 
             {todayPosts.length === 0 ? (
@@ -72,8 +71,7 @@ export default async function HomePage() {
           {/* 最近の更新 */}
           <section>
             <div className="section-title mb-3">
-              <span>🕐</span>
-              <span>最近の更新</span>
+              Recent Posts
             </div>
             <div className="space-y-3">
               {recentPosts.map((post) => (
@@ -89,8 +87,7 @@ export default async function HomePage() {
           {latestNews.length > 0 && (
             <section>
               <div className="section-title mb-3">
-                <span>📰</span>
-                <span>最新ニュース</span>
+                Latest News
               </div>
               <div className="card divide-y divide-warm-border">
                 {latestNews.map((article) => (

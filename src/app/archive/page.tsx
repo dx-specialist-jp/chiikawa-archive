@@ -15,7 +15,7 @@ export default async function ArchivePage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <div className="mb-6">
-        <h1 className="text-xl font-bold text-warm-text">📚 投稿アーカイブ</h1>
+        <h1 className="text-xl font-serif text-warm-text tracking-wide">Post Archive</h1>
         <p className="text-sm text-warm-muted mt-1">
           カレンダーで日付を選ぶか、カテゴリで絞り込んで公式X投稿を確認できます
         </p>
