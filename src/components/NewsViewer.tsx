@@ -46,8 +46,7 @@ export default function NewsViewer({ articles }: NewsViewerProps) {
 
       {filtered.length === 0 ? (
         <div className="card p-12 text-center text-warm-muted animate-fade-in">
-          <p className="text-3xl mb-3">🌙</p>
-          <p className="font-semibold mb-1">
+          <p className="font-medium mb-1">
             {articles.length === 0 ? "ニュースがまだありません" : "該当する記事がありません"}
           </p>
           <p className="text-sm">

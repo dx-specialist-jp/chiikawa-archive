@@ -38,7 +38,7 @@ export default function SearchViewer() {
         return matchQ && matchCat;
       })
       .slice(0, 30);
-  }, [data, q, hasQuery, category, hasFilter]);
+  }, [data, q, hasQuery, category]);
 
   return (
     <div className="space-y-5">

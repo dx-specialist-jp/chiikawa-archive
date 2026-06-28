@@ -36,7 +36,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden sm:flex items-center gap-0.5">
+        <nav className="hidden md:flex items-center gap-0.5">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -54,7 +54,7 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
-          className="sm:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5 transition-colors"
+          className="md:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5 transition-colors"
           onClick={() => setMenuOpen((o) => !o)}
           aria-label={menuOpen ? "メニューを閉じる" : "メニューを開く"}
           aria-expanded={menuOpen}
@@ -66,7 +66,7 @@ export default function Header() {
       </div>
 
       {/* Mobile dropdown */}
-      <div className={`sm:hidden overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}>
         <nav className="px-6 pb-4 flex flex-col gap-0.5 border-t border-warm-border pt-3">
           {navItems.map((item) => (
             <Link

@@ -56,7 +56,6 @@ export default async function HomePage() {
 
             {todayPosts.length === 0 ? (
               <div className="card p-8 text-center text-warm-muted">
-                <p className="text-2xl mb-2">🌙</p>
                 <p className="text-sm">本日はまだ更新がありません</p>
               </div>
             ) : (
@@ -121,8 +120,8 @@ export default async function HomePage() {
           <UpdateCalendar data={data.calendarData} />
 
           {/* 注意書き */}
-          <div className="bg-cream-100 rounded-2xl border border-warm-border p-4 text-xs text-warm-muted leading-relaxed">
-            <p className="font-semibold text-warm-text mb-1">⚠️ このサイトについて</p>
+          <div className="border-l-2 border-warm-border pl-3 text-xs text-warm-muted leading-relaxed">
+            <p className="font-medium text-warm-text mb-1 tracking-wide">このサイトについて</p>
             <p>
               非公式のファンサイトです。公式X（旧Twitter）の埋め込み機能を通じて情報を表示しています。
               漫画画像・動画等はサイト内に保存していません。

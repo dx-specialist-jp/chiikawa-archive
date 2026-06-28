@@ -288,14 +288,13 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
 
       {/* Post list */}
       <div ref={postListRef}>
-        <div className="section-title mb-3 flex items-center gap-2">
+        <div className="section-title mb-3">
           <span>{resultLabel}</span>
           <span className="font-normal normal-case text-warm-muted">{filtered.length}件</span>
         </div>
 
         {filtered.length === 0 ? (
           <div className="card p-8 text-center text-warm-muted">
-            <p className="text-2xl mb-2">🌙</p>
             <p className="text-sm">この月の投稿はまだアーカイブされていません</p>
           </div>
         ) : (

@@ -49,10 +49,9 @@ export default function PostCard({ post, showEmbed = false }: PostCardProps) {
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-mint-500 hover:underline flex items-center gap-1"
+              className="text-xs text-mint-500 hover:underline"
             >
-              <span>🐦</span>
-              公式Xで見る
+              公式X で見る →
             </a>
           </div>
         </>

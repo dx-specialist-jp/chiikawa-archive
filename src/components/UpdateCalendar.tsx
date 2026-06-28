@@ -44,7 +44,7 @@ export default function UpdateCalendar({ data }: UpdateCalendarProps) {
 
   return (
     <div className="card p-4">
-      <div className="section-title mb-3 flex items-center gap-2">
+      <div className="section-title mb-3">
         <span>Update Calendar</span>
         <span className="font-normal normal-case text-warm-muted">過去90日</span>
       </div>
