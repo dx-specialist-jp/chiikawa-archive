@@ -40,14 +40,11 @@ export default function StreakBadge() {
   const label =
     streak >= 30
       ? `${streak}日連続！すごい！！`
-      : streak >= 7
-      ? `${streak}日連続観測中🌟`
       : `${streak}日連続観測中`;
 
   return (
-    <div className="flex items-center gap-1 bg-honey-200 border border-honey-300 rounded-full px-3 py-1 text-xs font-bold text-warm-text animate-fade-in">
-      <span>🔥</span>
-      <span>{label}</span>
+    <div className="bg-honey-200 border border-honey-300 rounded-full px-3 py-1 text-xs font-bold text-warm-text animate-fade-in">
+      {label}
     </div>
   );
 }

@@ -14,25 +14,13 @@ const colorMap: Record<PostCategory, string> = {
   other: "bg-cream-200 text-warm-muted",
 };
 
-const iconMap: Record<PostCategory, string> = {
-  manga: "📖",
-  goods: "🛍️",
-  anime: "📺",
-  collab: "🤝",
-  event: "🎪",
-  other: "📌",
-};
-
 export default function CategoryBadge({ category, size = "sm" }: CategoryBadgeProps) {
   const sizeClass = size === "md"
-    ? "px-3 py-1 text-sm gap-1.5"
-    : "px-2 py-0.5 text-xs gap-1";
+    ? "px-3 py-1 text-sm"
+    : "px-2 py-0.5 text-xs";
 
   return (
-    <span
-      className={`inline-flex items-center rounded-full font-medium ${colorMap[category]} ${sizeClass}`}
-    >
-      <span className="text-xs">{iconMap[category]}</span>
+    <span className={`inline-flex items-center rounded-full font-medium ${colorMap[category]} ${sizeClass}`}>
       {CATEGORY_LABELS[category]}
     </span>
   );
