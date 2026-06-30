@@ -14,7 +14,8 @@ export default function SearchViewer() {
   const [category, setCategory] = useState<PostCategory | "all">("all");
 
   useEffect(() => {
-    fetch("/data/posts.json")
+    const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+    fetch(`${base}/data/posts.json`)
       .then((r) => r.json())
       .then(setData)
       .catch(() => {});

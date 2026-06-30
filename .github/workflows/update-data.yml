@@ -36,6 +36,7 @@ jobs:
         run: node scripts/fetch-posts.mjs
 
       - name: Fetch latest news via Google Alerts RSS
+        continue-on-error: true
         env:
           GOOGLE_ALERTS_RSS_URL: ${{ vars.GOOGLE_ALERTS_RSS_URL }}
         run: node scripts/fetch-news.mjs

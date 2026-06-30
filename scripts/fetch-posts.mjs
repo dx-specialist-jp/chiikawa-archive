@@ -155,7 +155,9 @@ async function main() {
     }));
 
   if (newPosts.length === 0) {
-    console.log("✅ 新規投稿なし");
+    console.log("✅ 新規投稿なし（lastUpdated を更新）");
+    const refreshed = { ...existing, lastUpdated: new Date().toISOString() };
+    await writeFile(join(DATA_DIR, "posts.json"), JSON.stringify(refreshed, null, 2), "utf-8");
     return;
   }
 
