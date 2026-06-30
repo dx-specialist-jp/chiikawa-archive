@@ -1,7 +1,19 @@
 {
-  "lastUpdated": "2026-06-30T12:33:38.963Z",
-  "totalPosts": 860,
+  "lastUpdated": "2026-06-30T18:24:38.473Z",
+  "totalPosts": 861,
   "posts": [
+    {
+      "id": "post-2071990615223816445",
+      "tweetId": "2071990615223816445",
+      "url": "https://x.com/ngnchiikawa/status/2071990615223816445",
+      "publishedAt": "2026-06-30T09:00:01.000Z",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "うさぎ"
+      ]
+    },
     {
       "id": "post-2071563419850018890",
       "tweetId": "2071563419850018890",
@@ -9093,6 +9105,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-06-30",
+      "count": 1,
+      "categories": [
+        "goods"
+      ]
+    },
     {
       "date": "2026-06-29",
       "count": 1,
