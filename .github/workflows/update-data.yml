@@ -26,6 +26,7 @@ jobs:
         run: npm ci
 
       - name: Fetch latest posts via RSSHub
+        id: fetch_posts
         continue-on-error: true
         env:
           RSSHUB_URL: ${{ vars.RSSHUB_URL }}
@@ -33,10 +34,17 @@ jobs:
         run: node scripts/fetch-posts.mjs
 
       - name: Fetch latest news via Google Alerts RSS
+        id: fetch_news
         continue-on-error: true
         env:
           GOOGLE_ALERTS_RSS_URL: ${{ vars.GOOGLE_ALERTS_RSS_URL }}
         run: node scripts/fetch-news.mjs
+
+      - name: Check fetch results
+        if: steps.fetch_posts.outcome == 'failure' && steps.fetch_news.outcome == 'failure'
+        run: |
+          echo "::error::両フェッチスクリプトが失敗しました。RSSHub・Google Alerts の設定を確認してください。"
+          exit 1
 
       - name: Check for changes
         id: changes

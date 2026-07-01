@@ -71,7 +71,7 @@ function extractXmlText(xml, tag) {
 
 function buildFeedUrl(username) {
   const path = `${RSSHUB_BASE}/twitter/user/${username}`;
-  return RSSHUB_ACCESS_KEY ? `${path}?key=${RSSHUB_ACCESS_KEY}` : path;
+  return (RSSHUB_ACCESS_KEY && RSSHUB_URL) ? `${path}?key=${RSSHUB_ACCESS_KEY}` : path;
 }
 
 async function fetchRssFeed(username) {
