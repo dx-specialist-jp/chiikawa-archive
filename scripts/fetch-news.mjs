@@ -199,9 +199,10 @@ async function main() {
   if (!res.ok) throw new Error(`RSS 応答エラー: ${res.status} ${res.statusText}`);
 
   const fetched = parseAtomEntries(await res.text());
-  console.log(`📋 フィードから ${fetched.length} 件取得`);
+  const relevant = fetched.filter((a) => a.title.includes("ちいかわ"));
+  console.log(`📋 フィードから ${fetched.length} 件取得（うちちいかわ関連: ${relevant.length} 件）`);
 
-  const newArticles = fetched.filter((a) => !existingUrls.has(a.url));
+  const newArticles = relevant.filter((a) => !existingUrls.has(a.url));
   if (newArticles.length === 0) {
     console.log("✅ 新規記事なし");
     return;
