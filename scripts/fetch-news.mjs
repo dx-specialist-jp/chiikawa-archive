@@ -203,9 +203,7 @@ async function main() {
 
   const newArticles = fetched.filter((a) => !existingUrls.has(a.url));
   if (newArticles.length === 0) {
-    console.log("✅ 新規記事なし（lastUpdated を更新）");
-    const refreshed = { ...existing, lastUpdated: new Date().toISOString() };
-    await writeFile(newsPath, JSON.stringify(refreshed, null, 2), "utf-8");
+    console.log("✅ 新規記事なし");
     return;
   }
 

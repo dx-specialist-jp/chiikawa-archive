@@ -111,8 +111,9 @@ function parseRssItems(xml) {
     const description = extractXmlText(itemXml, "description");
     const text = title || description;
 
-    const publishedAt = new Date(pubDateStr).toISOString();
-    if (isNaN(Date.parse(publishedAt))) continue;
+    const d = new Date(pubDateStr);
+    if (isNaN(d.getTime())) continue;
+    const publishedAt = d.toISOString();
 
     items.push({ tweetId: tweetIdMatch[1], link, text, publishedAt });
   }
@@ -134,8 +135,13 @@ function buildCalendarData(posts) {
 }
 
 async function main() {
-  const existingRaw = await readFile(join(DATA_DIR, "posts.json"), "utf-8");
-  const existing = JSON.parse(existingRaw);
+  let existing = { lastUpdated: new Date().toISOString(), totalPosts: 0, posts: [], calendarData: [], chiikawaIndex: null };
+  try {
+    const existingRaw = await readFile(join(DATA_DIR, "posts.json"), "utf-8");
+    existing = JSON.parse(existingRaw);
+  } catch {
+    console.log("📄 posts.json が存在しないため新規作成します");
+  }
   const existingPosts = existing.posts ?? [];
   const existingIds = new Set(existingPosts.map((p) => p.tweetId));
 
@@ -150,14 +156,12 @@ async function main() {
       url: item.link,
       publishedAt: item.publishedAt,
       category: detectCategory(item.text),
-      tags: [...item.text.matchAll(/#(\w+)/g)].map((m) => m[1]),
+      tags: [...item.text.matchAll(/[#＃]([\p{L}\p{N}_]+)/gu)].map((m) => m[1]),
       characters: extractCharacters(item.text),
     }));
 
   if (newPosts.length === 0) {
-    console.log("✅ 新規投稿なし（lastUpdated を更新）");
-    const refreshed = { ...existing, lastUpdated: new Date().toISOString() };
-    await writeFile(join(DATA_DIR, "posts.json"), JSON.stringify(refreshed, null, 2), "utf-8");
+    console.log("✅ 新規投稿なし");
     return;
   }
 
