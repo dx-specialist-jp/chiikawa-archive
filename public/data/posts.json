@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-06-30T22:54:07.262Z",
-  "totalPosts": 861,
+  "lastUpdated": "2026-07-01T03:34:16.344Z",
+  "totalPosts": 863,
   "posts": [
+    {
+      "id": "post-2072154155981148204",
+      "tweetId": "2072154155981148204",
+      "url": "https://x.com/ngnchiikawa/status/2072154155981148204",
+      "publishedAt": "2026-07-01T01:00:35.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2072154199354454094",
+      "tweetId": "2072154199354454094",
+      "url": "https://x.com/ngnchiikawa/status/2072154199354454094",
+      "publishedAt": "2026-06-30T20:00:01.000Z",
+      "category": "anime",
+      "tags": [
+        "FNS"
+      ],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
     {
       "id": "post-2071990615223816445",
       "tweetId": "2071990615223816445",
@@ -9105,6 +9129,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-01",
+      "count": 2,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-06-30",
       "count": 1,
