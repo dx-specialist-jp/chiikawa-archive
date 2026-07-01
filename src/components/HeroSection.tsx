@@ -48,7 +48,7 @@ export default function HeroSection({ todayCount, totalPosts, lastUpdated }: Her
           </div>
         </div>
         <div className="border-l border-warm-border pl-4">
-          <div className="text-xs text-warm-muted mb-0.5 tracking-wide">最終更新</div>
+          <div className="text-xs text-warm-muted mb-0.5 tracking-wide">最終投稿</div>
           <div className="text-sm font-light text-warm-text">{updatedDate}</div>
         </div>
         <StreakBadge />
