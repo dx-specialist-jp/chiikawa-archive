@@ -136,8 +136,9 @@ function parseAtomEntries(xml) {
     // 更新日時
     const dateM = block.match(/<updated>([^<]+)<\/updated>/);
     if (!dateM) continue;
-    const publishedAt = new Date(dateM[1].trim()).toISOString();
-    if (isNaN(Date.parse(publishedAt))) continue;
+    const dateObj = new Date(dateM[1].trim());
+    if (isNaN(dateObj.getTime())) continue;
+    const publishedAt = dateObj.toISOString();
 
     // タイトル
     const titleM = block.match(/<title[^>]*>([\s\S]*?)<\/title>/);
@@ -185,7 +186,8 @@ async function main() {
   try {
     const raw = await readFile(newsPath, "utf-8");
     existing = JSON.parse(raw);
-  } catch {
+  } catch (e) {
+    if (e.code !== "ENOENT") throw e;
     console.log("📄 news.json が存在しないため新規作成します");
   }
 
@@ -199,7 +201,7 @@ async function main() {
   if (!res.ok) throw new Error(`RSS 応答エラー: ${res.status} ${res.statusText}`);
 
   const fetched = parseAtomEntries(await res.text());
-  const relevant = fetched.filter((a) => a.title.includes("ちいかわ"));
+  const relevant = fetched.filter((a) => (a.title + " " + a.summary).includes("ちいかわ"));
   console.log(`📋 フィードから ${fetched.length} 件取得（うちちいかわ関連: ${relevant.length} 件）`);
 
   const newArticles = relevant.filter((a) => !existingUrls.has(a.url));

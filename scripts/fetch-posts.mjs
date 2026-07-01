@@ -139,7 +139,8 @@ async function main() {
   try {
     const existingRaw = await readFile(join(DATA_DIR, "posts.json"), "utf-8");
     existing = JSON.parse(existingRaw);
-  } catch {
+  } catch (e) {
+    if (e.code !== "ENOENT") throw e;
     console.log("📄 posts.json が存在しないため新規作成します");
   }
   const existingPosts = existing.posts ?? [];
