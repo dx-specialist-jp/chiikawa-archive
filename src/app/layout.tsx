@@ -35,6 +35,9 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        {/* next/font/google の Noto Serif JP は japanese サブセットを提供していないため、
+            全ページ共通で読み込む root layout 内でリンクタグを直接使用している */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap"
           rel="stylesheet"
