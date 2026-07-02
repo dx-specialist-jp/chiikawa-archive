@@ -1,7 +1,25 @@
 {
-  "lastUpdated": "2026-07-01T03:34:16.344Z",
-  "totalPosts": 863,
+  "lastUpdated": "2026-07-02T03:58:21.819Z",
+  "totalPosts": 865,
   "posts": [
+    {
+      "id": "post-2072274613795745906",
+      "tweetId": "2072274613795745906",
+      "url": "https://x.com/ngnchiikawa/status/2072274613795745906",
+      "publishedAt": "2026-07-01T11:02:23.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-2072252775233409333",
+      "tweetId": "2072252775233409333",
+      "url": "https://x.com/ngnchiikawa/status/2072252775233409333",
+      "publishedAt": "2026-07-01T09:35:36.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
     {
       "id": "post-2072154155981148204",
       "tweetId": "2072154155981148204",
@@ -9131,8 +9149,9 @@
   "calendarData": [
     {
       "date": "2026-07-01",
-      "count": 2,
+      "count": 4,
       "categories": [
+        "other",
         "anime"
       ]
     },
