@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update:
@@ -45,6 +46,34 @@ jobs:
         run: |
           echo "::error::両フェッチスクリプトが失敗しました。RSSHub・Google Alerts の設定を確認してください。"
           exit 1
+
+      - name: Sync fetch failure issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          POSTS_OUTCOME: ${{ steps.fetch_posts.outcome }}
+          NEWS_OUTCOME: ${{ steps.fetch_news.outcome }}
+        run: |
+          TITLE="⚠️ データ更新フェッチ失敗を検知"
+          EXISTING=$(gh issue list --repo "$REPO" --search "in:title \"$TITLE\"" --state open --json number --jq '.[0].number')
+
+          if [ "$POSTS_OUTCOME" = "failure" ] || [ "$NEWS_OUTCOME" = "failure" ]; then
+            BODY="fetch-posts.mjs: ${POSTS_OUTCOME}
+          fetch-news.mjs: ${NEWS_OUTCOME}
+
+          実行ログ: ${RUN_URL}"
+            if [ -z "$EXISTING" ]; then
+              gh issue create --repo "$REPO" --title "$TITLE" --body "$BODY"
+            else
+              gh issue comment "$EXISTING" --repo "$REPO" --body "再発を検知しました。
+
+          $BODY"
+            fi
+          elif [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --repo "$REPO" --comment "フェッチが正常に成功したためクローズします。実行ログ: ${RUN_URL}"
+          fi
 
       - name: Check for changes
         id: changes
