@@ -14,7 +14,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
 const OFFICIAL_X_USERNAME = "ngnchiikawa";
 
-const RSSHUB_BASE = (process.env.RSSHUB_URL ?? "https://rsshub.app").replace(/\/$/, "");
+const RSSHUB_URL = process.env.RSSHUB_URL;
+const RSSHUB_BASE = (RSSHUB_URL ?? "https://rsshub.app").replace(/\/$/, "");
 const RSSHUB_ACCESS_KEY = process.env.RSSHUB_ACCESS_KEY ?? "";
 
 const CATEGORY_KEYWORDS = {
