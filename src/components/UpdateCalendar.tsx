@@ -21,18 +21,17 @@ export default function UpdateCalendar({ data }: UpdateCalendarProps) {
 
   const dataMap = Object.fromEntries(sortedData.map((d) => [d.date, d]));
 
-  const endDate = new Date();
-  endDate.setHours(0, 0, 0, 0);
+  const endDate = new Date(`${today}T00:00:00Z`);
   const startDate = new Date(endDate);
-  startDate.setDate(startDate.getDate() - 90);
+  startDate.setUTCDate(startDate.getUTCDate() - 90);
 
   const days: CalendarDay[] = [];
-  for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+  for (let d = new Date(startDate); d <= endDate; d.setUTCDate(d.getUTCDate() + 1)) {
     const dateStr = d.toISOString().split("T")[0];
     days.push(dataMap[dateStr] ?? { date: dateStr, count: 0, categories: [] });
   }
 
-  const firstDayOfWeek = new Date(days[0].date).getDay();
+  const firstDayOfWeek = new Date(`${days[0].date}T00:00:00Z`).getUTCDay();
   const paddedDays: (CalendarDay | null)[] = [
     ...Array(firstDayOfWeek).fill(null),
     ...days,

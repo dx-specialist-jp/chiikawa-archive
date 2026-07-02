@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function GrassBackground() {
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true">
@@ -5,7 +7,7 @@ export default function GrassBackground() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/images/bg-meadow.jpg')",
+          backgroundImage: `url('${basePath}/images/bg-meadow.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center 62%",
           backgroundRepeat: "no-repeat",

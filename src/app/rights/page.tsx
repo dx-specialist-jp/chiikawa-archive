@@ -61,7 +61,7 @@ export default function RightsPage() {
         <div className="card p-6">
           <h2 className="font-medium text-warm-text mb-4 tracking-wide">権利侵害・不適切掲載のご連絡</h2>
           <p className="text-sm text-warm-muted mb-4 leading-relaxed">
-            権利侵害または不適切な掲載がございましたら、お問い合わせフォームよりご連絡ください。
+            権利侵害または不適切な掲載がございましたら、お問い合わせページよりご連絡ください。
             内容を確認後、速やかに修正・削除等の対応を実施いたします。
           </p>
 
@@ -69,7 +69,7 @@ export default function RightsPage() {
             <div className="text-xs font-medium text-warm-text mb-2 tracking-wide">対応の流れ</div>
             <ol className="space-y-2">
               {[
-                "お問い合わせフォームよりご連絡いただく",
+                "お問い合わせページよりご連絡いただく",
                 "内容を確認（原則24時間以内）",
                 "速やかに該当コンテンツの修正・削除対応",
                 "対応完了をご報告",
