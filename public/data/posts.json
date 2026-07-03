@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-07-03T10:06:16.914Z",
-  "totalPosts": 876,
+  "lastUpdated": "2026-07-03T17:04:28.000Z",
+  "totalPosts": 878,
   "posts": [
+    {
+      "id": "post-2073010064387109357",
+      "tweetId": "2073010064387109357",
+      "url": "https://x.com/ngnchiikawa/status/2073010064387109357",
+      "publishedAt": "2026-07-03T11:44:48.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-2072999867421773830",
+      "tweetId": "2072999867421773830",
+      "url": "https://x.com/ngnchiikawa/status/2072999867421773830",
+      "publishedAt": "2026-07-03T10:30:00.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ]
+    },
     {
       "id": "post-2072960381576974460",
       "tweetId": "2072960381576974460",
@@ -9281,11 +9303,11 @@
   "calendarData": [
     {
       "date": "2026-07-03",
-      "count": 7,
+      "count": 9,
       "categories": [
-        "goods",
-        "anime",
         "other",
+        "anime",
+        "goods",
         "manga"
       ]
     },
