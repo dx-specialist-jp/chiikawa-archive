@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-07-03T17:04:28.000Z",
-  "totalPosts": 878,
+  "lastUpdated": "2026-07-04T04:31:14.858Z",
+  "totalPosts": 879,
   "posts": [
+    {
+      "id": "post-2073233256884092989",
+      "tweetId": "2073233256884092989",
+      "url": "https://x.com/ngnchiikawa/status/2073233256884092989",
+      "publishedAt": "2026-07-04T02:31:41.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
     {
       "id": "post-2073010064387109357",
       "tweetId": "2073010064387109357",
@@ -9301,6 +9310,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-04",
+      "count": 1,
+      "categories": [
+        "other"
+      ]
+    },
     {
       "date": "2026-07-03",
       "count": 9,
