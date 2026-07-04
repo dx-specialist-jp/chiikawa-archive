@@ -1,0 +1,47 @@
+name: Retry Failed Deploy
+
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types: [completed]
+
+permissions:
+  actions: write
+  issues: write
+
+jobs:
+  retry:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retry failed jobs or report persistent failure
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          RUN_ATTEMPT: ${{ github.event.workflow_run.run_attempt }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+        run: |
+          TITLE="⚠️ GitHub Pages デプロイが繰り返し失敗"
+          MAX_ATTEMPTS=3
+
+          if [ "$RUN_ATTEMPT" -lt "$MAX_ATTEMPTS" ]; then
+            echo "デプロイ失敗を検知（${RUN_ATTEMPT}回目）。失敗したジョブを再実行します: ${RUN_URL}"
+            gh api --method POST "repos/${REPO}/actions/runs/${RUN_ID}/rerun-failed-jobs"
+          else
+            echo "::error::デプロイが${MAX_ATTEMPTS}回連続で失敗しました。"
+            BODY="GitHub Pages へのデプロイが ${RUN_ATTEMPT} 回連続で失敗しました。
+
+          実行ログ: ${RUN_URL}
+
+          actions/deploy-pages の一時的な障害（\"Deployment failed, try again later.\"）である可能性がありますが、繰り返す場合は GitHub Status (https://www.githubstatus.com/) やリポジトリの Pages 設定を確認してください。"
+
+            EXISTING=$(gh issue list --repo "$REPO" --search "in:title \"$TITLE\"" --state open --json number --jq '.[0].number')
+            if [ -z "$EXISTING" ]; then
+              gh issue create --repo "$REPO" --title "$TITLE" --body "$BODY"
+            else
+              gh issue comment "$EXISTING" --repo "$REPO" --body "再発を検知しました。
+
+          $BODY"
+            fi
+          fi
