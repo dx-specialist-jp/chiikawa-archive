@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-07-04T04:31:14.858Z",
-  "totalPosts": 879,
+  "lastUpdated": "2026-07-05T15:57:05.175Z",
+  "totalPosts": 880,
   "posts": [
+    {
+      "id": "post-2073767564338249933",
+      "tweetId": "2073767564338249933",
+      "url": "https://x.com/ngnchiikawa/status/2073767564338249933",
+      "publishedAt": "2026-07-05T13:54:50.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
     {
       "id": "post-2073233256884092989",
       "tweetId": "2073233256884092989",
@@ -153,19 +162,6 @@
       ]
     },
     {
-      "id": "post-2072548125265531225",
-      "tweetId": "2072548125265531225",
-      "url": "https://x.com/ngnchiikawa/status/2072548125265531225",
-      "publishedAt": "2026-07-01T01:00:02.000Z",
-      "category": "anime",
-      "tags": [
-        "映画ちいかわ"
-      ],
-      "characters": [
-        "ちいかわ"
-      ]
-    },
-    {
       "id": "post-2072274613795745906",
       "tweetId": "2072274613795745906",
       "url": "https://x.com/ngnchiikawa/status/2072274613795745906",
@@ -190,6 +186,19 @@
       "publishedAt": "2026-07-01T01:00:35.000Z",
       "category": "anime",
       "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2072548125265531225",
+      "tweetId": "2072548125265531225",
+      "url": "https://x.com/ngnchiikawa/status/2072548125265531225",
+      "publishedAt": "2026-07-01T01:00:02.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
       "characters": [
         "ちいかわ"
       ]
@@ -9311,6 +9320,13 @@
   ],
   "calendarData": [
     {
+      "date": "2026-07-05",
+      "count": 1,
+      "categories": [
+        "other"
+      ]
+    },
+    {
       "date": "2026-07-04",
       "count": 1,
       "categories": [
@@ -9340,8 +9356,8 @@
       "date": "2026-07-01",
       "count": 5,
       "categories": [
-        "anime",
-        "other"
+        "other",
+        "anime"
       ]
     },
     {
