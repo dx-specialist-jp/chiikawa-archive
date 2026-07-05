@@ -25,12 +25,17 @@ let widgetsScriptPromise: Promise<void> | null = null;
 function loadWidgetsScript(): Promise<void> {
   if (window.twttr?.widgets) return Promise.resolve();
   if (!widgetsScriptPromise) {
-    widgetsScriptPromise = new Promise((resolve) => {
+    widgetsScriptPromise = new Promise<void>((resolve, reject) => {
       const script = document.createElement("script");
       script.src = "https://platform.twitter.com/widgets.js";
       script.async = true;
       script.onload = () => resolve();
+      script.onerror = () => reject(new Error("widgets.js の読み込みに失敗しました"));
       document.head.appendChild(script);
+    }).catch((err: unknown) => {
+      // 失敗を永続キャッシュしない。次回マウント時に再試行できるようリセットする
+      widgetsScriptPromise = null;
+      throw err;
     });
   }
   return widgetsScriptPromise;
@@ -45,11 +50,15 @@ export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedPr
     if (!container) return;
 
     let cancelled = false;
-    loadWidgetsScript().then(() => {
-      if (!cancelled && window.twttr?.widgets) {
-        window.twttr.widgets.load(container);
-      }
-    });
+    loadWidgetsScript()
+      .then(() => {
+        if (!cancelled && window.twttr?.widgets) {
+          window.twttr.widgets.load(container);
+        }
+      })
+      .catch(() => {
+        // 読み込み失敗時はフォールバックのリンク（blockquote内の <a>）がそのまま表示される
+      });
 
     return () => {
       cancelled = true;
