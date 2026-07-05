@@ -169,7 +169,9 @@ async function main() {
 
   console.log(`✨ ${newPosts.length} 件の新着を追加`);
 
-  const merged = [...newPosts, ...existingPosts];
+  const merged = [...newPosts, ...existingPosts].sort((a, b) =>
+    b.publishedAt.localeCompare(a.publishedAt)
+  );
 
   const updated = {
     lastUpdated: new Date().toISOString(),

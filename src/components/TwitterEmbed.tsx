@@ -18,6 +18,24 @@ declare global {
   }
 }
 
+// 複数の TwitterEmbed が同時にマウントされても widgets.js の <script> タグが
+// 重複挿入されないよう、読み込みの Promise をモジュールスコープで共有する
+let widgetsScriptPromise: Promise<void> | null = null;
+
+function loadWidgetsScript(): Promise<void> {
+  if (window.twttr?.widgets) return Promise.resolve();
+  if (!widgetsScriptPromise) {
+    widgetsScriptPromise = new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = "https://platform.twitter.com/widgets.js";
+      script.async = true;
+      script.onload = () => resolve();
+      document.head.appendChild(script);
+    });
+  }
+  return widgetsScriptPromise;
+}
+
 export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedProps) {
   const tweetUrl = url ?? `https://x.com/i/web/status/${tweetId}`;
   const containerRef = useRef<HTMLDivElement>(null);
@@ -26,21 +44,16 @@ export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedPr
     const container = containerRef.current;
     if (!container) return;
 
-    const loadWidget = () => {
-      if (window.twttr?.widgets) {
+    let cancelled = false;
+    loadWidgetsScript().then(() => {
+      if (!cancelled && window.twttr?.widgets) {
         window.twttr.widgets.load(container);
       }
-    };
+    });
 
-    if (window.twttr) {
-      loadWidget();
-    } else {
-      const script = document.createElement("script");
-      script.src = "https://platform.twitter.com/widgets.js";
-      script.async = true;
-      script.onload = loadWidget;
-      document.head.appendChild(script);
-    }
+    return () => {
+      cancelled = true;
+    };
   }, [tweetId]);
 
   return (
