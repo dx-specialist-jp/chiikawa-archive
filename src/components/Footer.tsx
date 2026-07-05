@@ -51,7 +51,9 @@ export default function Footer() {
           </p>
           <p className="text-[10px] text-warm-muted font-light opacity-60">
             Background photo by{" "}
-            <a href="https://unsplash.com/photos/1475656106224-d72c2ab53e8d" target="_blank" rel="noopener noreferrer" className="hover:text-mint-400 transition-colors">Unsplash</a>
+            <a href="https://unsplash.com/@omarvellous14" target="_blank" rel="noopener noreferrer" className="hover:text-mint-400 transition-colors">Omar Ramadan</a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/photos/green-grass-field-under-blue-sky-and-white-clouds-during-daytime-vcRHpfrsaL8" target="_blank" rel="noopener noreferrer" className="hover:text-mint-400 transition-colors">Unsplash</a>
           </p>
         </div>
       </div>
