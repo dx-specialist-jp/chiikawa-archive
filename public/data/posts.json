@@ -1,7 +1,38 @@
 {
-  "lastUpdated": "2026-07-05T15:57:05.175Z",
-  "totalPosts": 880,
+  "lastUpdated": "2026-07-06T14:08:24.324Z",
+  "totalPosts": 883,
   "posts": [
+    {
+      "id": "post-2074075359323296061",
+      "tweetId": "2074075359323296061",
+      "url": "https://x.com/ngnchiikawa/status/2074075359323296061",
+      "publishedAt": "2026-07-06T10:17:54.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-2074074881722040465",
+      "tweetId": "2074074881722040465",
+      "url": "https://x.com/ngnchiikawa/status/2074074881722040465",
+      "publishedAt": "2026-07-06T09:00:03.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2074074825937781016",
+      "tweetId": "2074074825937781016",
+      "url": "https://x.com/ngnchiikawa/status/2074074825937781016",
+      "publishedAt": "2026-07-06T03:00:00.000Z",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
     {
       "id": "post-2073767564338249933",
       "tweetId": "2073767564338249933",
@@ -9319,6 +9350,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-06",
+      "count": 3,
+      "categories": [
+        "other",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-07-05",
       "count": 1,
