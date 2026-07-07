@@ -1,7 +1,54 @@
 {
-  "lastUpdated": "2026-07-06T14:08:24.324Z",
-  "totalPosts": 883,
+  "lastUpdated": "2026-07-07T19:18:08.716Z",
+  "totalPosts": 887,
   "posts": [
+    {
+      "id": "post-2074475903841956205",
+      "tweetId": "2074475903841956205",
+      "url": "https://x.com/ngnchiikawa/status/2074475903841956205",
+      "publishedAt": "2026-07-07T12:49:32.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-2074473227540443174",
+      "tweetId": "2074473227540443174",
+      "url": "https://x.com/ngnchiikawa/status/2074473227540443174",
+      "publishedAt": "2026-07-07T11:00:39.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2074473169910702541",
+      "tweetId": "2074473169910702541",
+      "url": "https://x.com/ngnchiikawa/status/2074473169910702541",
+      "publishedAt": "2026-07-07T09:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ]
+    },
+    {
+      "id": "post-2074473182019653796",
+      "tweetId": "2074473182019653796",
+      "url": "https://x.com/ngnchiikawa/status/2074473182019653796",
+      "publishedAt": "2026-07-07T09:00:02.000Z",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ]
+    },
     {
       "id": "post-2074075359323296061",
       "tweetId": "2074075359323296061",
@@ -9350,6 +9397,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-07",
+      "count": 4,
+      "categories": [
+        "other",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-07-06",
       "count": 3,
