@@ -1,7 +1,41 @@
 {
-  "lastUpdated": "2026-07-07T19:18:08.716Z",
-  "totalPosts": 887,
+  "lastUpdated": "2026-07-08T17:14:04.904Z",
+  "totalPosts": 890,
   "posts": [
+    {
+      "id": "post-2074903301020377235",
+      "tweetId": "2074903301020377235",
+      "url": "https://x.com/ngnchiikawa/status/2074903301020377235",
+      "publishedAt": "2026-07-08T17:07:51.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-2074815269177073801",
+      "tweetId": "2074815269177073801",
+      "url": "https://x.com/ngnchiikawa/status/2074815269177073801",
+      "publishedAt": "2026-07-08T11:00:00.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2074815251816821108",
+      "tweetId": "2074815251816821108",
+      "url": "https://x.com/ngnchiikawa/status/2074815251816821108",
+      "publishedAt": "2026-07-08T04:00:17.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ",
+        "イオンシネマ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
     {
       "id": "post-2074475903841956205",
       "tweetId": "2074475903841956205",
@@ -9397,6 +9431,20 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-09",
+      "count": 1,
+      "categories": [
+        "other"
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "count": 2,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-07-07",
       "count": 4,
