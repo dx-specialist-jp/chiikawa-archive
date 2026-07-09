@@ -1,7 +1,54 @@
 {
-  "lastUpdated": "2026-07-08T17:14:04.904Z",
-  "totalPosts": 890,
+  "lastUpdated": "2026-07-09T11:27:13.384Z",
+  "totalPosts": 895,
   "posts": [
+    {
+      "id": "post-2075149231883800779",
+      "tweetId": "2075149231883800779",
+      "url": "https://x.com/ngnchiikawa/status/2075149231883800779",
+      "publishedAt": "2026-07-09T09:25:05.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
+    {
+      "id": "post-2075148958633218275",
+      "tweetId": "2075148958633218275",
+      "url": "https://x.com/ngnchiikawa/status/2075148958633218275",
+      "publishedAt": "2026-07-09T09:00:03.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2075077318280892606",
+      "tweetId": "2075077318280892606",
+      "url": "https://x.com/ngnchiikawa/status/2075077318280892606",
+      "publishedAt": "2026-07-09T04:00:51.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ]
+    },
+    {
+      "id": "post-2075077058477301870",
+      "tweetId": "2075077058477301870",
+      "url": "https://x.com/ngnchiikawa/status/2075077058477301870",
+      "publishedAt": "2026-07-09T01:00:17.000Z",
+      "category": "manga",
+      "tags": [
+        "マツキヨココカラ",
+        "ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
     {
       "id": "post-2074903301020377235",
       "tweetId": "2074903301020377235",
@@ -31,6 +78,19 @@
       "tags": [
         "映画ちいかわ",
         "イオンシネマ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2075077235086872683",
+      "tweetId": "2075077235086872683",
+      "url": "https://x.com/ngnchiikawa/status/2075077235086872683",
+      "publishedAt": "2026-07-08T01:00:23.000Z",
+      "category": "manga",
+      "tags": [
+        "ちいかわぽけ"
       ],
       "characters": [
         "ちいかわ"
@@ -9433,16 +9493,19 @@
   "calendarData": [
     {
       "date": "2026-07-09",
-      "count": 1,
+      "count": 5,
       "categories": [
-        "other"
+        "other",
+        "anime",
+        "manga"
       ]
     },
     {
       "date": "2026-07-08",
-      "count": 2,
+      "count": 3,
       "categories": [
-        "anime"
+        "anime",
+        "manga"
       ]
     },
     {
