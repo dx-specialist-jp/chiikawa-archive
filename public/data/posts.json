@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-07-10T11:24:46.059Z",
-  "totalPosts": 899,
+  "lastUpdated": "2026-07-10T18:09:39.554Z",
+  "totalPosts": 900,
   "posts": [
+    {
+      "id": "post-2075587313384800406",
+      "tweetId": "2075587313384800406",
+      "url": "https://x.com/ngnchiikawa/status/2075587313384800406",
+      "publishedAt": "2026-07-10T14:25:52.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
     {
       "id": "post-2075525047209619895",
       "tweetId": "2075525047209619895",
@@ -9539,8 +9548,9 @@
   "calendarData": [
     {
       "date": "2026-07-10",
-      "count": 3,
+      "count": 4,
       "categories": [
+        "other",
         "anime",
         "goods"
       ]
