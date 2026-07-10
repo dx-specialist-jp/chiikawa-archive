@@ -1,7 +1,53 @@
 {
-  "lastUpdated": "2026-07-09T11:27:13.384Z",
-  "totalPosts": 895,
+  "lastUpdated": "2026-07-10T11:24:46.059Z",
+  "totalPosts": 899,
   "posts": [
+    {
+      "id": "post-2075525047209619895",
+      "tweetId": "2075525047209619895",
+      "url": "https://x.com/ngnchiikawa/status/2075525047209619895",
+      "publishedAt": "2026-07-10T09:00:02.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ち"
+      ],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2075400523059282164",
+      "tweetId": "2075400523059282164",
+      "url": "https://x.com/ngnchiikawa/status/2075400523059282164",
+      "publishedAt": "2026-07-10T01:00:00.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2075400424769925511",
+      "tweetId": "2075400424769925511",
+      "url": "https://x.com/ngnchiikawa/status/2075400424769925511",
+      "publishedAt": "2026-07-09T15:00:04.000Z",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2075400498841313713",
+      "tweetId": "2075400498841313713",
+      "url": "https://x.com/ngnchiikawa/status/2075400498841313713",
+      "publishedAt": "2026-07-09T10:00:01.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
     {
       "id": "post-2075149231883800779",
       "tweetId": "2075149231883800779",
@@ -9492,11 +9538,19 @@
   ],
   "calendarData": [
     {
-      "date": "2026-07-09",
-      "count": 5,
+      "date": "2026-07-10",
+      "count": 3,
       "categories": [
-        "other",
         "anime",
+        "goods"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "count": 6,
+      "categories": [
+        "anime",
+        "other",
         "manga"
       ]
     },
