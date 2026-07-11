@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-07-10T18:09:39.554Z",
-  "totalPosts": 900,
+  "lastUpdated": "2026-07-11T15:34:04.947Z",
+  "totalPosts": 903,
   "posts": [
+    {
+      "id": "post-2075941667748954549",
+      "tweetId": "2075941667748954549",
+      "url": "https://x.com/ngnchiikawa/status/2075941667748954549",
+      "publishedAt": "2026-07-11T13:53:57.000Z",
+      "category": "other",
+      "tags": [],
+      "characters": []
+    },
     {
       "id": "post-2075587313384800406",
       "tweetId": "2075587313384800406",
@@ -19,6 +28,31 @@
       "category": "anime",
       "tags": [
         "映画ち"
+      ],
+      "characters": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "post-2075940230784507980",
+      "tweetId": "2075940230784507980",
+      "url": "https://x.com/ngnchiikawa/status/2075940230784507980",
+      "publishedAt": "2026-07-10T09:00:00.000Z",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ]
+    },
+    {
+      "id": "post-2075940311759794378",
+      "tweetId": "2075940311759794378",
+      "url": "https://x.com/ngnchiikawa/status/2075940311759794378",
+      "publishedAt": "2026-07-10T03:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
       ],
       "characters": [
         "ちいかわ"
@@ -9547,8 +9581,15 @@
   ],
   "calendarData": [
     {
+      "date": "2026-07-11",
+      "count": 1,
+      "categories": [
+        "other"
+      ]
+    },
+    {
       "date": "2026-07-10",
-      "count": 4,
+      "count": 6,
       "categories": [
         "other",
         "anime",
