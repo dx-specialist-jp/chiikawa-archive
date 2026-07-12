@@ -9,6 +9,8 @@
 import { writeFile, readFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { detectCategory, extractCharacters, extractTagsFromHashtags, extractHashtagsFromText } from "./lib/tagging.mjs";
+import { fetchTweetDetails } from "./lib/syndication.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
@@ -17,36 +19,6 @@ const OFFICIAL_X_USERNAME = "ngnchiikawa";
 const RSSHUB_URL = process.env.RSSHUB_URL;
 const RSSHUB_BASE = (RSSHUB_URL ?? "https://rsshub.app").replace(/\/$/, "");
 const RSSHUB_ACCESS_KEY = process.env.RSSHUB_ACCESS_KEY ?? "";
-
-const CATEGORY_KEYWORDS = {
-  manga: ["漫画", "まんが", "コミック", "#ちいかわ", "更新"],
-  goods: ["グッズ", "商品", "発売", "販売", "限定", "コラボ商品", "ぬいぐるみ", "フィギュア"],
-  anime: ["アニメ", "放送", "配信", "映画", "劇場"],
-  collab: ["コラボ", "×", "✕"],
-  event: ["イベント", "展示", "ポップアップ", "フェア", "期間限定"],
-};
-
-const CHARACTER_KEYWORDS = {
-  ちいかわ: ["ちいかわ"],
-  ハチワレ: ["ハチワレ"],
-  うさぎ: ["うさぎ"],
-  くりまんじゅう: ["くりまんじゅう"],
-  もんじゃ: ["もんじゃ"],
-  シーサー: ["シーサー"],
-};
-
-function detectCategory(text) {
-  for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
-    if (keywords.some((kw) => text.includes(kw))) return category;
-  }
-  return "other";
-}
-
-function extractCharacters(text) {
-  return Object.entries(CHARACTER_KEYWORDS)
-    .filter(([, keywords]) => keywords.some((kw) => text.includes(kw)))
-    .map(([char]) => char);
-}
 
 function toJstDateStr(isoStr) {
   return new Date(isoStr).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
@@ -136,7 +108,7 @@ function buildCalendarData(posts) {
 }
 
 async function main() {
-  let existing = { lastUpdated: new Date().toISOString(), totalPosts: 0, posts: [], calendarData: [], chiikawaIndex: null };
+  let existing = { lastUpdated: new Date().toISOString(), totalPosts: 0, posts: [], calendarData: [] };
   try {
     const existingRaw = await readFile(join(DATA_DIR, "posts.json"), "utf-8");
     existing = JSON.parse(existingRaw);
@@ -150,27 +122,38 @@ async function main() {
   const rssItems = await fetchRssFeed(OFFICIAL_X_USERNAME);
   console.log(`📋 RSS から ${rssItems.length} 件取得`);
 
-  const newPosts = rssItems
-    .filter((item) => !existingIds.has(item.tweetId))
-    .map((item) => ({
-      id: `post-${item.tweetId}`,
-      tweetId: item.tweetId,
-      url: item.link,
-      publishedAt: item.publishedAt,
-      category: detectCategory(item.text),
-      tags: [...item.text.matchAll(/[#＃]([\p{L}\p{N}_]+)/gu)].map((m) => m[1]),
-      characters: extractCharacters(item.text),
-    }));
+  const newItems = rssItems.filter((item) => !existingIds.has(item.tweetId));
 
-  if (newPosts.length === 0) {
+  if (newItems.length === 0) {
     console.log("✅ 新規投稿なし");
     return;
   }
 
+  // RSS本文は「…」で途中省略されることがあるため、syndication API で正確な本文を取得する
+  const newPosts = [];
+  for (const item of newItems) {
+    const details = await fetchTweetDetails(item.tweetId);
+    const text = details?.text ?? item.text;
+    const hashtags = details ? details.hashtags : extractHashtagsFromText(item.text);
+    const mediaCount = details?.mediaCount ?? 0;
+
+    newPosts.push({
+      id: `post-${item.tweetId}`,
+      tweetId: item.tweetId,
+      url: item.link,
+      publishedAt: item.publishedAt,
+      category: detectCategory(text, { mediaCount }),
+      tags: extractTagsFromHashtags(hashtags),
+      characters: extractCharacters(text),
+    });
+
+    await new Promise((r) => setTimeout(r, 300));
+  }
+
   console.log(`✨ ${newPosts.length} 件の新着を追加`);
 
-  const merged = [...newPosts, ...existingPosts].sort((a, b) =>
-    b.publishedAt.localeCompare(a.publishedAt)
+  const merged = [...newPosts, ...existingPosts].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
   const updated = {
@@ -178,7 +161,6 @@ async function main() {
     totalPosts: merged.length,
     posts: merged,
     calendarData: buildCalendarData(merged),
-    chiikawaIndex: existing.chiikawaIndex,
   };
 
   await writeFile(

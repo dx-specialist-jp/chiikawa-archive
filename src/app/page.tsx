@@ -33,7 +33,8 @@ export default async function HomePage() {
   const todayPosts = data.posts.filter((p) =>
     new Date(p.publishedAt).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" }) === todayStr
   );
-  const recentPosts = data.posts.slice(0, 5);
+  const todayIds = new Set(todayPosts.map((p) => p.id));
+  const recentPosts = data.posts.filter((p) => !todayIds.has(p.id)).slice(0, 5);
   const latestNews = newsData.articles.slice(0, 6);
 
   return (

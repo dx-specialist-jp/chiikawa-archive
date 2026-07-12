@@ -9,6 +9,7 @@
 import { writeFile, readFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { detectCategory, extractCharacters, extractTagsFromHashtags } from "./lib/tagging.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
@@ -53,36 +54,6 @@ const GQL_FEATURES_TWEETS = {
   longform_notetweets_inline_media_enabled: false,
   responsive_web_enhance_cards_enabled: false,
 };
-
-const CATEGORY_KEYWORDS = {
-  manga: ["漫画", "まんが", "コミック", "#ちいかわ", "更新"],
-  goods: ["グッズ", "商品", "発売", "販売", "限定", "コラボ商品", "ぬいぐるみ", "フィギュア"],
-  anime: ["アニメ", "放送", "配信", "映画", "劇場"],
-  collab: ["コラボ", "×", "✕"],
-  event: ["イベント", "展示", "ポップアップ", "フェア", "期間限定"],
-};
-
-const CHARACTER_KEYWORDS = {
-  ちいかわ: ["ちいかわ"],
-  ハチワレ: ["ハチワレ"],
-  うさぎ: ["うさぎ"],
-  くりまんじゅう: ["くりまんじゅう"],
-  もんじゃ: ["もんじゃ"],
-  シーサー: ["シーサー"],
-};
-
-function detectCategory(text) {
-  for (const [cat, kws] of Object.entries(CATEGORY_KEYWORDS)) {
-    if (kws.some((kw) => text.includes(kw))) return cat;
-  }
-  return "other";
-}
-
-function extractCharacters(text) {
-  return Object.entries(CHARACTER_KEYWORDS)
-    .filter(([, kws]) => kws.some((kw) => text.includes(kw)))
-    .map(([c]) => c);
-}
 
 function toJstDateStr(isoStr) {
   return new Date(isoStr).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
@@ -316,13 +287,15 @@ async function main() {
     for (const legacy of tweets) {
       if (allPosts.has(legacy.id_str)) continue;
       const text = legacy.full_text ?? legacy.text ?? "";
+      const hashtags = (legacy.entities?.hashtags ?? []).map((h) => h.text);
+      const mediaCount = (legacy.extended_entities?.media ?? legacy.entities?.media ?? []).length;
       allPosts.set(legacy.id_str, {
         id: `post-${legacy.id_str}`,
         tweetId: legacy.id_str,
         url: `https://x.com/${USERNAME}/status/${legacy.id_str}`,
         publishedAt: new Date(legacy.created_at).toISOString(),
-        category: detectCategory(text),
-        tags: [],
+        category: detectCategory(text, { mediaCount }),
+        tags: extractTagsFromHashtags(hashtags),
         characters: extractCharacters(text),
       });
       addedThisPage++;
@@ -350,8 +323,8 @@ async function main() {
     await new Promise((r) => setTimeout(r, 800));
   }
 
-  const merged = [...allPosts.values()].sort((a, b) =>
-    b.publishedAt.localeCompare(a.publishedAt)
+  const merged = [...allPosts.values()].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
   const oldest = merged[merged.length - 1];
 

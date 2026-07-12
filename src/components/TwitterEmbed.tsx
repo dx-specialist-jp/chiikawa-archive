@@ -71,6 +71,7 @@ export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedPr
         className="twitter-tweet"
         data-dnt="true"
         data-theme="light"
+        data-width="550"
       >
         <a
           href={tweetUrl}

@@ -10,12 +10,14 @@
 import { writeFile, readFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { detectCategory, extractCharacters, extractTagsFromHashtags } from "./lib/tagging.mjs";
+import { fetchTweetDetails } from "./lib/syndication.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
 
 const TWEET_URL = process.env.TWEET_URL ?? "";
-const CATEGORY = process.env.CATEGORY ?? "other";
+const CATEGORY = process.env.CATEGORY ?? "";
 const PUBLISHED_DATE = process.env.PUBLISHED_DATE ?? "";
 
 function parseTweetId(url) {
@@ -70,27 +72,33 @@ async function main() {
     return;
   }
 
+  const details = await fetchTweetDetails(tweetId);
+  if (!details) {
+    console.warn("⚠️ ツイート本文の取得に失敗しました。category/tags/characters は空のまま登録されます");
+  }
+  const text = details?.text ?? "";
+  const category = CATEGORY || detectCategory(text, { mediaCount: details?.mediaCount ?? 0 });
+
   const newPost = {
     id: `post-${tweetId}`,
     tweetId,
     url: `https://x.com/ngnchiikawa/status/${tweetId}`,
     publishedAt,
-    category: CATEGORY,
-    tags: [],
-    characters: [],
+    category,
+    tags: details ? extractTagsFromHashtags(details.hashtags) : [],
+    characters: details ? extractCharacters(text) : [],
   };
 
-  console.log(`➕ 追加: ${tweetId} (${CATEGORY}) ${toJstDateStr(publishedAt)}`);
+  console.log(`➕ 追加: ${tweetId} (${category}) ${toJstDateStr(publishedAt)}`);
 
   const merged = [newPost, ...existingPosts];
-  merged.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  merged.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   const updated = {
     lastUpdated: new Date().toISOString(),
     totalPosts: merged.length,
     posts: merged,
     calendarData: buildCalendarData(merged),
-    chiikawaIndex: existing.chiikawaIndex,
   };
 
   await writeFile(postsPath, JSON.stringify(updated, null, 2), "utf-8");

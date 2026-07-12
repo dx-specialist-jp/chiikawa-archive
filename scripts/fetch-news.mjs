@@ -211,7 +211,7 @@ async function main() {
   }
 
   const merged = [...newArticles, ...(existing.articles ?? [])];
-  merged.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  merged.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   await writeFile(
     newsPath,
