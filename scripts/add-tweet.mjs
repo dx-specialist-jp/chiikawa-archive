@@ -87,6 +87,7 @@ async function main() {
     category,
     tags: details ? extractTagsFromHashtags(details.hashtags) : [],
     characters: details ? extractCharacters(text) : [],
+    photoUrl: details?.photoUrl ?? null,
   };
 
   console.log(`➕ 追加: ${tweetId} (${category}) ${toJstDateStr(publishedAt)}`);

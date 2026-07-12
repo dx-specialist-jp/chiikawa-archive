@@ -6,6 +6,7 @@ interface TwitterEmbedProps {
   tweetId: string;
   url?: string;
   className?: string;
+  photoUrl?: string | null;
 }
 
 declare global {
@@ -41,11 +42,12 @@ function loadWidgetsScript(): Promise<void> {
   return widgetsScriptPromise;
 }
 
-export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedProps) {
+export default function TwitterEmbed({ tweetId, url, className, photoUrl }: TwitterEmbedProps) {
   const tweetUrl = url ?? `https://x.com/i/web/status/${tweetId}`;
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (photoUrl) return; // 画像を直接表示する場合は widgets.js 不要
     const container = containerRef.current;
     if (!container) return;
 
@@ -63,7 +65,23 @@ export default function TwitterEmbed({ tweetId, url, className }: TwitterEmbedPr
     return () => {
       cancelled = true;
     };
-  }, [tweetId]);
+  }, [tweetId, photoUrl]);
+
+  // 画像1枚のみの投稿は、X埋め込みウィジェットが縦長画像の上下をトリミングして
+  // 表示することがあるため、元画像を直接 <img> で表示し常に全体が見えるようにする
+  if (photoUrl) {
+    return (
+      <a
+        href={tweetUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`block rounded-2xl overflow-hidden border border-warm-border ${className ?? ""}`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={photoUrl} alt="" className="w-full h-auto block" loading="lazy" />
+      </a>
+    );
+  }
 
   return (
     <div ref={containerRef} className={className}>

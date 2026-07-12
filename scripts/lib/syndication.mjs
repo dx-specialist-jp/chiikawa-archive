@@ -22,10 +22,19 @@ export async function fetchTweetDetails(tweetId, { retries = 2 } = {}) {
       const data = await res.json();
       if (!data || data.__typename === "TweetTombstone") return null;
 
+      const mediaDetails = data.mediaDetails ?? [];
+      // 画像1枚のみの投稿は、X埋め込みウィジェットが縦長画像の上下をトリミングして
+      // 表示してしまうことがあるため、元画像URLを直接表示できるよう保持しておく
+      const photoUrl =
+        mediaDetails.length === 1 && mediaDetails[0].type === "photo"
+          ? `${mediaDetails[0].media_url_https}?format=jpg&name=large`
+          : null;
+
       return {
         text: data.text ?? "",
         hashtags: (data.entities?.hashtags ?? []).map((h) => h.text),
-        mediaCount: (data.mediaDetails ?? []).length,
+        mediaCount: mediaDetails.length,
+        photoUrl,
       };
     } catch {
       await new Promise((r) => setTimeout(r, 1000));

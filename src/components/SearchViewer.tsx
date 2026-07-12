@@ -110,7 +110,7 @@ export default function SearchViewer() {
                     <CategoryBadge category={post.category} />
                     <time className="text-xs text-warm-muted">{date}</time>
                   </div>
-                  <TwitterEmbed tweetId={post.tweetId} url={post.url} />
+                  <TwitterEmbed tweetId={post.tweetId} url={post.url} photoUrl={post.photoUrl} />
                   {(post.tags.length > 0 || post.characters.length > 0) && (
                     <div className="mt-3 pt-3 border-t border-warm-border flex flex-wrap gap-1.5">
                       {post.characters.map((c) => (

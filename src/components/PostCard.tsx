@@ -24,7 +24,7 @@ export default function PostCard({ post, showEmbed = false }: PostCardProps) {
       </div>
 
       {showEmbed ? (
-        <TwitterEmbed tweetId={post.tweetId} url={post.url} className="mb-3" />
+        <TwitterEmbed tweetId={post.tweetId} url={post.url} photoUrl={post.photoUrl} className="mb-3" />
       ) : (
         <>
           {post.summary && (

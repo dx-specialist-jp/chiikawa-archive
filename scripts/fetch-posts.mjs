@@ -145,6 +145,7 @@ async function main() {
       category: detectCategory(text, { mediaCount }),
       tags: extractTagsFromHashtags(hashtags),
       characters: extractCharacters(text),
+      photoUrl: details?.photoUrl ?? null,
     });
 
     await new Promise((r) => setTimeout(r, 300));

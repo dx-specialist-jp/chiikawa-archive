@@ -15,6 +15,7 @@ export interface Post {
   tags: string[];
   summary?: string;
   characters: string[];
+  photoUrl?: string | null;
 }
 
 export interface SiteData {

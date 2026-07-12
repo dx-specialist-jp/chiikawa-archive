@@ -288,15 +288,22 @@ async function main() {
       if (allPosts.has(legacy.id_str)) continue;
       const text = legacy.full_text ?? legacy.text ?? "";
       const hashtags = (legacy.entities?.hashtags ?? []).map((h) => h.text);
-      const mediaCount = (legacy.extended_entities?.media ?? legacy.entities?.media ?? []).length;
+      const media = legacy.extended_entities?.media ?? legacy.entities?.media ?? [];
+      // 画像1枚のみの投稿は、X埋め込みウィジェットが縦長画像の上下をトリミングして
+      // 表示してしまうことがあるため、元画像URLを直接表示できるよう保持しておく
+      const photoUrl =
+        media.length === 1 && media[0].type === "photo"
+          ? `${media[0].media_url_https}?format=jpg&name=large`
+          : null;
       allPosts.set(legacy.id_str, {
         id: `post-${legacy.id_str}`,
         tweetId: legacy.id_str,
         url: `https://x.com/${USERNAME}/status/${legacy.id_str}`,
         publishedAt: new Date(legacy.created_at).toISOString(),
-        category: detectCategory(text, { mediaCount }),
+        category: detectCategory(text, { mediaCount: media.length }),
         tags: extractTagsFromHashtags(hashtags),
         characters: extractCharacters(text),
+        photoUrl,
       });
       addedThisPage++;
       totalAdded++;

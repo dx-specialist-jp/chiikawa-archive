@@ -317,7 +317,7 @@ function PostEmbedCard({ post }: { post: Post }) {
         <time className="text-xs text-warm-muted">{date}</time>
       </div>
 
-      <TwitterEmbed tweetId={post.tweetId} url={post.url} />
+      <TwitterEmbed tweetId={post.tweetId} url={post.url} photoUrl={post.photoUrl} />
 
       {(post.characters.length > 0 || post.tags.length > 0) && (
         <div className="mt-3 pt-3 border-t border-warm-border flex flex-wrap items-center gap-2">
