@@ -201,7 +201,7 @@ async function main() {
   if (!res.ok) throw new Error(`RSS 応答エラー: ${res.status} ${res.statusText}`);
 
   const fetched = parseAtomEntries(await res.text());
-  const relevant = fetched.filter((a) => (a.title + " " + a.summary).includes("ちいかわ"));
+  const relevant = fetched.filter((a) => a.title.includes("ちいかわ"));
   console.log(`📋 フィードから ${fetched.length} 件取得（うちちいかわ関連: ${relevant.length} 件）`);
 
   const newArticles = relevant.filter((a) => !existingUrls.has(a.url));
