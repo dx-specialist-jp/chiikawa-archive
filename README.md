@@ -1,4 +1,4 @@
-# ちいかわ観測所 🔭
+# CHIIKAWA ARCHIVE
 
 ちいかわ（nagano）の公式X（旧Twitter）情報を整理・検索しやすくする**非公式**ナレッジサイトです。
 
@@ -25,7 +25,7 @@
 | ビルド出力 | 静的エクスポート (`output: 'export'`) |
 | ホスティング | GitHub Pages |
 | CI/CD | GitHub Actions |
-| データ取得 | RSSHub (Render) + Google Alerts RSS |
+| データ取得 | RSSHub (Render) + X syndication API + Google Alerts RSS |
 
 ---
 
@@ -54,7 +54,7 @@ chiikawa-archive/
 │   ├── app/                     # Next.js App Router ページ
 │   │   ├── layout.tsx           # ルートレイアウト（フォント・メタデータ）
 │   │   ├── globals.css          # グローバルスタイル・カスタムアニメーション
-│   │   ├── page.tsx             # トップページ（観測所）
+│   │   ├── page.tsx             # トップページ
 │   │   ├── archive/page.tsx     # 投稿アーカイブ（カレンダー＋カテゴリフィルタ）
 │   │   ├── news/page.tsx        # ニュース一覧
 │   │   ├── search/page.tsx      # 全文検索（クライアントサイド）
@@ -86,7 +86,10 @@ chiikawa-archive/
 │   ├── fetch-posts.mjs          # RSSHub からX投稿を定期取得（update-data.yml から実行）
 │   ├── fetch-news.mjs           # Google Alerts RSS からニュースを定期取得
 │   ├── fetch-older.mjs          # 過去投稿の一括取得（一回限り、import-history.yml から実行）
-│   └── add-tweet.mjs            # 単一ツイートの手動追加用
+│   ├── add-tweet.mjs            # 単一ツイートの手動追加用
+│   └── lib/
+│       ├── tagging.mjs          # 投稿のカテゴリ・タグ・キャラクター判定ロジック（共通化）
+│       └── syndication.mjs      # syndication API から正確な本文・ハッシュタグ・画像URLを取得
 ├── .github/
 │   └── workflows/
 │       ├── deploy.yml           # GitHub Pages デプロイ（main push / Update Data 完了時）
@@ -104,8 +107,8 @@ chiikawa-archive/
 
 | URL | ページ | 内容 |
 |-----|--------|------|
-| `/` | 観測所トップ | 今日の更新・最近の投稿・最新ニュース・更新カレンダー |
-| `/archive` | 投稿アーカイブ | カレンダー選択＋カテゴリフィルタで全投稿を閲覧 |
+| `/` | トップ | 今日の更新・最近の投稿・最新ニュース・更新カレンダー |
+| `/archive` | 投稿アーカイブ | カレンダー選択＋カテゴリフィルタで全投稿を閲覧（投稿は古い順に表示） |
 | `/news` | ニュース | Google Alerts で収集したちいかわ関連ニュース |
 | `/search` | 検索 | キャラクター名・タグ・カテゴリで投稿を全文検索 |
 | `/stats` | 統計 | 月別推移・カテゴリ内訳・曜日別・TOP10・キャラ登場回数 |
@@ -129,6 +132,8 @@ chiikawa-archive/
 
 `platform.twitter.com/widgets.js` を読み込んで公式Xの埋め込みツイートを描画する。同時に複数マウントされても `<script>` タグが重複挿入されないよう、読み込み Promise をモジュールスコープで共有している。
 
+画像1枚のみの投稿は X埋め込みウィジェットが縦長画像の上下をトリミングしてしまうことがあるため、`photoUrl`（元画像URL）が渡された場合は widgets.js を使わず `<img>` で元画像を直接表示する。画像が複数枚の投稿は従来通りX埋め込みを使用する。
+
 ---
 
 ## データ構造
@@ -148,7 +153,8 @@ chiikawa-archive/
       "category": "manga",        // manga | goods | anime | collab | event | other
       "characters": ["ちいかわ", "ハチワレ"],
       "tags": ["更新"],
-      "summary": "ちいかわが..."
+      "summary": "ちいかわが...",
+      "photoUrl": null            // 画像1枚のみの投稿は元画像URL。複数枚 or 画像なしは null
     }
   ],
   "calendarData": [
@@ -286,7 +292,30 @@ X投稿の取得には自前の RSSHub インスタンスを使用。
 
 ---
 
+## 投稿カテゴリ・タグ判定（scripts/lib/tagging.mjs）
+
+公式Xポストのカテゴリ・タグ・キャラクター判定ロジック。`fetch-posts.mjs` / `fetch-older.mjs` / `add-tweet.mjs` で共通利用する。
+
+カテゴリ判定は優先度順（先勝ち）:
+
+1. **collab** — コラボ, タイアップ, ユニクロ, マクドナルド など
+2. **event** — イベント, ポップアップ, ちいかわらんど など
+3. **goods** — グッズ, 発売, 一番くじ, ぬいぐるみ, フィギュア など（「映画ちいかわ」等がグッズ告知の枕詞になるケースが多いため anime より先に判定）
+4. **anime** — 放送, 配信, アニメちいかわ, 劇場版 など
+5. **manga** — 漫画, まんが, コミック, 単行本 など
+6. **other** — 上記に当てはまらないもの
+
+本文が実質空（絵文字・URL・空白のみ）でメディアが添付されている投稿は、公式アカウントが日々投稿する漫画1コマ切り抜きとみなし `manga` と判定する。「#ちいかわ」のような汎用語句だけでは特定カテゴリに誤判定しないよう、判定キーワードから除外している。
+
+本文・ハッシュタグは RSS の省略（「…」による途中切れ）を避けるため `scripts/lib/syndication.mjs`（`cdn.syndication.twimg.com`、認証不要）経由で取得する。
+
+キャラクタータグ: ちいかわ, ハチワレ, うさぎ, くりまんじゅう, モモンガ, シーサー, もんじゃ, セイレーン, 古本屋, 島二郎
+
+---
+
 ## ニュースカテゴリ判定（fetch-news.mjs）
+
+Google アラートのフィードは概要文だけに「ちいかわ」を含む無関係な記事も混ざるため、**タイトルに「ちいかわ」を含む記事のみ**を取得対象とする（概要文は判定に使わない）。
 
 カテゴリ判定は優先度順（先勝ち）:
 

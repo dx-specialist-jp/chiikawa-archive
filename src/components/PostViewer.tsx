@@ -82,7 +82,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
         if (selectedCategory !== "all" && p.category !== selectedCategory) return false;
         return true;
       })
-      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+      .sort((a, b) => new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime());
   }, [posts, selectedDate, viewYM, selectedCategory]);
 
   const [vYear, vMonth] = viewYM.split("-").map(Number);
