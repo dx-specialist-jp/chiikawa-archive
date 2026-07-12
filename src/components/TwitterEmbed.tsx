@@ -6,7 +6,7 @@ interface TwitterEmbedProps {
   tweetId: string;
   url?: string;
   className?: string;
-  photoUrl?: string | null;
+  hasSinglePhoto?: boolean;
 }
 
 declare global {
@@ -42,12 +42,11 @@ function loadWidgetsScript(): Promise<void> {
   return widgetsScriptPromise;
 }
 
-export default function TwitterEmbed({ tweetId, url, className, photoUrl }: TwitterEmbedProps) {
+export default function TwitterEmbed({ tweetId, url, className, hasSinglePhoto }: TwitterEmbedProps) {
   const tweetUrl = url ?? `https://x.com/i/web/status/${tweetId}`;
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (photoUrl) return; // 画像を直接表示する場合は widgets.js 不要
     const container = containerRef.current;
     if (!container) return;
 
@@ -65,40 +64,38 @@ export default function TwitterEmbed({ tweetId, url, className, photoUrl }: Twit
     return () => {
       cancelled = true;
     };
-  }, [tweetId, photoUrl]);
-
-  // 画像1枚のみの投稿は、X埋め込みウィジェットが縦長画像の上下をトリミングして
-  // 表示することがあるため、元画像を直接 <img> で表示し常に全体が見えるようにする
-  if (photoUrl) {
-    return (
-      <a
-        href={tweetUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`block rounded-2xl overflow-hidden border border-warm-border ${className ?? ""}`}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={photoUrl} alt="" className="w-full h-auto block" loading="lazy" />
-      </a>
-    );
-  }
+  }, [tweetId]);
 
   return (
-    <div ref={containerRef} className={className}>
-      <blockquote
-        className="twitter-tweet"
-        data-dnt="true"
-        data-theme="light"
-        data-width="550"
-      >
+    <div className={className}>
+      {hasSinglePhoto && (
+        // X公式の埋め込みウィジェットは縦長画像の上下をトリミングして表示することがあるため、
+        // 画像を自前で表示するのではなく、X上の元画像ページへのリンクを埋め込みの上に明示する
         <a
-          href={tweetUrl}
+          href={`${tweetUrl}/photo/1`}
           target="_blank"
           rel="noopener noreferrer"
+          className="mb-2 inline-flex items-center gap-1 text-xs font-medium bg-mint-100 text-mint-500 px-2.5 py-1 rounded-full hover:bg-mint-200"
         >
-          Xで投稿を見る
+          画像が見切れている場合はXで元画像を見る ↗
         </a>
-      </blockquote>
+      )}
+      <div ref={containerRef}>
+        <blockquote
+          className="twitter-tweet"
+          data-dnt="true"
+          data-theme="light"
+          data-width="550"
+        >
+          <a
+            href={tweetUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xで投稿を見る
+          </a>
+        </blockquote>
+      </div>
     </div>
   );
 }
