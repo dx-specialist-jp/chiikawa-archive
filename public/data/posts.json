@@ -1,7 +1,45 @@
 {
-  "lastUpdated": "2026-07-12T19:58:32.898Z",
-  "totalPosts": 904,
+  "lastUpdated": "2026-07-13T18:20:26.848Z",
+  "totalPosts": 907,
   "posts": [
+    {
+      "id": "post-2076692019922321589",
+      "tweetId": "2076692019922321589",
+      "url": "https://x.com/ngnchiikawa/status/2076692019922321589",
+      "publishedAt": "2026-07-13T15:35:35.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HNHkYrDbMAAzB15.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2076676717142561185",
+      "tweetId": "2076676717142561185",
+      "url": "https://x.com/ngnchiikawa/status/2076676717142561185",
+      "publishedAt": "2026-07-13T09:16:14.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNGBQ8FbcAAdtyi.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2076676592680808771",
+      "tweetId": "2076676592680808771",
+      "url": "https://x.com/ngnchiikawa/status/2076676592680808771",
+      "publishedAt": "2026-07-13T09:00:01.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNFZpF8aIAAHZD6.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2076349967539859952",
       "tweetId": "2076349967539859952",
@@ -11762,9 +11800,17 @@
   ],
   "calendarData": [
     {
-      "date": "2026-07-13",
+      "date": "2026-07-14",
       "count": 1,
       "categories": [
+        "manga"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "count": 3,
+      "categories": [
+        "anime",
         "manga"
       ]
     },
