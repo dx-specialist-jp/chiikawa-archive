@@ -1,7 +1,23 @@
 {
-  "lastUpdated": "2026-07-13T18:20:26.848Z",
-  "totalPosts": 907,
+  "lastUpdated": "2026-07-14T20:22:05.258Z",
+  "totalPosts": 909,
   "posts": [
+    {
+      "id": "post-2077040441426579756",
+      "tweetId": "2077040441426579756",
+      "url": "https://x.com/ngnchiikawa/status/2077040441426579756",
+      "publishedAt": "2026-07-14T09:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNFTYmga0AAyb-F.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2076692019922321589",
       "tweetId": "2076692019922321589",
@@ -59,6 +75,22 @@
       "tags": [],
       "characters": [],
       "photoUrl": "https://pbs.twimg.com/media/HM858SMbMAAjJeR.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2077040422837436455",
+      "tweetId": "2077040422837436455",
+      "url": "https://x.com/ngnchiikawa/status/2077040422837436455",
+      "publishedAt": "2026-07-11T02:51:08.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ",
+        "ちいかわマーケット"
+      ],
+      "characters": [
+        "ちいかわ",
+        "セイレーン"
+      ],
+      "photoUrl": null
     },
     {
       "id": "post-2075587313384800406",
@@ -11801,8 +11833,9 @@
   "calendarData": [
     {
       "date": "2026-07-14",
-      "count": 1,
+      "count": 2,
       "categories": [
+        "anime",
         "manga"
       ]
     },
@@ -11816,9 +11849,10 @@
     },
     {
       "date": "2026-07-11",
-      "count": 1,
+      "count": 2,
       "categories": [
-        "manga"
+        "manga",
+        "goods"
       ]
     },
     {
