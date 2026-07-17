@@ -1,7 +1,66 @@
 {
-  "lastUpdated": "2026-07-17T07:35:54.031Z",
-  "totalPosts": 914,
+  "lastUpdated": "2026-07-17T12:20:17.688Z",
+  "totalPosts": 918,
   "posts": [
+    {
+      "id": "post-2078082323841679687",
+      "tweetId": "2078082323841679687",
+      "url": "https://x.com/ngnchiikawa/status/2078082323841679687",
+      "publishedAt": "2026-07-17T11:40:09.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNbU3ApakAEj8Ue.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2078072730990297526",
+      "tweetId": "2078072730990297526",
+      "url": "https://x.com/ngnchiikawa/status/2078072730990297526",
+      "publishedAt": "2026-07-17T10:30:00.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "セイレーン"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNZns3zaMAAduga.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2078055411836662065",
+      "tweetId": "2078055411836662065",
+      "url": "https://x.com/ngnchiikawa/status/2078055411836662065",
+      "publishedAt": "2026-07-17T09:00:01.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNZ2wS7bEAA4QZb.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2078055393994104991",
+      "tweetId": "2078055393994104991",
+      "url": "https://x.com/ngnchiikawa/status/2078055393994104991",
+      "publishedAt": "2026-07-17T09:00:01.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNQRbAgbAAAK9N_.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2078008795343761790",
       "tweetId": "2078008795343761790",
@@ -11899,8 +11958,10 @@
   "calendarData": [
     {
       "date": "2026-07-17",
-      "count": 1,
+      "count": 5,
       "categories": [
+        "anime",
+        "goods",
         "collab"
       ]
     },
