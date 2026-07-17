@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-07-16T13:07:16.213Z",
-  "totalPosts": 913,
+  "lastUpdated": "2026-07-17T07:35:54.031Z",
+  "totalPosts": 914,
   "posts": [
+    {
+      "id": "post-2078008795343761790",
+      "tweetId": "2078008795343761790",
+      "url": "https://x.com/ngnchiikawa/status/2078008795343761790",
+      "publishedAt": "2026-07-17T05:00:21.000Z",
+      "category": "collab",
+      "tags": [
+        "映画ちいかわ",
+        "横浜"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNZ5WIbbMAAb9Zi.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2077704742067904960",
       "tweetId": "2077704742067904960",
@@ -11882,6 +11897,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-17",
+      "count": 1,
+      "categories": [
+        "collab"
+      ]
+    },
     {
       "date": "2026-07-16",
       "count": 2,
