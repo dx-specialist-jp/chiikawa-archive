@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-07-19T11:41:44.788Z",
-  "totalPosts": 921,
+  "lastUpdated": "2026-07-19T15:34:31.018Z",
+  "totalPosts": 923,
   "posts": [
+    {
+      "id": "post-2078845951389954405",
+      "tweetId": "2078845951389954405",
+      "url": "https://x.com/ngnchiikawa/status/2078845951389954405",
+      "publishedAt": "2026-07-19T14:14:32.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HNmLX3ObYAAubBi.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2078796814942421057",
       "tweetId": "2078796814942421057",
@@ -15,6 +25,23 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HNlerxGbkAIw_Al.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2078845277054947513",
+      "tweetId": "2078845277054947513",
+      "url": "https://x.com/ngnchiikawa/status/2078845277054947513",
+      "publishedAt": "2026-07-19T09:00:01.000Z",
+      "category": "anime",
+      "tags": [
+        "めざましテレビ",
+        "ノンストップ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNkXrPla8AAQP53.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2078479181508419948",
@@ -11996,8 +12023,9 @@
   "calendarData": [
     {
       "date": "2026-07-19",
-      "count": 1,
+      "count": 3,
       "categories": [
+        "manga",
         "anime"
       ]
     },
