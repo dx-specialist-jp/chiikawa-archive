@@ -1,7 +1,35 @@
 {
-  "lastUpdated": "2026-07-19T15:34:31.018Z",
-  "totalPosts": 923,
+  "lastUpdated": "2026-07-20T10:35:00.789Z",
+  "totalPosts": 927,
   "posts": [
+    {
+      "id": "post-2079143160736067833",
+      "tweetId": "2079143160736067833",
+      "url": "https://x.com/ngnchiikawa/status/2079143160736067833",
+      "publishedAt": "2026-07-20T09:00:00.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNbXgivbYAAGt54.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2079078625769656804",
+      "tweetId": "2079078625769656804",
+      "url": "https://x.com/ngnchiikawa/status/2079078625769656804",
+      "publishedAt": "2026-07-20T03:00:02.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNn-o7FbMAAYIka.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2078845951389954405",
       "tweetId": "2078845951389954405",
@@ -152,6 +180,20 @@
       "photoUrl": "https://pbs.twimg.com/media/HNV9cyqbYAAlT0d.jpg?format=jpg&name=large"
     },
     {
+      "id": "post-2079143634868531529",
+      "tweetId": "2079143634868531529",
+      "url": "https://x.com/ngnchiikawa/status/2079143634868531529",
+      "publishedAt": "2026-07-16T09:01:00.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
       "id": "post-2077704112322527608",
       "tweetId": "2077704112322527608",
       "url": "https://x.com/ngnchiikawa/status/2077704112322527608",
@@ -161,6 +203,20 @@
         "ちいかわパーク",
         "Chiikawapark",
         "ちいかわパーク1周年"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2079078552734237065",
+      "tweetId": "2079078552734237065",
+      "url": "https://x.com/ngnchiikawa/status/2079078552734237065",
+      "publishedAt": "2026-07-16T03:00:00.000Z",
+      "category": "goods",
+      "tags": [
+        "エニマイくじ"
       ],
       "characters": [
         "ちいかわ"
@@ -12022,6 +12078,14 @@
   ],
   "calendarData": [
     {
+      "date": "2026-07-20",
+      "count": 2,
+      "categories": [
+        "anime",
+        "goods"
+      ]
+    },
+    {
       "date": "2026-07-19",
       "count": 3,
       "categories": [
@@ -12048,7 +12112,7 @@
     },
     {
       "date": "2026-07-16",
-      "count": 2,
+      "count": 4,
       "categories": [
         "manga",
         "goods"
