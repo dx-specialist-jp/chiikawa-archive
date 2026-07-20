@@ -1,7 +1,35 @@
 {
-  "lastUpdated": "2026-07-20T10:35:00.789Z",
-  "totalPosts": 927,
+  "lastUpdated": "2026-07-20T17:10:09.918Z",
+  "totalPosts": 929,
   "posts": [
+    {
+      "id": "post-2079207236040331485",
+      "tweetId": "2079207236040331485",
+      "url": "https://x.com/ngnchiikawa/status/2079207236040331485",
+      "publishedAt": "2026-07-20T12:00:01.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2079170990748426489",
+      "tweetId": "2079170990748426489",
+      "url": "https://x.com/ngnchiikawa/status/2079170990748426489",
+      "publishedAt": "2026-07-20T11:46:07.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNqy_vTaIAAkdA4.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2079143160736067833",
       "tweetId": "2079143160736067833",
@@ -12079,10 +12107,10 @@
   "calendarData": [
     {
       "date": "2026-07-20",
-      "count": 2,
+      "count": 4,
       "categories": [
-        "anime",
-        "goods"
+        "goods",
+        "anime"
       ]
     },
     {
