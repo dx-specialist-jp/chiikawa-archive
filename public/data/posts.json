@@ -1,7 +1,23 @@
 {
-  "lastUpdated": "2026-07-24T06:28:40.911Z",
-  "totalPosts": 941,
+  "lastUpdated": "2026-07-24T17:40:26.629Z",
+  "totalPosts": 942,
   "posts": [
+    {
+      "id": "post-2080664922678313187",
+      "tweetId": "2080664922678313187",
+      "url": "https://x.com/ngnchiikawa/status/2080664922678313187",
+      "publishedAt": "2026-07-24T03:00:01.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ",
+        "Cypic",
+        "サイピク"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNzGIvuacAAb_UB.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2080405401024266598",
       "tweetId": "2080405401024266598",
@@ -12274,7 +12290,7 @@
   "calendarData": [
     {
       "date": "2026-07-24",
-      "count": 1,
+      "count": 2,
       "categories": [
         "anime"
       ]
