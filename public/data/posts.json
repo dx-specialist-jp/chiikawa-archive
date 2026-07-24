@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-24T02:51:16.199Z",
-  "totalPosts": 940,
+  "lastUpdated": "2026-07-24T06:28:40.911Z",
+  "totalPosts": 941,
   "posts": [
     {
       "id": "post-2080405401024266598",
@@ -15,6 +15,20 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HN8Vr4pbEAAfCzM.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2080499136819016143",
+      "tweetId": "2080499136819016143",
+      "url": "https://x.com/ngnchiikawa/status/2080499136819016143",
+      "publishedAt": "2026-07-23T11:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
     },
     {
       "id": "post-2080225048061964695",
@@ -12267,7 +12281,7 @@
     },
     {
       "date": "2026-07-23",
-      "count": 3,
+      "count": 4,
       "categories": [
         "anime",
         "manga"
