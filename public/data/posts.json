@@ -1,7 +1,21 @@
 {
-  "lastUpdated": "2026-07-24T17:40:26.629Z",
-  "totalPosts": 942,
+  "lastUpdated": "2026-07-25T02:50:18.960Z",
+  "totalPosts": 944,
   "posts": [
+    {
+      "id": "post-2080842419466371350",
+      "tweetId": "2080842419466371350",
+      "url": "https://x.com/ngnchiikawa/status/2080842419466371350",
+      "publishedAt": "2026-07-25T02:00:00.000Z",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HOCBK_aaoAE7Rie.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2080664922678313187",
       "tweetId": "2080664922678313187",
@@ -31,6 +45,20 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HN8Vr4pbEAAfCzM.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2080802513843028408",
+      "tweetId": "2080802513843028408",
+      "url": "https://x.com/ngnchiikawa/status/2080802513843028408",
+      "publishedAt": "2026-07-23T12:38:29.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
     },
     {
       "id": "post-2080499136819016143",
@@ -12289,6 +12317,13 @@
   ],
   "calendarData": [
     {
+      "date": "2026-07-25",
+      "count": 1,
+      "categories": [
+        "goods"
+      ]
+    },
+    {
       "date": "2026-07-24",
       "count": 2,
       "categories": [
@@ -12297,7 +12332,7 @@
     },
     {
       "date": "2026-07-23",
-      "count": 4,
+      "count": 5,
       "categories": [
         "anime",
         "manga"
