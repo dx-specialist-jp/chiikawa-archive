@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-25T02:50:18.960Z",
-  "totalPosts": 944,
+  "lastUpdated": "2026-07-26T06:39:25.365Z",
+  "totalPosts": 946,
   "posts": [
     {
       "id": "post-2080842419466371350",
@@ -17,6 +17,20 @@
       "photoUrl": "https://pbs.twimg.com/media/HOCBK_aaoAE7Rie.jpg?format=jpg&name=large"
     },
     {
+      "id": "post-2081220618796908807",
+      "tweetId": "2081220618796908807",
+      "url": "https://x.com/ngnchiikawa/status/2081220618796908807",
+      "publishedAt": "2026-07-24T09:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNy_W8lb0AAtDBd.jpg?format=jpg&name=large"
+    },
+    {
       "id": "post-2080664922678313187",
       "tweetId": "2080664922678313187",
       "url": "https://x.com/ngnchiikawa/status/2080664922678313187",
@@ -31,6 +45,21 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HNzGIvuacAAb_UB.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2081220679828164780",
+      "tweetId": "2081220679828164780",
+      "url": "https://x.com/ngnchiikawa/status/2081220679828164780",
+      "publishedAt": "2026-07-24T02:00:01.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "島二郎"
+      ],
+      "photoUrl": null
     },
     {
       "id": "post-2080405401024266598",
@@ -12325,7 +12354,7 @@
     },
     {
       "date": "2026-07-24",
-      "count": 2,
+      "count": 4,
       "categories": [
         "anime"
       ]
