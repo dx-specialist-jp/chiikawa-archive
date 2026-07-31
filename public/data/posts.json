@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-07-31T10:42:36.302Z",
-  "totalPosts": 958,
+  "lastUpdated": "2026-07-31T14:12:45.848Z",
+  "totalPosts": 960,
   "posts": [
+    {
+      "id": "post-2083184655428366657",
+      "tweetId": "2083184655428366657",
+      "url": "https://x.com/ngnchiikawa/status/2083184655428366657",
+      "publishedAt": "2026-07-31T13:35:00.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HOj1ZrLawAAKpRj.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2083184241832231076",
+      "tweetId": "2083184241832231076",
+      "url": "https://x.com/ngnchiikawa/status/2083184241832231076",
+      "publishedAt": "2026-07-31T09:00:16.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HOizFl2bcAAQ8Os.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2082831628813082901",
       "tweetId": "2082831628813082901",
@@ -12494,6 +12519,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-07-31",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-07-30",
       "count": 4,
