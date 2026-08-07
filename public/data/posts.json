@@ -1,7 +1,256 @@
 {
-  "lastUpdated": "2026-07-31T14:12:45.848Z",
-  "totalPosts": 960,
+  "lastUpdated": "2026-08-07T12:38:46.098Z",
+  "totalPosts": 978,
   "posts": [
+    {
+      "id": "post-2085654268707750157",
+      "tweetId": "2085654268707750157",
+      "url": "https://x.com/ngnchiikawa/status/2085654268707750157",
+      "publishedAt": "2026-08-07T09:00:05.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ",
+        "モモンガ",
+        "古本屋"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HPG2NjhbYAAWE32.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2085654401780482463",
+      "tweetId": "2085654401780482463",
+      "url": "https://x.com/ngnchiikawa/status/2085654401780482463",
+      "publishedAt": "2026-08-07T03:00:04.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ",
+        "セイレーン",
+        "島二郎"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2085353691155239302",
+      "tweetId": "2085353691155239302",
+      "url": "https://x.com/ngnchiikawa/status/2085353691155239302",
+      "publishedAt": "2026-08-06T09:00:04.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HPBspdDaMAA9Bz8.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084989690982367319",
+      "tweetId": "2084989690982367319",
+      "url": "https://x.com/ngnchiikawa/status/2084989690982367319",
+      "publishedAt": "2026-08-05T10:25:00.000Z",
+      "category": "other",
+      "tags": [
+        "ちいかわパーク",
+        "Chiikawapark",
+        "ちいかわパーク1周年"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HO85OlLawAEnBrS.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2085353738940948688",
+      "tweetId": "2085353738940948688",
+      "url": "https://x.com/ngnchiikawa/status/2085353738940948688",
+      "publishedAt": "2026-08-05T06:00:00.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ",
+        "プライズ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2084989826412277979",
+      "tweetId": "2084989826412277979",
+      "url": "https://x.com/ngnchiikawa/status/2084989826412277979",
+      "publishedAt": "2026-08-05T02:02:24.000Z",
+      "category": "collab",
+      "tags": [
+        "映画ちいかわ",
+        "ココイチ",
+        "ちいかわカレー大作戦"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HO7G1C7a4AAReM8.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084659637857698102",
+      "tweetId": "2084659637857698102",
+      "url": "https://x.com/ngnchiikawa/status/2084659637857698102",
+      "publishedAt": "2026-08-04T15:16:03.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HO4y4_nbkAAYg8T.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084989880107712819",
+      "tweetId": "2084989880107712819",
+      "url": "https://x.com/ngnchiikawa/status/2084989880107712819",
+      "publishedAt": "2026-08-04T09:00:21.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HO3c5qtaYAAL9Ab.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084657723300552825",
+      "tweetId": "2084657723300552825",
+      "url": "https://x.com/ngnchiikawa/status/2084657723300552825",
+      "publishedAt": "2026-08-04T09:00:05.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "モモンガ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HO3Zb09bQAAWQup.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084283035298758705",
+      "tweetId": "2084283035298758705",
+      "url": "https://x.com/ngnchiikawa/status/2084283035298758705",
+      "publishedAt": "2026-08-03T14:19:34.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HOzcX0-bIAABpQP.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084267982344380779",
+      "tweetId": "2084267982344380779",
+      "url": "https://x.com/ngnchiikawa/status/2084267982344380779",
+      "publishedAt": "2026-08-03T09:00:05.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HOyP5o-bkAA4s0l.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084281751241904223",
+      "tweetId": "2084281751241904223",
+      "url": "https://x.com/ngnchiikawa/status/2084281751241904223",
+      "publishedAt": "2026-08-03T07:10:00.000Z",
+      "category": "other",
+      "tags": [
+        "ちいぽけ夏まつり2026",
+        "青森ねぶた祭",
+        "ちいぽけねぶた",
+        "ちいぽけ"
+      ],
+      "characters": [],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2084197697398190449",
+      "tweetId": "2084197697398190449",
+      "url": "https://x.com/ngnchiikawa/status/2084197697398190449",
+      "publishedAt": "2026-08-03T06:00:01.000Z",
+      "category": "collab",
+      "tags": [
+        "ANA"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HOjGXyoaYAAFUyI.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084113396098806046",
+      "tweetId": "2084113396098806046",
+      "url": "https://x.com/ngnchiikawa/status/2084113396098806046",
+      "publishedAt": "2026-08-03T01:10:00.000Z",
+      "category": "anime",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "うさぎ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2084267909132759228",
+      "tweetId": "2084267909132759228",
+      "url": "https://x.com/ngnchiikawa/status/2084267909132759228",
+      "publishedAt": "2026-08-03T01:00:00.000Z",
+      "category": "event",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2084113453737037946",
+      "tweetId": "2084113453737037946",
+      "url": "https://x.com/ngnchiikawa/status/2084113453737037946",
+      "publishedAt": "2026-08-03T01:00:00.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HOwXZ2nbcAANlJV.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2083807594662228194",
+      "tweetId": "2083807594662228194",
+      "url": "https://x.com/ngnchiikawa/status/2083807594662228194",
+      "publishedAt": "2026-08-02T03:08:33.000Z",
+      "category": "event",
+      "tags": [
+        "ちいぽけ夏まつり2026",
+        "青森ねぶた祭",
+        "ちいぽけねぶた",
+        "ちいぽけ",
+        "ちいかわぽけっと"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2083184655428366657",
       "tweetId": "2083184655428366657",
@@ -189,6 +438,22 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HOCBK_aaoAE7Rie.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2084267851473691083",
+      "tweetId": "2084267851473691083",
+      "url": "https://x.com/ngnchiikawa/status/2084267851473691083",
+      "publishedAt": "2026-07-25T00:11:00.000Z",
+      "category": "anime",
+      "tags": [
+        "ちいかわおばけの森",
+        "お台場ファンライジング",
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
     },
     {
       "id": "post-2081220618796908807",
@@ -12520,6 +12785,55 @@
   ],
   "calendarData": [
     {
+      "date": "2026-08-07",
+      "count": 2,
+      "categories": [
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "count": 4,
+      "categories": [
+        "other",
+        "anime",
+        "collab",
+        "manga"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "count": 2,
+      "categories": [
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "count": 7,
+      "categories": [
+        "manga",
+        "anime",
+        "other",
+        "collab",
+        "event"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "count": 1,
+      "categories": [
+        "event"
+      ]
+    },
+    {
       "date": "2026-07-31",
       "count": 2,
       "categories": [
@@ -12568,9 +12882,10 @@
     },
     {
       "date": "2026-07-25",
-      "count": 1,
+      "count": 2,
       "categories": [
-        "goods"
+        "goods",
+        "anime"
       ]
     },
     {
