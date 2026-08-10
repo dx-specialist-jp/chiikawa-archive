@@ -1,7 +1,53 @@
 {
-  "lastUpdated": "2026-08-10T05:28:36.914Z",
-  "totalPosts": 981,
+  "lastUpdated": "2026-08-10T13:13:49.534Z",
+  "totalPosts": 984,
   "posts": [
+    {
+      "id": "post-2086778729410490745",
+      "tweetId": "2086778729410490745",
+      "url": "https://x.com/ngnchiikawa/status/2086778729410490745",
+      "publishedAt": "2026-08-10T11:00:00.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HPVvOdWaoAAKyVO.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2086765476584239546",
+      "tweetId": "2086765476584239546",
+      "url": "https://x.com/ngnchiikawa/status/2086765476584239546",
+      "publishedAt": "2026-08-10T09:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HPWTELqaAAAhWDw.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2086765538379022592",
+      "tweetId": "2086765538379022592",
+      "url": "https://x.com/ngnchiikawa/status/2086765538379022592",
+      "publishedAt": "2026-08-10T03:00:01.000Z",
+      "category": "goods",
+      "tags": [
+        "ちいぽけ",
+        "ちいかわぽけっと",
+        "ちいぽけグッズ",
+        "恐竜ちいぽけ",
+        "アリスちいぽけ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2086653792133779637",
       "tweetId": "2086653792133779637",
@@ -12818,8 +12864,10 @@
   "calendarData": [
     {
       "date": "2026-08-10",
-      "count": 1,
+      "count": 4,
       "categories": [
+        "anime",
+        "goods",
         "collab"
       ]
     },
