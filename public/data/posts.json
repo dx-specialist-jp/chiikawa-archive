@@ -1,7 +1,19 @@
 {
-  "lastUpdated": "2026-08-07T16:56:29.450Z",
-  "totalPosts": 980,
+  "lastUpdated": "2026-08-10T05:28:36.914Z",
+  "totalPosts": 981,
   "posts": [
+    {
+      "id": "post-2086653792133779637",
+      "tweetId": "2086653792133779637",
+      "url": "https://x.com/ngnchiikawa/status/2086653792133779637",
+      "publishedAt": "2026-08-10T01:00:01.000Z",
+      "category": "collab",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HNaYv69a4AEpUjj.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2085722986490052885",
       "tweetId": "2085722986490052885",
@@ -12804,6 +12816,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-08-10",
+      "count": 1,
+      "categories": [
+        "collab"
+      ]
+    },
     {
       "date": "2026-08-07",
       "count": 4,
