@@ -92,15 +92,13 @@ chiikawa-archive/
 ├── scripts/
 │   ├── fetch-posts.mjs          # RSSHub からX投稿を定期取得（update-data.yml から実行）
 │   ├── fetch-news.mjs           # Google Alerts RSS からニュースを定期取得
-│   ├── fetch-gallery.mjs        # 承認済みギャラリー投稿（Tally）を定期取得
+│   ├── fetch-gallery.mjs        # ギャラリー投稿（Tally）を定期取得・自動公開
 │   ├── fetch-older.mjs          # 過去投稿の一括取得（一回限り、import-history.yml から実行）
 │   ├── add-tweet.mjs            # 単一ツイートの手動追加用
 │   └── lib/
 │       ├── tagging.mjs          # 投稿のカテゴリ・タグ・キャラクター判定ロジック（共通化）
 │       ├── syndication.mjs      # syndication API から正確な本文・ハッシュタグ・画像URLを取得
 │       └── tally.mjs            # Tally APIから回答を取得する共通ヘルパー
-├── moderation/
-│   └── gallery-approved.json    # ギャラリー投稿の承認リスト（管理者が手動編集、公開サイトには含まれない）
 ├── .github/
 │   └── workflows/
 │       ├── deploy.yml           # GitHub Pages デプロイ（main push / Update Data 完了時）
@@ -123,7 +121,7 @@ chiikawa-archive/
 | `/news` | ニュース | Google Alerts で収集したちいかわ関連ニュース |
 | `/search` | 検索 | キャラクター名・タグ・カテゴリで投稿を全文検索 |
 | `/stats` | 統計 | 月別推移・カテゴリ内訳・曜日別・TOP10・キャラ登場回数 |
-| `/gallery` | ギャラリー | グッズ・イベント写真のファン投稿ギャラリー（Tally経由・承認制・アカウント不要） |
+| `/gallery` | ギャラリー | グッズ・イベント写真のファン投稿ギャラリー（Tally経由・自動公開・アカウント不要） |
 | `/rights` | 権利者様へ | 著作権・問い合わせ先の説明 |
 | `/contact` | お問い合わせ | GitHub Issues へのリンク |
 
@@ -233,9 +231,9 @@ Tallyフォームのフィールド仕様（変更する場合は `scripts/fetch
 | コメント投稿フォーム | `image_id` | Hidden field | — |
 | コメント投稿フォーム | `コメント` | Long text | Yes |
 
-管理者はTally自身のダッシュボード（本人のTallyアカウントのみが閲覧可能）で投稿内容を確認し、公開してよいものだけ回答IDを `moderation/gallery-approved.json`（`public/` 配下ではないため静的サイトには一切含まれない）に追記してコミットする。`update-data.yml`（4時間ごと、または手動実行）が `scripts/fetch-gallery.mjs` を実行し、承認済みIDのみを `gallery.json` に反映する。
+投稿は事前承認なしで自動的に公開される。`update-data.yml`（4時間ごと、または手動実行）が `scripts/fetch-gallery.mjs` を実行し、Tallyの完了済み回答をすべて `gallery.json` に反映する（画像ファイルの `mimeType` が `image/*` でないものは自動的に除外する）。
 
-**未承認の投稿はリポジトリにもサイトにも一切現れない**（Tallyのダッシュボード内にのみ存在する）。
+不適切な投稿を見つけた場合は、管理者がTallyのダッシュボードで該当の回答を削除すれば、次回の同期時にギャラリーからも自動的に消える。公開・削除ともに同期のタイムラグ（最大4時間、手動実行で短縮可）がある点に留意する。
 
 ---
 
