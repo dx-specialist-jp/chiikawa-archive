@@ -60,6 +60,29 @@ export default function RightsPage() {
         </div>
 
         <div className="card p-6">
+          <h2 className="font-medium text-warm-text mb-4 tracking-wide">ギャラリー投稿機能について</h2>
+          <p className="text-sm text-warm-muted mb-3 leading-relaxed">
+            ユーザーが自分で購入したグッズ・参加したイベントの写真を投稿できる
+            <Link href="/gallery" className="text-mint-500 hover:underline mx-1">Gallery</Link>
+            機能があります。投稿された写真にはグッズに印字された公式イラスト等が写り込む場合があります。投稿はGitHub Issueとして受け付けており、外部サービスへの保存は行っていません。
+          </p>
+          <ul className="space-y-3">
+            {[
+              "投稿はすべてGitHub Issue上で管理者が内容を確認した上で公開する承認制",
+              "個人の記念写真の範囲に限定し、公式アートの転載や第三者の写真の投稿は禁止",
+              "権利者様からの削除依頼があれば画像・コメントを速やかに削除",
+            ].map((text, i) => (
+              <li key={i} className="flex items-start gap-3 text-sm text-warm-text">
+                <span className="w-4 h-4 rounded-full border border-mint-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-mint-400" />
+                </span>
+                <span>{text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="card p-6">
           <h2 className="font-medium text-warm-text mb-4 tracking-wide">権利侵害・不適切掲載のご連絡</h2>
           <p className="text-sm text-warm-muted mb-4 leading-relaxed">
             権利侵害または不適切な掲載がございましたら、お問い合わせページよりご連絡ください。

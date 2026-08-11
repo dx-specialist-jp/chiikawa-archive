@@ -56,3 +56,34 @@ export interface NewsData {
   totalArticles: number;
   articles: NewsArticle[];
 }
+
+export type GalleryCategory = "goods" | "event" | "other";
+
+export const GALLERY_CATEGORY_LABELS: Record<GalleryCategory, string> = {
+  goods: "グッズ",
+  event: "イベント",
+  other: "その他",
+};
+
+export interface GalleryComment {
+  id: string;
+  body: string;
+  createdAt: string;
+}
+
+export interface GalleryImage {
+  id: string;
+  issueNumber: number;
+  issueUrl: string;
+  imageUrl: string;
+  caption: string | null;
+  category: GalleryCategory;
+  createdAt: string;
+  comments: GalleryComment[];
+}
+
+export interface GalleryData {
+  lastUpdated: string;
+  totalImages: number;
+  images: GalleryImage[];
+}

@@ -63,6 +63,7 @@ chiikawa-archive/
 │   │   ├── news/page.tsx        # ニュース一覧
 │   │   ├── search/page.tsx      # 全文検索（クライアントサイド）
 │   │   ├── stats/page.tsx       # 統計ダッシュボード
+│   │   ├── gallery/page.tsx     # ファン投稿ギャラリー
 │   │   ├── rights/page.tsx      # 権利者様へ
 │   │   └── contact/page.tsx     # お問い合わせ
 │   ├── components/              # 共通UIコンポーネント
@@ -78,27 +79,33 @@ chiikawa-archive/
 │   │   ├── NewsViewer.tsx       # ニュース表示（クライアント）
 │   │   ├── SearchViewer.tsx     # 検索UI（クライアント）
 │   │   ├── GrassBackground.tsx  # 背景画像レイヤー
-│   │   └── BackToTop.tsx        # トップへ戻るボタン
+│   │   ├── BackToTop.tsx        # トップへ戻るボタン
+│   │   └── gallery/              # ギャラリー関連（GalleryGrid/Lightbox/CommentThread/UploadForm/GuidelineNotice）
 │   └── types/
-│       └── index.ts             # 型定義（Post, SiteData, NewsData など）
+│       └── index.ts             # 型定義（Post, SiteData, NewsData, GalleryImage など）
 ├── public/
 │   └── data/
 │       ├── posts.json           # X投稿データ（自動更新）
 │       ├── news.json            # Google Alerts ニュース（自動更新）
+│       ├── gallery.json         # ファン投稿ギャラリーデータ（自動更新）
 │       └── episodes.json        # 未使用（削除候補）
 ├── scripts/
 │   ├── fetch-posts.mjs          # RSSHub からX投稿を定期取得（update-data.yml から実行）
 │   ├── fetch-news.mjs           # Google Alerts RSS からニュースを定期取得
+│   ├── fetch-gallery.mjs        # 承認済みギャラリー投稿（GitHub Issues）を定期取得
 │   ├── fetch-older.mjs          # 過去投稿の一括取得（一回限り、import-history.yml から実行）
 │   ├── add-tweet.mjs            # 単一ツイートの手動追加用
 │   └── lib/
 │       ├── tagging.mjs          # 投稿のカテゴリ・タグ・キャラクター判定ロジック（共通化）
 │       └── syndication.mjs      # syndication API から正確な本文・ハッシュタグ・画像URLを取得
 ├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   └── gallery-submission.yml  # ギャラリー投稿用 Issue Form
 │   └── workflows/
 │       ├── deploy.yml           # GitHub Pages デプロイ（main push / Update Data 完了時）
 │       ├── retry-deploy.yml     # デプロイ失敗時の自動リトライ・Issue通知
-│       ├── update-data.yml      # データ自動更新（4時間ごと）
+│       ├── update-data.yml      # データ自動更新（4時間ごと。ギャラリー同期含む）
+│       ├── gallery-intake.yml   # ギャラリー投稿Issue作成時の画像添付チェック
 │       └── import-history.yml   # 過去データ一括インポート用
 ├── next.config.ts               # Next.js 設定（basePath, output: 'export'）
 ├── tailwind.config.ts           # Tailwind カラーパレット・フォント設定
@@ -116,6 +123,7 @@ chiikawa-archive/
 | `/news` | ニュース | Google Alerts で収集したちいかわ関連ニュース |
 | `/search` | 検索 | キャラクター名・タグ・カテゴリで投稿を全文検索 |
 | `/stats` | 統計 | 月別推移・カテゴリ内訳・曜日別・TOP10・キャラ登場回数 |
+| `/gallery` | ギャラリー | グッズ・イベント写真のファン投稿ギャラリー（GitHub Issues経由・承認制） |
 | `/rights` | 権利者様へ | 著作権・問い合わせ先の説明 |
 | `/contact` | お問い合わせ | GitHub Issues へのリンク |
 
@@ -187,6 +195,37 @@ X公式の埋め込みウィジェットは、縦長画像を持つ投稿で画�
   ]
 }
 ```
+
+### gallery.json
+
+```jsonc
+{
+  "lastUpdated": "2026-08-11T00:00:00.000Z",
+  "totalImages": 12,
+  "images": [
+    {
+      "id": "gallery-42",
+      "issueNumber": 42,
+      "issueUrl": "https://github.com/dx-specialist-jp/chiikawa-archive/issues/42",
+      "imageUrl": "https://github.com/user-attachments/assets/...",
+      "caption": "推しぬいと一緒に",
+      "category": "goods",        // goods | event | other
+      "createdAt": "2026-08-10T09:00:00.000Z",
+      "comments": [
+        { "id": "comment-123", "body": "かわいい！", "createdAt": "2026-08-10T10:00:00.000Z" }
+      ]
+    }
+  ]
+}
+```
+
+#### ギャラリー投稿の仕組み（外部サービス不使用）
+
+ユーザーはグッズ・イベント写真を GitHub の Issue Form（`.github/ISSUE_TEMPLATE/gallery-submission.yml`）から投稿する（GitHubアカウントが必要）。投稿は `gallery-submission` + `pending-review` ラベル付きのIssueとして作成され、`gallery-intake.yml` が画像添付の有無を自動チェックする。
+
+管理者がIssueを確認し、公開してよければ `pending-review` を外して `approved` ラベルを付与する（問題があればクローズして `rejected`）。`update-data.yml`（4時間ごと）が `scripts/fetch-gallery.mjs` を実行し、`approved` ラベル付きIssueとそのコメントを GitHub REST API から取得して `gallery.json` を更新・コミットする。コメントはIssueへの返信がそのまま使われるため、サイト側に別途コメント投稿機能は存在しない（「GitHubでコメントする」ボタンからIssueへ遷移する）。
+
+承認前のIssueはリポジトリの公開Issue一覧としては見える状態になるが、`/gallery` ページには `approved` になるまで一切表示されない。
 
 ---
 

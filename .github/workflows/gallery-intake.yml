@@ -1,0 +1,29 @@
+name: Gallery Submission Intake
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  check-photo-attached:
+    if: contains(github.event.issue.labels.*.name, 'gallery-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for an attached image
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          if echo "$BODY" | grep -qE '!\[[^]]*\]\([^)]+\)|<img[^>]+src='; then
+            echo "画像の添付を確認しました"
+            exit 0
+          fi
+
+          gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body \
+            "画像の添付が確認できませんでした。お手数ですが「写真」欄に画像をドラッグ&ドロップ、またはタップして添付のうえ、コメントで再度お知らせください。"
+          gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-label "needs-info"

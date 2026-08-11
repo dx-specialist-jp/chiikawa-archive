@@ -41,6 +41,14 @@ jobs:
           GOOGLE_ALERTS_RSS_URL: ${{ vars.GOOGLE_ALERTS_RSS_URL }}
         run: node scripts/fetch-news.mjs
 
+      - name: Sync approved gallery submissions
+        id: fetch_gallery
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/fetch-gallery.mjs
+
       - name: Check fetch results
         if: steps.fetch_posts.outcome == 'failure' && steps.fetch_news.outcome == 'failure'
         run: |

@@ -1,0 +1,45 @@
+name: "📷 ギャラリー投稿"
+description: "グッズ・イベント写真を投稿する"
+title: "[Gallery] "
+labels: ["gallery-submission", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        自分が購入したグッズ・参加したイベントの写真を投稿できます。
+        投稿は管理者の確認後にギャラリーへ公開されます。ガイドラインは [こちら](https://dx-specialist-jp.github.io/chiikawa-archive/rights/) もご確認ください。
+  - type: textarea
+    id: photo
+    attributes:
+      label: 写真
+      description: この欄に画像をドラッグ&ドロップ、またはタップして添付してください（1枚）
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: カテゴリ
+      options:
+        - グッズ
+        - イベント
+        - その他
+    validations:
+      required: true
+  - type: input
+    id: caption
+    attributes:
+      label: コメント（任意・140字まで）
+      placeholder: 推しぬいと一緒に…
+    validations:
+      required: false
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: 確認事項
+      options:
+        - label: 自分が購入したグッズ・参加したイベントの個人的な写真です（他人の写真や公式アートの転載ではありません）
+          required: true
+        - label: 他人の顔や個人情報が写り込んでいません
+          required: true
+        - label: 承認後に公開されることを理解しています
+          required: true
