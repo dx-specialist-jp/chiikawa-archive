@@ -2,10 +2,10 @@ import type { GalleryComment } from "@/types";
 
 interface CommentThreadProps {
   comments: GalleryComment[];
-  issueUrl: string;
+  commentFormUrl: string;
 }
 
-export default function CommentThread({ comments, issueUrl }: CommentThreadProps) {
+export default function CommentThread({ comments, commentFormUrl }: CommentThreadProps) {
   return (
     <div className="mt-4 space-y-3">
       <h3 className="text-xs font-medium text-warm-text tracking-wide">
@@ -25,12 +25,12 @@ export default function CommentThread({ comments, issueUrl }: CommentThreadProps
       )}
 
       <a
-        href={issueUrl}
+        href={commentFormUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs font-medium bg-mint-100 text-mint-500 px-3 py-1.5 rounded-full hover:bg-mint-200"
       >
-        GitHubでコメントする ↗
+        コメントする ↗
       </a>
     </div>
   );

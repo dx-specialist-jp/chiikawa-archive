@@ -1,22 +1,28 @@
 /**
- * GitHub Issues（gallery-submission + approved ラベル）からギャラリー投稿とコメントを
- * 取得し gallery.json を更新する
+ * Tally（写真投稿フォーム・コメント投稿フォーム）から承認済みの投稿を取得し gallery.json を更新する
  *
  * 環境変数:
- *   GITHUB_TOKEN      - GitHub API 呼び出し用トークン（必須。Actions では既定の GITHUB_TOKEN でよい）
- *   GITHUB_REPOSITORY - "owner/repo" 形式（Actions では既定で設定される）
+ *   TALLY_API_KEY         - Tally Personal Access Token（必須）
+ *   TALLY_IMAGE_FORM_ID   - 写真投稿フォームのID（必須）
+ *   TALLY_COMMENT_FORM_ID - コメント投稿フォームのID（必須）
+ *
+ * 承認は public/ 配下ではない moderation/gallery-approved.json （管理者が手動編集）で行う。
+ * このファイルに載っていない回答IDはギャラリーに一切反映されない。
  */
 
-import { writeFile, mkdir } from "fs/promises";
+import { writeFile, readFile, mkdir } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { fetchAllSubmissions, findAnswer } from "./lib/tally.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
 const GALLERY_JSON_PATH = join(DATA_DIR, "gallery.json");
+const APPROVED_LIST_PATH = join(__dirname, "..", "moderation", "gallery-approved.json");
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN ?? "";
-const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY ?? "";
+const TALLY_API_KEY = process.env.TALLY_API_KEY ?? "";
+const TALLY_IMAGE_FORM_ID = process.env.TALLY_IMAGE_FORM_ID ?? "";
+const TALLY_COMMENT_FORM_ID = process.env.TALLY_COMMENT_FORM_ID ?? "";
 
 const CATEGORY_LABELS_JA_TO_EN = {
   グッズ: "goods",
@@ -24,102 +30,157 @@ const CATEGORY_LABELS_JA_TO_EN = {
   その他: "other",
 };
 
-function apiHeaders() {
-  return {
-    Authorization: `Bearer ${GITHUB_TOKEN}`,
-    Accept: "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "chiikawa-archive/1.0",
-  };
-}
-
-async function githubGet(path) {
-  const res = await fetch(`https://api.github.com${path}`, {
-    headers: apiHeaders(),
-    signal: AbortSignal.timeout(30000),
-  });
-  if (!res.ok) {
-    throw new Error(`GitHub API エラー: ${res.status} ${res.statusText} (${path})`);
+/**
+ * File Uploadフィールドの回答からURLを取り出す。
+ * Tallyの正確なレスポンス形式が未確認のため、想定しうる複数の形（文字列 / {url} / [{url}] / URL文字列配列）
+ * を順に試す。どれにも一致しない場合は ⚠️ を出して null を返す（実データ確認後に確定させる）。
+ */
+function extractImageUrl(answer) {
+  if (!answer) return null;
+  if (typeof answer === "string") return answer;
+  if (Array.isArray(answer)) {
+    const first = answer[0];
+    if (typeof first === "string") return first;
+    if (first && typeof first === "object" && typeof first.url === "string") return first.url;
   }
-  return res.json();
+  if (typeof answer === "object" && typeof answer.url === "string") return answer.url;
+
+  console.warn("⚠️ 写真の回答形式を認識できませんでした:", JSON.stringify(answer));
+  return null;
 }
 
-/** ページネーションしながら承認済みギャラリー投稿issueを全件取得する */
-async function fetchApprovedIssues(repo) {
-  const issues = [];
-  let page = 1;
-  for (;;) {
-    const batch = await githubGet(
-      `/repos/${repo}/issues?labels=gallery-submission,approved&state=open&per_page=100&page=${page}`
-    );
-    issues.push(...batch.filter((issue) => !issue.pull_request));
-    if (batch.length < 100) break;
-    page += 1;
+/**
+ * Dropdownフィールドの回答からカテゴリラベルを取り出す。
+ * ラベル文字列そのまま、または選択肢オブジェクト([{label}] 等)の可能性を考慮する。
+ */
+function extractCategoryLabel(answer) {
+  if (!answer) return null;
+  if (typeof answer === "string") return answer;
+  if (Array.isArray(answer)) {
+    const first = answer[0];
+    if (typeof first === "string") return first;
+    if (first && typeof first === "object") return first.label ?? first.text ?? null;
   }
-  return issues;
-}
-
-async function fetchIssueComments(repo, issueNumber) {
-  const comments = await githubGet(`/repos/${repo}/issues/${issueNumber}/comments?per_page=100`);
-  return comments.map((c) => ({
-    id: `comment-${c.id}`,
-    body: c.body ?? "",
-    createdAt: c.created_at,
-  }));
-}
-
-// Issue Form は "### 見出し\n\n回答本文" の形でissue本文にレンダリングされる
-function extractField(body, label) {
-  const regex = new RegExp(`### ${label}\\s*\\n\\n([\\s\\S]*?)(?=\\n### |$)`);
-  const match = body.match(regex);
-  if (!match) return "";
-  const value = match[1].trim();
-  return value === "_No response_" ? "" : value;
-}
-
-function extractImageUrl(body) {
-  const match = body.match(/!\[[^\]]*\]\(([^)\s]+)\)/);
-  return match?.[1] ?? null;
+  if (typeof answer === "object") return answer.label ?? answer.text ?? null;
+  return null;
 }
 
 function toCategory(label) {
   return CATEGORY_LABELS_JA_TO_EN[label] ?? "other";
 }
 
+/**
+ * Hidden Fieldの回答は `{ <フィールドキー>: <値> }` というオブジェクト形式で返る
+ * （他の質問タイプの文字列/配列とは異なる）。
+ */
+function extractHiddenFieldValue(answer, key) {
+  if (!answer) return null;
+  if (typeof answer === "string") return answer;
+  if (typeof answer === "object" && !Array.isArray(answer)) {
+    return answer[key] ?? Object.values(answer)[0] ?? null;
+  }
+  return null;
+}
+
+async function readApprovedList() {
+  try {
+    const raw = await readFile(APPROVED_LIST_PATH, "utf-8");
+    const parsed = JSON.parse(raw);
+    return {
+      approvedImageResponseIds: parsed.approvedImageResponseIds ?? [],
+      approvedCommentResponseIds: parsed.approvedCommentResponseIds ?? [],
+    };
+  } catch (e) {
+    if (e.code !== "ENOENT") throw e;
+    console.warn("⚠️ moderation/gallery-approved.json が見つからないため、承認済み投稿はありません");
+    return { approvedImageResponseIds: [], approvedCommentResponseIds: [] };
+  }
+}
+
+function warnUnmatchedIds(approvedIds, submissions, label) {
+  const submissionIds = new Set(submissions.map((s) => s.id));
+  for (const id of approvedIds) {
+    if (!submissionIds.has(id)) {
+      console.warn(`⚠️ 承認リストのID「${id}」に一致する${label}が見つかりません（誤入力の可能性）`);
+    }
+  }
+}
+
 async function main() {
-  if (!GITHUB_TOKEN) {
-    console.error("❌ GITHUB_TOKEN が未設定です");
-    process.exit(1);
-  }
-  if (!GITHUB_REPOSITORY) {
-    console.error("❌ GITHUB_REPOSITORY が未設定です");
+  if (!TALLY_API_KEY || !TALLY_IMAGE_FORM_ID || !TALLY_COMMENT_FORM_ID) {
+    console.error("❌ TALLY_API_KEY / TALLY_IMAGE_FORM_ID / TALLY_COMMENT_FORM_ID が未設定です");
     process.exit(1);
   }
 
-  console.log(`📡 承認済みギャラリー投稿を取得中: ${GITHUB_REPOSITORY}`);
-  const issues = await fetchApprovedIssues(GITHUB_REPOSITORY);
-  console.log(`📋 ${issues.length} 件の承認済み投稿を検出`);
+  const approved = await readApprovedList();
 
-  const images = [];
-  for (const issue of issues) {
-    const imageUrl = extractImageUrl(issue.body ?? "");
-    if (!imageUrl) {
-      console.warn(`⚠️ 画像が見つからないためスキップ: issue #${issue.number}`);
+  console.log("📡 写真投稿フォームの回答を取得中");
+  const { questions: imageQuestions, submissions: imageSubmissions } = await fetchAllSubmissions(
+    TALLY_API_KEY,
+    TALLY_IMAGE_FORM_ID
+  );
+  console.log(`📋 ${imageSubmissions.length} 件の回答を検出`);
+  warnUnmatchedIds(approved.approvedImageResponseIds, imageSubmissions, "写真投稿");
+
+  const images = imageSubmissions
+    .filter((s) => s.isCompleted && approved.approvedImageResponseIds.includes(s.id))
+    .map((s) => {
+      const imageUrl = extractImageUrl(findAnswer(s, imageQuestions, "写真"));
+      const categoryLabel = extractCategoryLabel(findAnswer(s, imageQuestions, "カテゴリ"));
+      const caption = findAnswer(s, imageQuestions, "コメント（任意・140字まで）");
+      const id = `gallery-${s.id}`;
+
+      return {
+        id,
+        imageUrl,
+        caption: caption || null,
+        category: toCategory(categoryLabel),
+        createdAt: s.submittedAt,
+        commentFormUrl: `https://tally.so/r/${TALLY_COMMENT_FORM_ID}?image_id=${encodeURIComponent(id)}`,
+        comments: [],
+      };
+    })
+    .filter((img) => {
+      if (!img.imageUrl) {
+        console.warn(`⚠️ 画像URLを取得できなかったためスキップ: ${img.id}`);
+        return false;
+      }
+      return true;
+    });
+
+  console.log(`✨ 承認済み画像 ${images.length} 件`);
+
+  console.log("📡 コメント投稿フォームの回答を取得中");
+  const { questions: commentQuestions, submissions: commentSubmissions } = await fetchAllSubmissions(
+    TALLY_API_KEY,
+    TALLY_COMMENT_FORM_ID
+  );
+  console.log(`📋 ${commentSubmissions.length} 件の回答を検出`);
+  warnUnmatchedIds(approved.approvedCommentResponseIds, commentSubmissions, "コメント");
+
+  const imagesById = new Map(images.map((img) => [img.id, img]));
+
+  for (const s of commentSubmissions) {
+    if (!s.isCompleted || !approved.approvedCommentResponseIds.includes(s.id)) continue;
+
+    const imageId = extractHiddenFieldValue(findAnswer(s, commentQuestions, "image_id"), "image_id");
+    const body = findAnswer(s, commentQuestions, "コメント");
+    const image = imageId ? imagesById.get(imageId) : undefined;
+
+    if (!image) {
+      console.warn(`⚠️ コメント ${s.id} の対象画像(${imageId})が見つからないためスキップ`);
+      continue;
+    }
+    if (!body) {
+      console.warn(`⚠️ コメント ${s.id} の本文が空のためスキップ`);
       continue;
     }
 
-    const comments = await fetchIssueComments(GITHUB_REPOSITORY, issue.number);
+    image.comments.push({ id: `comment-${s.id}`, body, createdAt: s.submittedAt });
+  }
 
-    images.push({
-      id: `gallery-${issue.number}`,
-      issueNumber: issue.number,
-      issueUrl: issue.html_url,
-      imageUrl,
-      caption: extractField(issue.body ?? "", "コメント（任意・140字まで）") || null,
-      category: toCategory(extractField(issue.body ?? "", "カテゴリ")),
-      createdAt: issue.created_at,
-      comments,
-    });
+  for (const img of images) {
+    img.comments.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
   }
 
   images.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());

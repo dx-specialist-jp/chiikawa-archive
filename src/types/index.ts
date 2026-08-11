@@ -73,12 +73,11 @@ export interface GalleryComment {
 
 export interface GalleryImage {
   id: string;
-  issueNumber: number;
-  issueUrl: string;
   imageUrl: string;
   caption: string | null;
   category: GalleryCategory;
   createdAt: string;
+  commentFormUrl: string;
   comments: GalleryComment[];
 }
 

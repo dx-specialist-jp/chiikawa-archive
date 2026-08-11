@@ -65,7 +65,7 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
             <p className="mt-2 text-sm text-warm-text leading-relaxed">{image.caption}</p>
           )}
 
-          <CommentThread comments={image.comments} issueUrl={image.issueUrl} />
+          <CommentThread comments={image.comments} commentFormUrl={image.commentFormUrl} />
         </div>
       </div>
     </div>

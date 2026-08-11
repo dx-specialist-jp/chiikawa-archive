@@ -45,8 +45,9 @@ jobs:
         id: fetch_gallery
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          TALLY_API_KEY: ${{ secrets.TALLY_API_KEY }}
+          TALLY_IMAGE_FORM_ID: ${{ vars.TALLY_IMAGE_FORM_ID }}
+          TALLY_COMMENT_FORM_ID: ${{ vars.TALLY_COMMENT_FORM_ID }}
         run: node scripts/fetch-gallery.mjs
 
       - name: Check fetch results
