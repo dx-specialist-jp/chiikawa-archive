@@ -1,7 +1,53 @@
 {
-  "lastUpdated": "2026-08-12T13:14:34.274Z",
-  "totalPosts": 987,
+  "lastUpdated": "2026-08-13T13:16:14.583Z",
+  "totalPosts": 990,
   "posts": [
+    {
+      "id": "post-2087862892926525905",
+      "tweetId": "2087862892926525905",
+      "url": "https://x.com/ngnchiikawa/status/2087862892926525905",
+      "publishedAt": "2026-08-13T11:01:00.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "くりまんじゅう",
+        "モモンガ",
+        "シーサー",
+        "古本屋"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2087863010178245089",
+      "tweetId": "2087863010178245089",
+      "url": "https://x.com/ngnchiikawa/status/2087863010178245089",
+      "publishedAt": "2026-08-13T11:00:02.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2087862675976184004",
+      "tweetId": "2087862675976184004",
+      "url": "https://x.com/ngnchiikawa/status/2087862675976184004",
+      "publishedAt": "2026-08-13T09:00:21.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HPlvzm8bMAAqJ08.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2087522201310531612",
       "tweetId": "2087522201310531612",
@@ -12897,6 +12943,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-08-13",
+      "count": 3,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-08-12",
       "count": 1,
