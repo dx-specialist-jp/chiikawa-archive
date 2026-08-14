@@ -1,7 +1,37 @@
 {
-  "lastUpdated": "2026-08-13T16:58:17.929Z",
-  "totalPosts": 991,
+  "lastUpdated": "2026-08-14T13:11:35.327Z",
+  "totalPosts": 993,
   "posts": [
+    {
+      "id": "post-2088198596831461811",
+      "tweetId": "2088198596831461811",
+      "url": "https://x.com/ngnchiikawa/status/2088198596831461811",
+      "publishedAt": "2026-08-14T09:00:05.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "くりまんじゅう"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HPq5X0RaUAALhwd.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2088198611213680674",
+      "tweetId": "2088198611213680674",
+      "url": "https://x.com/ngnchiikawa/status/2088198611213680674",
+      "publishedAt": "2026-08-14T01:00:00.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2087943240091853297",
       "tweetId": "2087943240091853297",
@@ -12955,8 +12985,9 @@
   "calendarData": [
     {
       "date": "2026-08-14",
-      "count": 1,
+      "count": 3,
       "categories": [
+        "anime",
         "manga"
       ]
     },
