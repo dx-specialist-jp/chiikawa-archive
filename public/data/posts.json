@@ -1,7 +1,21 @@
 {
-  "lastUpdated": "2026-08-17T08:46:07.796Z",
-  "totalPosts": 998,
+  "lastUpdated": "2026-08-17T12:48:26.204Z",
+  "totalPosts": 999,
   "posts": [
+    {
+      "id": "post-2089314950036783530",
+      "tweetId": "2089314950036783530",
+      "url": "https://x.com/ngnchiikawa/status/2089314950036783530",
+      "publishedAt": "2026-08-17T09:00:05.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HP6WIyAagAAYyDX.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2089223068246057142",
       "tweetId": "2089223068246057142",
@@ -13046,10 +13060,10 @@
   "calendarData": [
     {
       "date": "2026-08-17",
-      "count": 2,
+      "count": 3,
       "categories": [
-        "manga",
-        "anime"
+        "anime",
+        "manga"
       ]
     },
     {
