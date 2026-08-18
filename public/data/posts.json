@@ -1,7 +1,59 @@
 {
-  "lastUpdated": "2026-08-17T12:48:26.204Z",
-  "totalPosts": 999,
+  "lastUpdated": "2026-08-18T12:51:03.973Z",
+  "totalPosts": 1003,
   "posts": [
+    {
+      "id": "post-2089656496967827884",
+      "tweetId": "2089656496967827884",
+      "url": "https://x.com/ngnchiikawa/status/2089656496967827884",
+      "publishedAt": "2026-08-18T10:11:47.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HP_zgfPb0AAFNYA.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2089655880338006157",
+      "tweetId": "2089655880338006157",
+      "url": "https://x.com/ngnchiikawa/status/2089655880338006157",
+      "publishedAt": "2026-08-18T09:00:03.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "うさぎ",
+        "モモンガ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HP_ftuha4AAZ8_n.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2089655826252468644",
+      "tweetId": "2089655826252468644",
+      "url": "https://x.com/ngnchiikawa/status/2089655826252468644",
+      "publishedAt": "2026-08-18T03:02:02.000Z",
+      "category": "goods",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HP-RIqUaAAAzNXJ.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2089655795122356466",
+      "tweetId": "2089655795122356466",
+      "url": "https://x.com/ngnchiikawa/status/2089655795122356466",
+      "publishedAt": "2026-08-18T01:09:11.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "うさぎ",
+        "セイレーン"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2089314950036783530",
       "tweetId": "2089314950036783530",
@@ -13058,6 +13110,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-08-18",
+      "count": 4,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-08-17",
       "count": 3,
