@@ -1,7 +1,23 @@
 {
-  "lastUpdated": "2026-08-18T12:51:03.973Z",
-  "totalPosts": 1003,
+  "lastUpdated": "2026-08-21T12:52:13.367Z",
+  "totalPosts": 1004,
   "posts": [
+    {
+      "id": "post-2090766394577264901",
+      "tweetId": "2090766394577264901",
+      "url": "https://x.com/ngnchiikawa/status/2090766394577264901",
+      "publishedAt": "2026-08-21T09:00:04.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HQO8gpvaAAAfg0H.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2089656496967827884",
       "tweetId": "2089656496967827884",
@@ -13110,6 +13126,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-08-21",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-08-18",
       "count": 4,
