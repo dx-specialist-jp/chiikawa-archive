@@ -1,7 +1,37 @@
 {
-  "lastUpdated": "2026-08-23T08:33:11.845Z",
-  "totalPosts": 1007,
+  "lastUpdated": "2026-08-24T08:51:01.145Z",
+  "totalPosts": 1009,
   "posts": [
+    {
+      "id": "post-2091775468437749845",
+      "tweetId": "2091775468437749845",
+      "url": "https://x.com/ngnchiikawa/status/2091775468437749845",
+      "publishedAt": "2026-08-24T05:01:38.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HQdmDwObsAAePAj.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2091775487123357732",
+      "tweetId": "2091775487123357732",
+      "url": "https://x.com/ngnchiikawa/status/2091775487123357732",
+      "publishedAt": "2026-08-24T05:01:12.000Z",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "うさぎ",
+        "セイレーン"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HQdl9jpb0AA9lcN.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2091382556172394979",
       "tweetId": "2091382556172394979",
@@ -13169,6 +13199,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-08-24",
+      "count": 2,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-08-23",
       "count": 2,
