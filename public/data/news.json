@@ -1,7 +1,241 @@
 {
-  "lastUpdated": "2026-08-28T10:13:10.338Z",
-  "totalArticles": 2609,
+  "lastUpdated": "2026-08-28T21:50:55.702Z",
+  "totalArticles": 2626,
   "articles": [
+    {
+      "id": "news-337e74ed6b4a",
+      "title": "【映画 ちいかわ 】「転売ヤーざまあ」マスコット全21種が個数制限なしの受注生産へ ... - LASISA",
+      "url": "https://lasisa.net/post/158092",
+      "source": "lasisa.net",
+      "publishedAt": "2026-08-28T15:30:55.000Z",
+      "summary": "買い占め直後の切り替え！ 鮮やかな転売対策にファンスカッと. これまで「 ちいかわ 」関連の限定グッズは、 発売 と同時に即完売となり、フリマ ...",
+      "category": "anime",
+      "tags": [
+        "ちいかわ",
+        "ぬいぐるみ",
+        "映画",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-4071d025cca3",
+      "title": "アニメ『 ちいかわ 』 第373話「メロン当選②」 | めざましmedia | “好き”でつながる",
+      "url": "https://mezamashi.media/articles/gallery/339417",
+      "source": "mezamashi.media",
+      "publishedAt": "2026-08-28T15:18:05.000Z",
+      "summary": "「 ちいかわ ベーカリー」が京都で 期間限定 「 ちいかわ ベーカリー KYOTO POP UP SHOP ...",
+      "category": "anime",
+      "tags": [
+        "ちいかわ",
+        "パン",
+        "アニメ",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-b067fd76a767",
+      "title": "『 ちいかわ 』センス抜群な新グッズにネット衝撃 「人魚の塩コショウ入れ」など種類豊富 - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2476676",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-08-28T15:17:11.000Z",
+      "summary": "... 発売 ＝写真は『USB Type-C マスコットACアダプタ（全3種）』. アニメ『 ちいかわ 』の 新商品 ... コラボ 実現「歌も踊りも、ファンだったからこそ調和できた」 · M ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ぬいぐるみ",
+        "アニメ",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-7eafc3beb1da",
+      "title": "映画「 ちいかわ 」音楽はどこまで物語を知っていた？ 「島のうた」の変化から紐解く",
+      "url": "https://animeanime.jp/article/2026/08/28/102460.html",
+      "source": "animeanime.jp",
+      "publishedAt": "2026-08-28T15:09:20.000Z",
+      "summary": "... 発売 · 映画「 ちいかわ 」6歳児も楽しめる？ 子どもが気になってしまう“意外”な視点を聞いてみた ...",
+      "category": "anime",
+      "tags": [
+        "ちいかわ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-ed5b5c0bd111",
+      "title": "【きょうから】『 ちいかわ ぽけっと』「お月見」 イベント 開始 ちいかわ たちの新衣装が一斉登場",
+      "url": "https://www.toonippo.co.jp/articles/-/2350291",
+      "source": "toonippo.co.jp",
+      "publishedAt": "2026-08-28T14:45:08.000Z",
+      "summary": "【きょうから】『 ちいかわ ぽけっと』「お月見」 イベント 開始 ちいかわ たちの新衣装が一斉登場、シーサーがもらえる イベント も ... コラボ 実現「歌も踊りも ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "シーサー"
+      ]
+    },
+    {
+      "id": "news-5fca1f7ddb72",
+      "title": "映画「 ちいかわ 」音楽はどこまで物語を知っていた？ 「島のうた」の変化から紐解く",
+      "url": "https://s.animeanime.jp/article/img/2026/08/28/102460/925280.html",
+      "source": "s.animeanime.jp",
+      "publishedAt": "2026-08-28T14:27:38.000Z",
+      "summary": "CLOSE. ニュース. アニメ · 映画/ドラマ · マンガ · ノベル · 音楽 · 声優 · ゲーム · グッズ · イベント · 海外. イベント ... 発売 中. ニュース 2026.8.10(月) ...",
+      "category": "event",
+      "tags": [
+        "ちいかわ",
+        "映画",
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-0e52b117d92e",
+      "title": "「 ちいかわ 」×「東京ばな奈」 コラボ 商品が全国通販決定！キラキラした瞳のエコバッグ",
+      "url": "https://news.yahoo.co.jp/articles/e4f9fc574dbef8186cc98c33b66d05e156502cb6",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-28T13:54:02.000Z",
+      "summary": "... ちいかわ 」×「東京ばな奈」 コラボ ... しまむら・シャンブルにて「 ちいかわ 」グッズが 発売 ！セイレーン編原作 ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "セイレーン"
+      ]
+    },
+    {
+      "id": "news-2b7a0985290c",
+      "title": "『 ちいかわ ぽけっと』「お月見」 イベント 開催！月見衣装の「シーサー」がもらえる！",
+      "url": "https://gamewith.jp/gamedb/11599/articles/62554",
+      "source": "gamewith.jp",
+      "publishedAt": "2026-08-28T13:34:19.000Z",
+      "summary": "株式会社アプリボットは、スマホアプリ『 ちいかわ ぽけっと』で「お月見」 イベント を開催し、新衣装を公開しました。 イベント 期間中、特別なアイテムや衣装が ...",
+      "category": "event",
+      "tags": [
+        "ちいかわ",
+        "シーサー"
+      ]
+    },
+    {
+      "id": "news-1d9c98b69da1",
+      "title": "蜷川実花 “人生初推し活” ちいかわ のハンドメイド作品を披露！入場者特典のシールをアレンジ ...",
+      "url": "https://mezamashi.media/articles/gallery/339434",
+      "source": "mezamashi.media",
+      "publishedAt": "2026-08-28T12:47:42.000Z",
+      "summary": "ちいかわ 情報 ちいかわ 占い 週刊 ちいかわ 恋占い · アニメ · ゆるアニぼっ ... イベント by PR TIMES ワタシの生き方 by PR TIMES · めざましテレビ · めざまし ...",
+      "category": "event",
+      "tags": [
+        "ちいかわ",
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-a029a4c5c4ab",
+      "title": "行くかっ 祝いの焼肉！「 ちいかわ 」卓を囲む微笑ましいデザインなど6種が「Talking ODM」に追加",
+      "url": "https://www.inside-games.jp/article/2026/08/28/186878.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-28T12:38:36.000Z",
+      "summary": "グッズアクセスランキング. しまむら・シャンブルにて「 ちいかわ 」グッズが 発売 ...",
+      "category": "goods",
+      "tags": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "news-ce026ddbf162",
+      "title": "【映画動員ランキング】『映画 ちいかわ 』が首位キープ！ トイ５、スパイダーマンがTOP３に の ...",
+      "url": "https://lp.p.pia.jp/article/news/511206/photo-gallery/index.html?id=5",
+      "source": "lp.p.pia.jp",
+      "publishedAt": "2026-08-28T12:16:14.000Z",
+      "summary": "ココス限定「 ちいかわコラボ グッズ」2種を購入レビュー!“特別感たっぷり”の ... 歌劇な潜入捜査官』配信開始記念 イベント 30名様！ ニュース. 8/27(木) ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "映画",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-0efb441399c3",
+      "title": "映画『 ちいかわ 』、『anan』表紙“スペシャルエディション”が緊急重版 情報解禁後にネット書店 ...",
+      "url": "https://www.the-miyanichi.co.jp/oricon/1047473.html",
+      "source": "the-miyanichi.co.jp",
+      "publishedAt": "2026-08-28T11:50:32.000Z",
+      "summary": "発売 から2日経ち、“緊急重版”が決定した。 【画像】『anan』2509号、特別 ... コラボ 「 ちいかわ とのんびり船旅」8・6より開催 · 【写真】 ちいかわ ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-3ff17163d328",
+      "title": "映画『 ちいかわ 』、『anan』表紙“スペシャルエディション”が緊急重版 情報解禁後に ... - 佐賀新聞",
+      "url": "https://www.saga-s.co.jp/articles/-/1780443",
+      "source": "saga-s.co.jp",
+      "publishedAt": "2026-08-28T11:38:04.000Z",
+      "summary": "... 発売 号スペシャルエディション（マガジンハウス発行）の表紙に登場。 発売 ... 「 ちいかわ 」が初の船旅と コラボ 「 ちいかわ とのんびり船旅」8・6より開催.",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-511f60ba1a28",
+      "title": "ちいかわ たちが食べるあの味を再現！モンテール「むちゃうまプリン」スイーツが9月限定 発売",
+      "url": "https://news.yahoo.co.jp/articles/07b0e99a4fe66c3ee17f303da127535bddc0a28f",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-28T11:15:56.000Z",
+      "summary": "... 期間限定 で 発売 される。 【写真】モンテール×「 ちいかわ 」 コラボ 商品 両商品は、作中に登場する『むちゃうまプリン』をイメージした コラボ 限定スイーツ。",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "お菓子",
+        "食品",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-47479e896670",
+      "title": "『映画 ちいかわ 人魚の島のひみつ』マスコット・ぬいぐるみが8月28日18時から受注開始 ...",
+      "url": "https://www.cinemacafe.net/article/img/2026/08/28/112137/829260.html",
+      "source": "cinemacafe.net",
+      "publishedAt": "2026-08-28T11:09:35.000Z",
+      "summary": "... コラボ キャンペーン8月21日から！ 先着プレゼント第1弾はミニ巾着. 最新 ... 発売 . 最新ニュース 2026.8.27 Thu 18:30 ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ぬいぐるみ",
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-49a5082fec4f",
+      "title": "オリコンニュース：［きょうから］『 ちいかわ ぽけっと』「お月見」 イベント 開始 ちい ... - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20260828/orc/00m/200/198000c",
+      "source": "mainichi.jp",
+      "publishedAt": "2026-08-28T10:35:56.000Z",
+      "summary": "... ちいかわ たちの新衣装が一斉登場、シーサーがもらえる イベント も. 2026 ... 「 ちいかわ 」が初の船旅と コラボ 「 ちいかわ とのんびり船旅」8・6より開催. 1 ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "シーサー"
+      ]
+    },
+    {
+      "id": "news-6ac63322dca6",
+      "title": "行くかっ 祝いの焼肉！「 ちいかわ 」卓を囲む微笑ましいデザインなど6種が「Talking ODM」に追加",
+      "url": "https://news.yahoo.co.jp/articles/ec8eda0d455fabf7702fa05568d9ab2ad46db7e1",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-28T10:13:11.000Z",
+      "summary": "アニメ「 ちいかわ 」新作ぷっくりごほうびシールが 発売 ！集合デザインや、 ちいかわ ＆むちゃうマンなどさまざま収録 · 「アニメ ちいかわ 」の楽しくて可愛い ...",
+      "category": "anime",
+      "tags": [
+        "ちいかわ",
+        "アニメ"
+      ]
+    },
     {
       "id": "news-689ca3a25138",
       "title": "TOHOシネマズ4劇場にて『映画 ちいかわ 人魚の島のひみつ』“また会う日まで”お見送り付き上映会 ...",
