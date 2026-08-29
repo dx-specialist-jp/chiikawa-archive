@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-08-28T21:50:55.292Z",
-  "totalPosts": 1013,
+  "lastUpdated": "2026-08-29T13:41:39.462Z",
+  "totalPosts": 1014,
   "posts": [
+    {
+      "id": "post-2093689424550985850",
+      "tweetId": "2093689424550985850",
+      "url": "https://x.com/ngnchiikawa/status/2093689424550985850",
+      "publishedAt": "2026-08-29T13:17:12.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HQ5Hbu3bcAAYNmE.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2093329251982516573",
       "tweetId": "2093329251982516573",
@@ -13254,6 +13264,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-08-29",
+      "count": 1,
+      "categories": [
+        "manga"
+      ]
+    },
     {
       "date": "2026-08-28",
       "count": 2,
