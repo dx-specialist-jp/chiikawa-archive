@@ -1,7 +1,23 @@
 {
-  "lastUpdated": "2026-08-31T15:57:25.707Z",
-  "totalPosts": 1017,
+  "lastUpdated": "2026-09-01T13:14:04.183Z",
+  "totalPosts": 1019,
   "posts": [
+    {
+      "id": "post-2094717252998476046",
+      "tweetId": "2094717252998476046",
+      "url": "https://x.com/ngnchiikawa/status/2094717252998476046",
+      "publishedAt": "2026-09-01T09:00:02.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HRHl8zaakAAjbL4.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2094432415733502106",
       "tweetId": "2094432415733502106",
@@ -89,6 +105,20 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HQt2B24akAAQnma.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2094717411585040801",
+      "tweetId": "2094717411585040801",
+      "url": "https://x.com/ngnchiikawa/status/2094717411585040801",
+      "publishedAt": "2026-08-26T02:02:57.000Z",
+      "category": "goods",
+      "tags": [
+        "ちいかわマーケット"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HQnQQ82bQAA6DjR.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2092233279105912846",
@@ -13303,6 +13333,13 @@
   ],
   "calendarData": [
     {
+      "date": "2026-09-01",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
+    {
       "date": "2026-08-31",
       "count": 3,
       "categories": [
@@ -13331,6 +13368,13 @@
       "count": 1,
       "categories": [
         "anime"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "count": 1,
+      "categories": [
+        "goods"
       ]
     },
     {
