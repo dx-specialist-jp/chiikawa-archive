@@ -1,7 +1,261 @@
 {
-  "lastUpdated": "2026-08-31T21:24:16.383Z",
-  "totalArticles": 2752,
+  "lastUpdated": "2026-09-01T04:09:12.674Z",
+  "totalArticles": 2771,
   "articles": [
+    {
+      "id": "news-0a671865e50c",
+      "title": "ちいかわ ×CITENの コラボ コレクション、 ちいかわ たちが顔を覗かせるトートバッグなど - ナタリー",
+      "url": "https://natalie.mu/comic/news/687525",
+      "source": "natalie.mu",
+      "publishedAt": "2026-09-01T03:01:10.000Z",
+      "summary": "ちいかわ ×CITENの コラボ コレクション、 ちいかわ たちが顔を覗かせるトートバッグなど · 「 ちいかわ 」スペシャルコレクションを 発売 ｜ニュース｜ユナイテッド ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "news-3a102a32d739",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://www.sanin-chuo.co.jp/articles/-/1071482",
+      "source": "sanin-chuo.co.jp",
+      "publishedAt": "2026-09-01T02:43:29.000Z",
+      "summary": "... コラボ アイテム（一覧） CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 ... イベント 情報 イベント 投稿 山陰中央新報デジタルの使い方.",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-d4725432fcc0",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://www.sankei.com/article/20260901-NEAL57Y2XRIMJLX2RLVZ4JD6CM/",
+      "source": "sankei.com",
+      "publishedAt": "2026-09-01T02:37:56.000Z",
+      "summary": "【画像】「 ちいかわ 」×「CITEN」 コラボ アイテム（一覧）. CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 する。 今回のスペシャル ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-a66fbdeb7efd",
+      "title": "ちいかわ ：CITENと コラボ ルームウエア、トートバッグ PCケースも - MANTANWEB（まんたん ...",
+      "url": "https://mantan-web.jp/article/20260901dog00m200011000a.html",
+      "source": "mantan-web.jp",
+      "publishedAt": "2026-09-01T02:35:25.000Z",
+      "summary": "ナガノさんの人気マンガ「 ちいかわ 」とファッションブランド「CITEN（シテン）」が コラボ したコレクションが、9月15日から順次、 発売 される。 ちいかわ たち ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "news-767929a28026",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全 ... - 徳島新聞",
+      "url": "https://www.topics.or.jp/articles/-/1487280",
+      "source": "topics.or.jp",
+      "publishedAt": "2026-09-01T02:27:38.000Z",
+      "summary": "... イベント デジタル ... 【画像】「 ちいかわ 」×「CITEN」 コラボ アイテム（一覧） CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 する。",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-a967ea59edbe",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://373news.com/news/national/oricon/detail/2477462/",
+      "source": "373news.com",
+      "publishedAt": "2026-09-01T02:23:56.000Z",
+      "summary": "... コラボ アイテム（一覧） CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 ... 鹿児島県内や県境で開催される イベント の最新情報を集めました。",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-54fc538034a5",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://www.the-miyanichi.co.jp/oricon/1055873.html",
+      "source": "the-miyanichi.co.jp",
+      "publishedAt": "2026-09-01T02:22:14.000Z",
+      "summary": "【画像】「 ちいかわ 」×「CITEN」 コラボ アイテム（一覧）. CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 する。 ... イベント · 訃報 ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-9a1b9f3a2ce3",
+      "title": "『 ちいかわ 』ルームウェアやトートバッグなど新登場！ 「CITEN」 コラボ コレクション 発売",
+      "url": "https://news.yahoo.co.jp/articles/8faacb4026263fcd6994229f63e4b3dc694e5bea",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-01T02:13:02.000Z",
+      "summary": "... ちいかわらんど 」「Talking」で 発売 される。 【写真】シンプルなデザインがおしゃれ！ 『 ちいかわ 』×「CITEN」 コラボ コレクション一覧 □実用性を兼ね備えた ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-d821ddb2aa6b",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://cont.t-com.ne.jp/entame/930355_1.html",
+      "source": "cont.t-com.ne.jp",
+      "publishedAt": "2026-09-01T02:11:24.000Z",
+      "summary": "【画像】「 ちいかわ 」×「CITEN」 コラボ アイテム（一覧） CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 する。 ... 期間限定 商品「月 ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ポップアップ",
+        "ちいかわらんど",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-2d2d300f6b77",
+      "title": "【きょうから】モンテールと ちいかわ が今年も コラボ 『むちゃうまプリン』イメージのスイーツ2 ...",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/oricon/entertainment/oricon-2476718",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-01T02:08:07.000Z",
+      "summary": "... ちいかわ が今年も コラボ 『 ... 期間限定 で販売する。 昨年、暑い夏のおやつ時間がより楽しくワクワクする ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "お菓子",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-7b96d0bbfe15",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://www.oricon.co.jp/news/2477462/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-01T01:59:38.000Z",
+      "summary": "... ちいかわ 」のスペシャルコレクションを 発売 する。 ... コラボ · ちいかわ CITEN サテンルームウェア. 新着トレンド.",
+      "category": "collab",
+      "tags": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "news-79a27937d6a3",
+      "title": "「 ちいかわ 」2026ハロウィンデザインが「Talking ODM」に 期間限定 追加！えだまめくり ...",
+      "url": "https://www.inside-games.jp/article/2026/09/01/187053.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-09-01T01:51:26.000Z",
+      "summary": "グッズはTシャツやエコバッグ、マグカップなど定番アイテムに加えて、 新商品 のプルオーバーパーカーも用意されています。 ... 「【 期間限定 】 ちいかわ HAPPY ...",
+      "category": "goods",
+      "tags": [
+        "ちいかわ",
+        "Tシャツ",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-c83d6adad07b",
+      "title": "「ついにきたか…」映画「 ちいかわ 」“新たな入場特典”に「えぐいランダムww」「これが本番 ...",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3995674/",
+      "source": "nlab.itmedia.co.jp",
+      "publishedAt": "2026-09-01T01:50:48.000Z",
+      "summary": "「 ちいかわ 」を初めて劇場版にした同作は、原作でも屈指の人気を誇る長編 ... イベント のお手伝いをお願いすることもあります。 使用する車種は ...",
+      "category": "event",
+      "tags": [
+        "ちいかわ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-c46bc742480c",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://www.oricon.co.jp/news/2477462/full/?anc=294",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-01T01:44:39.000Z",
+      "summary": "... コラボ . 拡大する（20枚） · 【画像】「 ちいかわ 」×「CITEN」 コラボ アイテム(一覧). CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 する。",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-030cde5bbc31",
+      "title": "「 ちいかわ 」、ユナイテッドアローズ・シテンと コラボ ルームウェア＆PCケースなど全6型",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/oricon/entertainment/oricon-2477462",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-01T01:43:44.000Z",
+      "summary": "なお購入は、1人各商品各色1点まで。 2CITEN全店舗とECサイトおよび「 ちいかわらんど 」「Talking」にて 発売 する。 今回のスペシャルコレクションでは、 ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ちいかわらんど"
+      ]
+    },
+    {
+      "id": "news-43aaacf17de5",
+      "title": "「 ちいかわ 」2026ハロウィンデザインが「Talking ODM」に 期間限定 追加！えだまめくり ...",
+      "url": "https://news.yahoo.co.jp/articles/0b7edc9accc823420fba304423a1a942df61c8eb",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-01T01:28:56.000Z",
+      "summary": "グッズはTシャツやエコバッグ、マグカップなど定番アイテムに加えて、 新商品 のプルオーバーパーカーも用意されています。 ... 「 ちいかわ 焼き」 期間限定 フレーバー ...",
+      "category": "goods",
+      "tags": [
+        "ちいかわ",
+        "Tシャツ",
+        "お菓子",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-26b5b46251c1",
+      "title": "ちいかわ が8種類ではんぺんに！全部集めたい「 ちいかわ サンドはんぺん」全国 発売",
+      "url": "https://report.iko-yo.net/articles/33158",
+      "source": "report.iko-yo.net",
+      "publishedAt": "2026-09-01T00:20:54.000Z",
+      "summary": "... ちいかわ サンドはんぺん」が全国 発売 ... 【関東】2026年8月29日・30日週末開催の無料 イベント 16選 大規模夏祭り＆フェスタも！",
+      "category": "event",
+      "tags": [
+        "ちいかわ"
+      ]
+    },
+    {
+      "id": "news-ed365a20fe8e",
+      "title": "『 ちいかわ 』映画の概念コーデを浴衣で表現したら…… 圧巻の姿に「惚れすぎる自信がある」「め ...",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3987851/",
+      "source": "nlab.itmedia.co.jp",
+      "publishedAt": "2026-08-31T23:58:20.000Z",
+      "summary": "今回話題を呼んだのは、映画 ちいかわ に登場する「セイレーン」をイメージした浴衣コーデ。うさこまさんと有松・鳴海絞りのメーカー「山上商店」が コラボ して ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-60d77b44b9d2",
+      "title": "2026年9月の回転寿司チェーン注目企画！かっぱ寿司プリキュア・くら寿司 ちいかわ 第2弾",
+      "url": "https://report.iko-yo.net/articles/33152",
+      "source": "report.iko-yo.net",
+      "publishedAt": "2026-08-31T23:00:50.000Z",
+      "summary": "【くら寿司】「 ちいかわ 」 コラボ キャンペーン 第2弾（9月4日〜）; 【かっぱ ... 9月11日（金）からは、ロングセラーの「月見軍艦」も 期間限定 で登場。お ...",
+      "category": "collab",
+      "tags": [
+        "ちいかわ",
+        "ポップアップ",
+        "限定"
+      ]
+    },
     {
       "id": "news-62fa6c1ed297",
       "title": "『映画 ちいかわ 』セイレーンや島二郎たちが手のひらサイズに 入場者特典第4弾「チャームミニ ...",
