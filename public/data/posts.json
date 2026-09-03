@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-09-02T16:11:39.680Z",
-  "totalPosts": 1022,
+  "lastUpdated": "2026-09-03T16:00:17.288Z",
+  "totalPosts": 1024,
   "posts": [
+    {
+      "id": "post-2095510007496511641",
+      "tweetId": "2095510007496511641",
+      "url": "https://x.com/ngnchiikawa/status/2095510007496511641",
+      "publishedAt": "2026-09-03T13:51:33.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HRS_PhWbYAAr1d5.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2095504229633069467",
+      "tweetId": "2095504229633069467",
+      "url": "https://x.com/ngnchiikawa/status/2095504229633069467",
+      "publishedAt": "2026-09-03T09:00:04.000Z",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HRR5KowbwAAQZ-S.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2095141296067465629",
       "tweetId": "2095141296067465629",
@@ -13366,6 +13390,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-03",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-09-02",
       "count": 1,
