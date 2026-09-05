@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-09-05T08:10:04.743Z",
-  "totalImages": 2,
+  "lastUpdated": "2026-09-05T14:48:32.865Z",
+  "totalImages": 3,
   "images": [
+    {
+      "id": "gallery-ArQOojk",
+      "caption": "映画ちいかわ第4弾入場者特典。フタバはゲットしました。あとはヒトハ狙い。",
+      "category": "goods",
+      "createdAt": "2026-09-05T08:33:56.000Z",
+      "commentFormUrl": "https://tally.so/r/81DZ8o?image_id=gallery-ArQOojk",
+      "comments": [],
+      "imageUrl": "https://storage.tally.so/private/IMG_1120.jpeg?id=WX6v9v&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IldYNnY5diIsImZvcm1JZCI6ImRXRzlkQSIsImlhdCI6MTc4ODYxOTcxMn0.fqg6N_4LXKpv-e_P0OBj6lxiSzeADv8qqukHuyr0-E4&signature=2c5a6d90ce0fe59cc21789666b6aa56616f0c73a80bdc4f2b823946d470eb382"
+    },
     {
       "id": "gallery-VpbdLzM",
       "caption": "ハチワレだらけくじのC賞:全滅しちゃう～。がお気に入り。",
@@ -9,7 +18,7 @@
       "createdAt": "2026-08-11T10:18:03.000Z",
       "commentFormUrl": "https://tally.so/r/81DZ8o?image_id=gallery-VpbdLzM",
       "comments": [],
-      "imageUrl": "https://storage.tally.so/private/IMG_1035.jpeg?id=8gjl4r&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijhnamw0ciIsImZvcm1JZCI6ImRXRzlkQSIsImlhdCI6MTc4ODU5NTgwNH0.TSf8luwKazCECdpt_0CMlZNGSw_H0fLK1_Rgq4qsaV0&signature=c74e52c114bd2e0c445f6a61da98daa424c89a855fb9a4a7ab222a7911d72518"
+      "imageUrl": "https://storage.tally.so/private/IMG_1035.jpeg?id=8gjl4r&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijhnamw0ciIsImZvcm1JZCI6ImRXRzlkQSIsImlhdCI6MTc4ODYxOTcxMn0.XpRHs53fxtBk5B17WwCUg-71tlP8Q65QBiar9ApUcOE&signature=1bbfa7c64f9889cacdbfa3473334839132255e2609be027c46c6224941251d35"
     },
     {
       "id": "gallery-NqbEzVN",
@@ -18,7 +27,7 @@
       "createdAt": "2026-08-11T09:51:59.000Z",
       "commentFormUrl": "https://tally.so/r/81DZ8o?image_id=gallery-NqbEzVN",
       "comments": [],
-      "imageUrl": "https://storage.tally.so/private/IMG_1023.jpeg?id=Qa8Nq7&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlFhOE5xNyIsImZvcm1JZCI6ImRXRzlkQSIsImlhdCI6MTc4ODU5NTgwNH0.QZBqBGa2v9yAr49oFxLQK2hZ3lv4YYyL_YJuQ-__9cs&signature=fb7ff28c759cc0a80a9de9b6c269487b405f0c8a94597ea3399f4b9d7ef575c8"
+      "imageUrl": "https://storage.tally.so/private/IMG_1023.jpeg?id=Qa8Nq7&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlFhOE5xNyIsImZvcm1JZCI6ImRXRzlkQSIsImlhdCI6MTc4ODYxOTcxMn0.mgRlIXnxy7OADk3Xq5SNXWm0Zs67Xgr4sUw2wGSZDK8&signature=e5ff8c0c0788c2fed655f3b0b08ea7742650484ce074791e60e0bfb97943887c"
     }
   ]
 }
