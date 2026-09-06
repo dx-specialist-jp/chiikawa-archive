@@ -9,69 +9,13 @@ import { writeFile, readFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { createHash } from "crypto";
+import { detectCategory, extractTags } from "./lib/news-tagging.mjs";
+import { applyRetention, archiveArticles, MAX_ARTICLES } from "./lib/news-archive.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
 
 const ALERTS_RSS_URL = process.env.GOOGLE_ALERTS_RSS_URL ?? "";
-
-const CATEGORY_KEYWORDS = {
-  collab: ["コラボ", "ユニクロ", "UNIQLO", "マクドナルド", "ハッピーセット", "×"],
-  event: ["イベント", "展示", "ポップアップ", "フェア", "横浜", "まつり", "ランド"],
-  manga: ["漫画", "まんが", "コミック", "単行本"],
-  anime: ["アニメ", "放送", "TVer", "テレビ", "劇場版", "映画"],
-  goods: ["グッズ", "商品", "発売", "販売", "限定", "Tシャツ", "UT", "バウム", "パン", "フィギュア", "ぬいぐるみ", "ベーカリー"],
-};
-
-// タグルール: { タグ名: 検索キーワード配列 }
-const TAG_RULES = {
-  // キャラクター
-  ちいかわ: ["ちいかわ"],
-  ハチワレ: ["ハチワレ"],
-  うさぎ: ["うさぎ"],
-  くりまんじゅう: ["くりまんじゅう"],
-  モモンガ: ["モモンガ"],
-  シーサー: ["シーサー"],
-  もんじゃ: ["もんじゃ"],
-  セイレーン: ["セイレーン"],
-  古本屋: ["古本屋"],
-  // 企業コラボ
-  ユニクロ: ["ユニクロ", "UNIQLO", "UT"],
-  マクドナルド: ["マクドナルド", "ハッピーセット"],
-  // 商品ジャンル
-  Tシャツ: ["Tシャツ", "スウェット"],
-  ぬいぐるみ: ["ぬいぐるみ", "マスコット"],
-  フィギュア: ["フィギュア", "3D"],
-  お菓子: ["バウム", "焼き", "スイーツ", "お菓子", "ケーキ"],
-  パン: ["パン", "ベーカリー"],
-  食品: ["食べ", "グルメ", "フード", "料理", "飲食"],
-  // メディア
-  映画: ["映画", "劇場版"],
-  アニメ: ["アニメ", "放送", "TVer"],
-  漫画: ["漫画", "まんが"],
-  // 場所
-  横浜: ["横浜"],
-  // イベント・場所
-  ポップアップ: ["ポップアップ", "期間限定", "フェア"],
-  ちいかわらんど: ["ちいかわらんど"],
-  // 映画タイトル
-  人魚の島: ["人魚の島", "人魚"],
-  // 限定
-  限定: ["限定", "先行発売"],
-};
-
-function extractTags(text) {
-  return Object.entries(TAG_RULES)
-    .filter(([, keywords]) => keywords.some((kw) => text.includes(kw)))
-    .map(([tag]) => tag);
-}
-
-function detectCategory(text) {
-  for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
-    if (keywords.some((kw) => text.includes(kw))) return category;
-  }
-  return "other";
-}
 
 function extractActualUrl(googleUrl) {
   try {
@@ -159,7 +103,6 @@ function parseAtomEntries(xml) {
     // ID（URL の MD5 ハッシュ先頭12文字）
     const id = `news-${createHash("md5").update(actualUrl).digest("hex").slice(0, 12)}`;
 
-    const text = title + " " + summary;
     entries.push({
       id,
       title,
@@ -167,8 +110,9 @@ function parseAtomEntries(xml) {
       source,
       publishedAt,
       summary,
-      category: detectCategory(text),
-      tags: extractTags(text),
+      // 判定に本文を使わない理由は lib/news-tagging.mjs を参照
+      category: detectCategory(title),
+      tags: extractTags(title),
     });
   }
 
@@ -205,25 +149,35 @@ async function main() {
   console.log(`📋 フィードから ${fetched.length} 件取得（うちちいかわ関連: ${relevant.length} 件）`);
 
   const newArticles = relevant.filter((a) => !existingUrls.has(a.url));
-  if (newArticles.length === 0) {
-    console.log("✅ 新規記事なし");
-    return;
-  }
 
   const merged = [...newArticles, ...(existing.articles ?? [])];
   merged.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
+  // 上限を超えたぶんは年別アーカイブへ退避する（詳細は lib/news-archive.mjs）
+  const { kept, dropped } = applyRetention(merged);
+
+  if (newArticles.length === 0 && dropped.length === 0) {
+    console.log("✅ 新規記事なし");
+    return;
+  }
+
+  for (const { year, added, total } of await archiveArticles(DATA_DIR, dropped)) {
+    console.log(`🗃️  ${year} 年のアーカイブへ ${added} 件退避（アーカイブ計 ${total} 件）`);
+  }
+
   await writeFile(
     newsPath,
     JSON.stringify(
-      { lastUpdated: new Date().toISOString(), totalArticles: merged.length, articles: merged },
+      { lastUpdated: new Date().toISOString(), totalArticles: kept.length, articles: kept },
       null,
       2
     ),
     "utf-8"
   );
 
-  console.log(`✅ 更新完了（${newArticles.length} 件追加、合計 ${merged.length} 件）`);
+  console.log(
+    `✅ 更新完了（${newArticles.length} 件追加 / ${dropped.length} 件退避、掲載 ${kept.length} 件・上限 ${MAX_ARTICLES} 件）`
+  );
 }
 
 main().catch((err) => {
