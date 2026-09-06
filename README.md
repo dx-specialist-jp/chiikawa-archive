@@ -130,9 +130,11 @@ chiikawa-archive/
 │       ├── news-tagging.mjs     # ニュースのカテゴリ・タグ判定（タイトルのみを見る）
 │       ├── news-text.mjs        # ニュース本文の整形（ナビ・著作権表記の除去）
 │       ├── news-archive.mjs     # news.json の保持件数管理・年別アーカイブへの退避
+│       ├── gallery-store.mjs    # gallery.json の画像URL維持・無変更時の書き込み抑止
 │       ├── syndication.mjs      # syndication API から正確な本文・ハッシュタグ・画像URLを取得
 │       └── tally.mjs            # Tally APIから回答を取得する共通ヘルパー
 ├── tests/
+│   ├── gallery-store.test.mjs   # ギャラリーの画像URL維持・差分判定の単体テスト
 │   ├── news-lib.test.mjs        # カテゴリ判定・本文整形・保持件数の単体テスト
 │   ├── post-text.test.mjs       # 投稿本文の整形の単体テスト
 │   ├── fetch-news.test.mjs      # fetch-news.mjs をローカルのフィード相手に実行する結合テスト
@@ -301,6 +303,10 @@ Tallyフォームのフィールド仕様（変更する場合は `scripts/fetch
 | 写真投稿フォーム | 同意事項3件 | Checkbox（個別） | Yes |
 | コメント投稿フォーム | `image_id` | Hidden field | — |
 | コメント投稿フォーム | `コメント` | Long text | Yes |
+
+> Tally の File Upload は取得のたびに新しい `accessToken` 付きの URL を返す。そのまま保存すると投稿が1件も増えていなくても `gallery.json` が毎回変わり、4時間ごとに実体のないコミットとデプロイが走る（実際 `gallery.json` を変更した128コミットのうち123件がトークンだけの差分だった）。トークンに有効期限は無く22日前のものでも画像を取得できることを確認したため、すでに保存してある URL をそのまま使い続ける（`scripts/lib/gallery-store.mjs`）。
+>
+> ファイル自体が差し替わった場合は URL の（トークンを除いた）本体部分が変わるので、そのときは新しい URL を採用する。
 
 投稿は事前承認なしで自動的に公開される。`update-data.yml`（4時間ごと、または手動実行）が `scripts/fetch-gallery.mjs` を実行し、Tallyの完了済み回答をすべて `gallery.json` に反映する（画像ファイルの `mimeType` が `image/*` でないものは自動的に除外する）。
 

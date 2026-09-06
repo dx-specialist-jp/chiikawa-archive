@@ -10,10 +10,11 @@
  * 該当の回答を削除すれば、次回同期時にギャラリーからも自動的に消える。
  */
 
-import { writeFile, mkdir } from "fs/promises";
+import { writeFile, readFile, mkdir } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { fetchAllSubmissions, findAnswer } from "./lib/tally.mjs";
+import { preserveImageUrls, hasChanges } from "./lib/gallery-store.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
@@ -154,11 +155,24 @@ async function main() {
 
   images.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
+  let existing = null;
+  try {
+    existing = JSON.parse(await readFile(GALLERY_JSON_PATH, "utf-8"));
+  } catch (e) {
+    if (e.code !== "ENOENT") throw e;
+  }
+
+  // 取得のたびに変わる画像URLのトークンで差分を出さない（詳細は lib/gallery-store.mjs）
   const updated = {
     lastUpdated: new Date().toISOString(),
     totalImages: images.length,
-    images,
+    images: preserveImageUrls(images, existing?.images),
   };
+
+  if (!hasChanges(updated, existing)) {
+    console.log("✅ ギャラリーに変更なし");
+    return;
+  }
 
   await mkdir(DATA_DIR, { recursive: true });
   await writeFile(GALLERY_JSON_PATH, JSON.stringify(updated, null, 2), "utf-8");
