@@ -156,13 +156,24 @@ async function main() {
   // 上限を超えたぶんは年別アーカイブへ退避する（詳細は lib/news-archive.mjs）
   const { kept, dropped } = applyRetention(merged);
 
-  if (newArticles.length === 0 && dropped.length === 0) {
+  // 退避済みの記事がフィードに再登場すると「新規」として拾ってしまう（重複判定は
+  // 掲載中のURLしか見ていないため）。掲載内容が変わらないときは書き込まないことで、
+  // lastUpdated だけが動いて無意味なコミットとデプロイが走るのを防ぐ。
+  const keptIds = kept.map((a) => a.id).join(",");
+  const unchanged = keptIds === (existing.articles ?? []).map((a) => a.id).join(",");
+
+  if (unchanged && dropped.length === 0) {
     console.log("✅ 新規記事なし");
     return;
   }
 
   for (const { year, added, total } of await archiveArticles(DATA_DIR, dropped)) {
     console.log(`🗃️  ${year} 年のアーカイブへ ${added} 件退避（アーカイブ計 ${total} 件）`);
+  }
+
+  if (unchanged) {
+    console.log("✅ 掲載記事に変更なし（保持上限を超えた記事のみ退避）");
+    return;
   }
 
   await writeFile(
