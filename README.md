@@ -58,6 +58,7 @@ chiikawa-archive/
 │   ├── app/                     # Next.js App Router ページ
 │   │   ├── layout.tsx           # ルートレイアウト（フォント・メタデータ・構造化データ）
 │   │   ├── globals.css          # グローバルスタイル・カスタムアニメーション
+│   │   ├── not-found.tsx        # 404ページ（GitHub Pages が out/404.html として配信）
 │   │   ├── robots.ts            # robots.txt の生成
 │   │   ├── sitemap.ts           # sitemap.xml の生成
 │   │   ├── page.tsx             # トップページ
@@ -140,6 +141,7 @@ chiikawa-archive/
 | `/gallery` | ギャラリー | グッズ・イベント写真のファン投稿ギャラリー（Tally経由・自動公開・アカウント不要） |
 | `/rights` | 権利者様へ | 著作権・問い合わせ先の説明 |
 | `/contact` | お問い合わせ | GitHub Issues へのリンク |
+| （404） | ページ未検出 | 主要ページへの導線付き。`out/404.html` を GitHub Pages が配信 |
 
 ---
 
