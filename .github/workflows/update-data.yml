@@ -64,13 +64,16 @@ jobs:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           POSTS_OUTCOME: ${{ steps.fetch_posts.outcome }}
           NEWS_OUTCOME: ${{ steps.fetch_news.outcome }}
+          GALLERY_OUTCOME: ${{ steps.fetch_gallery.outcome }}
         run: |
           TITLE="⚠️ データ更新フェッチ失敗を検知"
           EXISTING=$(gh issue list --repo "$REPO" --search "in:title \"$TITLE\"" --state open --json number --jq '.[0].number')
 
-          if [ "$POSTS_OUTCOME" = "failure" ] || [ "$NEWS_OUTCOME" = "failure" ]; then
+          # 3本とも continue-on-error で走らせているため、失敗はここでしか表に出ない
+          if [ "$POSTS_OUTCOME" = "failure" ] || [ "$NEWS_OUTCOME" = "failure" ] || [ "$GALLERY_OUTCOME" = "failure" ]; then
             BODY="fetch-posts.mjs: ${POSTS_OUTCOME}
           fetch-news.mjs: ${NEWS_OUTCOME}
+          fetch-gallery.mjs: ${GALLERY_OUTCOME}
 
           実行ログ: ${RUN_URL}"
             if [ -z "$EXISTING" ]; then

@@ -135,6 +135,7 @@ chiikawa-archive/
 │       └── tally.mjs            # Tally APIから回答を取得する共通ヘルパー
 ├── tests/
 │   ├── gallery-store.test.mjs   # ギャラリーの画像URL維持・差分判定の単体テスト
+│   ├── fetch-gallery.test.mjs   # fetch-gallery.mjs をTally APIのスタブ相手に実行する結合テスト
 │   ├── news-lib.test.mjs        # カテゴリ判定・本文整形・保持件数の単体テスト
 │   ├── post-text.test.mjs       # 投稿本文の整形の単体テスト
 │   ├── fetch-news.test.mjs      # fetch-news.mjs をローカルのフィード相手に実行する結合テスト
@@ -568,6 +569,7 @@ node scripts/reclassify-news.mjs --write    # news.json を書き換える
 - `fetch-news.mjs` の import を1つ落とす（`node --check` は通過してしまう種類の不具合）
 - 「掲載内容が変わらないなら書かない」ガードを外す（4時間ごとに実体のないコミットとデプロイが走る）
 - `out/data/news.json` を壊す / `out/404.html` を消す
+- ギャラリーの画像URL維持を外す（トークンだけの差分でコミットが走る状態に戻す）
 
 ---
 
@@ -580,6 +582,7 @@ node scripts/reclassify-news.mjs --write    # news.json を書き換える
 | X投稿が更新されない | `auth_token` が失効している可能性。Render のダッシュボードで環境変数を更新する。フェッチが失敗すると GitHub Issue が自動作成されるので、まずそれを確認する |
 | RSSHub が 504 エラー | Render のコールドスタート。`update-data.yml` の `continue-on-error: true` により次回のスケジュールで自動リトライされる |
 | ニュースが取れない | Google Alerts の RSS URL が変わっている可能性。Google Alerts で再設定して `GOOGLE_ALERTS_RSS_URL` を更新 |
+| ギャラリーが更新されない | 3本のフェッチはいずれも `continue-on-error` で走るため、失敗しても他は進む。`Update Data` が自動作成する Issue に `fetch-gallery.mjs: failure` が出ていないか確認する |
 | デプロイが失敗する | `actions/deploy-pages` の一時的な障害の場合が多い。`retry-deploy.yml` が自動で最大3回リトライする。3回失敗した場合は自動作成される Issue と [GitHub Status](https://www.githubstatus.com/) を確認 |
 | ビルドが失敗する | TypeScript エラーは `npm run build` でローカル確認。依存パッケージの更新が必要な場合は `npm install` |
 

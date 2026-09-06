@@ -17,7 +17,8 @@ import { fetchAllSubmissions, findAnswer } from "./lib/tally.mjs";
 import { preserveImageUrls, hasChanges } from "./lib/gallery-store.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, "..", "public", "data");
+// テストから差し替えられるようにしている（既定は public/data）
+const DATA_DIR = process.env.GALLERY_DATA_DIR ?? join(__dirname, "..", "public", "data");
 const GALLERY_JSON_PATH = join(DATA_DIR, "gallery.json");
 
 const TALLY_API_KEY = process.env.TALLY_API_KEY ?? "";

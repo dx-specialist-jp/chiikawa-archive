@@ -2,7 +2,8 @@
  * Tally（https://tally.so）フォームの回答をREST APIから取得するための共通ヘルパー
  */
 
-const API_BASE = "https://api.tally.so";
+// テストからローカルのスタブへ差し替えられるようにしている
+const API_BASE = process.env.TALLY_API_BASE ?? "https://api.tally.so";
 
 /**
  * 指定フォームの全回答（ページング込み）を取得する
