@@ -194,6 +194,61 @@ await step("検索: 本文のキーワードで投稿が見つかる", async () 
   await context.close();
 });
 
+// ギャラリーのライトボックス（開く・閉じる・背面スクロール固定）
+await step("ギャラリー: ライトボックスの開閉", async () => {
+  const { context, page, errors } = await openPage();
+  await page.goto(`${origin}/gallery/`, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(1500);
+
+  const tiles = page.locator("main .grid button");
+  if ((await tiles.count()) === 0) {
+    // 投稿がまだ無いビルドでは開くものが無いので失敗にはしない
+    console.log("- ギャラリー: ライトボックスの開閉 — 投稿がないため省略");
+    await context.close();
+    return;
+  }
+
+  await tiles.first().click();
+  await page.waitForTimeout(600);
+  const dialog = page.locator("[role='dialog']");
+  check("ギャラリー: タイルを押すとダイアログが開く", (await dialog.count()) === 1);
+
+  // 一覧は space-y-6 の中にあり、その中に置くと fixed のオーバーレイにも
+  // margin-top が効いて画面上端を覆えなくなる（ヘッダーがクリックを吸う）
+  const covers = await page.evaluate(() => {
+    const overlay = document.querySelector("[role='dialog']")?.parentElement;
+    if (!overlay) return false;
+    const rect = overlay.getBoundingClientRect();
+    return rect.top === 0 && rect.left === 0 && rect.height === window.innerHeight;
+  });
+  check("ギャラリー: 暗幕が画面全体を覆う", covers);
+  check(
+    "ギャラリー: 開いている間は背面がスクロールしない",
+    (await page.evaluate(() => document.body.style.overflow)) === "hidden"
+  );
+  check(
+    "ギャラリー: 閉じるボタンにフォーカスが移る",
+    (await page.evaluate(() => document.activeElement?.getAttribute("aria-label"))) === "閉じる"
+  );
+
+  await page.keyboard.press("Escape");
+  await page.waitForTimeout(600);
+  check("ギャラリー: Esc で閉じる", (await dialog.count()) === 0);
+  check(
+    "ギャラリー: 閉じたら背面のスクロールが戻る",
+    (await page.evaluate(() => document.body.style.overflow)) !== "hidden"
+  );
+
+  // 背景クリックでも閉じる
+  await tiles.first().click();
+  await page.waitForTimeout(600);
+  await page.mouse.click(8, 8);
+  await page.waitForTimeout(600);
+  check("ギャラリー: 背景クリックで閉じる", (await dialog.count()) === 0);
+  check("ギャラリー: JSエラーなし", errors.filter(isOurError).length === 0);
+  await context.close();
+});
+
 await browser.close();
 server.close();
 

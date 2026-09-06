@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import type { GalleryImage } from "@/types";
 import { GALLERY_CATEGORY_LABELS } from "@/types";
@@ -12,12 +13,24 @@ interface LightboxProps {
   onClose: () => void;
 }
 
-/** 投稿画像の拡大表示。Esc / 背景クリック / 閉じるボタンで閉じる。 */
+/**
+ * 投稿画像の拡大表示。Esc / 背景クリック / 閉じるボタンで閉じる。
+ *
+ * body 直下に描画する。ギャラリーの一覧は `space-y-6` の中にあり、そこに置くと
+ * position: fixed のオーバーレイにも margin-top: 24px が効いて画面上端24pxを
+ * 覆えなくなる（そこにあるヘッダーが前面に残り、クリックも吸われる）。
+ */
 export default function Lightbox({ image, onClose }: LightboxProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => setMounted(true), []);
+
+  // mounted になって初めて中身が描画されるので、フォーカス移動もそれを待つ
   useEffect(() => {
+    if (!mounted) return;
+
     const previouslyFocused = document.activeElement as HTMLElement | null;
     closeButtonRef.current?.focus();
 
@@ -55,9 +68,11 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
       document.body.style.overflow = overflow;
       previouslyFocused?.focus();
     };
-  }, [onClose]);
+  }, [onClose, mounted]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <div
       className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
       onClick={onClose}
@@ -110,6 +125,7 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
           <CommentThread comments={image.comments} commentFormUrl={image.commentFormUrl} />
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
