@@ -1,7 +1,78 @@
 {
   "year": "2026",
-  "totalArticles": 1105,
+  "totalArticles": 1111,
   "articles": [
+    {
+      "id": "news-f37edaaeb910",
+      "title": "「 ちいかわ 」初のスマホアプリ『 ちいかわ ぽけっと』 ちいかわ をお世話できる新機能「ふれあい ...",
+      "url": "https://www.jiji.com/jc/article?k=000000042.000156996&g=prt",
+      "source": "jiji.com",
+      "publishedAt": "2026-07-24T17:38:33.000Z",
+      "summary": "また、「映画 ちいかわ 人魚の島のひみつ」の世界が楽しめる新 イベント 「人魚の島」も本日から開催します。 本作は、イラストレーター ナガノ氏がX（旧Twitter）に ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-9a60c858ab76",
+      "title": "【 ちいかわ 】362話まで無料一挙放送 ABEMA「 ちいかわ 公式無料チャンネル」5日間限定復活",
+      "url": "https://www.sanyonews.jp/article/1960562",
+      "source": "sanyonews.jp",
+      "publishedAt": "2026-07-24T16:33:09.000Z",
+      "summary": "イベント . 【 ちいかわ 】362話まで無料一挙放送 ABEMA「 ちいかわ 公式無料 ... アニメ『 ちいかわ 』初の映画『映画 ちいかわ 人魚の島のひみつ』（きょう24 ...",
+      "category": "goods",
+      "tags": [
+        "アニメ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-fa7298042384",
+      "title": "「転売ヤー消えてくれ!」 『映画 ちいかわ 』入場者特典フィギュア&グッズ転売にファン激怒",
+      "url": "https://www.oricon.co.jp/news/2469801/photo/2/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-07-24T16:09:15.000Z",
+      "summary": "特典のチャームミニフィギュア （C）ナガノ / 2026「映画 ちいかわ 」製作委員会 2枚目 ／ 「転売ヤー消えてくれ！」 『映画 ちいかわ 』入場者特典 ...",
+      "category": "anime",
+      "tags": [
+        "フィギュア",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-e9a249240a8b",
+      "title": "「 ちいかわ 」初のスマホアプリ『 ちいかわ ぽけっと』 ちいかわ をお世話できる新機能「ふれあい ...",
+      "url": "https://prtimes.jp/main/html/rd/p/000000042.000156996.html",
+      "source": "prtimes.jp",
+      "publishedAt": "2026-07-24T15:52:22.000Z",
+      "summary": "「 ちいかわ 」初のスマホアプリ『 ちいかわ ぽけっと』公式グッズ第2弾、2026年4月10日に 発売 開始が決定！！ ... イベント 会場で ちいかわ たちのイラストが描かれた ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-b327f0339121",
+      "title": "ちいかわ の光るオクトパスカードが限定販売 - 香港BS",
+      "url": "https://hongkong-bs.com/uncategorized/20260724/",
+      "source": "hongkong-bs.com",
+      "publishedAt": "2026-07-24T15:38:41.000Z",
+      "summary": "ICカード「オクトパスカード（八達通）」から、「 ちいかわ 」デザインの限定版が 発売 ... CHIIKAWA ARTIVERSE（ ちいかわ アートバース） イベント 情報",
+      "category": "goods",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-760b23a5d759",
+      "title": "ちいかわ 作者・ナガノ氏、映画を見る人への“アドバイス”を自作漫画で紹介「知らなくても全く問題 ...",
+      "url": "https://www.sankei.com/article/20260724-6T5RFJXUG5IQTE3HVWJARGAXSA/?outputType=theme_oriconnews",
+      "source": "sankei.com",
+      "publishedAt": "2026-07-24T15:00:06.000Z",
+      "summary": "林 ... 【動画あり】仙台名物“七夕”と『映画 ちいかわ 』が コラボ ちいかわ",
+      "category": "manga",
+      "tags": [
+        "映画",
+        "漫画"
+      ]
+    },
     {
       "id": "news-f0718dcf7277",
       "title": "お台場「 ちいかわ おばけの森」内部が公開！ 水みくじ、ヨーヨーつりなど“お楽しみ”が ...",
