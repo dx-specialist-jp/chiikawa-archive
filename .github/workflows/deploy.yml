@@ -45,7 +45,7 @@ jobs:
       # 成果物をそのまま配信して全ページを実際に開く。データ更新で
       # ページが壊れた場合もここで止まり、壊れたままデプロイされない。
       - name: Cache Playwright browsers
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
