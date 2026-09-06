@@ -103,3 +103,25 @@ test("アーカイブ: 年別に分かれ、同じ記事を二度退避しても
   const saved = JSON.parse(await readFile(join(dir, "news-archive", "2026.json"), "utf-8"));
   assert.equal(saved.totalArticles, 1);
 });
+
+test("本文整形: 関連記事欄など、ページの部品より後ろを落とす", () => {
+  assert.equal(
+    cleanSummary("「ちいかわベーカリー アドベントカレンダー」発売へ！ 関連記事. 【写真】東京ばな奈コラボ"),
+    "「ちいかわベーカリー アドベントカレンダー」発売へ！"
+  );
+  // 見出しが括弧の中にあると開き括弧だけが残るので落とす
+  assert.equal(
+    cleanSummary("最新9巻が11月20日に発売されることが決まった。【ちいかわ関連記事】CITENとコラボ"),
+    "最新9巻が11月20日に発売されることが決まった。"
+  );
+});
+
+test("本文整形: 見出しの手前に本文が残らないなら切り詰めない", () => {
+  const navOnly = "アクセスランキング くら寿司「ちいかわ」コラボ景品の一部";
+  assert.equal(cleanSummary(navOnly), navOnly);
+});
+
+test("本文整形: 本文中の「ランキング」は切り取りの目印にしない", () => {
+  const body = "8月14日から16日の全国映画動員ランキングトップ10が発表され、映画ちいかわが1位に輝いた。";
+  assert.equal(cleanSummary(body), body);
+});
