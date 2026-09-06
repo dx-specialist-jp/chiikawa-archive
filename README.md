@@ -104,8 +104,7 @@ chiikawa-archive/
 │   └── data/
 │       ├── posts.json           # X投稿データ（自動更新）
 │       ├── news.json            # Google Alerts ニュース（自動更新）
-│       ├── gallery.json         # ファン投稿ギャラリーデータ（自動更新）
-│       └── episodes.json        # 未使用（削除候補）
+│       └── gallery.json         # ファン投稿ギャラリーデータ（自動更新）
 ├── scripts/
 │   ├── fetch-posts.mjs          # RSSHub からX投稿を定期取得（update-data.yml から実行）
 │   ├── fetch-news.mjs           # Google Alerts RSS からニュースを定期取得

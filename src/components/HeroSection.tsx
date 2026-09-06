@@ -4,11 +4,12 @@ import StreakBadge from "./StreakBadge";
 interface HeroSectionProps {
   todayCount: number;
   totalPosts: number;
-  lastUpdated: string;
+  /** 最新の公式X投稿の日時（データの取得時刻ではない） */
+  latestPostAt: string;
 }
 
 /** 見出し・サイト概要・観測サマリーをまとめたトップのヒーロー */
-export default function HeroSection({ todayCount, totalPosts, lastUpdated }: HeroSectionProps) {
+export default function HeroSection({ todayCount, totalPosts, latestPostAt }: HeroSectionProps) {
   const stats = [
     { label: "今日の更新", value: todayCount.toLocaleString(), unit: "件", accent: "border-mint-400" },
     { label: "総観測数", value: totalPosts.toLocaleString(), unit: "件", accent: "border-lavender-300" },
@@ -41,11 +42,11 @@ export default function HeroSection({ todayCount, totalPosts, lastUpdated }: Her
           </div>
         ))}
 
-        {lastUpdated && (
+        {latestPostAt && (
           <div className="border-l border-warm-border pl-4">
             <div className="text-xs text-warm-muted mb-0.5 tracking-wide">最終投稿</div>
-            <time dateTime={lastUpdated} className="text-sm font-light text-warm-text">
-              {formatJst(lastUpdated, "longDateTime")}
+            <time dateTime={latestPostAt} className="text-sm font-light text-warm-text">
+              {formatJst(latestPostAt, "longDateTime")}
             </time>
           </div>
         )}

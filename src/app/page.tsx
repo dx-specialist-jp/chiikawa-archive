@@ -21,12 +21,19 @@ export default async function HomePage() {
   const recentPosts = data.posts.filter((post) => !todayIds.has(post.id)).slice(0, RECENT_POSTS);
   const latestNews = newsData.articles.slice(0, LATEST_NEWS);
 
+  // posts.json の lastUpdated は「スクリプトの実行時刻」なので投稿日時としては使えない。
+  // 並び順にも依存しないよう、最新の publishedAt を明示的に求める。
+  const latestPostAt = data.posts.reduce(
+    (latest, post) => (post.publishedAt > latest ? post.publishedAt : latest),
+    ""
+  );
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <HeroSection
         todayCount={todayPosts.length}
         totalPosts={data.totalPosts}
-        lastUpdated={data.lastUpdated}
+        latestPostAt={latestPostAt}
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
