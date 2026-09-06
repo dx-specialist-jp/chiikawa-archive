@@ -34,10 +34,29 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test
+        run: npm test
+
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: /chiikawa-archive
         run: npm run build
+
+      # 成果物をそのまま配信して全ページを実際に開く。データ更新で
+      # ページが壊れた場合もここで止まり、壊れたままデプロイされない。
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Smoke test
+        env:
+          NEXT_PUBLIC_BASE_PATH: /chiikawa-archive
+        run: npm run test:smoke
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

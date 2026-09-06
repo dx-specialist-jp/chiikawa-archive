@@ -44,6 +44,12 @@ npm run dev
 
 # プロダクションビルド（out/ に静的ファイルを生成）
 npm run build
+
+# テスト（データ取得スクリプトの単体・結合テスト）
+npm test
+
+# スモークテスト（ビルド成果物を実際のブラウザで巡回。npm run build のあとに実行）
+npm run test:smoke
 ```
 
 > **注意**: `npm run build` では `NEXT_PUBLIC_BASE_PATH` を設定しないため、ローカルビルドでは画像パスが `/chiikawa-archive/...` にならない。GitHub Actions での本番ビルドでは自動設定される。
@@ -122,9 +128,13 @@ chiikawa-archive/
 │       ├── news-archive.mjs     # news.json の保持件数管理・年別アーカイブへの退避
 │       ├── syndication.mjs      # syndication API から正確な本文・ハッシュタグ・画像URLを取得
 │       └── tally.mjs            # Tally APIから回答を取得する共通ヘルパー
+├── tests/
+│   ├── news-lib.test.mjs        # カテゴリ判定・本文整形・保持件数の単体テスト
+│   ├── fetch-news.test.mjs      # fetch-news.mjs をローカルのフィード相手に実行する結合テスト
+│   └── smoke.mjs                # out/ を配信して全ページ＋404をブラウザで巡回
 ├── .github/
 │   └── workflows/
-│       ├── deploy.yml           # GitHub Pages デプロイ（main push / Update Data 完了時）
+│       ├── deploy.yml           # テスト → ビルド → スモークテスト → デプロイ
 │       ├── retry-deploy.yml     # デプロイ失敗時の自動リトライ・Issue通知
 │       ├── update-data.yml      # データ自動更新（4時間ごと。ギャラリー同期含む）
 │       └── import-history.yml   # 過去データ一括インポート用
@@ -338,6 +348,8 @@ Tallyフォームのフィールド仕様（変更する場合は `scripts/fetch
 
 **トリガー**: `main` ブランチへの push、または `Update Data` ワークフロー完了時
 
+`npm test` → ビルド → `npm run test:smoke` → デプロイの順に実行する。スモークテストは本番と同じ `basePath` 付きの成果物を配信して巡回するため、Chromium を都度インストールする（`~/.cache/ms-playwright` をキャッシュ）。
+
 1. `npm ci` → `npm run build`（`NEXT_PUBLIC_BASE_PATH=/chiikawa-archive` を設定）
 2. `out/` を GitHub Pages にデプロイ
 
@@ -493,6 +505,25 @@ node scripts/reclassify-news.mjs --write    # news.json を書き換える
 ### basePath
 
 `NEXT_PUBLIC_BASE_PATH=/chiikawa-archive` を GitHub Actions の Build ステップで設定。`next.config.ts` が環境変数を読み込んで `basePath` に適用する。
+
+---
+
+## テスト
+
+| コマンド | 内容 |
+|----------|------|
+| `npm test` | `scripts/` のテスト（ブラウザ不要・数百ms） |
+| `npm run test:smoke` | `out/` を配信して全ページ＋404を実際のブラウザで巡回 |
+
+デプロイのワークフローは **テスト → ビルド → スモークテスト → デプロイ** の順で、どこかで落ちれば配信されない。データ自動更新きっかけのデプロイも同じ経路を通るため、取得したデータでページが壊れた場合もここで止まる。
+
+テストで見ているのは「どう扱うと決めたか」であって、キーワードの網羅ではない。ルールを増やしただけで落ちるテストは書かない。
+
+意図的に壊して、次のいずれもテストが検知することを確認してある:
+
+- `fetch-news.mjs` の import を1つ落とす（`node --check` は通過してしまう種類の不具合）
+- 「掲載内容が変わらないなら書かない」ガードを外す（4時間ごとに実体のないコミットとデプロイが走る）
+- `out/data/news.json` を壊す / `out/404.html` を消す
 
 ---
 

@@ -14,7 +14,8 @@ import { decodeHtmlEntities, stripTags, cleanSummary } from "./lib/news-text.mjs
 import { applyRetention, archiveArticles, MAX_ARTICLES } from "./lib/news-archive.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, "..", "public", "data");
+// テストから差し替えられるようにしている（既定は public/data）
+const DATA_DIR = process.env.NEWS_DATA_DIR ?? join(__dirname, "..", "public", "data");
 
 const ALERTS_RSS_URL = process.env.GOOGLE_ALERTS_RSS_URL ?? "";
 
