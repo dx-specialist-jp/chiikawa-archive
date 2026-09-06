@@ -1,9 +1,9 @@
 /**
- * 既存の news.json を現在の判定ルールで作り直す
+ * 既存の news.json を現在のルールで作り直す
  *
- * カテゴリ・タグのルールは新着記事にしか適用されないため、ルールを変えると
- * 既存記事と新着で基準がズレる。ルールを更新したらこのスクリプトを実行して
- * 全件を同じ基準に揃える。あわせて保持件数の上限も適用する。
+ * カテゴリ・タグの判定も本文の整形も新着記事にしか適用されないため、ルールを
+ * 変えると既存記事と新着で基準がズレる。ルールを更新したらこのスクリプトを
+ * 実行して全件を同じ基準に揃える。あわせて保持件数の上限も適用する。
  *
  * 使い方:
  *   node scripts/reclassify-news.mjs            # 変更内容を表示するだけ（dry-run）
@@ -14,6 +14,7 @@ import { readFile, writeFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { detectCategory, extractTags } from "./lib/news-tagging.mjs";
+import { cleanSummary } from "./lib/news-text.mjs";
 import { applyRetention, archiveArticles, MAX_ARTICLES } from "./lib/news-archive.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -46,12 +47,15 @@ async function main() {
 
   const before = countByCategory(articles);
   let changed = 0;
+  let cleaned = 0;
 
   const reclassified = articles.map((article) => {
     const category = detectCategory(article.title);
     const tags = extractTags(article.title);
+    const summary = cleanSummary(article.summary ?? "");
     if (category !== article.category) changed++;
-    return { ...article, category, tags };
+    if (summary !== article.summary) cleaned++;
+    return { ...article, summary, category, tags };
   });
 
   reclassified.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
@@ -61,6 +65,7 @@ async function main() {
   console.log(`  変更前: ${format(before, articles.length)}`);
   console.log(`  変更後: ${format(countByCategory(reclassified), reclassified.length)}`);
   console.log(`  カテゴリが変わった記事: ${changed} 件`);
+  console.log(`  本文が整形された記事: ${cleaned} 件`);
   console.log(`  保持上限 ${MAX_ARTICLES} 件 → 掲載 ${kept.length} 件 / 退避 ${dropped.length} 件`);
 
   if (!write) {

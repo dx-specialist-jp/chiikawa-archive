@@ -10,6 +10,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { createHash } from "crypto";
 import { detectCategory, extractTags } from "./lib/news-tagging.mjs";
+import { decodeHtmlEntities, stripTags, cleanSummary } from "./lib/news-text.mjs";
 import { applyRetention, archiveArticles, MAX_ARTICLES } from "./lib/news-archive.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -32,24 +33,6 @@ function extractSource(url) {
   } catch {
     return url;
   }
-}
-
-function decodeHtmlEntities(str) {
-  return str
-    .replace(/&nbsp;/g, " ")
-    .replace(/&#160;/g, " ")
-    .replace(/&middot;/g, "·")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#x27;/g, "'");
-}
-
-function stripTags(html) {
-  const decoded = decodeHtmlEntities(html).replace(/<[^>]+>/g, " ");
-  return decodeHtmlEntities(decoded).replace(/\s+/g, " ").trim();
 }
 
 function parseAtomEntries(xml) {
@@ -90,7 +73,8 @@ function parseAtomEntries(xml) {
 
     // 本文（概要）
     const contentM = block.match(/<content[^>]*>([\s\S]*?)<\/content>/);
-    const summary = contentM ? stripTags(contentM[1]).slice(0, 200) : "";
+    // 元ページのナビや著作権表記を落としてから長さを切り詰める
+    const summary = contentM ? cleanSummary(stripTags(contentM[1])).slice(0, 200) : "";
 
     // ソース名（サイト名）
     const sourceBlockM = block.match(/<source>([\s\S]*?)<\/source>/);
