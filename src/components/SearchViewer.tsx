@@ -1,130 +1,136 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
-import type { SiteData, PostCategory } from "@/types";
-import { CATEGORY_LABELS } from "@/types";
-import CategoryBadge from "./CategoryBadge";
-import TwitterEmbed from "./TwitterEmbed";
+import { useMemo, useState } from "react";
+import type { CategoryFilter, SiteData } from "@/types";
+import { useSiteJson } from "@/lib/client-data";
+import PostCard from "./PostCard";
+import CategoryFilterBar from "./ui/CategoryFilterBar";
+import EmptyState from "./ui/EmptyState";
 
-const ALL_CATEGORIES: PostCategory[] = ["manga", "goods", "anime", "collab", "event", "other"];
+const PAGE_SIZE = 20;
+const MIN_QUERY_LENGTH = 2;
 
 export default function SearchViewer() {
-  const [data, setData] = useState<SiteData | null>(null);
+  const posts = useSiteJson<SiteData>("posts.json");
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<PostCategory | "all">("all");
+  const [category, setCategory] = useState<CategoryFilter>("all");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  useEffect(() => {
-    const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-    fetch(`${base}/data/posts.json`)
-      .then((r) => r.json())
-      .then(setData)
-      .catch(() => {});
-  }, []);
-
-  const q = query.trim().toLowerCase();
-  const hasQuery = q.length >= 2;
+  const normalizedQuery = query.trim().toLowerCase();
+  const hasQuery = normalizedQuery.length >= MIN_QUERY_LENGTH;
   const hasFilter = category !== "all";
 
-  const results = useMemo(() => {
-    if (!data) return [];
-    if (!hasQuery && !hasFilter) return [];
-    return data.posts
-      .filter((p) => {
-        const matchQ =
-          !hasQuery ||
-          p.summary?.toLowerCase().includes(q) ||
-          p.tags.some((t) => t.toLowerCase().includes(q)) ||
-          p.characters.some((c) => c.toLowerCase().includes(q));
-        const matchCat = category === "all" || p.category === category;
-        return matchQ && matchCat;
-      })
-      .slice(0, 30);
-  }, [data, q, hasQuery, hasFilter, category]);
+  const matches = useMemo(() => {
+    if (!posts.data || (!hasQuery && !hasFilter)) return [];
+    return posts.data.posts.filter((post) => {
+      if (category !== "all" && post.category !== category) return false;
+      if (!hasQuery) return true;
+      return (
+        post.summary?.toLowerCase().includes(normalizedQuery) ||
+        post.tags.some((tag) => tag.toLowerCase().includes(normalizedQuery)) ||
+        post.characters.some((char) => char.toLowerCase().includes(normalizedQuery))
+      );
+    });
+  }, [posts.data, normalizedQuery, hasQuery, hasFilter, category]);
+
+  // 条件が変わったら1ページ目から表示し直す
+  function handleQueryChange(value: string) {
+    setQuery(value);
+    setVisibleCount(PAGE_SIZE);
+  }
+
+  function handleCategoryChange(value: CategoryFilter) {
+    setCategory(value);
+    setVisibleCount(PAGE_SIZE);
+  }
+
+  const visible = matches.slice(0, visibleCount);
 
   return (
     <div className="space-y-5">
-      {/* Search input */}
+      {/* 検索入力 */}
       <div className="relative">
         <input
           type="search"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => handleQueryChange(e.target.value)}
           placeholder="キャラクター名・タグ・キーワードで検索…"
-          className="w-full bg-white border border-warm-border rounded-2xl px-5 py-4 pr-12 text-sm text-warm-text placeholder:text-warm-muted focus:outline-none focus:ring-2 focus:ring-mint-300 focus:border-mint-400 transition-all shadow-soft"
-          autoFocus
+          aria-label="投稿を検索"
+          className="w-full bg-white border border-warm-border rounded-2xl pl-5 pr-12 py-4 text-sm text-warm-text placeholder:text-warm-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-mint-300 focus:border-mint-400 transition-all shadow-soft"
         />
-        <div className="absolute right-4 top-1/2 -translate-y-1/2 text-warm-muted">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-            <circle cx="11" cy="11" r="8" />
-            <path d="M21 21l-4.35-4.35" />
-          </svg>
-        </div>
-      </div>
-
-      {/* Category filter */}
-      <div className="flex flex-wrap gap-2">
-        <button
-          onClick={() => setCategory("all")}
-          className={`px-3 py-1.5 rounded-xl text-xs font-light tracking-wide transition-colors ${category === "all" ? "bg-mint-400 text-white" : "bg-white border border-warm-border text-warm-muted hover:bg-cream-100"}`}
-        >
-          すべて
-        </button>
-        {ALL_CATEGORIES.map((cat) => (
+        {query ? (
           <button
-            key={cat}
-            onClick={() => setCategory(cat === category ? "all" : cat)}
-            className={`px-3 py-1.5 rounded-xl text-xs font-light tracking-wide transition-colors ${category === cat ? "bg-mint-400 text-white" : "bg-white border border-warm-border text-warm-muted hover:bg-cream-100"}`}
+            type="button"
+            onClick={() => handleQueryChange("")}
+            aria-label="検索キーワードを消す"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center rounded-full text-warm-muted hover:bg-cream-100 hover:text-warm-text transition-colors"
           >
-            {CATEGORY_LABELS[cat]}
+            ×
           </button>
-        ))}
+        ) : (
+          <span
+            aria-hidden="true"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-warm-muted"
+          >
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+          </span>
+        )}
       </div>
 
-      {/* State display */}
-      {!data ? (
-        <div className="card p-10 text-center text-warm-muted text-sm animate-fade-in">読み込み中…</div>
+      <CategoryFilterBar value={category} onChange={handleCategoryChange} />
+
+      {posts.status === "loading" ? (
+        <EmptyState title="アーカイブを読み込んでいます…" />
+      ) : posts.status === "error" ? (
+        <EmptyState
+          title="アーカイブを読み込めませんでした"
+          hint="時間をおいて再度お試しください"
+        />
       ) : !hasQuery && !hasFilter ? (
-        <div className="card p-12 text-center animate-fade-in">
-          <p className="text-warm-muted text-sm">キーワードを入力、またはカテゴリを選択してください</p>
-          <p className="text-warm-muted text-xs mt-1.5 font-light">{data.totalPosts.toLocaleString()}件のアーカイブから検索します</p>
-        </div>
-      ) : results.length === 0 ? (
-        <div className="card p-12 text-center animate-fade-in">
-          <p className="text-warm-text text-sm mb-1">一致する投稿が見つかりませんでした</p>
-          {hasQuery && <p className="text-warm-muted text-xs font-light">「{query}」</p>}
-        </div>
+        <EmptyState
+          title="キーワードを入力、またはカテゴリを選択してください"
+          hint={`${posts.data.totalPosts.toLocaleString()}件のアーカイブから検索します（2文字以上）`}
+        />
+      ) : matches.length === 0 ? (
+        <EmptyState
+          title="一致する投稿が見つかりませんでした"
+          hint={hasQuery ? `「${query.trim()}」` : undefined}
+        />
       ) : (
-        <div className="animate-fade-in space-y-5">
-          <p className="text-xs text-warm-muted tracking-widest uppercase">
-            {results.length}件{results.length === 30 ? "（上位30件）" : ""}
+        <div className="animate-fade-in space-y-4">
+          <p className="on-photo inline-block px-3.5 py-2 text-xs text-warm-muted tracking-wide">
+            <span className="tabular-nums">{matches.length.toLocaleString()}</span> 件
+            {visible.length < matches.length && (
+              <span className="ml-1">（{visible.length}件を表示中）</span>
+            )}
           </p>
-          <div className="space-y-4">
-            {results.map((post) => {
-              const date = new Date(post.publishedAt).toLocaleDateString("ja-JP", {
-                year: "numeric", month: "short", day: "numeric",
-                hour: "2-digit", minute: "2-digit", timeZone: "Asia/Tokyo",
-              });
-              return (
-                <article key={post.id} className="card p-4 animate-fade-in">
-                  <div className="flex items-center justify-between gap-3 mb-3">
-                    <CategoryBadge category={post.category} />
-                    <time className="text-xs text-warm-muted">{date}</time>
-                  </div>
-                  <TwitterEmbed tweetId={post.tweetId} url={post.url} hasSinglePhoto={Boolean(post.photoUrl)} />
-                  {(post.tags.length > 0 || post.characters.length > 0) && (
-                    <div className="mt-3 pt-3 border-t border-warm-border flex flex-wrap gap-1.5">
-                      {post.characters.map((c) => (
-                        <span key={c} className="text-xs bg-lavender-100 text-lavender-400 px-2 py-0.5 rounded-full">{c}</span>
-                      ))}
-                      {post.tags.map((t) => (
-                        <span key={t} className="text-xs text-warm-muted">#{t}</span>
-                      ))}
-                    </div>
-                  )}
-                </article>
-              );
-            })}
-          </div>
+
+          {visible.map((post) => (
+            <PostCard key={post.id} post={post} />
+          ))}
+
+          {visible.length < matches.length && (
+            <div className="text-center pt-2">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+                className="btn-secondary"
+              >
+                もっと見る
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>

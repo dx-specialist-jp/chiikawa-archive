@@ -2,23 +2,27 @@ import type { GalleryComment } from "@/types";
 
 interface CommentThreadProps {
   comments: GalleryComment[];
+  /** Tally のコメント投稿フォーム（画像ごとに URL が異なる） */
   commentFormUrl: string;
 }
 
 export default function CommentThread({ comments, commentFormUrl }: CommentThreadProps) {
   return (
-    <div className="mt-4 space-y-3">
+    <div className="mt-5 space-y-3">
       <h3 className="text-xs font-medium text-warm-text tracking-wide">
-        コメント {comments.length > 0 && `(${comments.length})`}
+        コメント{comments.length > 0 && ` (${comments.length})`}
       </h3>
 
       {comments.length === 0 ? (
         <p className="text-xs text-warm-muted">まだコメントはありません</p>
       ) : (
         <ul className="space-y-2">
-          {comments.map((c) => (
-            <li key={c.id} className="bg-cream-100 rounded-2xl px-4 py-2.5 text-sm text-warm-text">
-              <p className="whitespace-pre-wrap break-words">{c.body}</p>
+          {comments.map((comment) => (
+            <li
+              key={comment.id}
+              className="bg-cream-100 rounded-2xl px-4 py-2.5 text-sm text-warm-text"
+            >
+              <p className="whitespace-pre-wrap break-words">{comment.body}</p>
             </li>
           ))}
         </ul>
@@ -28,7 +32,7 @@ export default function CommentThread({ comments, commentFormUrl }: CommentThrea
         href={commentFormUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1.5 text-xs font-medium bg-mint-100 text-mint-500 px-3 py-1.5 rounded-full hover:bg-mint-200"
+        className="inline-flex items-center gap-1.5 text-xs font-medium bg-mint-100 text-mint-500 px-3 py-1.5 rounded-full hover:bg-mint-200 transition-colors"
       >
         コメントする ↗
       </a>

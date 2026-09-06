@@ -56,23 +56,31 @@ npm run build
 chiikawa-archive/
 ├── src/
 │   ├── app/                     # Next.js App Router ページ
-│   │   ├── layout.tsx           # ルートレイアウト（フォント・メタデータ）
+│   │   ├── layout.tsx           # ルートレイアウト（フォント・メタデータ・構造化データ）
 │   │   ├── globals.css          # グローバルスタイル・カスタムアニメーション
+│   │   ├── robots.ts            # robots.txt の生成
+│   │   ├── sitemap.ts           # sitemap.xml の生成
 │   │   ├── page.tsx             # トップページ
 │   │   ├── archive/page.tsx     # 投稿アーカイブ（カレンダー＋カテゴリフィルタ）
 │   │   ├── news/page.tsx        # ニュース一覧
-│   │   ├── search/page.tsx      # 全文検索（クライアントサイド）
+│   │   ├── search/page.tsx      # 検索（クライアントサイド）
 │   │   ├── stats/page.tsx       # 統計ダッシュボード
 │   │   ├── gallery/page.tsx     # ファン投稿ギャラリー
 │   │   ├── rights/page.tsx      # 権利者様へ
 │   │   └── contact/page.tsx     # お問い合わせ
+│   ├── lib/                     # 共通ロジック（UIを持たない）
+│   │   ├── site.ts              # サイト定数（名称・URL・basePath・assetPath）
+│   │   ├── date.ts              # JST基準の日付整形・計算（実行環境のTZに依存しない）
+│   │   ├── categories.ts        # カテゴリ別件数の集計
+│   │   ├── server-data.ts       # ビルド時に public/data/*.json を読む
+│   │   └── client-data.ts       # ブラウザから public/data/*.json を取得する useSiteJson
 │   ├── components/              # 共通UIコンポーネント
 │   │   ├── Header.tsx           # ナビゲーションヘッダー（スティッキー）
 │   │   ├── Footer.tsx           # フッター
 │   │   ├── HeroSection.tsx      # トップのヒーローバナー（ストリークバッジ含む）
 │   │   ├── StreakBadge.tsx      # 連続観測日数バッジ（localStorage）
 │   │   ├── UpdateCalendar.tsx   # 更新カレンダー（右サイドバー用）
-│   │   ├── PostCard.tsx         # 投稿カード（トップページ用）
+│   │   ├── PostCard.tsx         # 投稿カード（トップ・アーカイブ・検索で共通）
 │   │   ├── PostViewer.tsx       # 投稿ビューアー（アーカイブページ用・クライアント）
 │   │   ├── TwitterEmbed.tsx     # X埋め込みコンポーネント
 │   │   ├── CategoryBadge.tsx    # カテゴリバッジ
@@ -80,6 +88,15 @@ chiikawa-archive/
 │   │   ├── SearchViewer.tsx     # 検索UI（クライアント）
 │   │   ├── GrassBackground.tsx  # 背景画像レイヤー
 │   │   ├── BackToTop.tsx        # トップへ戻るボタン
+│   │   ├── ui/                  # ページ間で使い回す小さな部品
+│   │   │   ├── PageHeader.tsx           # ページ見出し
+│   │   │   ├── SectionTitle.tsx         # セクション小見出し（floating で写真の上でも可読）
+│   │   │   ├── CategoryFilterBar.tsx    # カテゴリ絞り込み（件数表示・0件は選択不可）
+│   │   │   ├── TagList.tsx              # キャラクター名・タグのチップ列
+│   │   │   ├── BulletList.tsx           # 丸印つきリスト
+│   │   │   ├── InfoCard.tsx             # 見出しつき本文カード
+│   │   │   ├── NoteBox.tsx              # 免責・補足の注記ボックス
+│   │   │   └── EmptyState.tsx           # 空状態・読み込み中の表示
 │   │   └── gallery/              # ギャラリー関連（GalleryGrid/Lightbox/CommentThread/UploadForm/GuidelineNotice）
 │   └── types/
 │       └── index.ts             # 型定義（Post, SiteData, NewsData, GalleryImage など）
@@ -118,12 +135,39 @@ chiikawa-archive/
 |-----|--------|------|
 | `/` | トップ | 今日の更新・最近の投稿・最新ニュース・更新カレンダー |
 | `/archive` | 投稿アーカイブ | カレンダー選択＋カテゴリフィルタで全投稿を閲覧（投稿は古い順に表示） |
-| `/news` | ニュース | Google Alerts で収集したちいかわ関連ニュース |
-| `/search` | 検索 | キャラクター名・タグ・カテゴリで投稿を全文検索 |
+| `/news` | ニュース | Google Alerts で収集したちいかわ関連ニュース（30件ずつ追加読み込み） |
+| `/search` | 検索 | キャラクター名・タグ・カテゴリで投稿を絞り込み（20件ずつ追加読み込み） |
 | `/stats` | 統計 | 月別推移・カテゴリ内訳・曜日別・TOP10・キャラ登場回数 |
 | `/gallery` | ギャラリー | グッズ・イベント写真のファン投稿ギャラリー（Tally経由・自動公開・アカウント不要） |
 | `/rights` | 権利者様へ | 著作権・問い合わせ先の説明 |
 | `/contact` | お問い合わせ | GitHub Issues へのリンク |
+
+---
+
+## データ読み込みの方針
+
+`news.json` は3000件超・約2MB、`posts.json` も約500KBある。これらを全件HTMLに埋め込むとページが数MBに膨らむため、**初期表示に必要なぶんだけをサーバー側で埋め込み、残りはブラウザから JSON を取得する**方針をとっている。
+
+| ページ | ビルド時にHTMLへ埋め込むもの | ブラウザが取得するもの |
+|--------|------------------------------|------------------------|
+| `/` | 今日の投稿・直近5件・ニュース6件・カレンダー | （なし） |
+| `/archive` | 日別件数（カレンダー描画用）のみ | `posts.json`（日付・カテゴリを選ぶ前に先読み） |
+| `/news` | 直近30件＋カテゴリ別件数 | `news.json`（絞り込み or「もっと見る」で初めて取得） |
+| `/search` | （なし） | `posts.json` |
+| `/gallery` | （なし） | `gallery.json` |
+
+`posts.json` は `/archive` と `/search` で同じURLを取得するためブラウザキャッシュが共有される。
+取得は `src/lib/client-data.ts` の `useSiteJson()` に集約されており、読み込み中・失敗の状態も返す。
+
+この方針により `/news` のHTMLは 6.3MB → 88KB、`/archive` は 442KB → 76KB になっている。
+
+---
+
+## 実装上の約束ごと
+
+- **日付は必ず `src/lib/date.ts` を経由する。** 扱う日付はすべてJST基準で、ビルドサーバーや閲覧者の端末のタイムゾーンで結果が変わってはいけない。`new Date("2026-09-05T00:00:00")` のような実行環境依存のパースは書かない。
+- **カテゴリの一覧は `ALL_CATEGORIES`（`src/types/index.ts`）から導出する。** ラベルと順序の二重管理を避けるため、`CATEGORY_LABELS` のキー順をそのまま使う。
+- **背景写真の上に置くテキストには下地を敷く。** 固定背景の草原写真はビューポート下部で常に見えているため、カード外のテキストは `.on-photo` か `<SectionTitle floating>` を使わないと読めなくなる。
 
 ---
 
@@ -259,12 +303,23 @@ Tallyフォームのフィールド仕様（変更する場合は `scripts/fetch
 ### ユーティリティクラス（globals.css）
 
 ```css
-.card           /* 白背景 + 角丸 + 影 */
-.card-hover     /* card + ホバー時に浮き上がる */
-.section-title  /* セクション見出し（アイコン + テキスト） */
-.btn-primary    /* ミントグリーンボタン */
-.btn-secondary  /* クリームボタン */
+.card                    /* 白背景 + 角丸 + 影 */
+.card-hover              /* card + ホバー時に浮き上がる */
+.section-title           /* セクション見出し（カード内で使う） */
+.section-title-floating  /* セクション見出し（カード外＝背景写真の上で使う） */
+.on-photo                /* 背景写真の上に置くテキストの下地（淡いクリーム + ぼかし） */
+.btn-primary             /* ゴールドのボタン */
+.btn-secondary           /* 白地のセカンダリボタン */
+.skip-link               /* キーボード操作時のみ現れる「本文へスキップ」 */
 ```
+
+### アクセシビリティ
+
+- 本文冒頭にスキップリンク（Tab キー1回で到達）
+- 現在地のナビゲーションに `aria-current="page"`、絞り込みボタンに `aria-pressed`
+- ギャラリーのライトボックスは `role="dialog"` + フォーカストラップ + 背面スクロール固定、Esc で閉じる
+- `prefers-reduced-motion: reduce` でアニメーションを無効化
+- フォーカスリングは `:focus-visible`（キーボード操作時のみ）で表示
 
 ---
 

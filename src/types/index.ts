@@ -40,6 +40,14 @@ export const CATEGORY_LABELS: Record<PostCategory, string> = {
   other: "その他",
 };
 
+/** フィルタ UI の表示順（CATEGORY_LABELS のキー順と揃える） */
+export const ALL_CATEGORIES: PostCategory[] = Object.keys(
+  CATEGORY_LABELS
+) as PostCategory[];
+
+/** 「すべて」を含むカテゴリ絞り込みの選択値 */
+export type CategoryFilter = PostCategory | "all";
+
 export interface NewsArticle {
   id: string;
   title: string;

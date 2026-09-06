@@ -1,41 +1,25 @@
-import { promises as fs } from "fs";
-import path from "path";
-import type { SiteData, NewsData } from "@/types";
+import Link from "next/link";
+import { readNewsData, readSiteData } from "@/lib/server-data";
+import { toJstDateString, todayJst } from "@/lib/date";
 import HeroSection from "@/components/HeroSection";
 import UpdateCalendar from "@/components/UpdateCalendar";
 import PostCard from "@/components/PostCard";
 import CategoryBadge from "@/components/CategoryBadge";
-import Link from "next/link";
+import SectionTitle from "@/components/ui/SectionTitle";
+import EmptyState from "@/components/ui/EmptyState";
 
-async function getSiteData(): Promise<SiteData> {
-  const filePath = path.join(process.cwd(), "public", "data", "posts.json");
-  const raw = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(raw) as SiteData;
-}
-
-async function getNewsData(): Promise<NewsData> {
-  try {
-    const filePath = path.join(process.cwd(), "public", "data", "news.json");
-    const raw = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(raw) as NewsData;
-  } catch {
-    return { lastUpdated: "", totalArticles: 0, articles: [] };
-  }
-}
-
-function getTodayJst(): string {
-  return new Date().toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
-}
+/** トップに並べる「最近の更新」の件数 */
+const RECENT_POSTS = 5;
+const LATEST_NEWS = 6;
 
 export default async function HomePage() {
-  const [data, newsData] = await Promise.all([getSiteData(), getNewsData()]);
-  const todayStr = getTodayJst();
-  const todayPosts = data.posts.filter((p) =>
-    new Date(p.publishedAt).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" }) === todayStr
-  );
-  const todayIds = new Set(todayPosts.map((p) => p.id));
-  const recentPosts = data.posts.filter((p) => !todayIds.has(p.id)).slice(0, 5);
-  const latestNews = newsData.articles.slice(0, 6);
+  const [data, newsData] = await Promise.all([readSiteData(), readNewsData()]);
+
+  const today = todayJst();
+  const todayPosts = data.posts.filter((post) => toJstDateString(post.publishedAt) === today);
+  const todayIds = new Set(todayPosts.map((post) => post.id));
+  const recentPosts = data.posts.filter((post) => !todayIds.has(post.id)).slice(0, RECENT_POSTS);
+  const latestNews = newsData.articles.slice(0, LATEST_NEWS);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
@@ -46,56 +30,69 @@ export default async function HomePage() {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* 左カラム (2/3) */}
-        <div className="lg:col-span-2 space-y-6">
-          {/* 今日の公式更新 */}
-          <section>
-            <div className="section-title mb-3">
-              Today&apos;s Update
-            </div>
+        {/* 左カラム：公式X投稿 */}
+        <div className="lg:col-span-2 space-y-8">
+          <section aria-labelledby="today-heading">
+            <SectionTitle
+              floating
+              className="mb-3"
+              meta={todayPosts.length > 0 ? `${todayPosts.length}件` : undefined}
+            >
+              <span id="today-heading">Today&apos;s Update</span>
+            </SectionTitle>
 
             {todayPosts.length === 0 ? (
-              <div className="card p-8 text-center text-warm-muted">
-                <p className="text-sm">本日はまだ更新がありません</p>
-              </div>
+              <EmptyState
+                title="本日はまだ更新がありません"
+                hint="公式Xの新着を1日数回チェックしています"
+              />
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {todayPosts.map((post) => (
-                  <PostCard key={post.id} post={post} showEmbed />
+                  <PostCard key={post.id} post={post} />
                 ))}
               </div>
             )}
           </section>
 
-          {/* 最近の更新 */}
-          <section>
-            <div className="section-title mb-3">
-              Recent Posts
-            </div>
-            <div className="space-y-3">
+          <section aria-labelledby="recent-heading">
+            <SectionTitle floating className="mb-3">
+              <span id="recent-heading">Recent Posts</span>
+            </SectionTitle>
+
+            <div className="space-y-4">
               {recentPosts.map((post) => (
-                <PostCard key={post.id} post={post} showEmbed />
+                <PostCard key={post.id} post={post} />
               ))}
+            </div>
+
+            <div className="mt-4 flex justify-end">
+              <Link
+                href="/archive"
+                className="on-photo px-3.5 py-2 text-xs text-mint-500 hover:text-mint-400 font-medium transition-colors"
+              >
+                アーカイブをすべて見る →
+              </Link>
             </div>
           </section>
         </div>
 
-        {/* 右カラム (1/3) */}
-        <div className="space-y-4">
-          {/* 最新ニュース */}
+        {/* 右カラム：ニュース・カレンダー */}
+        <div className="space-y-6">
           {latestNews.length > 0 && (
-            <section>
-              <div className="section-title mb-3">
-                Latest News
-              </div>
-              <div className="card divide-y divide-warm-border">
+            <section aria-labelledby="news-heading">
+              <SectionTitle floating className="mb-3">
+                <span id="news-heading">Latest News</span>
+              </SectionTitle>
+
+              <div className="card divide-y divide-warm-border overflow-hidden">
                 {latestNews.map((article) => (
                   <a
                     key={article.id}
                     href={article.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block p-3 hover:bg-cream-100 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                    className="block p-3 hover:bg-cream-100 transition-colors"
                   >
                     <div className="flex items-center gap-1.5 mb-1">
                       <CategoryBadge category={article.category} />
@@ -107,8 +104,12 @@ export default async function HomePage() {
                   </a>
                 ))}
               </div>
-              <div className="mt-2 text-right">
-                <Link href="/news" className="text-xs text-mint-500 hover:underline font-medium">
+
+              <div className="mt-2 flex justify-end">
+                <Link
+                  href="/news"
+                  className="on-photo px-3.5 py-2 text-xs text-mint-500 hover:text-mint-400 font-medium transition-colors"
+                >
                   ニュース一覧 →
                 </Link>
               </div>
@@ -117,14 +118,16 @@ export default async function HomePage() {
 
           <UpdateCalendar data={data.calendarData} />
 
-          {/* 注意書き */}
-          <div className="border-l-2 border-warm-border pl-3 text-xs text-warm-muted leading-relaxed">
+          <aside className="on-photo p-4 text-xs text-warm-muted leading-relaxed">
             <p className="font-medium text-warm-text mb-1 tracking-wide">このサイトについて</p>
             <p>
               非公式のファンサイトです。公式X（旧Twitter）の埋め込み機能を通じて情報を表示しています。
               漫画画像・動画等はサイト内に保存していません。
             </p>
-          </div>
+            <Link href="/rights" className="text-mint-500 hover:underline mt-1.5 inline-block">
+              権利について →
+            </Link>
+          </aside>
         </div>
       </div>
     </div>

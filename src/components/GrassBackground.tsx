@@ -1,20 +1,19 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+import { assetPath } from "@/lib/site";
 
+/**
+ * 全ページ共通の背景。上部はクリーム色で塗りつぶして本文の可読性を保ち、
+ * 下にいくほど草原の写真が透けて見えるようにしている。
+ */
 export default function GrassBackground() {
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true">
-      {/* Photo layer */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url('${basePath}/images/bg-meadow.jpg')`,
-          backgroundSize: "cover",
+          backgroundImage: `url('${assetPath("/images/bg-meadow.jpg")}')`,
           backgroundPosition: "center 62%",
-          backgroundRepeat: "no-repeat",
         }}
       />
-
-      {/* Gradient overlay: cream at top for readability, fades to reveal photo */}
       <div
         className="absolute inset-0"
         style={{

@@ -4,7 +4,8 @@
 
 @layer base {
   html {
-    background-color: #E4DCD2; /* fallback for fixed bg layer */
+    background-color: #E4DCD2; /* 固定背景レイヤーのフォールバック */
+    scroll-behavior: smooth;
   }
 
   body {
@@ -25,6 +26,13 @@
     font-weight: 500;
     letter-spacing: 0.03em;
   }
+
+  /* キーボード操作時のみフォーカスリングを出す */
+  :focus-visible {
+    outline: 2px solid #B8956A;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 }
 
 @layer components {
@@ -37,7 +45,19 @@
   }
 
   .section-title {
-    @apply text-xs font-normal text-warm-muted flex items-center gap-2 tracking-widest uppercase;
+    @apply text-xs font-normal text-warm-muted flex items-center justify-between gap-2
+           tracking-widest uppercase;
+  }
+
+  /* 背景写真の上に直接置くテキスト。草原に重なっても読めるよう淡い下地を敷く */
+  .on-photo {
+    @apply bg-cream-50/85 backdrop-blur-sm rounded-xl border border-warm-border/50;
+  }
+
+  .section-title-floating {
+    @apply text-xs font-normal text-warm-muted flex items-center justify-between gap-2
+           tracking-widest uppercase bg-cream-50/85 backdrop-blur-sm rounded-xl
+           border border-warm-border/50 px-3.5 py-2;
   }
 
   .btn-primary {
@@ -46,8 +66,19 @@
   }
 
   .btn-secondary {
-    @apply bg-cream-200 text-warm-text px-5 py-2 rounded-xl text-xs font-medium tracking-wide
-           hover:bg-cream-300 transition-colors duration-200;
+    @apply bg-white border border-warm-border text-warm-muted px-5 py-2 rounded-xl text-xs
+           font-medium tracking-wide hover:bg-cream-100 hover:text-warm-text
+           transition-colors duration-200;
+  }
+
+  /* キーボード利用者向け。フォーカス時だけ画面左上に現れる */
+  .skip-link {
+    @apply sr-only;
+  }
+
+  .skip-link:focus {
+    @apply not-sr-only fixed top-3 left-3 z-[100] bg-white text-warm-text text-xs
+           px-4 py-2 rounded-xl border border-warm-border shadow-card;
   }
 }
 
@@ -69,10 +100,24 @@
 .animate-fade-in    { animation: fadeIn  0.4s  ease-out both; }
 .animate-scale-in   { animation: scaleIn 0.22s ease-out both; }
 
-/* Twitter embed override */
+/* 動きを減らす設定を尊重する */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* X埋め込みの余白調整 */
 .twitter-tweet { margin: 0 !important; }
 
-/* Refined scrollbar */
-::-webkit-scrollbar       { width: 4px; }
+/* スクロールバー */
+::-webkit-scrollbar       { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: #EEE6D9; }
 ::-webkit-scrollbar-thumb { background: #B8956A; border-radius: 2px; }

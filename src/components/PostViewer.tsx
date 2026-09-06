@@ -1,136 +1,139 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
-import type { Post, CalendarDay, PostCategory } from "@/types";
-import { CATEGORY_LABELS } from "@/types";
-import TwitterEmbed from "./TwitterEmbed";
-import CategoryBadge from "./CategoryBadge";
+import { useMemo, useRef, useState } from "react";
+import type { CalendarDay, CategoryFilter, Post, SiteData } from "@/types";
+import { useSiteJson } from "@/lib/client-data";
+import { countByCategory } from "@/lib/categories";
+import { addMonths, formatJst, formatJstDateString, toJstDateString, todayJst } from "@/lib/date";
+import PostCard from "./PostCard";
+import CategoryFilterBar from "./ui/CategoryFilterBar";
+import EmptyState from "./ui/EmptyState";
+import SectionTitle from "./ui/SectionTitle";
 
-const ALL_CATEGORIES: PostCategory[] = ["manga", "goods", "anime", "collab", "event", "other"];
-
-// ちいかわ連載開始月（これより前には遡れない）
+/** ちいかわ連載開始月（これより前には遡れない） */
 const MIN_YM = "2020-01";
 
-function getJstDate(isoStr: string): string {
-  return new Date(isoStr).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
-}
-
-function addMonths(ym: string, delta: number): string {
-  const [y, m] = ym.split("-").map(Number);
-  const d = new Date(y, m - 1 + delta, 1);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
-}
+const DOW_LABELS = ["日", "月", "火", "水", "木", "金", "土"];
 
 interface PostViewerProps {
-  posts: Post[];
+  /** 日別の投稿件数。カレンダーを即座に描画するためサーバーから受け取る。 */
   calendarData: CalendarDay[];
 }
 
-export default function PostViewer({ posts, calendarData }: PostViewerProps) {
-  const todayJst = new Date().toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
-  const currentYM = todayJst.slice(0, 7);
+/**
+ * 月カレンダー＋カテゴリ絞り込みで公式X投稿を辿るビューアー。
+ *
+ * 投稿本体（約500KB）は HTML に埋め込まず posts.json をクライアントから取得する。
+ * 検索ページと同じファイルなのでブラウザキャッシュも共有される。
+ */
+export default function PostViewer({ calendarData }: PostViewerProps) {
+  const today = todayJst();
+  const currentYM = today.slice(0, 7);
 
   const [viewYM, setViewYM] = useState(currentYM);
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<PostCategory | "all">("all");
+  const [category, setCategory] = useState<CategoryFilter>("all");
   const postListRef = useRef<HTMLDivElement>(null);
 
-  const dataMap = useMemo(
-    () => Object.fromEntries(calendarData.map((d) => [d.date, d])),
+  const posts = useSiteJson<SiteData>("posts.json");
+
+  const countByDate = useMemo(
+    () => new Map(calendarData.map((day) => [day.date, day.count])),
     [calendarData]
   );
 
   const calendarRows = useMemo(() => {
-    const [y, m] = viewYM.split("-").map(Number);
-    const firstDow = new Date(y, m - 1, 1).getDay();
-    const daysInMonth = new Date(y, m, 0).getDate();
+    const [year, month] = viewYM.split("-").map(Number);
+    const firstDow = new Date(year, month - 1, 1).getDay();
+    const daysInMonth = new Date(year, month, 0).getDate();
 
     const cells: ({ date: string; count: number } | null)[] = Array(firstDow).fill(null);
-    for (let d = 1; d <= daysInMonth; d++) {
-      const dateStr = `${viewYM}-${String(d).padStart(2, "0")}`;
-      cells.push({ date: dateStr, count: dataMap[dateStr]?.count ?? 0 });
+    for (let day = 1; day <= daysInMonth; day++) {
+      const date = `${viewYM}-${String(day).padStart(2, "0")}`;
+      cells.push({ date, count: countByDate.get(date) ?? 0 });
     }
     while (cells.length % 7 !== 0) cells.push(null);
 
-    const rows: ({ date: string; count: number } | null)[][] = [];
-    for (let i = 0; i < cells.length; i += 7) rows.push(cells.slice(i, i + 7));
-    return rows;
-  }, [viewYM, dataMap]);
+    return Array.from({ length: cells.length / 7 }, (_, i) => cells.slice(i * 7, i * 7 + 7));
+  }, [viewYM, countByDate]);
 
   const monthPostCount = useMemo(
-    () => calendarData.filter((d) => d.date.startsWith(viewYM)).reduce((s, d) => s + d.count, 0),
+    () =>
+      calendarData
+        .filter((day) => day.date.startsWith(viewYM))
+        .reduce((sum, day) => sum + day.count, 0),
     [calendarData, viewYM]
   );
 
-  function handleDayClick(date: string, count: number) {
-    if (count === 0) return;
-    setSelectedDate((prev) => {
-      if (prev !== date) {
-        setTimeout(() => {
-          postListRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 50);
-      }
-      return prev === date ? null : date;
-    });
-  }
-
-  const filtered = useMemo(() => {
-    return posts
-      .filter((p) => {
-        const d = getJstDate(p.publishedAt);
-        if (selectedDate ? d !== selectedDate : !d.startsWith(viewYM)) return false;
-        if (selectedCategory !== "all" && p.category !== selectedCategory) return false;
-        return true;
+  /** 選択中の日 / 月に属する投稿（カテゴリ絞り込み前） */
+  const scopedPosts = useMemo(() => {
+    if (!posts.data) return [];
+    return posts.data.posts
+      .filter((post) => {
+        const date = toJstDateString(post.publishedAt);
+        return selectedDate ? date === selectedDate : date.startsWith(viewYM);
       })
-      .sort((a, b) => new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime());
-  }, [posts, selectedDate, viewYM, selectedCategory]);
+      .sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
+  }, [posts.data, selectedDate, viewYM]);
 
-  const [vYear, vMonth] = viewYM.split("-").map(Number);
-  const viewMonthLabel = new Date(vYear, vMonth - 1, 1).toLocaleDateString("ja-JP", {
-    year: "numeric",
-    month: "long",
+  const categoryCounts = useMemo(() => countByCategory(scopedPosts), [scopedPosts]);
+
+  const filtered = useMemo(
+    () => (category === "all" ? scopedPosts : scopedPosts.filter((p) => p.category === category)),
+    [scopedPosts, category]
+  );
+
+  const [viewYear, viewMonth] = viewYM.split("-").map(Number);
+  const [minYear, minMonth] = MIN_YM.split("-").map(Number);
+  const [currentYear, currentMonth] = currentYM.split("-").map(Number);
+  const yearOptions = Array.from({ length: currentYear - minYear + 1 }, (_, i) => minYear + i);
+  const monthOptions = Array.from({ length: 12 }, (_, i) => i + 1).filter((month) => {
+    const ym = `${viewYear}-${String(month).padStart(2, "0")}`;
+    return ym >= MIN_YM && ym <= currentYM;
   });
 
-  const [minYear, minMonth] = MIN_YM.split("-").map(Number);
-  const [curYear, curMonth] = currentYM.split("-").map(Number);
-  const yearOptions = Array.from({ length: curYear - minYear + 1 }, (_, i) => minYear + i);
-
-  function handleYearChange(newYear: number) {
-    let month = vMonth;
-    if (newYear === minYear && month < minMonth) month = minMonth;
-    if (newYear === curYear && month > curMonth) month = curMonth;
-    setViewYM(`${newYear}-${String(month).padStart(2, "0")}`);
+  function goToMonth(ym: string) {
+    setViewYM(ym);
     setSelectedDate(null);
   }
 
-  function handleMonthChange(newMonth: number) {
-    setViewYM(`${vYear}-${String(newMonth).padStart(2, "0")}`);
-    setSelectedDate(null);
+  function handleYearChange(year: number) {
+    let month = viewMonth;
+    if (year === minYear && month < minMonth) month = minMonth;
+    if (year === currentYear && month > currentMonth) month = currentMonth;
+    goToMonth(`${year}-${String(month).padStart(2, "0")}`);
+  }
+
+  function handleDayClick(date: string) {
+    const isOpening = selectedDate !== date;
+    setSelectedDate(isOpening ? date : null);
+    if (isOpening) {
+      // state 反映後にリストの位置が確定するため、次フレームでスクロールする
+      requestAnimationFrame(() =>
+        postListRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+      );
+    }
   }
 
   const selectClass =
-    "bg-cream-100 border border-warm-border rounded-lg px-2 py-1 text-sm font-medium text-warm-text cursor-pointer hover:bg-cream-200 focus:outline-none focus:ring-2 focus:ring-mint-300";
+    "bg-cream-100 border border-warm-border rounded-lg px-2 py-1 text-sm font-medium text-warm-text cursor-pointer hover:bg-cream-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-mint-300";
+  const arrowClass =
+    "w-9 h-9 flex items-center justify-center rounded-lg hover:bg-cream-200 disabled:opacity-30 disabled:cursor-not-allowed text-warm-text text-xl";
 
   const resultLabel = selectedDate
-    ? new Date(selectedDate + "T00:00:00+09:00").toLocaleDateString("ja-JP", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        timeZone: "Asia/Tokyo",
-      })
-    : viewMonthLabel;
-
-  const DOW = ["日", "月", "火", "水", "木", "金", "土"];
+    ? formatJstDateString(selectedDate, "longDate")
+    : formatJst(new Date(Date.UTC(viewYear, viewMonth - 1, 1, 12)), "yearMonth");
 
   return (
     <div className="space-y-6">
-      {/* Month Calendar */}
+      {/* 月カレンダー */}
       <div className="card p-4">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between gap-2 mb-4 max-w-xs mx-auto">
           <button
-            onClick={() => { setViewYM(addMonths(viewYM, -1)); setSelectedDate(null); }}
+            type="button"
+            onClick={() => goToMonth(addMonths(viewYM, -1))}
             disabled={viewYM <= MIN_YM}
-            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-cream-200 disabled:opacity-30 disabled:cursor-not-allowed text-warm-text text-xl font-bold"
+            className={arrowClass}
             aria-label="前の月"
           >
             ‹
@@ -139,48 +142,50 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
           <div className="flex flex-col items-center gap-1">
             <div className="flex items-center gap-1">
               <select
-                value={vYear}
+                value={viewYear}
                 onChange={(e) => handleYearChange(Number(e.target.value))}
                 className={selectClass}
                 aria-label="年を選択"
               >
-                {yearOptions.map((y) => (
-                  <option key={y} value={y}>{y}年</option>
+                {yearOptions.map((year) => (
+                  <option key={year} value={year}>
+                    {year}年
+                  </option>
                 ))}
               </select>
               <select
-                value={vMonth}
-                onChange={(e) => handleMonthChange(Number(e.target.value))}
+                value={viewMonth}
+                onChange={(e) =>
+                  goToMonth(`${viewYear}-${String(Number(e.target.value)).padStart(2, "0")}`)
+                }
                 className={selectClass}
                 aria-label="月を選択"
               >
-                {Array.from({ length: 12 }, (_, i) => i + 1)
-                  .filter((m) => {
-                    const ym = `${vYear}-${String(m).padStart(2, "0")}`;
-                    return ym >= MIN_YM && ym <= currentYM;
-                  })
-                  .map((m) => (
-                    <option key={m} value={m}>{m}月</option>
-                  ))}
+                {monthOptions.map((month) => (
+                  <option key={month} value={month}>
+                    {month}月
+                  </option>
+                ))}
               </select>
             </div>
-            <p className="text-xs text-warm-muted">
+            <p className="text-xs text-warm-muted tabular-nums">
               {monthPostCount > 0 ? `${monthPostCount}件の投稿` : "投稿なし"}
             </p>
           </div>
 
           <button
-            onClick={() => { setViewYM(addMonths(viewYM, 1)); setSelectedDate(null); }}
+            type="button"
+            onClick={() => goToMonth(addMonths(viewYM, 1))}
             disabled={viewYM >= currentYM}
-            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-cream-200 disabled:opacity-30 disabled:cursor-not-allowed text-warm-text text-xl font-bold"
+            className={arrowClass}
             aria-label="次の月"
           >
             ›
           </button>
         </div>
 
-        <div className="grid grid-cols-7 mb-1">
-          {DOW.map((label, i) => (
+        <div className="grid grid-cols-7 mb-1" aria-hidden="true">
+          {DOW_LABELS.map((label, i) => (
             <div
               key={label}
               className={`text-center text-xs py-1 font-medium ${
@@ -193,36 +198,38 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
         </div>
 
         <div className="space-y-1">
-          {calendarRows.map((row, ri) => (
-            <div key={ri} className="grid grid-cols-7 gap-1">
-              {row.map((cell, ci) => {
-                if (!cell) return <div key={ci} className="h-9" />;
-                const dayNum = parseInt(cell.date.slice(-2));
-                const isToday = cell.date === todayJst;
+          {calendarRows.map((row, rowIndex) => (
+            <div key={rowIndex} className="grid grid-cols-7 gap-1">
+              {row.map((cell, cellIndex) => {
+                if (!cell) return <div key={cellIndex} className="h-9" />;
+
+                const dayNumber = Number(cell.date.slice(-2));
+                const isToday = cell.date === today;
                 const isSelected = cell.date === selectedDate;
                 const hasPost = cell.count > 0;
+
                 return (
                   <button
-                    key={ci}
+                    key={cell.date}
                     type="button"
-                    onClick={() => handleDayClick(cell.date, cell.count)}
+                    onClick={() => handleDayClick(cell.date)}
                     disabled={!hasPost}
-                    title={hasPost ? `${cell.date}：${cell.count}件` : cell.date}
+                    aria-pressed={hasPost ? isSelected : undefined}
+                    aria-label={`${formatJstDateString(cell.date)} ${cell.count}件`}
                     className={[
-                      "h-9 rounded-lg flex flex-col items-center justify-center relative text-sm transition-colors select-none",
+                      "h-9 rounded-lg flex items-center justify-center relative text-sm transition-colors select-none tabular-nums",
                       isSelected
-                        ? "bg-mint-500 text-white"
+                        ? "bg-mint-500 text-white font-medium"
                         : hasPost
                         ? "bg-mint-100 hover:bg-mint-200 text-mint-500 cursor-pointer"
-                        : "text-warm-muted cursor-default",
+                        : "text-warm-muted/60 cursor-default",
                       isToday && !isSelected ? "ring-2 ring-mint-400 ring-offset-1" : "",
-                    ]
-                      .filter(Boolean)
-                      .join(" ")}
+                    ].join(" ")}
                   >
-                    <span className="leading-none text-sm">{dayNum}</span>
+                    <span className="leading-none">{dayNumber}</span>
                     {hasPost && (
                       <span
+                        aria-hidden="true"
                         className={`absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${
                           isSelected ? "bg-white" : "bg-mint-400"
                         }`}
@@ -238,6 +245,7 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
         {selectedDate && (
           <div className="mt-3 text-center">
             <button
+              type="button"
               onClick={() => setSelectedDate(null)}
               className="text-xs text-warm-muted hover:text-warm-text underline"
             >
@@ -247,95 +255,50 @@ export default function PostViewer({ posts, calendarData }: PostViewerProps) {
         )}
       </div>
 
-      {/* Category filter */}
+      {/* カテゴリ絞り込み */}
       <div className="card p-4">
-        <div className="section-title mb-3">Category</div>
-        <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => setSelectedCategory("all")}
-            className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${
-              selectedCategory === "all"
-                ? "bg-mint-200 text-mint-500"
-                : "bg-cream-100 text-warm-muted hover:bg-cream-200"
-            }`}
-          >
-            すべて
-          </button>
-          {ALL_CATEGORIES.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat === selectedCategory ? "all" : cat)}
-              className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${
-                selectedCategory === cat
-                  ? "bg-mint-200 text-mint-500"
-                  : "bg-cream-100 text-warm-muted hover:bg-cream-200"
-              }`}
-            >
-              {CATEGORY_LABELS[cat]}
-            </button>
-          ))}
-        </div>
+        <SectionTitle className="mb-3">Category</SectionTitle>
+        <CategoryFilterBar
+          value={category}
+          onChange={setCategory}
+          counts={posts.status === "ready" ? categoryCounts : undefined}
+        />
       </div>
 
-      {/* Post list */}
-      <div ref={postListRef}>
-        <div className="section-title mb-3">
-          <span>{resultLabel}</span>
-          <span className="font-normal normal-case text-warm-muted">{filtered.length}件</span>
-        </div>
+      {/* 投稿リスト */}
+      <div ref={postListRef} className="scroll-mt-20">
+        <SectionTitle
+          floating
+          className="mb-3"
+          meta={posts.status === "ready" ? `${filtered.length}件` : undefined}
+        >
+          {resultLabel}
+        </SectionTitle>
 
-        {filtered.length === 0 ? (
-          <div className="card p-8 text-center text-warm-muted">
-            <p className="text-sm">この月の投稿はまだアーカイブされていません</p>
-          </div>
+        {posts.status === "loading" ? (
+          <EmptyState title="投稿を読み込んでいます…" />
+        ) : posts.status === "error" ? (
+          <EmptyState
+            title="投稿データを読み込めませんでした"
+            hint="時間をおいて再度お試しください"
+          />
+        ) : filtered.length === 0 ? (
+          <EmptyState
+            title={
+              selectedDate
+                ? "この日の投稿はアーカイブされていません"
+                : "この月の投稿はまだアーカイブされていません"
+            }
+            hint={category !== "all" ? "カテゴリの絞り込みを外すと表示されることがあります" : undefined}
+          />
         ) : (
           <div className="space-y-4">
-            {filtered.map((post) => (
-              <PostEmbedCard key={post.id} post={post} />
+            {filtered.map((post: Post) => (
+              <PostCard key={post.id} post={post} />
             ))}
           </div>
         )}
       </div>
     </div>
-  );
-}
-
-function PostEmbedCard({ post }: { post: Post }) {
-  const date = new Date(post.publishedAt).toLocaleDateString("ja-JP", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    timeZone: "Asia/Tokyo",
-  });
-
-  return (
-    <article className="card p-4">
-      <div className="flex items-center justify-between gap-3 mb-3">
-        <CategoryBadge category={post.category} />
-        <time className="text-xs text-warm-muted">{date}</time>
-      </div>
-
-      <TwitterEmbed tweetId={post.tweetId} url={post.url} hasSinglePhoto={Boolean(post.photoUrl)} />
-
-      {(post.characters.length > 0 || post.tags.length > 0) && (
-        <div className="mt-3 pt-3 border-t border-warm-border flex flex-wrap items-center gap-2">
-          {post.characters.map((char) => (
-            <span
-              key={char}
-              className="text-xs bg-lavender-100 text-lavender-400 px-2 py-0.5 rounded-full"
-            >
-              {char}
-            </span>
-          ))}
-          {post.tags.map((tag) => (
-            <span key={tag} className="text-xs text-warm-muted">
-              #{tag}
-            </span>
-          ))}
-        </div>
-      )}
-    </article>
   );
 }

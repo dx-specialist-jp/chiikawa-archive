@@ -1,62 +1,35 @@
 import type { Post } from "@/types";
+import { formatJst } from "@/lib/date";
 import CategoryBadge from "./CategoryBadge";
 import TwitterEmbed from "./TwitterEmbed";
+import TagList from "./ui/TagList";
 
 interface PostCardProps {
   post: Post;
-  showEmbed?: boolean;
 }
 
-export default function PostCard({ post, showEmbed = false }: PostCardProps) {
-  const date = new Date(post.publishedAt).toLocaleDateString("ja-JP", {
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    timeZone: "Asia/Tokyo",
-  });
-
+/** 公式X投稿1件のカード。トップ・アーカイブ・検索で共通に使う。 */
+export default function PostCard({ post }: PostCardProps) {
   return (
-    <article className="card-hover p-4">
-      <div className="flex items-start justify-between gap-3 mb-2">
+    <article className="card p-4">
+      <div className="flex items-center justify-between gap-3 mb-3">
         <CategoryBadge category={post.category} />
-        <time className="text-xs text-warm-muted shrink-0">{date}</time>
+        <time dateTime={post.publishedAt} className="text-xs text-warm-muted shrink-0 tabular-nums">
+          {formatJst(post.publishedAt, "shortDateTime")}
+        </time>
       </div>
 
-      {showEmbed ? (
-        <TwitterEmbed tweetId={post.tweetId} url={post.url} hasSinglePhoto={Boolean(post.photoUrl)} className="mb-3" />
-      ) : (
-        <>
-          {post.summary && (
-            <p className="text-sm text-warm-text leading-relaxed mb-3">{post.summary}</p>
-          )}
-          <div className="flex flex-wrap items-center gap-2 mb-3">
-            {post.characters.map((char) => (
-              <span
-                key={char}
-                className="text-xs bg-lavender-100 text-lavender-400 px-2 py-0.5 rounded-full"
-              >
-                {char}
-              </span>
-            ))}
-            {post.tags.map((tag) => (
-              <span key={tag} className="text-xs text-warm-muted">
-                #{tag}
-              </span>
-            ))}
-          </div>
-          <div className="pt-3 border-t border-warm-border">
-            <a
-              href={post.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-mint-500 hover:underline"
-            >
-              公式X で見る →
-            </a>
-          </div>
-        </>
+      <TwitterEmbed
+        tweetId={post.tweetId}
+        url={post.url}
+        hasSinglePhoto={Boolean(post.photoUrl)}
+      />
+
+      {post.summary && (
+        <p className="mt-3 text-sm text-warm-text leading-relaxed">{post.summary}</p>
       )}
+
+      <TagList characters={post.characters} tags={post.tags} divided />
     </article>
   );
 }
