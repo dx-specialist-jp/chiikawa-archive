@@ -104,6 +104,8 @@ export interface GalleryImage {
 
 export interface GalleryData {
   lastUpdated: string;
+  /** 写真投稿フォームのURL（同期スクリプトが使ったフォームIDから生成される） */
+  submissionFormUrl?: string;
   totalImages: number;
   images: GalleryImage[];
 }

@@ -5,6 +5,7 @@ import EmptyState from "@/components/ui/EmptyState";
 import GuidelineNotice from "@/components/gallery/GuidelineNotice";
 import UploadForm from "@/components/gallery/UploadForm";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
+import { readGalleryData } from "@/lib/server-data";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     "ちいかわグッズ・イベント写真のファン投稿ギャラリー。アカウント登録なしで投稿できます。",
 };
 
-export default function GalleryPage() {
+export default async function GalleryPage() {
+  const { submissionFormUrl } = await readGalleryData();
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <PageHeader
@@ -21,7 +24,7 @@ export default function GalleryPage() {
       />
 
       <div className="space-y-6">
-        <UploadForm />
+        <UploadForm submissionFormUrl={submissionFormUrl} />
         <Suspense fallback={<EmptyState title="読み込んでいます…" />}>
           <GalleryGrid />
         </Suspense>

@@ -115,6 +115,8 @@ test("投稿を取り込み、画像以外を除外してコメントを紐づ�
   assert.equal(image.caption, "映画の入場者特典です");
   assert.deepEqual(image.comments.map((c) => c.body), ["かわいい！"]);
   assert.match(image.commentFormUrl, /image_id=gallery-SUB1/);
+  // 投稿ボタンのリンク先も同じフォームIDから作る（サイト側に持たせるとズレる）
+  assert.equal(data.submissionFormUrl, `https://tally.so/r/${IMAGE_FORM}`);
 });
 
 test("画像URLのトークンだけが変わったときは書き込まない", async () => {

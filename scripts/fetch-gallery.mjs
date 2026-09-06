@@ -166,6 +166,9 @@ async function main() {
   // 取得のたびに変わる画像URLのトークンで差分を出さない（詳細は lib/gallery-store.mjs）
   const updated = {
     lastUpdated: new Date().toISOString(),
+    // 投稿ボタンのリンク先。サイト側にIDを持たせると差し替え時にズレるため、
+    // 同期に使っているフォームIDをそのまま書き出して単一の出所にする
+    submissionFormUrl: `https://tally.so/r/${TALLY_IMAGE_FORM_ID}`,
     totalImages: images.length,
     images: preserveImageUrls(images, existing?.images),
   };
