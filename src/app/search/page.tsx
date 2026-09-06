@@ -12,7 +12,7 @@ export default function SearchPage() {
     <div className="max-w-3xl mx-auto px-4 py-6">
       <PageHeader
         title="Search"
-        description="キャラクター名・タグ・カテゴリで公式X投稿を絞り込めます"
+        description="投稿本文のキーワード・キャラクター名・タグ・カテゴリで公式X投稿を絞り込めます"
       />
       <SearchViewer />
     </div>
