@@ -22,6 +22,14 @@ const CATEGORY_RULES = [
     keywords: ["イベント", "展示", "ポップアップ", "フェア", "ちいかわらんど", "催事", "PARCO", "パルコ"],
   },
   {
+    // 単行本・掲載誌の告知は「発売」を含むため、goods より先に判定しないと
+    // すべてグッズに倒れる（実データでは10件中9件がそうなっていた）。
+    // 「描き下ろし」は「特別描き下ろしデザインのグッズ」でも使われるためここには入れない
+    category: "manga",
+    keywords: ["単行本", "コミックス", "モーニング"],
+    patterns: [/[0-9０-９]+巻/],
+  },
+  {
     // 「映画ちいかわ」等はグッズ告知の枕詞としても頻出するため、
     // 商品固有の語句を先に判定してからアニメ本編・劇場版の話題に倒す
     category: "goods",
@@ -79,8 +87,9 @@ export function detectCategory(text, { mediaCount = 0 } = {}) {
     return "manga";
   }
 
-  for (const { category, keywords } of CATEGORY_RULES) {
+  for (const { category, keywords, patterns = [] } of CATEGORY_RULES) {
     if (keywords.some((kw) => text.includes(kw))) return category;
+    if (patterns.some((pattern) => pattern.test(text))) return category;
   }
   return "other";
 }
