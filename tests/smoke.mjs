@@ -153,6 +153,33 @@ await step("ニュースの操作", async () => {
   await context.close();
 });
 
+// 掲載ぶんを見終えたあと、年別アーカイブの過去記事を読み込めるか
+await step("ニュース: 過去記事の読み込み", async () => {
+  const { context, page, errors } = await openPage();
+  await page.goto(`${origin}/news/`, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(400);
+
+  // 件数の少ないカテゴリで絞り込むと、掲載ぶんを見終えた状態にすぐ辿り着ける
+  await page.getByRole("button", { name: /漫画/ }).click();
+  await page.waitForTimeout(1500);
+  const before = await page.locator("main a.card-hover").count();
+
+  const olderButton = page.getByRole("button", { name: /年の記事を読み込む/ });
+  if ((await olderButton.count()) === 0) {
+    // 退避がまだ発生していないビルドでは出ないボタンなので、失敗にはしない
+    console.log("- ニュース: 過去記事の読み込み — アーカイブがないため省略");
+    await context.close();
+    return;
+  }
+
+  await olderButton.first().click();
+  await page.waitForTimeout(2000);
+  const after = await page.locator("main a.card-hover").count();
+  check("ニュース: 過去記事を読み込むと件数が増える", after > before, `${before} → ${after}`);
+  check("ニュース: 過去記事の読み込みでJSエラーなし", errors.filter(isOurError).length === 0);
+  await context.close();
+});
+
 await browser.close();
 server.close();
 

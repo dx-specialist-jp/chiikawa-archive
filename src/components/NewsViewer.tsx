@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import type { CategoryFilter, NewsArticle, NewsData } from "@/types";
+import type { CategoryFilter, NewsArchiveData, NewsArchiveYear, NewsArticle, NewsData } from "@/types";
 import { CATEGORY_LABELS } from "@/types";
 import { fetchSiteJson } from "@/lib/client-data";
 import { formatJst } from "@/lib/date";
@@ -17,6 +17,8 @@ interface NewsViewerProps {
   /** 全件数とカテゴリ別件数（全件 JSON を読まずに件数を出すため） */
   totalArticles: number;
   categoryCounts: Record<CategoryFilter, number>;
+  /** 保持上限を超えて年別ファイルへ退避した過去記事の一覧（新しい年が先） */
+  archiveYears: NewsArchiveYear[];
 }
 
 /**
@@ -28,10 +30,13 @@ export default function NewsViewer({
   initialArticles,
   totalArticles,
   categoryCounts,
+  archiveYears,
 }: NewsViewerProps) {
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [allArticles, setAllArticles] = useState<NewsArticle[] | null>(null);
+  const [olderArticles, setOlderArticles] = useState<NewsArticle[]>([]);
+  const [loadedYears, setLoadedYears] = useState<string[]>([]);
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
 
   const requestedRef = useRef(false);
@@ -51,6 +56,23 @@ export default function NewsViewer({
       });
   }, []);
 
+  /** 次に読み込む年（新しい年から順に1年ぶんずつ）*/
+  const nextArchiveYear = archiveYears.find((y) => !loadedYears.includes(y.year));
+
+  function loadOlder() {
+    if (!nextArchiveYear || status === "loading") return;
+    setStatus("loading");
+    loadAll(); // 掲載中のぶんが未取得なら合わせて取りに行く
+    fetchSiteJson<NewsArchiveData>(`news-archive/${nextArchiveYear.year}.json`)
+      .then((data) => {
+        setOlderArticles((current) => [...current, ...data.articles]);
+        setLoadedYears((current) => [...current, data.year]);
+        setVisibleCount((count) => count + PAGE_SIZE);
+        setStatus("idle");
+      })
+      .catch(() => setStatus("error"));
+  }
+
   function handleCategoryChange(next: CategoryFilter) {
     setCategory(next);
     setVisibleCount(PAGE_SIZE);
@@ -64,7 +86,7 @@ export default function NewsViewer({
   }
 
   const hasAll = allArticles !== null;
-  const articles = allArticles ?? initialArticles;
+  const articles = [...(allArticles ?? initialArticles), ...olderArticles];
   const filtered =
     category === "all" ? articles : articles.filter((a) => a.category === category);
   const visible = filtered.slice(0, visibleCount);
@@ -119,11 +141,23 @@ export default function NewsViewer({
         </p>
       )}
 
-      {status === "idle" && visible.length < matchCount && (
-        <div className="text-center mt-6">
-          <button type="button" onClick={showMore} className="btn-secondary">
-            もっと見る
-          </button>
+      {status === "idle" && (
+        <div className="text-center mt-6 flex flex-col items-center gap-3">
+          {visible.length < matchCount && (
+            <button type="button" onClick={showMore} className="btn-secondary">
+              もっと見る
+            </button>
+          )}
+
+          {/* 掲載ぶんを見終えたら、年別に退避してある過去記事を辿れるようにする */}
+          {visible.length >= matchCount && nextArchiveYear && (
+            <button type="button" onClick={loadOlder} className="btn-secondary">
+              {nextArchiveYear.year}年の記事を読み込む
+              <span className="ml-1.5 opacity-70 tabular-nums">
+                {nextArchiveYear.totalArticles.toLocaleString()}件
+              </span>
+            </button>
+          )}
         </div>
       )}
     </>

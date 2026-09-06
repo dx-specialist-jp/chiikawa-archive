@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import type { GalleryData, NewsData, SiteData } from "@/types";
+import type { GalleryData, NewsArchiveData, NewsArchiveYear, NewsData, SiteData } from "@/types";
 
 /**
  * ビルド時に `public/data/*.json` を読み込むヘルパー。
@@ -31,6 +31,28 @@ export function readNewsData(): Promise<NewsData> {
     totalArticles: 0,
     articles: [],
   });
+}
+
+/**
+ * 年別アーカイブの一覧を作る。件数だけをビルド時に数えておき、
+ * 記事本体はブラウザが必要になった時点で取得する。
+ */
+export async function readNewsArchiveYears(): Promise<NewsArchiveYear[]> {
+  const dir = path.join(process.cwd(), "public", "data", "news-archive");
+  let fileNames: string[];
+  try {
+    fileNames = (await fs.readdir(dir)).filter((name) => name.endsWith(".json"));
+  } catch {
+    return []; // 退避がまだ発生していない状態
+  }
+
+  const years = await Promise.all(
+    fileNames.map(async (fileName) => {
+      const data = JSON.parse(await fs.readFile(path.join(dir, fileName), "utf-8")) as NewsArchiveData;
+      return { year: data.year, totalArticles: data.articles.length };
+    })
+  );
+  return years.sort((a, b) => b.year.localeCompare(a.year));
 }
 
 export function readGalleryData(): Promise<GalleryData> {

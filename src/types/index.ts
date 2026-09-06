@@ -65,6 +65,19 @@ export interface NewsData {
   articles: NewsArticle[];
 }
 
+/** 保持上限を超えて年別ファイルへ退避した過去記事 */
+export interface NewsArchiveData {
+  year: string;
+  totalArticles: number;
+  articles: NewsArticle[];
+}
+
+/** ビルド時に数えておく年別アーカイブの一覧（新しい年が先） */
+export interface NewsArchiveYear {
+  year: string;
+  totalArticles: number;
+}
+
 export type GalleryCategory = "goods" | "event" | "other";
 
 export const GALLERY_CATEGORY_LABELS: Record<GalleryCategory, string> = {

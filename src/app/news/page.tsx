@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { readNewsData } from "@/lib/server-data";
+import { readNewsArchiveYears, readNewsData } from "@/lib/server-data";
 import { countByCategory } from "@/lib/categories";
 import NewsViewer from "@/components/NewsViewer";
 import PageHeader from "@/components/ui/PageHeader";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const INITIAL_ARTICLES = 30;
 
 export default async function NewsPage() {
-  const data = await readNewsData();
+  const [data, archiveYears] = await Promise.all([readNewsData(), readNewsArchiveYears()]);
 
   // 件数はビルド時に数えておき、全件JSONを取得しなくても絞り込みUIに出せるようにする
   const categoryCounts = countByCategory(data.articles);
@@ -37,6 +37,7 @@ export default async function NewsPage() {
           initialArticles={data.articles.slice(0, INITIAL_ARTICLES)}
           totalArticles={data.totalArticles || data.articles.length}
           categoryCounts={categoryCounts}
+          archiveYears={archiveYears}
         />
       </div>
     </div>
