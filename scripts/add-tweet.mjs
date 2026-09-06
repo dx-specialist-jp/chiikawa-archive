@@ -12,6 +12,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { detectCategory, extractCharacters, extractTagsFromHashtags } from "./lib/tagging.mjs";
 import { fetchTweetDetails } from "./lib/syndication.mjs";
+import { toSummary } from "./lib/post-text.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
@@ -79,11 +80,14 @@ async function main() {
   const text = details?.text ?? "";
   const category = CATEGORY || detectCategory(text, { mediaCount: details?.mediaCount ?? 0 });
 
+  const summary = toSummary(text);
+
   const newPost = {
     id: `post-${tweetId}`,
     tweetId,
     url: `https://x.com/ngnchiikawa/status/${tweetId}`,
     publishedAt,
+    ...(summary ? { summary } : {}),
     category,
     tags: details ? extractTagsFromHashtags(details.hashtags) : [],
     characters: details ? extractCharacters(text) : [],

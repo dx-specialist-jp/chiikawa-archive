@@ -10,6 +10,7 @@ import { writeFile, readFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { detectCategory, extractCharacters, extractTagsFromHashtags } from "./lib/tagging.mjs";
+import { toSummary } from "./lib/post-text.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
@@ -295,11 +296,13 @@ async function main() {
         media.length === 1 && media[0].type === "photo"
           ? `${media[0].media_url_https}?format=jpg&name=large`
           : null;
+      const summary = toSummary(text);
       allPosts.set(legacy.id_str, {
         id: `post-${legacy.id_str}`,
         tweetId: legacy.id_str,
         url: `https://x.com/${USERNAME}/status/${legacy.id_str}`,
         publishedAt: new Date(legacy.created_at).toISOString(),
+        ...(summary ? { summary } : {}),
         category: detectCategory(text, { mediaCount: media.length }),
         tags: extractTagsFromHashtags(hashtags),
         characters: extractCharacters(text),

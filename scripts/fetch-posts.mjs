@@ -11,6 +11,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { detectCategory, extractCharacters, extractTagsFromHashtags, extractHashtagsFromText } from "./lib/tagging.mjs";
 import { fetchTweetDetails } from "./lib/syndication.mjs";
+import { toSummary } from "./lib/post-text.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "public", "data");
@@ -137,11 +138,15 @@ async function main() {
     const hashtags = details ? details.hashtags : extractHashtagsFromText(item.text);
     const mediaCount = details?.mediaCount ?? 0;
 
+    // 本文は検索と投稿カードの表示に使う（絵文字だけの投稿は保存しない）
+    const summary = toSummary(text);
+
     newPosts.push({
       id: `post-${item.tweetId}`,
       tweetId: item.tweetId,
       url: item.link,
       publishedAt: item.publishedAt,
+      ...(summary ? { summary } : {}),
       category: detectCategory(text, { mediaCount }),
       tags: extractTagsFromHashtags(hashtags),
       characters: extractCharacters(text),

@@ -180,6 +180,20 @@ await step("ニュース: 過去記事の読み込み", async () => {
   await context.close();
 });
 
+// 本文キーワードでの検索（タグ・キャラクター名では当たらない語で確かめる）
+await step("検索: 本文のキーワードで投稿が見つかる", async () => {
+  const { context, page, errors } = await openPage();
+  await page.goto(`${origin}/search/`, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(1200);
+
+  await page.locator("main input").first().fill("上映");
+  await page.waitForTimeout(1200);
+  const hits = await page.locator("main article.card").count();
+  check("検索: 本文のキーワードで投稿が見つかる", hits > 0, `「上映」で${hits}件`);
+  check("検索: JSエラーなし", errors.filter(isOurError).length === 0);
+  await context.close();
+});
+
 await browser.close();
 server.close();
 
