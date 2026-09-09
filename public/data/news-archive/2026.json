@@ -1,7 +1,51 @@
 {
   "year": "2026",
-  "totalArticles": 1260,
+  "totalArticles": 1264,
   "articles": [
+    {
+      "id": "news-980d2df863b4",
+      "title": "『 ちいかわ 』×「スッパイマン」コラボパケがグッズ化！ マスコットやおかしキーホルダーなど全5型",
+      "url": "https://www.crank-in.net/trend/item/188716/1",
+      "source": "crank-in.net",
+      "publishedAt": "2026-07-28T01:06:23.000Z",
+      "summary": "おでかけ ... 『 ちいかわ 』新作エニマイくじ、12月中旬頃 発売 ！ 加湿器やブランケットなど冬らしいラインナップ 『映画 ちいかわ 』 コラボ ...",
+      "category": "collab",
+      "tags": [
+        "ぬいぐるみ"
+      ]
+    },
+    {
+      "id": "news-0d9b462e1bb4",
+      "title": "「お台場ファンライジング」ついに開幕！ ガチャピン・ムック、 ちいかわ 、ハチワレ - アットプレス",
+      "url": "https://www.atpress.ne.jp/news/618367",
+      "source": "atpress.ne.jp",
+      "publishedAt": "2026-07-28T00:34:59.000Z",
+      "summary": "真夏のエンタメ最前線～」が7月25日(土)についに開幕しました。本 イベント にはフジテレビの人気アニメ、バラエティなど様々な番組や映画のブースが集結。世代や ...",
+      "category": "goods",
+      "tags": [
+        "ハチワレ"
+      ]
+    },
+    {
+      "id": "news-d6ee63a24426",
+      "title": "ちいかわ ×スッパイマン コラボ パッケージをモチーフにした5アイテムが登場 - TNCニュース",
+      "url": "https://news.tnc.ne.jp/sp/entame/920765_1.html",
+      "source": "news.tnc.ne.jp",
+      "publishedAt": "2026-07-27T23:40:07.000Z",
+      "summary": "特集. エンタメ. ちいかわ ×スッパイマン コラボ パッケージをモチーフにした5アイテムが登場. 2026/07/27 18:57. ちいかわ ×スッパイマン.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-1bae7d654d60",
+      "title": "ちいかわ ×スッパイマン コラボ パッケージをモチーフにした5アイテムが登場 - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2470380",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-07-27T23:16:30.000Z",
+      "summary": "ybc. ちいかわ ×スッパイマン コラボ パッケージをモチーフにした5アイテムが登場.",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-540160fbf74b",
       "title": "観客動員数は「150万人」を突破、『 ちいかわ 』初の劇場作品が好調のスタート。都内劇場での ...",
