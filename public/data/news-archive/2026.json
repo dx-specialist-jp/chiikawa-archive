@@ -1,7 +1,19 @@
 {
   "year": "2026",
-  "totalArticles": 1400,
+  "totalArticles": 1401,
   "articles": [
+    {
+      "id": "news-3e0d4163d5da",
+      "title": "アニメ「 ちいかわ 」初のキャラクター図鑑「アニメ ちいかわ ひみつずかん」 発売 中 | ニコニコ ...",
+      "url": "https://news.nicovideo.jp/watch/nw19608471?news_ref=search_search",
+      "source": "news.nicovideo.jp",
+      "publishedAt": "2026-07-31T05:50:57.000Z",
+      "summary": "ミニサイズの絵本「アニメ ちいかわ ひみつずかん」が、KADOKAWAから 発売 中だ(7月15日 発売 )。A5変形判 30ページで、価格は1320円(税込)。",
+      "category": "anime",
+      "tags": [
+        "アニメ"
+      ]
+    },
     {
       "id": "news-4a0b1d89405d",
       "title": "ハチワレ ちいかわ まるで島フルーツタオル ラッコ 人魚の島のひみつ ... - Yahoo!フリマ",
