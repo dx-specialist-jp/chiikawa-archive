@@ -1,7 +1,65 @@
 {
   "year": "2026",
-  "totalArticles": 1434,
+  "totalArticles": 1439,
   "articles": [
+    {
+      "id": "news-1ce28d2a8400",
+      "title": "【あすまで】みなとみらいの大観覧車が“ ちいかわ ”のライトアップに…『映画 ちいかわ 』×横浜市 ...",
+      "url": "https://www.the-miyanichi.co.jp/oricon/960851.html",
+      "source": "the-miyanichi.co.jp",
+      "publishedAt": "2026-07-31T21:53:40.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ』in 横浜市 コラボ . 横浜市は7月24日より、『映画 ... イベント",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "横浜"
+      ]
+    },
+    {
+      "id": "news-371b1f1e9c68",
+      "title": "【あすまで】みなとみらいの大観覧車が“ ちいかわ ”のライトアップに…『映画 ちいかわ 』×横浜市 ...",
+      "url": "https://www.toonippo.co.jp/articles/-/2330751",
+      "source": "toonippo.co.jp",
+      "publishedAt": "2026-07-31T21:52:57.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ』in 横浜市 コラボ ... 発売 ！ 東奥こども記者募集（6/19締め切り）",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "横浜"
+      ]
+    },
+    {
+      "id": "news-06b167a38f0c",
+      "title": "セブン「 ちいかわ 」 コラボ が闇すぎる？「赤魚の煮付」の隣になぜか単3電池 - アゴラ",
+      "url": "https://agora-web.jp/archives/260731084529.html",
+      "source": "agora-web.jp",
+      "publishedAt": "2026-07-31T21:30:47.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ』が7月24日に公開され、映画と連動したセブン‐イレブンの コラボ ... ちいかわ まるで島フルーツタオル」も順次 発売 されています。",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-9b3c92e7f371",
+      "title": "【あすまで】みなとみらいの大観覧車が“ ちいかわ ”のライトアップに…『映画 ... - ｄメニューニュース",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/oricon/entertainment/oricon-2470220",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-07-31T21:18:27.000Z",
+      "summary": "【あすまで】みなとみらいの大観覧車が“ ちいかわ ”のライトアップに…『映画 ちいかわ 』×横浜市 コラボ で「コスモクロック21」特別演出実施（ORICON NEWS） 横浜 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-c11172998d21",
+      "title": "オリコンニュース：［あすから順次］『 ちいかわ ぽけっと』が青森ねぶた・仙台七夕・阿波おどり ...",
+      "url": "https://mainichi.jp/articles/20260731/orc/00m/200/166000c",
+      "source": "mainichi.jp",
+      "publishedAt": "2026-07-31T21:05:04.000Z",
+      "summary": "［あすから順次］『 ちいかわ ぽけっと』が青森ねぶた 阿波おどりと コラボ 浴衣姿の ちいかわ たちが夏を彩る［スケジュールあり］. 2026/7/31 17:15.",
+      "category": "other",
+      "tags": []
+    },
     {
       "id": "news-6610a1ae4737",
       "title": "｢クレヨンしんちゃん｣｢プリキュア｣とはまったく違う…映画｢ ちいかわ ｣が破った\"長編アニメのお約束\"",
