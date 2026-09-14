@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-09-12T08:05:59.250Z",
-  "totalPosts": 1036,
+  "lastUpdated": "2026-09-14T09:46:30.023Z",
+  "totalPosts": 1037,
   "posts": [
+    {
+      "id": "post-2099372242341917046",
+      "tweetId": "2099372242341917046",
+      "url": "https://x.com/ngnchiikawa/status/2099372242341917046",
+      "publishedAt": "2026-09-14T05:01:47.000Z",
+      "summary": "『#映画ちいかわ 人魚の島のひみつ』 🏝️.˚⊹大ヒット上映中🎬 【9/19(土)より】 入場者特典第5弾「ひみつ本」 数量限定配布が決定📖✨ ※劇場ごとに数に限りがございます。配布数が足りなくなった時点で配布を終了いたします。",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSJveqGboAAVNQN.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2098358055314526460",
       "tweetId": "2098358055314526460",
@@ -14263,6 +14278,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-14",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-09-11",
       "count": 1,
