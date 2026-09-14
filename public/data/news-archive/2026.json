@@ -1,7 +1,75 @@
 {
   "year": "2026",
-  "totalArticles": 1485,
+  "totalArticles": 1491,
   "articles": [
+    {
+      "id": "news-2e22bff020cb",
+      "title": "東京ばな奈限定！【 ちいかわ 】 コラボ 第2弾「エコバッグセット」が8/1より東京駅や羽田空港で 発売",
+      "url": "https://www.asahi.com/and/w/article/16765649/31141052",
+      "source": "asahi.com",
+      "publishedAt": "2026-08-02T00:35:08.000Z",
+      "summary": "東京ばな奈限定！【 ちいかわ 】 コラボ 第2弾「エコバッグセット」が8/1より東京駅や羽田空港で 発売",
+      "category": "collab",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-2ce6ba105337",
+      "title": "映画「 ちいかわ 」大ヒットの要因 大学准教授見解「忘れがちな教訓が…」 - ライブドアニュース",
+      "url": "https://news.livedoor.com/topics/detail/31961803/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-08-02T00:09:46.000Z",
+      "summary": "ちいかわ 人魚 ... イベント NEW",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-c1b79e42e160",
+      "title": "「 ちいかわ 」漫画のコマをそのままマグネットに！当たったらラッキーなレア3種も見逃せない",
+      "url": "https://www.excite.co.jp/news/article/Inside_185570/",
+      "source": "excite.co.jp",
+      "publishedAt": "2026-08-02T00:04:47.000Z",
+      "summary": "パッケージ風ボックス入りの「 ちいかわ 」マスコットが 発売 ！おまけ付きお ... ユニクロ×「 ちいかわ 」 コラボ UTが、むちゃカワ！みんなで船に乗る集合 ...",
+      "category": "manga",
+      "tags": [
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-52cb23051dba",
+      "title": "【 ちいかわ 】セブンで買える新作くじが可愛すぎる！“まさかのラスト賞”まで豪華賞品をチェック",
+      "url": "https://news.yahoo.co.jp/articles/6fa0a874ec2d37d211e73d6d8c0debb4cd8551f9?page=2",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-01T23:49:50.000Z",
+      "summary": "ちいかわ たちのフィギュアが装飾された流しそうめん機がもらえます！ ... 発売 時期が異なる場合があります。 ※画像は実際の賞品とは異なる場合が ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-2d8a40e564d6",
+      "title": "「 ちいかわ 」漫画のコマをそのままマグネットに！当たったらラッキーなレア3種も見逃せない",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/insidegames/trend/insidegames-185570",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-01T23:32:53.000Z",
+      "summary": "価格は297円（税込）です。 関連記事. パッケージ風ボックス入りの「 ちいかわ 」マスコットが 発売 ！ ... ユニクロ×「 ちいかわ 」 コラボ UTが、むちゃカワ！みんなで船 ...",
+      "category": "manga",
+      "tags": [
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-d62e9ebe2f14",
+      "title": "【ENGEI8 笑いの夏祭り】『レッドカーペット』に ちいかわ 「満点大笑い」 今田耕司が ... - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2471484",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-08-01T23:19:29.000Z",
+      "summary": "コラボ 「 ちいかわ とのんびり船旅」8 【写真】 ちいかわ ... イベント 情報 県内の イベント 情報を掲載しています",
+      "category": "other",
+      "tags": []
+    },
     {
       "id": "news-6f8e53f163ca",
       "title": "「 ちいかわ 」漫画のコマをそのままマグネットに！当たったらラッキーなレア3種も見逃せない",
