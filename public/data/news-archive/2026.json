@@ -1,7 +1,54 @@
 {
   "year": "2026",
-  "totalArticles": 1491,
+  "totalArticles": 1495,
   "articles": [
+    {
+      "id": "news-f86198bee2da",
+      "title": "「 ちいかわ 」漫画のコマをそのままマグネットに！当たったらラッキーなレア3種も見逃せない 1枚 ...",
+      "url": "https://www.inside-games.jp/article/img/2026/08/02/185570/1750932.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-02T02:24:33.000Z",
+      "summary": "！「 ちいかわ キャラマグネッツ5」が2026年11月に 発売 決定。 「 ちいかわ ... イベント",
+      "category": "manga",
+      "tags": [
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-9888c24ec6cb",
+      "title": "【あすから順次】『 ちいかわ ぽけっと』が青森ねぶた・仙台七夕・阿波おどりと コラボ 浴衣姿の ...",
+      "url": "https://www.sanyonews.jp/article/1965008",
+      "source": "sanyonews.jp",
+      "publishedAt": "2026-08-02T02:10:57.000Z",
+      "summary": "「 ちいかわ 」の世界観にどっぷり浸れる イベント ＆スポットまとめ ちいかわ ×スッパイマン コラボ パッケージをモチーフにした5アイテムが登場. ORICON NEWS.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-aefec39b82d1",
+      "title": "【近江八幡市】人気の「 ちいかわ 」たちがやってくる！ ちいかわ &ハチワレ&ラッコの写真撮影会や ...",
+      "url": "https://higashiomi-omihachiman.goguynet.jp/2026/08/02/chiikawa/",
+      "source": "higashiomi-omihachiman.goguynet.jp",
+      "publishedAt": "2026-08-02T01:57:29.000Z",
+      "summary": "なお、 イベント 参加券の配布場所はセンターコートではなく2番街1F正面入口扉前であり、 ちいかわ ARラリー景品引換券も同時に配布されます。 イオン近江八幡 ...",
+      "category": "other",
+      "tags": [
+        "ハチワレ"
+      ]
+    },
+    {
+      "id": "news-405eb101924c",
+      "title": "「 ちいかわ ×スッパイマン」 コラボ マスコット、Tシャツなど全5アイテムが8月7日から 発売",
+      "url": "https://eiga.com/news/20260802/3/",
+      "source": "eiga.com",
+      "publishedAt": "2026-08-02T01:47:12.000Z",
+      "summary": "「 ちいかわ ×スッパイマン」 コラボ マスコット、Tシャツなど全5アイテムが8月7日から 発売",
+      "category": "collab",
+      "tags": [
+        "Tシャツ",
+        "ぬいぐるみ"
+      ]
+    },
     {
       "id": "news-2e22bff020cb",
       "title": "東京ばな奈限定！【 ちいかわ 】 コラボ 第2弾「エコバッグセット」が8/1より東京駅や羽田空港で 発売",
