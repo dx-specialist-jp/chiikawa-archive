@@ -1,7 +1,33 @@
 {
-  "lastUpdated": "2026-09-15T03:57:18.554Z",
-  "totalPosts": 1044,
+  "lastUpdated": "2026-09-15T16:32:03.132Z",
+  "totalPosts": 1046,
   "posts": [
+    {
+      "id": "post-2099880112082817268",
+      "tweetId": "2099880112082817268",
+      "url": "https://x.com/ngnchiikawa/status/2099880112082817268",
+      "publishedAt": "2026-09-15T15:16:47.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HSRF1NFbcAAJDaK.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2099871332033048786",
+      "tweetId": "2099871332033048786",
+      "url": "https://x.com/ngnchiikawa/status/2099871332033048786",
+      "publishedAt": "2026-09-15T09:00:05.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第378話「パラレルワールド④」 元の世界よりもパラレルワールドの方が良い？悩むハチワレの前に… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSPsNl5bIAEcPZX.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2099688925656932674",
       "tweetId": "2099688925656932674",
@@ -14380,9 +14406,17 @@
   ],
   "calendarData": [
     {
-      "date": "2026-09-15",
+      "date": "2026-09-16",
       "count": 1,
       "categories": [
+        "manga"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "count": 2,
+      "categories": [
+        "anime",
         "goods"
       ]
     },
