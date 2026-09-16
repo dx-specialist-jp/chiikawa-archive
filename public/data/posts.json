@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-09-15T16:32:03.132Z",
-  "totalPosts": 1046,
+  "lastUpdated": "2026-09-16T16:23:35.430Z",
+  "totalPosts": 1048,
   "posts": [
+    {
+      "id": "post-2100214458249597310",
+      "tweetId": "2100214458249597310",
+      "url": "https://x.com/ngnchiikawa/status/2100214458249597310",
+      "publishedAt": "2026-09-16T13:25:21.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HSV16ntaYAATDtl.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2099880112082817268",
       "tweetId": "2099880112082817268",
@@ -11,6 +21,23 @@
       "tags": [],
       "characters": [],
       "photoUrl": "https://pbs.twimg.com/media/HSRF1NFbcAAJDaK.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2100213857071604091",
+      "tweetId": "2100213857071604091",
+      "url": "https://x.com/ngnchiikawa/status/2100213857071604091",
+      "publishedAt": "2026-09-15T12:00:00.000Z",
+      "summary": "🌼#ちいかわくじ 新商品🌼 『#くりまんじゅう だらけくじ』 1回1,100円(税込) ✅販売期間：9/24(木)11:00～10/1(木)23:59 ✅お届け予定：2027年2月下旬頃より順次 じっくり、もっちり、通のたしなみ🍶 五臓六腑に しみしみくじ🍺 詳細は さらに明日おしらせ📣 ⚠️ちいかわマーケットとは別サイト⚠️",
+      "category": "goods",
+      "tags": [
+        "ちいかわくじ",
+        "くりまんじゅう"
+      ],
+      "characters": [
+        "ちいかわ",
+        "くりまんじゅう"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSQRySOasAE4fpk.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2099871332033048786",
@@ -14407,17 +14434,17 @@
   "calendarData": [
     {
       "date": "2026-09-16",
-      "count": 1,
+      "count": 2,
       "categories": [
         "manga"
       ]
     },
     {
       "date": "2026-09-15",
-      "count": 2,
+      "count": 3,
       "categories": [
-        "anime",
-        "goods"
+        "goods",
+        "anime"
       ]
     },
     {
