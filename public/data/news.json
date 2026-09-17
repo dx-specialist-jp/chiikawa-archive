@@ -1,7 +1,42 @@
 {
-  "lastUpdated": "2026-09-16T22:43:51.992Z",
+  "lastUpdated": "2026-09-17T04:00:22.989Z",
   "totalArticles": 2000,
   "articles": [
+    {
+      "id": "news-8ffd71bec27b",
+      "title": "プレスリリース：「 ちいかわ POP UP STORE」が中部国際空港に初登場！フォトスポットや限定 ...",
+      "url": "https://mainichi.jp/articles/20260917/pr2/00m/020/115000c",
+      "source": "mainichi.jp",
+      "publishedAt": "2026-09-17T02:15:17.000Z",
+      "summary": "「 ちいかわ POP UP STORE」が中部国際空港に初登場！フォトスポットや限定特典も楽しめる 期間限定イベント を開催！（PR TIMES）. 2026/9/17 10:52. 情報提供 ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-d4387e4fb282",
+      "title": "くら寿司× ちいかわ に続き《牛角でも不正行為発覚》『呪術廻戦』 コラボ グッズを開封済みで提供",
+      "url": "https://www.jprime.jp/articles/-/43644?display=b",
+      "source": "jprime.jp",
+      "publishedAt": "2026-09-16T22:15:51.000Z",
+      "summary": "従業員による コラボ グッズの不正入手は、『くら寿司』で行われた「 ちいかわ 」キャンペーンでも問題になったばかり。そこで不正行為があったことが事実か、運営元 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-6d5d040f1387",
+      "title": "「 ちいかわ 」のかわいすぎるTシャツも！ 人気キャラクターなどが描かれた「Talking about」の ...",
+      "url": "https://www.asahi.com/and/w/article/16893896",
+      "source": "asahi.com",
+      "publishedAt": "2026-09-16T22:11:05.000Z",
+      "summary": "いずれも2026年9月18日（金）12:00、Talking 公式WEB SHOPなどで 発売 されるほか、 ちいかわ 公式WEB SHOP「 ちいかわマーケット 」などでも販売されます。詳細は ...",
+      "category": "goods",
+      "tags": [
+        "Tシャツ"
+      ]
+    },
     {
       "id": "news-cc0241dd5c9c",
       "title": "くりまんじゅうだらけのオンラインくじが登場！「 ちいかわ くりまんじゅうだらけくじ」 発売 9月 ...",
@@ -23,6 +58,18 @@
       "summary": "2025年の コラボ では、セットの買い占めや転売、おもちゃ目当ての大量購入や食品廃棄が問題として報道された。2026年には 発売 ... くら寿司「 ちいかわ 」 コラボ 不正 ...",
       "category": "other",
       "tags": []
+    },
+    {
+      "id": "news-88bd7d6b7dad",
+      "title": "ちいかわ 「くりまんじゅうだらけくじ」 発売 決定 魅力満載のグッズ当たる - ライブドアニュース",
+      "url": "https://news.livedoor.com/topics/detail/32338408/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-09-16T17:53:06.000Z",
+      "summary": "ちいかわ のキャラ「くりまんじゅう」を集めたオンラインくじが 発売 される。9月24日から10月1日まで「 ちいかわマーケット 」で1回1100円で販売予定。",
+      "category": "goods",
+      "tags": [
+        "くりまんじゅう"
+      ]
     },
     {
       "id": "news-516782666b60",
@@ -70,6 +117,16 @@
       "tags": []
     },
     {
+      "id": "news-808754dcb106",
+      "title": "「 ちいかわ 」シール収納などにぴったりな「ミニコレクトブックキーホルダー」がカプセルトイで ...",
+      "url": "https://www.inside-games.jp/article/2026/09/16/187815.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-09-16T16:05:02.000Z",
+      "summary": "「 ちいかわ ミニコレクトブックキーホルダー1」が9月中旬よりカプセルトイ売り場にて 発売 ！",
+      "category": "goods",
+      "tags": []
+    },
+    {
       "id": "news-270298ebb235",
       "title": "「ただの危険人物」有名実業家 ちいかわ パークで着ぐるみに絶叫しながら突撃も“迷惑行為”と波紋 ...",
       "url": "https://jisin.jp/entertainment/entertainment-news/2600316/",
@@ -114,6 +171,19 @@
       "category": "goods",
       "tags": [
         "くりまんじゅう"
+      ]
+    },
+    {
+      "id": "news-37b74bcf9ac0",
+      "title": "『映画 ちいかわ 』セイレーン、“くらいとこ”に全力抵抗 ゲーセンでの一幕に「凄い体勢W」「頭に ...",
+      "url": "https://www.huffingtonpost.jp/entry/story_jp_6aa8f8cbe4b0477c43bf2976",
+      "source": "huffingtonpost.jp",
+      "publishedAt": "2026-09-16T15:04:32.000Z",
+      "summary": "『映画 ちいかわ 』×『ユニクロ』キッズTシャツを驚きのリメイク！ ... 「きんぎょ注意報」が 期間限定 でYouTube公開！「小学生の頃全員観てたやつ ...",
+      "category": "anime",
+      "tags": [
+        "セイレーン",
+        "映画"
       ]
     },
     {
@@ -22752,76 +22822,6 @@
       "category": "goods",
       "tags": [
         "限定"
-      ]
-    },
-    {
-      "id": "news-daf24b075b6f",
-      "title": "映画『 ちいかわ 』公開10日間で興収44億円突破 2枚目 | オリコンニュース（ORICON NEWS）",
-      "url": "https://www.oricon.co.jp/news/2471657/photo/2/",
-      "source": "oricon.co.jp",
-      "publishedAt": "2026-08-03T20:43:40.000Z",
-      "summary": "試写会、登壇 イベント 、サインチェキなどプレゼント！ プレゼント特集 ... 発売 前に重版決定. 2026-08-03 12:03. 『ジャンプSQ.』 発売 前に重版決定. 7 ...",
-      "category": "anime",
-      "tags": [
-        "映画"
-      ]
-    },
-    {
-      "id": "news-e160b8d8f197",
-      "title": "ANA『 ちいかわ ジェット』国内線で10月下旬から就航 8キャラ描かれた特別デザイン機（オリコン）",
-      "url": "https://news.yahoo.co.jp/articles/ead8d45d2937c974d7912e7333e6b2e67370b867",
-      "source": "news.yahoo.co.jp",
-      "publishedAt": "2026-08-03T18:53:17.000Z",
-      "summary": "【画像】ANA『 ちいかわ 』 コラボ ビジュアル 人気作品『 ちいかわ 』とANAの飛行機がコラボレーションし、ANAは「皆さまの旅の思い出を鮮やかに彩ります。 ちいかわ ...",
-      "category": "other",
-      "tags": []
-    },
-    {
-      "id": "news-fac5c5141f98",
-      "title": "【 ちいかわ 】マツキヨ限定の新作グッズが神クオリティ！ 細部までこだわったコスメポーチがお ...",
-      "url": "https://lp.p.pia.jp/article/news/499703/photo-gallery/index.html?id=15",
-      "source": "lp.p.pia.jp",
-      "publishedAt": "2026-08-03T18:33:19.000Z",
-      "summary": "【 ちいかわ 新作】コンビニでも買える!「 【 ちいかわ ×東京ばな奈】“神 コラボ ”第2弾!",
-      "category": "goods",
-      "tags": [
-        "限定"
-      ]
-    },
-    {
-      "id": "news-1ddfe64e9277",
-      "title": "【 ちいかわ 】マツキヨ限定の新作グッズが神クオリティ！ 細部までこだわったコスメポーチがお ...",
-      "url": "https://lp.p.pia.jp/article/news/499703/photo-gallery/index.html?id=7",
-      "source": "lp.p.pia.jp",
-      "publishedAt": "2026-08-03T18:18:35.000Z",
-      "summary": "【 ちいかわ ×東京ばな奈】“神 コラボ ”第2弾! 初登場の「限定トートバッグセット」が争奪戦必至の可愛さ♪ 【山崎実業】穴あけ不要で広々スペース! towerの ...",
-      "category": "goods",
-      "tags": [
-        "限定"
-      ]
-    },
-    {
-      "id": "news-0f0486a6262c",
-      "title": "【 ちいかわ 】マツキヨ限定の新作グッズが神クオリティ！ 細部までこだわったコスメポーチがお ...",
-      "url": "https://lp.p.pia.jp/article/news/499703/photo-gallery/index.html",
-      "source": "lp.p.pia.jp",
-      "publishedAt": "2026-08-03T17:32:25.000Z",
-      "summary": "【 ちいかわ ×東京ばな奈】“神 コラボ ”第2弾! ロックちゃん by 芦沢ムネト(第154回)お知らせ",
-      "category": "goods",
-      "tags": [
-        "限定"
-      ]
-    },
-    {
-      "id": "news-035aeb158821",
-      "title": "「映画 ちいかわ 」首位！「スパイダーマン」「開戦前夜」「モアナと伝説の海」が上位にアップ ...",
-      "url": "https://eiga.com/news/20260803/12/",
-      "source": "eiga.com",
-      "publishedAt": "2026-08-03T17:08:15.000Z",
-      "summary": "新映像を追加した特別版「アベンジャーズ エンドゲーム アンコール」9月23日から 期間限定 で公開決定！ ... 「 ちいかわ ×スッパイマン」 コラボ マスコット、Tシャツ ...",
-      "category": "anime",
-      "tags": [
-        "映画"
       ]
     }
   ]

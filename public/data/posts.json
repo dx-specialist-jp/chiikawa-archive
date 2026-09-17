@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-09-16T16:23:35.430Z",
-  "totalPosts": 1048,
+  "lastUpdated": "2026-09-17T04:00:22.400Z",
+  "totalPosts": 1049,
   "posts": [
+    {
+      "id": "post-2100426413988106675",
+      "tweetId": "2100426413988106675",
+      "url": "https://x.com/ngnchiikawa/status/2100426413988106675",
+      "publishedAt": "2026-09-17T02:00:00.000Z",
+      "summary": "🏝️.˚⊹⁺‧ 『#映画ちいかわ 人魚の島のひみつ』 LINE公式スタンプ【第2弾】販売スタート！ ⁽⁽ アニメーション／ ボイス・サウンド付きスタンプ ⁾⁾ 映画の印象的なセリフなど ぜひご確認ください✨ 🎬大ヒット上映中",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSU95e6a0AECK5h.png?format=jpg&name=large"
+    },
     {
       "id": "post-2100214458249597310",
       "tweetId": "2100214458249597310",
@@ -14432,6 +14447,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-17",
+      "count": 1,
+      "categories": [
+        "goods"
+      ]
+    },
     {
       "date": "2026-09-16",
       "count": 2,

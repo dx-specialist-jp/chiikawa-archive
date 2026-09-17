@@ -1,7 +1,77 @@
 {
   "year": "2026",
-  "totalArticles": 1594,
+  "totalArticles": 1600,
   "articles": [
+    {
+      "id": "news-daf24b075b6f",
+      "title": "映画『 ちいかわ 』公開10日間で興収44億円突破 2枚目 | オリコンニュース（ORICON NEWS）",
+      "url": "https://www.oricon.co.jp/news/2471657/photo/2/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-08-03T20:43:40.000Z",
+      "summary": "試写会、登壇 イベント 、サインチェキなどプレゼント！ プレゼント特集 ... 発売 前に重版決定. 2026-08-03 12:03. 『ジャンプSQ.』 発売 前に重版決定. 7 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-e160b8d8f197",
+      "title": "ANA『 ちいかわ ジェット』国内線で10月下旬から就航 8キャラ描かれた特別デザイン機（オリコン）",
+      "url": "https://news.yahoo.co.jp/articles/ead8d45d2937c974d7912e7333e6b2e67370b867",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-03T18:53:17.000Z",
+      "summary": "【画像】ANA『 ちいかわ 』 コラボ ビジュアル 人気作品『 ちいかわ 』とANAの飛行機がコラボレーションし、ANAは「皆さまの旅の思い出を鮮やかに彩ります。 ちいかわ ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-fac5c5141f98",
+      "title": "【 ちいかわ 】マツキヨ限定の新作グッズが神クオリティ！ 細部までこだわったコスメポーチがお ...",
+      "url": "https://lp.p.pia.jp/article/news/499703/photo-gallery/index.html?id=15",
+      "source": "lp.p.pia.jp",
+      "publishedAt": "2026-08-03T18:33:19.000Z",
+      "summary": "【 ちいかわ 新作】コンビニでも買える!「 【 ちいかわ ×東京ばな奈】“神 コラボ ”第2弾!",
+      "category": "goods",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-1ddfe64e9277",
+      "title": "【 ちいかわ 】マツキヨ限定の新作グッズが神クオリティ！ 細部までこだわったコスメポーチがお ...",
+      "url": "https://lp.p.pia.jp/article/news/499703/photo-gallery/index.html?id=7",
+      "source": "lp.p.pia.jp",
+      "publishedAt": "2026-08-03T18:18:35.000Z",
+      "summary": "【 ちいかわ ×東京ばな奈】“神 コラボ ”第2弾! 初登場の「限定トートバッグセット」が争奪戦必至の可愛さ♪ 【山崎実業】穴あけ不要で広々スペース! towerの ...",
+      "category": "goods",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-0f0486a6262c",
+      "title": "【 ちいかわ 】マツキヨ限定の新作グッズが神クオリティ！ 細部までこだわったコスメポーチがお ...",
+      "url": "https://lp.p.pia.jp/article/news/499703/photo-gallery/index.html",
+      "source": "lp.p.pia.jp",
+      "publishedAt": "2026-08-03T17:32:25.000Z",
+      "summary": "【 ちいかわ ×東京ばな奈】“神 コラボ ”第2弾! ロックちゃん by 芦沢ムネト(第154回)お知らせ",
+      "category": "goods",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-035aeb158821",
+      "title": "「映画 ちいかわ 」首位！「スパイダーマン」「開戦前夜」「モアナと伝説の海」が上位にアップ ...",
+      "url": "https://eiga.com/news/20260803/12/",
+      "source": "eiga.com",
+      "publishedAt": "2026-08-03T17:08:15.000Z",
+      "summary": "新映像を追加した特別版「アベンジャーズ エンドゲーム アンコール」9月23日から 期間限定 で公開決定！ ... 「 ちいかわ ×スッパイマン」 コラボ マスコット、Tシャツ ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
     {
       "id": "news-34ec597c55af",
       "title": "「こんな悲しいキャッチコピーある？」 ちいかわ の“単三電池”にネット騒然 「ひ…人の心ない ...",
