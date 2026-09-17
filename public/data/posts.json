@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-09-17T04:00:22.400Z",
-  "totalPosts": 1049,
+  "lastUpdated": "2026-09-17T16:30:36.656Z",
+  "totalPosts": 1050,
   "posts": [
+    {
+      "id": "post-2100529237879120089",
+      "tweetId": "2100529237879120089",
+      "url": "https://x.com/ngnchiikawa/status/2100529237879120089",
+      "publishedAt": "2026-09-17T09:00:02.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第379話 フジテレビ系列「めざましテレビ」内にて 9月18日(金)7時36分頃放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSZ_bVjaUAEED-s.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2100426413988106675",
       "tweetId": "2100426413988106675",
@@ -14449,8 +14464,9 @@
   "calendarData": [
     {
       "date": "2026-09-17",
-      "count": 1,
+      "count": 2,
       "categories": [
+        "anime",
         "goods"
       ]
     },
