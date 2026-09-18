@@ -1,7 +1,215 @@
 {
   "year": "2026",
-  "totalArticles": 1644,
+  "totalArticles": 1662,
   "articles": [
+    {
+      "id": "news-a9067edaa5bc",
+      "title": "イラストレーター・ナガノがつむぐ『 ちいかわ 』の世界 - 日経クロストレンド",
+      "url": "https://xtrend.nikkei.com/atcl/contents/18/01435/00007/?i_cid=nbpnxr_child",
+      "source": "xtrend.nikkei.com",
+      "publishedAt": "2026-08-05T11:30:19.000Z",
+      "summary": "X（旧Twitter）に投稿した１枚のイラストきっかけに誕生した『 ちいかわ ... スタバ×110年老舗 本気の コラボ 論. スタバ×霧島酒造「引き算」の店舗開発 ...",
+      "category": "anime",
+      "tags": []
+    },
+    {
+      "id": "news-b75827cc470e",
+      "title": "「 ちいかわ 」×「ココイチ」キャンペーン第2弾が8月7日スタート！「うさぎ」や「モモンガ」の ...",
+      "url": "https://news.infoseek.co.jp/article/inside_185781/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-08-05T11:06:50.000Z",
+      "summary": "ゆるがぬ魂のおもてなし！「映画 ちいかわ 島二郎のでっかいソフビフィギュア」が8月7日 発売 ... ココイチで「映画 ちいかわ 」 コラボ が開催！“オリジナル島カレー”の ...",
+      "category": "other",
+      "tags": [
+        "うさぎ",
+        "モモンガ"
+      ]
+    },
+    {
+      "id": "news-ebb4c7612bb7",
+      "title": "しまむらで「 ちいかわ 」グッズがオンライン販売！討伐に挑む姿やワンポイントが可愛いフェイス ...",
+      "url": "https://www.inside-games.jp/article/2026/08/05/185766.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-05T09:52:06.000Z",
+      "summary": "しまむら公式オンラインストアにて、「 ちいかわ 」のフェイスタオルやバスマットが予約販売中！",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-4721a76fe2ff",
+      "title": "映画「 ちいかわ 」に昆布締めスタイルの ちいかわ マスコットを連れていきたくてお誂え向きの昆布 ...",
+      "url": "https://togetter.com/li/2729130",
+      "source": "togetter.com",
+      "publishedAt": "2026-08-05T09:06:22.000Z",
+      "summary": "発売 してほしいです ‍♀️. 2026-07-25 16:17:01. PONZ SHOPの商品 ... 商業施設でクリエイター イベント を企画 運営してます。colorlessの由来は ...",
+      "category": "anime",
+      "tags": [
+        "ぬいぐるみ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-ac05d86ff003",
+      "title": "「 ちいかわ ベーカリー」京都駅で 期間限定 ショップ開催 京都限定「ふわふわおたべキャラメル」も ...",
+      "url": "https://realsound.jp/book/2026/08/post-2482207.html/amp",
+      "source": "realsound.jp",
+      "publishedAt": "2026-08-05T08:42:42.000Z",
+      "summary": "京都限定商品として、美十との コラボ 商品「 ちいかわ ベーカリー ふわふわ ... 「 ちい ...",
+      "category": "event",
+      "tags": [
+        "パン",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-bae06b53b070",
+      "title": "「 ちいかわ 」×「ココイチ」キャンペーン第2弾が8月7日スタート！「うさぎ」や「モモンガ」の ...",
+      "url": "https://news.yahoo.co.jp/articles/c9662142157fabab585f970fd00f23d06838e794",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-05T08:18:15.000Z",
+      "summary": "CoCo壱番屋は、「 ちいかわ 」との コラボ キャンペーン ... 「映画 ちいかわ 島二郎のでっかいソフビフィギュア」が8月7日 発売 .",
+      "category": "other",
+      "tags": [
+        "うさぎ",
+        "モモンガ"
+      ]
+    },
+    {
+      "id": "news-45fbe8881daa",
+      "title": "『映画 ちいかわ 人魚の島のひみつ』入場者特典第2弾に関してのお知らせ - １０９シネマズ",
+      "url": "https://109cinemas.net/premiumshinjuku/news/9920.html",
+      "source": "109cinemas.net",
+      "publishedAt": "2026-08-05T07:48:15.000Z",
+      "summary": "『映画 ちいかわ 人魚の島のひみつ』入場者特典第2弾に関してのお知らせ ... イベント ／キャンペーン",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-a8110fb48929",
+      "title": "【ココイチ×映画 ちいかわ 】第2弾が8月7日開幕！第1弾は開始“わずか1週間”で完売店も…「うさぎ ...",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/lasisa/trend/lasisa-154865",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-05T07:45:43.000Z",
+      "summary": "爽やかなレモンスカッシュ＆注目の新フィギュア！ 第2弾ラインナップ. カレーハウスCoCo壱番屋（ココイチ）と『映画 ちいかわ 人魚の島のひみつ』の コラボ ...",
+      "category": "anime",
+      "tags": [
+        "うさぎ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-87b181ab2188",
+      "title": "ゆるがぬ魂のおもてなし！「映画 ちいかわ 島二郎のでっかいソフビフィギュア」が8月7日 発売",
+      "url": "https://www.inside-games.jp/article/2026/08/05/185753.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-05T07:29:25.000Z",
+      "summary": "VTuber ... 「映画 ちいかわ 島二郎のでっかいソフビフィギュア」の価格は4,950円（税込）で8月7日11時より ちいかわマーケット にて 発売 予定です。",
+      "category": "goods",
+      "tags": [
+        "フィギュア",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-523ddd692f6a",
+      "title": "全国初「 ちいかわ パーク」公式ショップが大阪に誕生へ！ パークで販売していたアイテムが勢ぞろい",
+      "url": "https://www.crank-in.net/trend/trip/189151/1",
+      "source": "crank-in.net",
+      "publishedAt": "2026-08-05T07:24:17.000Z",
+      "summary": "アイテム ... 『 ちいかわ 』×「オリオンビール」 コラボ Tシャツ 発売 決定！ 沖縄らしい全2柄 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-b249e81b64f2",
+      "title": "東大文学部卒が『 ちいかわ 』映画を観た正直な感想 興収100億円も射程圏内の大ヒットに納得｢お金 ...",
+      "url": "https://toyokeizai.net/articles/-/953406?page=5",
+      "source": "toyokeizai.net",
+      "publishedAt": "2026-08-05T07:13:16.000Z",
+      "summary": "ちいかわ 」。 ちいかわ たちは、怒り狂うセイレーンを鎮められるのでしょ ... また、映画化に際して、様々な企業と コラボ 商品を生み出している本作。「赤 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-a62211a7b3a9",
+      "title": "しまむらで「 ちいかわ 」グッズがオンライン販売！討伐に挑む姿やワンポイントが可愛いフェイス ...",
+      "url": "https://www.inside-games.jp/article/img/2026/08/05/185766/1764191.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-05T07:07:14.000Z",
+      "summary": "イベント データ設定/研修制度充実. 株式会社プロジェクトトリガー. 大阪府 ... しまむらで「PEANUTS」お出かけに活躍するアイテムが8月5日 発売 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-3a81b72dbc8b",
+      "title": "【 ちいかわ ×オリオンビール】まだ間に合うかも⁉︎ 沖縄らしさがあふれる夏のスペシャル コラボ T ...",
+      "url": "https://baila.hpplus.jp/lifestyle/recipegourmet/81726",
+      "source": "baila.hpplus.jp",
+      "publishedAt": "2026-08-05T07:05:13.000Z",
+      "summary": "「オリオン クリアフリー ちいかわ デザイン缶」の 発売 を記念し、特別な コラボ を今年4月から展開している「 ちいかわ ×オリオンビール」シリーズ。",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-7d78f1c3f5c3",
+      "title": "【映画 ちいかわ 】公開記念 コラボ 続々｜東京ばな奈・サントリー・しるこサンドも！2026",
+      "url": "https://report.iko-yo.net/articles/32654/digest",
+      "source": "report.iko-yo.net",
+      "publishedAt": "2026-08-05T07:03:05.000Z",
+      "summary": "2026年7月24日公開「映画 ちいかわ 人魚の島のひみつ」にあわせた コラボ が続々！ 東京ばな奈のエコバッグセット、サントリーの ちいかわ ボトル、映画 ちいかわ ...",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-76a4d0dca16f",
+      "title": "ルクア サウスに全国初「 ちいかわ パークストア」「サンリオ ハローステージ」出店へ - osaka style",
+      "url": "https://osaka.style/news/73725/",
+      "source": "osaka.style",
+      "publishedAt": "2026-08-05T07:01:43.000Z",
+      "summary": "全国修士論文展の記録を一冊に収録 書籍「トウキョウ建築コレクション2026 Official Book」 発売 ！ 【THEフィッシング】心 ...",
+      "category": "event",
+      "tags": []
+    },
+    {
+      "id": "news-7c360cb964f2",
+      "title": "【映画 ちいかわ 】公開記念 コラボ 続々｜東京ばな奈・サントリー・しるこサンドも！2026",
+      "url": "https://report.iko-yo.net/articles/32654",
+      "source": "report.iko-yo.net",
+      "publishedAt": "2026-08-05T06:49:46.000Z",
+      "summary": "東京ばな奈から、2026年8月1日（土）に「 ちいかわ バナナプリンケーキ エコバッグセット」が 発売 されます。 ちいかわ との コラボ グッズ第2弾です。",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-dc9913249b94",
+      "title": "全国初『 ちいかわ パークストア』 『サンリオ ハローステージ』梅田上陸『LUCUA SOUTH』第2期",
+      "url": "https://prtimes.jp/main/html/rd/p/000000231.000014414.html",
+      "source": "prtimes.jp",
+      "publishedAt": "2026-08-05T06:38:27.000Z",
+      "summary": "一人ひとりの「好き」を応援する イベント スペース。 11F. ナガノマーケット UMEDA. 梅田初. 『 ちいかわ 』作者",
+      "category": "event",
+      "tags": []
+    },
+    {
+      "id": "news-7e423d98e709",
+      "title": "【 ちいかわ 】セブンで買える最新「 ちいかわ エニマイくじ」をガチ勢が引いてみた！（実録 ...",
+      "url": "https://lp.p.pia.jp/article/news/499752/index.html",
+      "source": "lp.p.pia.jp",
+      "publishedAt": "2026-08-05T06:37:29.000Z",
+      "summary": "ちいかわ ～ ちいかわ と夏の思い出～」が 発売 されました！ ... コラボ の限定エコバッグセット.",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-62b4ef8051d8",
       "title": "ANA× ちいかわ の コラボ 決定！「 ちいかわ ジェット」が10月下旬に国内線就航へ 8キャラクターが ...",
