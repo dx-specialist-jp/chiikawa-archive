@@ -1,7 +1,47 @@
 {
   "year": "2026",
-  "totalArticles": 1640,
+  "totalArticles": 1644,
   "articles": [
+    {
+      "id": "news-62b4ef8051d8",
+      "title": "ANA× ちいかわ の コラボ 決定！「 ちいかわ ジェット」が10月下旬に国内線就航へ 8キャラクターが ...",
+      "url": "https://mezamashi.media/articles/-/330809",
+      "source": "mezamashi.media",
+      "publishedAt": "2026-08-05T06:34:46.000Z",
+      "summary": "ANA× ちいかわ の コラボ ... 就航時期やグッズの 発売 日などの詳細は、ANA公式ホームページなどで順次 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-9f0fea0e265f",
+      "title": "「 ちいかわ とのんびり船旅」オリジナルグッズが8月6日 ちいかわマーケット でも販売！船長風の ...",
+      "url": "https://news.yahoo.co.jp/articles/20f7af37f1630549cbd912b06b226f170aed4975",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-05T05:34:06.000Z",
+      "summary": "ちいかわマーケット にて 発売 します。 【画像】「 ちいかわ とのんびり船旅」 コラボ グッズが ちいかわマーケット でも販売 ◇「 ちいかわ とのんびり船旅」グッズが ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-f680320f4e30",
+      "title": "大人気「 ちいかわ 」キター！親子で楽しくひらがなが学べる絵本『 ちいかわ あいうえお』 発売 決定",
+      "url": "https://kosodate.mynavi.jp/articles/45643",
+      "source": "kosodate.mynavi.jp",
+      "publishedAt": "2026-08-05T05:03:26.000Z",
+      "summary": "親子で楽しくひらがなが学べる絵本『 ちいかわ あいうえお』 発売 決定. #絵本 ... コラボ キャンペーン開催！ 最新記事を",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-35e335b5cc2e",
+      "title": "ルクア大阪新館『LUCUA SOUTH』キャラゾーン新規21ブランド発表 「 ちいかわ ... - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2472186",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-08-05T04:20:05.000Z",
+      "summary": "一人ひとりの「好き」を応援する イベント スペース。 「ナガノマーケット UMEDA」※梅田初「 ちいかわ 」作者 ナガノの常設グッズ店。くまのバルーンやフォト ...",
+      "category": "other",
+      "tags": []
+    },
     {
       "id": "news-fa149f98debb",
       "title": "ゆるがぬ魂のおもてなし！「映画 ちいかわ 島二郎のでっかいソフビフィギュア」が8月7日 発売 2枚 ...",
