@@ -1,7 +1,33 @@
 {
-  "lastUpdated": "2026-09-17T16:30:36.656Z",
-  "totalPosts": 1050,
+  "lastUpdated": "2026-09-18T16:02:18.251Z",
+  "totalPosts": 1052,
   "posts": [
+    {
+      "id": "post-2100977588411990149",
+      "tweetId": "2100977588411990149",
+      "url": "https://x.com/ngnchiikawa/status/2100977588411990149",
+      "publishedAt": "2026-09-18T15:57:46.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HSgr-w9boAAmt4k.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2100883846082498650",
+      "tweetId": "2100883846082498650",
+      "url": "https://x.com/ngnchiikawa/status/2100883846082498650",
+      "publishedAt": "2026-09-18T09:00:03.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第379話「パラレルワールド⑤」 元の世界に戻りたいなら、虫を潰す！？ハチワレ、虫を追いかけて… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSfJALraMAA_kaw.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2100529237879120089",
       "tweetId": "2100529237879120089",
@@ -14462,6 +14488,20 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-19",
+      "count": 1,
+      "categories": [
+        "manga"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-09-17",
       "count": 2,
