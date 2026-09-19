@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-09-18T16:02:18.251Z",
-  "totalPosts": 1052,
+  "lastUpdated": "2026-09-19T15:34:49.147Z",
+  "totalPosts": 1054,
   "posts": [
+    {
+      "id": "post-2101321674885083445",
+      "tweetId": "2101321674885083445",
+      "url": "https://x.com/ngnchiikawa/status/2101321674885083445",
+      "publishedAt": "2026-09-19T14:45:02.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HSlk7HXbcAAFcmL.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2100977588411990149",
       "tweetId": "2100977588411990149",
@@ -27,6 +37,23 @@
         "ハチワレ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HSfJALraMAA_kaw.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2101321161435173135",
+      "tweetId": "2101321161435173135",
+      "url": "https://x.com/ngnchiikawa/status/2101321161435173135",
+      "publishedAt": "2026-09-17T10:00:00.000Z",
+      "summary": "＼⋱🌊後半メニュー始まります🧜⋰／ 「映画ちいかわ 人魚の島のひみつ」 公開記念パン 後半メニューを 明日9月18日(金)より販売します✨ 後半はついに… セイレーンカレーパン🍛 なかよし人魚のちぎりパン が登場💥 ぜひセットでお楽しみください☺️ #ちいかわベーカリー #映画ちいかわ",
+      "category": "goods",
+      "tags": [
+        "ちいかわベーカリー",
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "セイレーン"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSVRGLpasAAhX5p.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2100529237879120089",
@@ -14490,7 +14517,7 @@
   "calendarData": [
     {
       "date": "2026-09-19",
-      "count": 1,
+      "count": 2,
       "categories": [
         "manga"
       ]
@@ -14504,10 +14531,10 @@
     },
     {
       "date": "2026-09-17",
-      "count": 2,
+      "count": 3,
       "categories": [
-        "anime",
-        "goods"
+        "goods",
+        "anime"
       ]
     },
     {
