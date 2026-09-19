@@ -1,7 +1,81 @@
 {
   "year": "2026",
-  "totalArticles": 1694,
+  "totalArticles": 1700,
   "articles": [
+    {
+      "id": "news-bc89150b7bba",
+      "title": "映画だけでは｢ ちいかわ ｣の深みがわからない…作者が｢かわいい世界観｣に潜ませた人間社会への ...",
+      "url": "https://president.jp/articles/-/117213?page=3",
+      "source": "president.jp",
+      "publishedAt": "2026-08-06T22:47:23.000Z",
+      "summary": "世界観も時代考証もめちゃくちゃだ！ という声もありそうだが、こうした装置がさまざまな憶測や考察を引き出しやすくなっており、同時に ちいかわコラボ を誘発し ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-3b2fc22a3245",
+      "title": "【箕面市】『映画 ちいかわ 人魚の島のひみつ』の公開を記念し、みのおキューズモール施設内で ...",
+      "url": "https://minoh.goguynet.jp/2026/08/07/chiikawa/",
+      "source": "minoh.goguynet.jp",
+      "publishedAt": "2026-08-06T22:29:13.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ』の公開を記念し、みのおキューズモール施設内で体験型 イベント ... 発売 ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-df1d9070d97a",
+      "title": "映画「 ちいかわ 」新グッズ説明文にネット上騒然「闇を感じる」 - ライブドアニュース",
+      "url": "https://news.livedoor.com/topics/detail/32000052/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-08-06T22:18:24.000Z",
+      "summary": "映画「 ちいかわ 人魚の島のひみつ」の 新商品 が、あす午前11時より 発売 される。公式Xでは、「在ったものを消しながら、いつかなくなる永遠のいのち」との紹介 ...",
+      "category": "goods",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-b572bd549cfd",
+      "title": "【ココイチ× ちいかわ 】「オリジナル島カレー」の《購入制限》が急遽変更！ 1日1食から ... - LASISA",
+      "url": "https://lasisa.net/post/155064",
+      "source": "lasisa.net",
+      "publishedAt": "2026-08-06T22:11:03.000Z",
+      "summary": "カレーハウスCoCo壱番屋（ココイチ）と『映画 ちいかわ 人魚の島のひみつ』の コラボ キャンペーンにおいて、人気メニュー「オリジナル島カレー」の購入制限 ...",
+      "category": "collab",
+      "tags": [
+        "食品"
+      ]
+    },
+    {
+      "id": "news-48e341b8cd7a",
+      "title": "映画 ちいかわ の灰色の島民たちが問いかける、共同体の罪と責任 - ライブドアニュース",
+      "url": "https://news.livedoor.com/topics/detail/32002995/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-08-06T21:43:56.000Z",
+      "summary": "# ちいかわ",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-43e9df3b317b",
+      "title": "ちいかわ に蹴られるモモンガ（アニメ『 ちいかわ 』第270話「涸れた③」より） - KAI-YOU.net",
+      "url": "https://kai-you.net/article/96186/images/1",
+      "source": "kai-you.net",
+      "publishedAt": "2026-08-06T20:44:25.000Z",
+      "summary": "池袋PARCOが漫画、アニメ、ゲームの横断型 イベント ... ホロライブのシール帳×戦略ゲーム 発売 へ.",
+      "category": "anime",
+      "tags": [
+        "モモンガ",
+        "アニメ"
+      ]
+    },
     {
       "id": "news-09d7224089fa",
       "title": "【明日から】《映画 ちいかわ 》新グッズ（第3弾）が大量 発売 ！ 「欲しいよね」「もう ... - LASISA",
