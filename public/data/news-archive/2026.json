@@ -1,7 +1,19 @@
 {
   "year": "2026",
-  "totalArticles": 1749,
+  "totalArticles": 1750,
   "articles": [
+    {
+      "id": "news-b7ba3f49ad96",
+      "title": "『映画 ちいかわ 』鈴木みのりさん「ナガノ先生から選考理由をいただきまして…」アフレコの ...",
+      "url": "https://www.pashplus.jp/anime/490183/",
+      "source": "pashplus.jp",
+      "publishedAt": "2026-08-07T14:59:31.000Z",
+      "summary": "PASH!」編集部が運営するニュースサイト。アニメ、声優、 イベント ... 9月号は2冊同時 発売 ！ 通常版はいれいすが表紙",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
     {
       "id": "news-a0df11121729",
       "title": "映画『 ちいかわ 』セイレーン役・鈴木みのり、原作者からの選考理由を告白 本番は「震えでみんな ...",
