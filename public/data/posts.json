@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-09-19T15:34:49.147Z",
-  "totalPosts": 1054,
+  "lastUpdated": "2026-09-21T18:01:10.700Z",
+  "totalPosts": 1055,
   "posts": [
+    {
+      "id": "post-2102006375627071720",
+      "tweetId": "2102006375627071720",
+      "url": "https://x.com/ngnchiikawa/status/2102006375627071720",
+      "publishedAt": "2026-09-21T09:00:02.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第380話 フジテレビ系列「めざましテレビ」内にて 9月22日(火)7時36分頃放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSul0I2bQAA7CMk.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2101321674885083445",
       "tweetId": "2101321674885083445",
@@ -14515,6 +14530,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-21",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-09-19",
       "count": 2,
