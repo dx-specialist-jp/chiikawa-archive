@@ -1,7 +1,23 @@
 {
-  "lastUpdated": "2026-09-22T03:54:43.404Z",
-  "totalPosts": 1056,
+  "lastUpdated": "2026-09-23T09:10:31.393Z",
+  "totalPosts": 1057,
   "posts": [
+    {
+      "id": "post-2102651210574758238",
+      "tweetId": "2102651210574758238",
+      "url": "https://x.com/ngnchiikawa/status/2102651210574758238",
+      "publishedAt": "2026-09-22T09:00:02.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第380話「パラレルワールド⑥」 パラレルワールドに馴染みはじめている！？ハチワレの姿が… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSzvW2RaIAANzhu.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2102236239995031704",
       "tweetId": "2102236239995031704",
@@ -14542,8 +14558,9 @@
   "calendarData": [
     {
       "date": "2026-09-22",
-      "count": 1,
+      "count": 2,
       "categories": [
+        "anime",
         "manga"
       ]
     },
