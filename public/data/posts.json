@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-09-24T03:44:51.812Z",
-  "totalPosts": 1060,
+  "lastUpdated": "2026-09-24T16:44:06.041Z",
+  "totalPosts": 1062,
   "posts": [
+    {
+      "id": "post-2103083017195684094",
+      "tweetId": "2103083017195684094",
+      "url": "https://x.com/ngnchiikawa/status/2103083017195684094",
+      "publishedAt": "2026-09-24T11:23:59.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HS-m20-akAA-6nW.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2103058505100042629",
+      "tweetId": "2103058505100042629",
+      "url": "https://x.com/ngnchiikawa/status/2103058505100042629",
+      "publishedAt": "2026-09-24T09:00:03.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第381話 フジテレビ系列「めざましテレビ」内にて 9月25日(金)7時36分頃放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HS-Cjc5aQAAZZQA.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2102951684960059395",
       "tweetId": "2102951684960059395",
@@ -14598,8 +14623,10 @@
   "calendarData": [
     {
       "date": "2026-09-24",
-      "count": 1,
+      "count": 3,
       "categories": [
+        "manga",
+        "anime",
         "collab"
       ]
     },
