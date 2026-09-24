@@ -1,7 +1,20 @@
 {
-  "lastUpdated": "2026-09-23T16:21:42.386Z",
-  "totalPosts": 1058,
+  "lastUpdated": "2026-09-24T03:44:51.812Z",
+  "totalPosts": 1060,
   "posts": [
+    {
+      "id": "post-2102951684960059395",
+      "tweetId": "2102951684960059395",
+      "url": "https://x.com/ngnchiikawa/status/2102951684960059395",
+      "publishedAt": "2026-09-24T02:42:07.000Z",
+      "summary": "🐶ちいかわ×WAON POINT🐶 無料絵文字が配信されました！ WAON POINT公式アカウントを友達追加するとDLできます🐶",
+      "category": "collab",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HS8vaVObAAAwBKP.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2102705903581765731",
       "tweetId": "2102705903581765731",
@@ -52,6 +65,23 @@
         "ちいかわ"
       ],
       "photoUrl": "https://pbs.twimg.com/media/HSul0I2bQAA7CMk.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2102951290204770358",
+      "tweetId": "2102951290204770358",
+      "url": "https://x.com/ngnchiikawa/status/2102951290204770358",
+      "publishedAt": "2026-09-20T10:30:03.000Z",
+      "summary": "🎨特別描き下ろしイラストが公開！🎉 「ちいかわ、さがしてます。」サイピク描き下ろしイラストが公開✨️ クリア人数は１万人を突破❗️ みんなでナゾ解きの冒険に出かけよう🎒 #映画ちいかわ #ちいかわさがしてます #東京メトロ脱出ゲーム",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ",
+        "ちいかわさがしてます",
+        "東京メトロ脱出ゲーム"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HSpxMFVa0AAoMfm.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2101321674885083445",
@@ -14567,6 +14597,13 @@
   ],
   "calendarData": [
     {
+      "date": "2026-09-24",
+      "count": 1,
+      "categories": [
+        "collab"
+      ]
+    },
+    {
       "date": "2026-09-23",
       "count": 1,
       "categories": [
@@ -14583,6 +14620,13 @@
     },
     {
       "date": "2026-09-21",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-09-20",
       "count": 1,
       "categories": [
         "anime"
