@@ -1,7 +1,39 @@
 {
-  "lastUpdated": "2026-09-25T04:00:23.708Z",
-  "totalPosts": 1063,
+  "lastUpdated": "2026-09-25T09:33:26.806Z",
+  "totalPosts": 1066,
   "posts": [
+    {
+      "id": "post-2103416956544335943",
+      "tweetId": "2103416956544335943",
+      "url": "https://x.com/ngnchiikawa/status/2103416956544335943",
+      "publishedAt": "2026-09-25T09:00:32.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第381話「パラレルワールド⑦」 完全に馴染んだ！？ハチワレ、ちいかわにさすまたを向けられて… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTDMKGGacAAvBpf.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2103416896423076264",
+      "tweetId": "2103416896423076264",
+      "url": "https://x.com/ngnchiikawa/status/2103416896423076264",
+      "publishedAt": "2026-09-25T03:00:40.000Z",
+      "summary": "📣9月カプセルトイ新情報！ ＃映画ちいかわ 人魚の島のひみつ デスクトップフィギュア が登場🏝️ 映画のワンシーンをイメージした ペン立てやスマホスタンドなど便利なアイテム！ デスク周りでも映画の余韻を楽しんでね☀️ 全4種 1回 500円 🏝️詳細🏝️ #カプセルトイ",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ",
+        "カプセルトイ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTB5ujgaYAAUvH5.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2103318641559453794",
       "tweetId": "2103318641559453794",
@@ -11,6 +43,19 @@
       "tags": [],
       "characters": [],
       "photoUrl": "https://pbs.twimg.com/media/HTB9J98bcAAAMhA.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2103416927146459336",
+      "tweetId": "2103416927146459336",
+      "url": "https://x.com/ngnchiikawa/status/2103416927146459336",
+      "publishedAt": "2026-09-25T03:00:03.000Z",
+      "summary": "＼新商品／ 『オキシクリーン 1500g ちいかわパッケージ』 オキシクリーン 1500gに ちいかわパッケージが数量限定で登場✨ 10月2日(金)より ちいかわマーケット、ちいかわらんど、 全国のドラッグストア・ホームセンター・スーパー、 ECサイト（Amazon・楽天・Yahoo！・Qoo10）などにて発売🙌",
+      "category": "event",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HRB9t0-bkAA9IvH.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2103083017195684094",
@@ -14633,9 +14678,12 @@
   "calendarData": [
     {
       "date": "2026-09-25",
-      "count": 1,
+      "count": 4,
       "categories": [
-        "manga"
+        "anime",
+        "goods",
+        "manga",
+        "event"
       ]
     },
     {
