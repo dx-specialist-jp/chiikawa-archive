@@ -1,7 +1,29 @@
 {
   "year": "2026",
-  "totalArticles": 1940,
+  "totalArticles": 1942,
   "articles": [
+    {
+      "id": "news-fcc3c07ec5a0",
+      "title": "【 ちいかわ ×オリオンビール】シーサーをデザインした「キャップ」と「サファリハット」 発売",
+      "url": "https://www.ssnp.co.jp/liquor/697385/",
+      "source": "ssnp.co.jp",
+      "publishedAt": "2026-08-12T14:01:17.000Z",
+      "summary": "イベント スペース8/18-8/31 ... 【セブン× ちいかわ 】「島二郎」のカツカレーなど、作中に登場する食べ物をイメージした コラボ 商品を 発売 ! ココイチ×「映画 ちいかわ ...",
+      "category": "collab",
+      "tags": [
+        "シーサー"
+      ]
+    },
+    {
+      "id": "news-21c45f7b4f7a",
+      "title": "『 ちいかわ 』とオリオンビールの コラボ シリーズに、沖縄らしさあふれる「帽子」が初登場 ...",
+      "url": "https://hobby.dengeki.com/news/3119212/",
+      "source": "hobby.dengeki.com",
+      "publishedAt": "2026-08-12T13:57:34.000Z",
+      "summary": "「 ちいかわ ×オリオンビール」 コラボ グッズ 「 ちいかわ ×オリオンビール コラボ 記念グッズ」追加 新商品発売 のお知らせ（オリオンビール公式通販） ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-d8d95a15ecdd",
       "title": "【 ちいかわ 】くら寿司との コラボ 開催！ メニューや湯呑みなどオリジナルアイテム公開",
