@@ -1,7 +1,60 @@
 {
-  "lastUpdated": "2026-09-26T19:06:08.647Z",
-  "totalPosts": 1068,
+  "lastUpdated": "2026-09-28T16:33:46.470Z",
+  "totalPosts": 1072,
   "posts": [
+    {
+      "id": "post-2104524895011078243",
+      "tweetId": "2104524895011078243",
+      "url": "https://x.com/ngnchiikawa/status/2104524895011078243",
+      "publishedAt": "2026-09-28T10:53:29.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HTTGOs8akAAH7ts.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2104523373355368581",
+      "tweetId": "2104523373355368581",
+      "url": "https://x.com/ngnchiikawa/status/2104523373355368581",
+      "publishedAt": "2026-09-28T09:00:04.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第382話 フジテレビ系列「めざましテレビ」内にて 9月29日(火)7時36分頃放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTSo8Kua8AAzIe1.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2104455113947611265",
+      "tweetId": "2104455113947611265",
+      "url": "https://x.com/ngnchiikawa/status/2104455113947611265",
+      "publishedAt": "2026-09-28T05:00:39.000Z",
+      "summary": "『#映画ちいかわ 人魚の島のひみつ』 🏝️.˚⊹ 大ヒット上映中 🎬 【10/10(土)より】 入場者特典第6弾 配布決定✨！ 「チャームミニフィギュア」（全2種） ※ランダム配布のため種類をお選び頂く事は出来ません。",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTR1ejkaAAAm43h.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2104454966119444847",
+      "tweetId": "2104454966119444847",
+      "url": "https://x.com/ngnchiikawa/status/2104454966119444847",
+      "publishedAt": "2026-09-28T02:18:36.000Z",
+      "summary": "【今日から発売】 『ちいかわ なにがでるかな？シールコレクション』は 本日より全国書店にて発売！ （早速ポストしてくださっている書店様、ありがとうございます） 書店にお出かけの際の参考に「購入説明動画」を公開します。 50秒弱なので、ぜひご覧ください！ #ちいかわ",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2103852324708073592",
       "tweetId": "2103852324708073592",
@@ -14696,6 +14749,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-28",
+      "count": 4,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-09-26",
       "count": 2,
