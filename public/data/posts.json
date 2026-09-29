@@ -1,7 +1,49 @@
 {
-  "lastUpdated": "2026-09-28T16:33:46.470Z",
-  "totalPosts": 1072,
+  "lastUpdated": "2026-09-29T17:50:34.505Z",
+  "totalPosts": 1075,
   "posts": [
+    {
+      "id": "post-2104921038530449658",
+      "tweetId": "2104921038530449658",
+      "url": "https://x.com/ngnchiikawa/status/2104921038530449658",
+      "publishedAt": "2026-09-29T13:07:37.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HTYuhu8aUAA6bfa.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2104908877691253238",
+      "tweetId": "2104908877691253238",
+      "url": "https://x.com/ngnchiikawa/status/2104908877691253238",
+      "publishedAt": "2026-09-29T09:00:41.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第382話「パラレルワールド⑧／クラッキング」 ちいかわを心配するハチワレ、思い出を質問して… あのこ、木の上にいるグレーの子を威嚇！？ ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTXyestaYAApmeM.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2104908867868262528",
+      "tweetId": "2104908867868262528",
+      "url": "https://x.com/ngnchiikawa/status/2104908867868262528",
+      "publishedAt": "2026-09-29T09:00:02.000Z",
+      "summary": "🍛 「島二郎」 食べログ特設ページ掲載は 明日9月30日(水)まで！ ┈┈┈┈┈┈┈┈┈┈┈┈ 【#映画ちいかわ島二郎食べログ】 たくさんの応援コメントの投稿 ありがとうございました🖊 一部コメントを掲載中👇 ぜひご確認ください🥄",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ島二郎食べログ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "島二郎"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTWofv2acAAJAon.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2104524895011078243",
       "tweetId": "2104524895011078243",
@@ -14749,6 +14791,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-09-29",
+      "count": 3,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-09-28",
       "count": 4,
