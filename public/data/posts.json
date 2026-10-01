@@ -1,7 +1,21 @@
 {
-  "lastUpdated": "2026-09-30T14:43:41.953Z",
-  "totalPosts": 1076,
+  "lastUpdated": "2026-10-01T04:48:55.005Z",
+  "totalPosts": 1077,
   "posts": [
+    {
+      "id": "post-2105506584562745566",
+      "tweetId": "2105506584562745566",
+      "url": "https://x.com/ngnchiikawa/status/2105506584562745566",
+      "publishedAt": "2026-10-01T03:22:19.000Z",
+      "summary": "／ ちいかわ9巻 表紙は古本屋📘 ＼ #ちいかわ 最新9巻のカバーを公開！ 古本屋が初めて表紙を飾ります🦀✨ 通常版とポストカードブック付き特装版、 11月20日（金）発売です。 初版限定封入の特典もあります🎁 ただいまご予約受付中！ （⚠️地域によって発売開始日が異なりますのでご了承ください）",
+      "category": "manga",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "古本屋"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTg7vKXbcAAzuF3.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2105220030258700364",
       "tweetId": "2105220030258700364",
@@ -14801,6 +14815,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-01",
+      "count": 1,
+      "categories": [
+        "manga"
+      ]
+    },
     {
       "date": "2026-09-30",
       "count": 1,
