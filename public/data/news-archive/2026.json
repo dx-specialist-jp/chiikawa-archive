@@ -1,7 +1,87 @@
 {
   "year": "2026",
-  "totalArticles": 2168,
+  "totalArticles": 2175,
   "articles": [
+    {
+      "id": "news-5e4f67dc9356",
+      "title": "くら寿司×「 ちいかわ 」 コラボ メニューを先行体験（GAME Watch） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/903b7ee22e5fa2826aeadb810ab9f33fe3b42023",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-18T16:21:38.000Z",
+      "summary": "期間限定 で販売される。 「あげだっこ！ソースのめん」はなんと言って ... ちいかわ 」 コラボ キャンペーン期間中、様々なフェアが登場。今回は、浜名湖 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-44d83cdb63fd",
+      "title": "【2026秋冬】大阪駅直結「LUCUA SOUTH」に国内最大級のキャラ特区誕生！ ちいかわ ・サンリオ ...",
+      "url": "https://tetsudo-ch.com/13034387.html",
+      "source": "tetsudo-ch.com",
+      "publishedAt": "2026-08-18T16:17:38.000Z",
+      "summary": "オープンに先駆けプレ イベント を開催！キャラクターグリーティングも. 「LUCUA キャラクターズワールド」の本格始動に先駆け、8月22日",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-524ba81c3630",
+      "title": "「 ちいかわマーケット 」で「ハッピーバッグ2027（未年）」の受注が8月26日に開始 …",
+      "url": "https://news.yahoo.co.jp/articles/70a1fca023f1f3381d15ef12d363dc2482f10ee5",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-18T16:07:58.000Z",
+      "summary": "「 ちいかわマーケット 」で「ハッピー ... 「 ちいかわ 」×くら寿司 コラボ キャンペーンが8月21日より 期間限定 開催 オリジナルの湯呑みや寿司皿が景品に登場！",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-8db29a2a4e46",
+      "title": "「 ちいかわ 」キャラクターたちが週刊誌「anan」に登場 表紙＆グラビア - ライブドアニュース",
+      "url": "https://news.livedoor.com/topics/detail/32094426/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-08-18T16:03:09.000Z",
+      "summary": "映画 ちいかわ の公開を記念し、ananスペシャルエディションが7月26日に 発売 される。 ちいかわ 、ハチワレ、うさぎ、セイレーンが表紙を飾り、島二郎がバック ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-6e408155a85c",
+      "title": "映画『 ちいかわ 』、『anan』で表紙＆グラビア バックカバーは島二郎 - 愛媛新聞ONLINE",
+      "url": "https://www.ehime-np.co.jp/article/202608180095",
+      "source": "ehime-np.co.jp",
+      "publishedAt": "2026-08-18T15:56:37.000Z",
+      "summary": "『映画 ちいかわ 人魚の島のひみつ』より、 ちいかわ 、ハチワレ、うさぎ&セイレーンが、女性グラビア週刊誌『anan』26日 発売 ... コラボ 「 ちいかわ と ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-02db48b17c96",
+      "title": "映画『 ちいかわ 』が『anan』で特集 セイレーンと島二郎が特別版のカバーを飾る - KAI-YOU.net",
+      "url": "https://kai-you.net/article/96282",
+      "source": "kai-you.net",
+      "publishedAt": "2026-08-18T15:44:05.000Z",
+      "summary": "劇場アニメ『映画 ちいかわ 人魚の島のひみつ』が、8月26日（水） 発売 の雑誌 ... イベント レポート、独自の視点 切り口からのレビューやコラムなども ...",
+      "category": "anime",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-518760151fc7",
+      "title": "「映画 ちいかわ 」 ちいかわ 、ハチワレ、うさぎをセイレーンが抱きしめる キュートな「anan ...",
+      "url": "https://cho-animedia.jp/article/2026/08/18/62374.html",
+      "source": "cho-animedia.jp",
+      "publishedAt": "2026-08-18T15:41:55.000Z",
+      "summary": "ちいかわ スペシャルエディション（8 月 26 日 発売 ）バックカバー. 「anan ... 新商品 が登場 「ちいぽけ」浴衣姿の ちいかわ たちが夏を彩る♪「阿波おどり ...",
+      "category": "anime",
+      "tags": [
+        "ハチワレ",
+        "うさぎ",
+        "セイレーン",
+        "映画"
+      ]
+    },
     {
       "id": "news-e6fc36ac1708",
       "title": "【予約受付中】『映画 ちいかわ 人魚の島のひみつ』から大人気キャラクターたちが表紙に登場 ...",
