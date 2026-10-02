@@ -1,7 +1,24 @@
 {
-  "lastUpdated": "2026-10-01T15:12:38.048Z",
-  "totalPosts": 1079,
+  "lastUpdated": "2026-10-02T14:33:18.816Z",
+  "totalPosts": 1080,
   "posts": [
+    {
+      "id": "post-2105976524331737483",
+      "tweetId": "2105976524331737483",
+      "url": "https://x.com/ngnchiikawa/status/2105976524331737483",
+      "publishedAt": "2026-10-02T09:00:06.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第6話「ともだち／ドラ焼き」 ハチワレ、ちいかわの友達のうさぎに出会う どら焼きの中身に大笑い！ ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTnPQCebUAAM0tJ.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2105665792213971357",
       "tweetId": "2105665792213971357",
@@ -14840,6 +14857,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-02",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-10-01",
       "count": 3,
