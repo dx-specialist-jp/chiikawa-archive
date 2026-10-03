@@ -1,7 +1,71 @@
 {
   "year": "2026",
-  "totalArticles": 2207,
+  "totalArticles": 2213,
   "articles": [
+    {
+      "id": "news-784202cdf34b",
+      "title": "「 ちいかわ 」PUKU CHURUシール第2弾が8月21日プライズ展開！キラキラのホログラム仕様",
+      "url": "https://www.inside-games.jp/article/2026/08/19/186406.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-19T07:20:57.000Z",
+      "summary": "発売 !総柄バッグやペットボトルホルダーなど、買い物からお出かけまで幅広く ... しまむらで「プロ野球10球団 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-d9b4cf6a6fdc",
+      "title": "「 ちいかわ 」PUKU CHURUシール第2弾が8月21日プライズ展開！キラキラのホログラム仕様",
+      "url": "https://news.infoseek.co.jp/article/inside_186406/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-08-19T07:13:05.000Z",
+      "summary": "「 ちいかわ 」PUKU CHURUシール第2弾が8月21日プライズ展開！キラキラの ... Polaroid、「ポケモン」 コラボ の限定インスタントカメラ 発売 カメ… 「IBM ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-4591ca81042c",
+      "title": "くら寿司×「 ちいかわ 」 コラボ メニューを先行体験「ビッくらポン!」景品のフィギュアはおしりが ...",
+      "url": "https://www.chiba-tv.com/plus/detail/2026081912147",
+      "source": "chiba-tv.com",
+      "publishedAt": "2026-08-19T07:12:20.000Z",
+      "summary": "くら寿司×「 ちいかわ 」 コラボ メニューを先行体験「ビッくらポン!」景品の ... イベント 「タッくん感謝デー」がベルサールで開催など～ 最近の秋葉原 ...",
+      "category": "collab",
+      "tags": [
+        "フィギュア"
+      ]
+    },
+    {
+      "id": "news-fdb625947ac7",
+      "title": "中止になった「 ちいかわ 」のワークショップ、予定通り開催へ イオンモール徳島 - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/89b97a490cd050e30618f0c74b04c92dc413ea16",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-19T06:49:40.000Z",
+      "summary": "イオンモール徳島、8月の「 ちいかわ 」 イベント など中止 ちいかわ の ... コラボ グッズ売り場もファン多数 動画】｢ちいぽけ展望台｣が眉山山頂に ...",
+      "category": "event",
+      "tags": []
+    },
+    {
+      "id": "news-c13cb144e760",
+      "title": "「 ちいかわ 」×くら寿司 コラボ キャンペーンが8月21日からスタート！特別メニューやオリジナル ...",
+      "url": "https://news.yahoo.co.jp/articles/41df843f78f7ba7f1ecb9c6aa2741a3e9f0a1e5c",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-19T06:32:35.000Z",
+      "summary": "2026年8月21日(金)から 期間限定 で、人気キャラクター「 ちいかわ 」と コラボ したキャンペーンを全国のくら寿司で開催される。 今回のキャンペーンでは、「 ちい ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-d8ba0270bfdb",
+      "title": "【サンレコ10月号】表紙特集はコーネリアス！ 『映画 ちいかわ 』OSTインタビューやフジロック ...",
+      "url": "https://www.snrec.jp/entry/news/srm202610",
+      "source": "snrec.jp",
+      "publishedAt": "2026-08-19T06:16:40.000Z",
+      "summary": "『映画 ちいかわ 』OSTインタビューやフジロックレポート、アンビエント マシン特集も ... 大貫妙子『Comin' Soon』 発売 40周年記念リマスターCD. コラム. ポスト ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
     {
       "id": "news-ead13be071ea",
       "title": "全70アプリ搭載のスマホトイ「 ちいかわ フォンすまーと」が10月31日 発売 ！”きらりんドロップ”6 ...",
