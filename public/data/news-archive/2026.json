@@ -1,7 +1,159 @@
 {
   "year": "2026",
-  "totalArticles": 2213,
+  "totalArticles": 2226,
   "articles": [
+    {
+      "id": "news-8bbf9e4f8e88",
+      "title": "【 ちいかわ ×くら寿司】 コラボ メニューの販売やオリジナル「湯呑み」のプレゼントキャンペーン ...",
+      "url": "https://news.yahoo.co.jp/articles/5b52e9108e1136010385f6239215dc54c0471f85?page=2",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-19T11:50:21.000Z",
+      "summary": "コラボ グッズ第2弾はオリジナルイラストの『エコバッグセット』 ◇ミニカップめん「明星 チャルメラ ちいかわ ラーメン とんこつ味」を新 発売 【明星食品】.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-7b79319bff9d",
+      "title": "『キングダム』が邦画史上初の記録達成！ 『映画 ちいかわ 』も100億突破が目前に…新作の動向は ...",
+      "url": "https://eigachannel.jp/movie/237370/",
+      "source": "eigachannel.jp",
+      "publishedAt": "2026-08-19T10:26:46.000Z",
+      "summary": "前週1位を獲得した『映画 ちいかわ 人魚の島のひみつ』の今週の結果は？ ... イベント 決定. 8月28日公開の映画『私はあなたを知らない、』。坂口健太郎が ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-519c6329954f",
+      "title": "「 ちいかわ 」便利なトートバッグがカプセルトイで登場！セイレーン編デザインの全5種 - インサイド",
+      "url": "https://www.inside-games.jp/article/img/2026/08/19/186420/1768651.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-19T09:51:44.000Z",
+      "summary": "カードゲーム ... アベイルにて「お文具といっしょ」グッズが8月22日 発売 !布団にくるまる ...",
+      "category": "goods",
+      "tags": [
+        "セイレーン"
+      ]
+    },
+    {
+      "id": "news-edfad1a40da6",
+      "title": "映画『 ちいかわ 』特典3弾にネットざわつく「センスいいよね」「こ - 徳島新聞",
+      "url": "https://www.topics.or.jp/articles/-/1480772",
+      "source": "topics.or.jp",
+      "publishedAt": "2026-08-19T09:33:36.000Z",
+      "summary": "トップ 徳島ニュース 市町村別 スポーツ マイニュース イベント デジタル限定 特集 海外 写真特集 動画 ... コラボ グッズ売り場もファン多数.",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-b34558731d3b",
+      "title": "映画『 ちいかわ 』特典3弾にネットざわつく「センスいいよね」「こ - 山陽新聞",
+      "url": "https://www.sanyonews.jp/article/1974439",
+      "source": "sanyonews.jp",
+      "publishedAt": "2026-08-19T09:32:58.000Z",
+      "summary": "イベント . 映画『 ちいかわ 』特典3弾にネットざわつく「センスいいよね ... ココス『アイドリッシュセブン』 コラボ 開催決定 メニュー発表でグッズなど販売.",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-c16c382976f4",
+      "title": "オリオンビール× ちいかわ 、シーサーデザインの帽子が8月21日 発売 。沖縄旅行のお供に",
+      "url": "https://otonano-shumatsu.com/articles/577549/2",
+      "source": "otonano-shumatsu.com",
+      "publishedAt": "2026-08-19T09:29:12.000Z",
+      "summary": "オリオンビール× ちいかわ 、シーサーデザインの帽子が8月21日 発売 。沖縄 ... 『 ちいかわ 』とオリオンビールの コラボ に新作！ シーサーが可愛いキャップ ...",
+      "category": "collab",
+      "tags": [
+        "シーサー"
+      ]
+    },
+    {
+      "id": "news-a13bd503b0d7",
+      "title": "『映画 ちいかわ 』、音楽でも記録 サントラ2作が「週間デジタル」で1・2位独占【オリコン ...",
+      "url": "https://kahoku.news/entertainment/ori2474589.html?format=slide",
+      "source": "kahoku.news",
+      "publishedAt": "2026-08-19T09:16:36.000Z",
+      "summary": "「 ちいかわ 」が初の船旅と コラボ 「 ちいかわ とのんびり船旅」8",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-d63ca723f697",
+      "title": "「映画 ちいかわ 人魚の島のひみつ」との コラボ カフェ | 東京バーゲンマニア",
+      "url": "https://bg-mania.jp/2026/08/19702385.html",
+      "source": "bg-mania.jp",
+      "publishedAt": "2026-08-19T09:11:01.000Z",
+      "summary": "期間限定 ... 「映画 ちいかわ 人魚の島のひみつ」との コラボ カフェ. 2026年7月24日から9月 ...",
+      "category": "collab",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-2b7feb323d5c",
+      "title": "【 ちいかわ 】赤ちゃん姿が可愛いChiikawa Babyシリーズからぬいぐるみパスケースポーチ第2弾が ...",
+      "url": "https://dengekionline.com/article/202608/84495",
+      "source": "dengekionline.com",
+      "publishedAt": "2026-08-19T08:37:12.000Z",
+      "summary": "『FINAL FANTASY XI』との コラボイベント をはじめ、最新情報や企画記事をまとめてお届けします！ 『FF14』企画記事 ニュースまとめページ. 『FF14』企画記事 ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ"
+      ]
+    },
+    {
+      "id": "news-4c7dd048f22b",
+      "title": "【Heatseekers Songs】「島のうた (セイレーンver.)」が首位に 『映画 ちいかわ 』劇中歌が5曲 ...",
+      "url": "https://www.billboard-japan.com/d_news/detail/164610",
+      "source": "billboard-japan.com",
+      "publishedAt": "2026-08-19T08:12:21.000Z",
+      "summary": "ちいかわ 』劇中歌が5曲チャートイン ... 『米津玄師 かいじゅうずかん カードウエハース』 発売 日＆商品写真が解禁 2. JO1×SHIBUYA109の コラボ キャンペーン、 ...",
+      "category": "anime",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-71314f017fab",
+      "title": "オリオンビール× ちいかわ 、シーサーデザインの帽子が8月21日 発売 。沖縄旅行のお供に",
+      "url": "https://otonano-shumatsu.com/articles/577549",
+      "source": "otonano-shumatsu.com",
+      "publishedAt": "2026-08-19T08:05:09.000Z",
+      "summary": "オリオンビール× ちいかわ 、シーサーデザインの帽子が8月21日 発売 。 ... 沖縄を代表するビールブランドのオリオンビールが『 ちいかわ 』との新 コラボ グッズを発表。",
+      "category": "collab",
+      "tags": [
+        "シーサー"
+      ]
+    },
+    {
+      "id": "news-4f6ecff85223",
+      "title": "『 ちいかわ 』×「くら寿司」 コラボ を 発売 前にチェック！ 寿司姿チャームは後ろ姿まで超かわいい ...",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/crankin_trend/trend/crankin_trend-18984815",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-19T07:39:30.000Z",
+      "summary": "『 ちいかわ 』×「くら寿司」 コラボ を 発売 前にチェック！ 寿司姿チャームは後ろ姿まで超かわいい＜実物レポ＞（クランクイン！トレンド） 「くら寿司」は、8 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-74ecade59d7c",
+      "title": "ちいかわ ハッピーバッグ2027 8月26日より予約受付開始! - コラボ カフェ",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-happybag-2027/",
+      "source": "collabo-cafe.com",
+      "publishedAt": "2026-08-19T07:28:01.000Z",
+      "summary": "ムック本 ... ブルーアーカイブ × 仙川湯けむりの里 コラボ グッズ 11月一般 発売 !",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-784202cdf34b",
       "title": "「 ちいかわ 」PUKU CHURUシール第2弾が8月21日プライズ展開！キラキラのホログラム仕様",
