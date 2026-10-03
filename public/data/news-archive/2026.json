@@ -1,7 +1,27 @@
 {
   "year": "2026",
-  "totalArticles": 2236,
+  "totalArticles": 2238,
   "articles": [
+    {
+      "id": "news-39b426b60eab",
+      "title": "【 ちいかわ ×くら寿司】 コラボ メニューの販売やオリジナル「湯呑み」のプレゼントキャンペーン ...",
+      "url": "https://topics.smt.docomo.ne.jp/article/ssnp/business/ssnp-20260819-697982?page=2",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-19T21:31:03.000Z",
+      "summary": "【 ちいかわ ×くら寿司】 コラボ ... ミニカップめん「明星 チャルメラ ちいかわ ラーメン とんこつ味」を新 発売 【明星食品】.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-0e0974517c3a",
+      "title": "ちょっぴりダークな世界観！「 ちいかわ 」ハロウィンがまぐちポーチ全3種が8月下旬プライズ展開",
+      "url": "https://www.inside-games.jp/article/2026/08/19/186417.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-19T21:02:35.000Z",
+      "summary": "発売 前のゲームを先取りできる!/ゲームテスター/新作ゲームの動作確認 ... しまむらで「プロ野球10球団×スヌーピー ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-126ed85154c2",
       "title": "「映画 ちいかわ 人魚の島のひみつ」を観てきました。 - LEE",

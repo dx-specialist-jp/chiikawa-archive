@@ -1,7 +1,21 @@
 {
-  "lastUpdated": "2026-10-03T19:05:31.245Z",
+  "lastUpdated": "2026-10-03T22:45:00.809Z",
   "totalArticles": 2000,
   "articles": [
+    {
+      "id": "news-e8682091c5c5",
+      "title": "「チョコサプ ちいかわ 2」が、むちゃかわ！ウクレレを弾くうさぎや、くりまんじゅう（禁酒 ...",
+      "url": "https://www.inside-games.jp/article/2026/10/04/188706.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-10-03T21:35:22.000Z",
+      "summary": "ちいかわ 2」が11月 発売 ！ ... イベント キャンペーン好き注目/未経験OK. 株式会社Harvest Biz Career.",
+      "category": "other",
+      "tags": [
+        "うさぎ",
+        "くりまんじゅう",
+        "お菓子"
+      ]
+    },
     {
       "id": "news-cfd8a46893a8",
       "title": "ちいかわ 韓国の人気音楽番組出演に大反響 ステージ映像が公開2日で100万回再生突破「可愛く ...",
@@ -88,6 +102,16 @@
         "ハチワレ",
         "うさぎ"
       ]
+    },
+    {
+      "id": "news-997ddf40ccc1",
+      "title": "【 ちいかわ 】今日 発売 の ちいかわ ダイカットステッカーセット第５弾が想像よりも可愛くてお得 ...",
+      "url": "https://media.unisba.ac.id/8d687ace/2da59fa8kDTDL_TVWsg///?share=telegram&nb=1",
+      "source": "media.unisba.ac.id",
+      "publishedAt": "2026-10-03T08:43:22.000Z",
+      "summary": "【 ちいかわ 】今日 発売 の ちいかわ ダイカットステッカーセット第５弾が想像よりも可愛くてお得だった！！ Tanner Scott (WWtURqiG4N).",
+      "category": "goods",
+      "tags": []
     },
     {
       "id": "news-eab99f46e181",
@@ -22587,26 +22611,6 @@
       "tags": [
         "映画"
       ]
-    },
-    {
-      "id": "news-39b426b60eab",
-      "title": "【 ちいかわ ×くら寿司】 コラボ メニューの販売やオリジナル「湯呑み」のプレゼントキャンペーン ...",
-      "url": "https://topics.smt.docomo.ne.jp/article/ssnp/business/ssnp-20260819-697982?page=2",
-      "source": "topics.smt.docomo.ne.jp",
-      "publishedAt": "2026-08-19T21:31:03.000Z",
-      "summary": "【 ちいかわ ×くら寿司】 コラボ ... ミニカップめん「明星 チャルメラ ちいかわ ラーメン とんこつ味」を新 発売 【明星食品】.",
-      "category": "collab",
-      "tags": []
-    },
-    {
-      "id": "news-0e0974517c3a",
-      "title": "ちょっぴりダークな世界観！「 ちいかわ 」ハロウィンがまぐちポーチ全3種が8月下旬プライズ展開",
-      "url": "https://www.inside-games.jp/article/2026/08/19/186417.html",
-      "source": "inside-games.jp",
-      "publishedAt": "2026-08-19T21:02:35.000Z",
-      "summary": "発売 前のゲームを先取りできる!/ゲームテスター/新作ゲームの動作確認 ... しまむらで「プロ野球10球団×スヌーピー ...",
-      "category": "goods",
-      "tags": []
     }
   ]
 }
