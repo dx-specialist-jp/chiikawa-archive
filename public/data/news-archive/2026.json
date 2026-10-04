@@ -1,7 +1,56 @@
 {
   "year": "2026",
-  "totalArticles": 2260,
+  "totalArticles": 2264,
   "articles": [
+    {
+      "id": "news-db544f88ec97",
+      "title": "【 ちいかわ 映画化記念】完売続出！ セブンイレブン赤魚の煮付 / 映画 ちいかわ 人魚の島のひみつ",
+      "url": "https://getnews.jp/archives/3737638",
+      "source": "getnews.jp",
+      "publishedAt": "2026-08-20T14:51:28.000Z",
+      "summary": "セブンイレブンの ちいかわコラボ 商品「赤魚の煮付」。映画の人魚モチーフで上映後に品切れ続出。骨が旨味を引き出し、ご飯と味噌汁に合う深紅の見た目も話題 ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-3de82d4d8525",
+      "title": "【8/21開始！】 ちいかわ ×くら寿司第4弾！初登場の湯呑み＆限定グッズに注目",
+      "url": "https://news.yahoo.co.jp/articles/03ce434508f07e9831c2484619ed43730aaa1a24",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-20T14:41:57.000Z",
+      "summary": "ちいかわ 」の コラボ ... 東京の「カレー」 イベント 3選【2026年8月",
+      "category": "collab",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-b22352c370a4",
+      "title": "『ちいぽけ』公式グッズ第3弾が 発売 ！\"恐竜\"＆\"アリス\"モチーフの ちいかわ たちなど盛り沢山ー ...",
+      "url": "https://news.infoseek.co.jp/article/inside_186498/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-08-20T14:30:28.000Z",
+      "summary": "ちいかわ ぽけっと（ちいぽけ）』公式グッズ第3弾を8月21日より 発売 ... くら寿司で「 ちいかわ 」 コラボ 第4弾が8月21日開催！初の“湯呑み”やお寿司 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-9812305187eb",
+      "title": "「チョコサプ ちいかわ 2」が11月 発売 ！ウクレレを弾くうさぎや、くりまんじゅう（禁酒）など ...",
+      "url": "https://news.yahoo.co.jp/articles/cff644b66dc3ddde18129ad065af8dcbb20a7783",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-20T14:27:47.000Z",
+      "summary": "バンダイは、「チョコサプ ちいかわ 2」を11月より全国量販店の菓子売場等にて 発売 予定です。 ◇「 ちいかわ 」チョコサプ第2弾！ チョコカプセルの中から ...",
+      "category": "goods",
+      "tags": [
+        "うさぎ",
+        "くりまんじゅう",
+        "お菓子"
+      ]
+    },
     {
       "id": "news-00d240c598ef",
       "title": "くら寿司と ちいかわ が4回目の コラボ オリジナル「湯呑み」や「寿司皿」などの限定グッズは ...",
