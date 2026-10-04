@@ -1,7 +1,20 @@
 {
-  "lastUpdated": "2026-10-04T19:18:54.019Z",
+  "lastUpdated": "2026-10-04T22:52:42.110Z",
   "totalArticles": 2000,
   "articles": [
+    {
+      "id": "news-f8c823d45524",
+      "title": "しまむらで「 ちいかわ 」グッズがオンライン販売！首にリボンを巻いた「ハチワレ」「うさぎ」ら ...",
+      "url": "https://www.inside-games.jp/article/2026/10/04/188726.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-10-04T18:35:42.000Z",
+      "summary": "しまむらの「 ちいかわ 」新作腹巻は、しまむらパーク（オンラインストア）にて2026年10月9日15時より販売されます。 【UPDATE】公式より 発売 日が10月6日15時→10 ...",
+      "category": "collab",
+      "tags": [
+        "ハチワレ",
+        "うさぎ"
+      ]
+    },
     {
       "id": "news-9ff3ce64112e",
       "title": "「正直に話します」シャウエッセン公式、“大切なお知らせ”告知！ 「もしや ちいかわコラボ 」「香 ...",
@@ -36,6 +49,16 @@
       "tags": []
     },
     {
+      "id": "news-f88cbb3f504d",
+      "title": "「正直に話します」シャウエッセン公式、“大切なお知らせ”告知！ 「もしや ちいかわコラボ 」「香 ...",
+      "url": "https://topics.smt.docomo.ne.jp/article/allaboutnews/entertainment/allaboutnews-164887?utm_source=dnews&utm_medium=article&utm_campaign=contentsmatch1",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-10-04T13:06:26.000Z",
+      "summary": "「もしや ちいかわコラボ でしょうか」「香薫と合併か？」「てーまぱーく ... 愛子さまカレンダー 発売 前から人気.",
+      "category": "collab",
+      "tags": []
+    },
+    {
       "id": "news-567bcb6cecb1",
       "title": "「正直に話します」シャウエッセン公式、“大切なお知らせ”告知！ 「もしや ちいかわコラボ 」「香 ...",
       "url": "https://news.allabout.co.jp/articles/o/130422/",
@@ -64,6 +87,19 @@
       "summary": "8人組アイドル メンバーが事務所の規約に反する行動で脱退へ 13日の「生誕祭」 イベント をもって. 2026年10月04日. 芸能 ...",
       "category": "other",
       "tags": []
+    },
+    {
+      "id": "news-26178175952f",
+      "title": "「なぜ皆 ちいかわ にハマるのか」映画 ちいかわ 人魚の島のひみつ 地元はどこでもワンダーランド ...",
+      "url": "https://eiga.com/movie/105109/review/07057309/",
+      "source": "eiga.com",
+      "publishedAt": "2026-10-04T10:57:07.000Z",
+      "summary": "全世代の子供、そして若者、大人までがはまる「 ちいかわ 」。最近は コラボ 製品も多々出てきて、出せばはまるような状況だ。 しかし私はシニア男子、本来 ちい ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
     },
     {
       "id": "news-0ee2129f9889",
@@ -22569,43 +22605,6 @@
       "tags": [
         "ポップアップ",
         "限定"
-      ]
-    },
-    {
-      "id": "news-99d38be97fac",
-      "title": "くら寿司で「 ちいかわ 」 コラボ 第4弾が開催！初の“湯呑み”やお寿司フィギュア、 コラボ メニューも",
-      "url": "https://www.inside-games.jp/article/2026/08/21/186499.html",
-      "source": "inside-games.jp",
-      "publishedAt": "2026-08-20T15:15:15.000Z",
-      "summary": "ちいかわ 」との 期間限定コラボ ... 発売 . 2026.8.3 Mon 10:50 ...",
-      "category": "collab",
-      "tags": [
-        "フィギュア"
-      ]
-    },
-    {
-      "id": "news-af4e8f6827df",
-      "title": "40代が「映画 ちいかわ 人魚の島のひみつ」を観に行ったらどっぷりハマってしまったおはなし | LEE",
-      "url": "https://lee.hpplus.jp/100nintai/3702639/",
-      "source": "lee.hpplus.jp",
-      "publishedAt": "2026-08-20T15:06:46.000Z",
-      "summary": "40周年の ... セブンイレブンにはまだまだ ちいかわコラボ 商品がありますし、ガチャガチャでもちいかわをよく見かけます。",
-      "category": "anime",
-      "tags": [
-        "映画",
-        "人魚の島"
-      ]
-    },
-    {
-      "id": "news-10d7675a470a",
-      "title": "売り切れ必至か…【 ちいかわ 映画】カプセルトイになって新登場！景品の詳細とは？ - LASISA",
-      "url": "https://lasisa.net/post/156670",
-      "source": "lasisa.net",
-      "publishedAt": "2026-08-20T14:57:24.000Z",
-      "summary": "ちいかわ 人魚の島のひみつ トートバッグ」の 発売 ... 【くら寿司× ちいかわ 】第4弾 コラボ ！“のり巻きチャーム”など、限定メニュー ...",
-      "category": "goods",
-      "tags": [
-        "映画"
       ]
     }
   ]
