@@ -1,7 +1,60 @@
 {
-  "lastUpdated": "2026-10-03T19:05:30.892Z",
-  "totalPosts": 1082,
+  "lastUpdated": "2026-10-05T16:54:54.061Z",
+  "totalPosts": 1086,
   "posts": [
+    {
+      "id": "post-2107116756280229934",
+      "tweetId": "2107116756280229934",
+      "url": "https://x.com/ngnchiikawa/status/2107116756280229934",
+      "publishedAt": "2026-10-05T14:32:37.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HT37hTqbkAAwg5d.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2107092186609377411",
+      "tweetId": "2107092186609377411",
+      "url": "https://x.com/ngnchiikawa/status/2107092186609377411",
+      "publishedAt": "2026-10-05T09:00:03.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第21話 フジテレビ系列「めざましテレビ」内にて 10月6日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HT2sACAawAArpES.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2107025123832480111",
+      "tweetId": "2107025123832480111",
+      "url": "https://x.com/ngnchiikawa/status/2107025123832480111",
+      "publishedAt": "2026-10-05T01:00:00.000Z",
+      "summary": "＼新商品／ 玉乃光酒造より 『ちいかわ 日本酒とお出汁のだし割りセット』が登場！ あの“だし割り”をおうちで楽しもう🍶 11月10日(火)発売 オンラインショップは10月5日(月)より予約開始 🔍ご予約・お取り扱い店舗はこちら ※飲酒は20歳になってから。",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HTXS6k3bAAAaGFC.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2107025083529408985",
+      "tweetId": "2107025083529408985",
+      "url": "https://x.com/ngnchiikawa/status/2107025083529408985",
+      "publishedAt": "2026-10-04T23:00:02.000Z",
+      "summary": "週の始まり月曜日✨ 嬉しいことはシェアしよう🎉 #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HT0ipnwbkAA9gmY.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2106382547727065529",
       "tweetId": "2106382547727065529",
@@ -14877,6 +14930,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-05",
+      "count": 4,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-10-03",
       "count": 2,
