@@ -1,7 +1,60 @@
 {
-  "lastUpdated": "2026-10-05T16:54:54.061Z",
-  "totalPosts": 1086,
+  "lastUpdated": "2026-10-06T11:05:41.656Z",
+  "totalPosts": 1090,
   "posts": [
+    {
+      "id": "post-2107413056133468600",
+      "tweetId": "2107413056133468600",
+      "url": "https://x.com/ngnchiikawa/status/2107413056133468600",
+      "publishedAt": "2026-10-06T10:10:01.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HT8JAR7akAA42zk.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2107411987756126561",
+      "tweetId": "2107411987756126561",
+      "url": "https://x.com/ngnchiikawa/status/2107411987756126561",
+      "publishedAt": "2026-10-06T08:00:01.000Z",
+      "summary": "🏝️.˚⊹ あの名場面がチャームミニフィギュアに❣️ 『#映画ちいかわ 人魚の島のひみつ』 入場者特典第6弾！ 「チャームミニフィギュア」（全2種） 10月10日（土）より配布開始✨ ※ランダム配布のため種類をお選び頂く事は出来ません。",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2107411953601974444",
+      "tweetId": "2107411953601974444",
+      "url": "https://x.com/ngnchiikawa/status/2107411953601974444",
+      "publishedAt": "2026-10-06T04:19:30.000Z",
+      "summary": "＼ いよいよ就航！✈️✨ ／ 「ちいかわジェット」が10月19日（月）より空へ！🎉☁️ ✈️初便スケジュール 羽田→長崎 ANA661便 8:15発（予定） 長崎→羽田 ANA664便 11:00発（予定） ※運航状況等により、運航機材が変更となる場合があります。初便以降はANA国内線のさまざまな路線に就航予定です。",
+      "category": "other",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HT64yBbaoAAnPOT.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2107411916243206394",
+      "tweetId": "2107411916243206394",
+      "url": "https://x.com/ngnchiikawa/status/2107411916243206394",
+      "publishedAt": "2026-10-05T23:00:04.000Z",
+      "summary": "／ TVアニメちいかわ 第21話 見逃し配信スタート📺 ＼ 第21話「なんとかバニア①」の1週間限定見逃し配信は下記URLよりご覧ください✨ ▼YouTube ※FOD、TVerでも1週間限定見逃し配信中 #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2107116756280229934",
       "tweetId": "2107116756280229934",
@@ -14930,6 +14983,16 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-06",
+      "count": 4,
+      "categories": [
+        "manga",
+        "goods",
+        "other",
+        "anime"
+      ]
+    },
     {
       "date": "2026-10-05",
       "count": 4,
