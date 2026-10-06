@@ -1,7 +1,190 @@
 {
   "year": "2026",
-  "totalArticles": 2322,
+  "totalArticles": 2338,
   "articles": [
+    {
+      "id": "news-54d6a1225a25",
+      "title": "【今週の注目記事】「路傍のフジイ」完結、「映画 ちいかわ 」入場特典第3弾はプルバックカー",
+      "url": "https://natalie.mu/comic/news/686061",
+      "source": "natalie.mu",
+      "publishedAt": "2026-08-22T00:03:26.000Z",
+      "summary": "「しもべの王子様」小川史記＆瀬戸利樹の“王子様な",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-ae4d81cb25fc",
+      "title": "「 ちいかわ 」子供から大人まで楽しめるふりかけとカレーが 期間限定発売 ！丸美屋スペシャル ...",
+      "url": "https://news.yahoo.co.jp/articles/892deef05238f945a4bfaf3a02cfc6621f6641e1",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-21T23:57:33.000Z",
+      "summary": "期間限定 アニメ ちいかわ チーズ入りカレー＜ポーク甘口＞」を8月31日まで、全国で 発売 ... ユニクロ×「 ちいかわ 」 コラボ UTが7月17日より順次 発売 ！みんなで船に ...",
+      "category": "goods",
+      "tags": [
+        "食品",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-e7aaae2bc477",
+      "title": "「 ちいかわ 」子供から大人まで楽しめるふりかけとカレーが 期間限定発売 ！丸美屋スペシャル ...",
+      "url": "https://news.infoseek.co.jp/article/inside_186585/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-08-21T22:56:53.000Z",
+      "summary": "「 期間限定 アニメ ちいかわ ふりかけ＜たまご＆おかか＞」「 期間限定 アニメ ちいかわ チーズ入りカレー＜ポーク甘口＞」は8月31日まで、全国で 発売 。価格は ...",
+      "category": "goods",
+      "tags": [
+        "食品",
+        "ポップアップ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-53b88df92267",
+      "title": "「映画 ちいかわ ダイカットステッカー付きグミ」の絵柄一挙公開！島二郎や捕まったラッコたち ...",
+      "url": "https://www.inside-games.jp/article/2026/08/21/186551.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-21T21:18:00.000Z",
+      "summary": "！「映画 ちいかわ ダイカットステッカー付きグミ」が9月28日 発売 ... イベント",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-e25cbfd2d461",
+      "title": "「ジャポニカ学習帳 アニメ ちいかわ 」が 発売 - 電ファミニコゲーマー",
+      "url": "https://news.denfaminicogamer.jp/news/2608213y",
+      "source": "news.denfaminicogamer.jp",
+      "publishedAt": "2026-08-21T18:16:58.000Z",
+      "summary": "『 ちいかわ 』と「ジャポニカ学習帳」の コラボ ノートがかわいすぎる。ハチワレ、うさぎ、モモンガなどを描いた全8種が 発売 ... サンスター文具は8月21日、TVアニメ ...",
+      "category": "anime",
+      "tags": [
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-94b0b348e222",
+      "title": "「 ちいかわ ぽけっと POP UP STORE」東京会場のレポートが公開！恐竜とアリスをモチーフにした ...",
+      "url": "https://www.gamer.ne.jp/news/202608210055/",
+      "source": "gamer.ne.jp",
+      "publishedAt": "2026-08-21T17:50:21.000Z",
+      "summary": "発売 ！ポップアップストアも東京、名古屋、福岡、仙台、大阪で開催 ... コラボイベント が9月10日より開催！謎解きラリーやオリジナルグッズの販売を ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-e3db2565ef17",
+      "title": "ジャポニカ学習帳と コラボ 草むしり検定5級の参考書持つ ちいかわ 名場面をデザイン",
+      "url": "https://mantan-web.jp/article/20260821dog00m200012000a/photopage/002.html",
+      "source": "mantan-web.jp",
+      "publishedAt": "2026-08-21T16:21:37.000Z",
+      "summary": "人気マンガが原作のテレビアニメ「 ちいかわ 」と「ジャポニカ学習帳」（ショウワノート）が コラボ したノート「ジャポニカ学習帳 アニメ ちいかわ 」が 発売 ... 発売 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-2b05cb50af4c",
+      "title": "【入場特典リスト 8月最新版】「映画 ちいかわ 」かわいすぎる新特典 「ミニオンズ＆モンスターズ ...",
+      "url": "https://anime.eiga.com/news/column/tokuten_list/127286/",
+      "source": "anime.eiga.com",
+      "publishedAt": "2026-08-21T15:31:14.000Z",
+      "summary": "期間限定 で配布された7週目入場特典と同じもの. ▽9月11 ... イベント 予定",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-c1c10baf83ec",
+      "title": "『 ちいかわ 』と『ジャポニカ学習帳』が コラボ ！ おなじみの緑の表紙でじゆうちょう＆方眼ノート ...",
+      "url": "https://dengekionline.com/article/images/202608/85098/836320",
+      "source": "dengekionline.com",
+      "publishedAt": "2026-08-21T15:22:47.000Z",
+      "summary": "ちいかわ 』が コラボ ！ ... コラボイベント 《闇深き幻想の城》の見どころを解説. 2026-08-20 18:50.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-05078ab89b5f",
+      "title": "恐竜とアリスな ちいかわ たちがやってきた！ 「 ちいかわ ぽけっと」公式グッズ第3弾が本日 発売 ...",
+      "url": "https://www.4gamer.net/games/826/G082624/20260821002/",
+      "source": "4gamer.net",
+      "publishedAt": "2026-08-21T15:09:48.000Z",
+      "summary": "「 ちいかわ ぽけっと」公式グッズ第3弾が本日 発売 。池袋のPOP UP STOREを ... とおじゃまし， 新商品 や店内の様子を見せてもらった。 画像ギャラリー No ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-0c16caace83f",
+      "title": "『 ちいかわ 』ジャポニカ学習帳と コラボ レトロなデザインで全8種類",
+      "url": "https://www.oricon.co.jp/news/2475246/photo/3/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-08-21T14:03:12.000Z",
+      "summary": "『 ちいかわ 』ジャポニカ学習帳と コラボ 3枚目 ／ 『 ちいかわ 』ジャポニカ学習帳と コラボ レトロ ... 発売 . 2026-08-21 10 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-41bac9adb9c4",
+      "title": "チョコサプ ちいかわ 2 全14種のフィギュアが11月 発売 ! - コラボ カフェ",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-chocosurp2-2026/",
+      "source": "collabo-cafe.com",
+      "publishedAt": "2026-08-21T13:55:07.000Z",
+      "summary": "ちいかわ の第2弾となる『チョコサプ ちいかわ 2』が2026年11月に 発売 ... アニメ",
+      "category": "collab",
+      "tags": [
+        "フィギュア",
+        "お菓子"
+      ]
+    },
+    {
+      "id": "news-1bdee6f37cff",
+      "title": "【 ちいかわ 】数量限定「キャップ&サファリハット」がおしゃれ可愛い オリオンビール コラボ 新作 ...",
+      "url": "https://news.yahoo.co.jp/articles/5d2a827113ddeec426659fba08d17669ba01e285",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-21T13:47:53.000Z",
+      "summary": "発売 中です。 【全ての画像】「 ちいかわ ×オリオンビール」 コラボ アイテムの写真 コラボ シリーズ初となる帽子アイテムが登場。 キャップは、ハイビスカスを頭 ...",
+      "category": "collab",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-ccba44bbbc40",
+      "title": "『 ちいかわ 』ジャポニカ学習帳と コラボ レトロなデザインで全8種類 | オリコンニュース（ORICON ...",
+      "url": "https://www.oricon.co.jp/news/2475246/full/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-08-21T13:43:43.000Z",
+      "summary": "ちいかわ 』がコラボレーションした『ジャポニカ学習帳 アニメ ちいかわ 』（全8種 各275円）が 発売 ... 『 ちいかわ 』ジャポニカ学習帳と コラボ . 拡大する.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-2558d9ced968",
+      "title": "【ジャポニカ学習帳】 ちいかわコラボ “レトロかわいい”デザイン | オトナンサー",
+      "url": "https://otonanswer.jp/post/387062/",
+      "source": "otonanswer.jp",
+      "publishedAt": "2026-08-21T13:03:14.000Z",
+      "summary": "【くら寿司】うなぎ“110円”「うなぎと肉」フェア開催 「 ちいかわ 」 コラボ も 【今日から】くら寿司×「 ちいかわ 」 “たこ着”の特製せんべい＆ ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-ab30d013cfc4",
+      "title": "『 ちいかわ 』ジャポニカ学習帳と コラボ レトロなデザインで全8種類 - 産経ニュース",
+      "url": "https://www.sankei.com/article/20260821-NYPYM6SWPJI5FEBLJU32T5M6BI/?outputType=theme_oriconnews",
+      "source": "sankei.com",
+      "publishedAt": "2026-08-21T12:32:26.000Z",
+      "summary": "ちいかわ 』がコラボレーションした『ジャポニカ学習帳 アニメ ちいかわ 』（全8種 各275円）が 発売 ... 『 ちいかわ 』ジャポニカ学習帳と コラボ ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-860f44bdf657",
       "title": "くら寿司『 ちいかわ 』 コラボ 初日「1人でちい活してるおじさんがいるわ…」 なだぎ武がフジ取材 ...",
