@@ -1,7 +1,37 @@
 {
-  "lastUpdated": "2026-10-06T11:05:41.656Z",
-  "totalPosts": 1090,
+  "lastUpdated": "2026-10-07T15:17:58.946Z",
+  "totalPosts": 1092,
   "posts": [
+    {
+      "id": "post-2107803725901554171",
+      "tweetId": "2107803725901554171",
+      "url": "https://x.com/ngnchiikawa/status/2107803725901554171",
+      "publishedAt": "2026-10-07T09:00:14.000Z",
+      "summary": "▞▞▞▞▞▞▞▞▞ #一番くじ ちいかわ ～みんなで遊園地～ 🎠2027年4月発売予定🎡 ▞▞▞▞▞▞▞▞▞ 続報をお楽しみに！ 🍿商品情報 #ちいかわ",
+      "category": "goods",
+      "tags": [
+        "一番くじ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUBCnDCakAACiR1.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2107711967909814272",
+      "tweetId": "2107711967909814272",
+      "url": "https://x.com/ngnchiikawa/status/2107711967909814272",
+      "publishedAt": "2026-10-07T05:00:00.000Z",
+      "summary": "『#映画ちいかわ 人魚の島のひみつ』 🏝️第2弾メインビジュアル解禁✨ ちいかわたちが経験する ⁽⁽ とくべつな島でのとくべつな思い出 ⁾⁾ ── さらに… 入場者特典【第3弾・第4弾・第6弾】が 年内にリバイバル配布決定🎉 実施時期など詳細は 今後の続報をお待ちください🌺 詳細",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUAA6cKbkAAUJuf.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2107413056133468600",
       "tweetId": "2107413056133468600",
@@ -14983,6 +15013,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-07",
+      "count": 2,
+      "categories": [
+        "goods",
+        "anime"
+      ]
+    },
     {
       "date": "2026-10-06",
       "count": 4,
