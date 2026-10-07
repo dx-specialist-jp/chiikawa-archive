@@ -1,7 +1,77 @@
 {
   "year": "2026",
-  "totalArticles": 2342,
+  "totalArticles": 2348,
   "articles": [
+    {
+      "id": "news-ea2c5f051c50",
+      "title": "2026年8月 発売 ！ 200円・4枚入り「アニメ ちいかわ ダイカットステッカーセット」全64種が ...",
+      "url": "https://news.allabout.co.jp/articles/o/126743/",
+      "source": "news.allabout.co.jp",
+      "publishedAt": "2026-08-22T12:36:36.000Z",
+      "summary": "8月 発売 のガチャガチャから、「アニメ ちいかわ ダイカットステッカーセット」を詳しくご紹介します。ガチャガチャとは思えないクオリティの高さに注目が ...",
+      "category": "anime",
+      "tags": [
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-03009474956a",
+      "title": "「どこ行っても売り切れ」「映画効果なのか」 ちいかわ ガチャをついに見つけた！ - TRILL",
+      "url": "https://trilltrill.jp/articles/4961405",
+      "source": "trilltrill.jp",
+      "publishedAt": "2026-08-22T12:29:58.000Z",
+      "summary": "映画に登場する重要キャラクターもラインナップされた「映画 ちいかわ 人魚の島のひみつもっちるフェイスマスコット」が 発売 ... 新商品",
+      "category": "goods",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-637c3dfc1061",
+      "title": "【84歳おばあちゃん】大好きな“ ちいかわ ” コラボ でココイチを爆食！幸せな食べっぷりが見ていて ...",
+      "url": "https://limo.media/articles/-/134671",
+      "source": "limo.media",
+      "publishedAt": "2026-08-22T12:16:31.000Z",
+      "summary": "84歳のヨシ子おばあちゃんが、大好きな「 ちいかわ 」 コラボ を開催する、CoCo壱番屋を訪れた日の動画がTikTokで話題です。 コラボ アイテムのステッカーを手に満足 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-62e1e6d67739",
+      "title": "平原綾香、“ ちいかわ ”スタイルな買い物の構え「ちょっとカレー粉 - ｄメニューニュース",
+      "url": "https://topics.smt.docomo.ne.jp/article/hochi/entertainment/hochi-20260822-OHT1T51182",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-22T12:10:35.000Z",
+      "summary": "ちいかわ ... ラストは出演者総出の豪華 コラボ ステージも！ WWSチャンネル8/22(土)20:40 ...",
+      "category": "other",
+      "tags": [
+        "食品"
+      ]
+    },
+    {
+      "id": "news-220070fc0092",
+      "title": "平原綾香、“ ちいかわ ”スタイルな買い物の構え「ちょっとカレー粉 - スポーツ報知",
+      "url": "https://hochi.news/articles/20260822-OHT1T51182.html",
+      "source": "hochi.news",
+      "publishedAt": "2026-08-22T12:02:28.000Z",
+      "summary": "キャップやロングスカートなどコーデとして完成されているが、腰元には今注目を集めている「 ちいかわ ... 平均年齢１３",
+      "category": "other",
+      "tags": [
+        "食品"
+      ]
+    },
+    {
+      "id": "news-d429906163ba",
+      "title": "くら寿司「790円セット」を食べた正直な感想 数量限定「 ちいかわコラボ 」キャンペーン",
+      "url": "https://news.yahoo.co.jp/expert/articles/e2ff4bff9cd8658f008e3fed2707e6438e6cb421",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-22T11:55:30.000Z",
+      "summary": "新商品 を実食した記事をまとめてお届けするアカウント 進撃のグルメ「実食！ 新商品 ... 2026年8月21日（金）より、くら寿司が「 ちいかわ 」 コラボ キャンペーンを ...",
+      "category": "collab",
+      "tags": [
+        "限定"
+      ]
+    },
     {
       "id": "news-d845d462023d",
       "title": "“暑くって動けないんだよッ” ちいかわ たちの可愛いフィギュア入りチョコが登場！ 「パキシパキ ...",
