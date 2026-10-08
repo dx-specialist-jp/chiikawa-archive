@@ -1,7 +1,128 @@
 {
   "year": "2026",
-  "totalArticles": 2377,
+  "totalArticles": 2387,
   "articles": [
+    {
+      "id": "news-1386e660ca8c",
+      "title": "【独占＆写真68枚】INIが ちいかわ ＆ハチワレと コラボ でハッピー空間に！バチイケなライブと ...",
+      "url": "https://mezamashi.media/articles/-/334657",
+      "source": "mezamashi.media",
+      "publishedAt": "2026-08-23T06:48:08.000Z",
+      "summary": "イベント by PR TIMES ワタシの生き方 by PR TIMES めざまし ... 【独占＆写真68枚】INIが ちいかわ ＆ハチワレと コラボ でハッピー空間に！",
+      "category": "collab",
+      "tags": [
+        "ハチワレ"
+      ]
+    },
+    {
+      "id": "news-e84dfefaa487",
+      "title": "【速報】「映画 ちいかわ 」が興行収入100億円突破 - 新潟日報",
+      "url": "https://www.niigata-nippo.co.jp/articles/-/892487",
+      "source": "niigata-nippo.co.jp",
+      "publishedAt": "2026-08-23T06:44:22.000Z",
+      "summary": "【速報】「映画 ちいかわ 」が興行収入100億円突破 ... 「アイドルマスター」グッズ、新潟市と佐渡市巡ってもらおう♡ コラボイベント 「がたます」開始、...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-6a38d0ad27f6",
+      "title": "ちいかわ 興行収入１００億円突破 人気漫画の初アニメ映画化 - 東京新聞",
+      "url": "https://www.tokyo-np.co.jp/article/510337?rct=bunka",
+      "source": "tokyo-np.co.jp",
+      "publishedAt": "2026-08-23T06:44:18.000Z",
+      "summary": "ちいかわ 興行収入１００億円突破 人気漫画の初アニメ映画化",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "アニメ",
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-41b4e7487d7b",
+      "title": "【速報】「映画 ちいかわ 」が興収100億円突破 - 47NEWS",
+      "url": "https://www.47news.jp/14831795.html",
+      "source": "47news.jp",
+      "publishedAt": "2026-08-23T06:29:58.000Z",
+      "summary": "【速報】「映画 ちいかわ 」が興収100億円突破. 2026年08月23日 15時20分 ... イベント 情報",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-3ad6d527b202",
+      "title": "『くら寿司』『ココイチ』『セブン』まで 飲食店が「 ちいかわコラボ 」に殺到する理由とは ...",
+      "url": "https://news.yahoo.co.jp/expert/articles/6f17dbe3478ef905369bd80e22d6156a1c90b6a4",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-23T06:21:35.000Z",
+      "summary": "ちいかわ との コラボ では、 コラボ メニューやオリジナルのグッズなどが貰えたり ... そして、すでに「 ちいかわ 」は 期間限定コラボ だけの存在でもありません。",
+      "category": "collab",
+      "tags": [
+        "食品"
+      ]
+    },
+    {
+      "id": "news-6817f1568e38",
+      "title": "「 ちいかわ ぽけっと」恐竜＆アリスモチーフの公式グッズ第3弾が 発売 ！POP UP STORE初日の ...",
+      "url": "https://news.yahoo.co.jp/articles/1c6531e3079631e63b2af76e0778bbebf811ce5e",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-23T04:42:50.000Z",
+      "summary": "ちいかわ 』初のスマホアプリ『 ちいかわ ぽけっと（ちいぽけ）』は、2026年8月21日の公式グッズ第3弾の 発売 にあわせ、同日より「 ちいかわ ... イベント ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-0d0d78b304f8",
+      "title": "『映画 ちいかわ 』の登場キャラ・セイレーンを「レゴ」で再現 “動かせる”ギミック搭載で迫力 ...",
+      "url": "https://www.oricon.co.jp/news/2474689/full/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-08-23T04:36:29.000Z",
+      "summary": "ちいかわ . レゴで ... 試写会、登壇 イベント 、サインチェキなどプレゼント！ プレゼント特集. ニュース記事",
+      "category": "goods",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-74e88946d89b",
+      "title": "メイク時間を楽しく！「 ちいかわ 」きゃらこすめすぽんじ登場、細部にフィットする指パフ",
+      "url": "https://s.inside-games.jp/article/img/2026/08/23/186613/1760151.html",
+      "source": "s.inside-games.jp",
+      "publishedAt": "2026-08-23T04:03:23.000Z",
+      "summary": "ちいかわ きゃらこすめすぽんじ」が2026年8月24日に 発売 ！ メイク ... イベント",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-eb6481c97400",
+      "title": "『映画 ちいかわ 』異例の興収ペースで衰えず 大台100億円突破で特典効果で予想外のハイペース",
+      "url": "https://www.nack5.co.jp/oricon/2475592/",
+      "source": "nack5.co.jp",
+      "publishedAt": "2026-08-23T03:55:14.000Z",
+      "summary": "LINE. オリコンニュースORICON NEWS. 『映画 ちいかわ 』異例の興収ペースで衰えず ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-ef1f95eb9ec9",
+      "title": "INIが ちいかわ ＆ハチワレと コラボ で会場をハッピー空間に！バチイケなライブとRIIZEとの ...",
+      "url": "https://portal.uqmobile.jp/detail/1/5/9/10214_9_r_20260823_1787454682913765",
+      "source": "portal.uqmobile.jp",
+      "publishedAt": "2026-08-23T03:55:01.000Z",
+      "summary": "INIが、熱量の高いパフォーマンスを発揮！ ちいかわ ＆ハチワレとのキュートな コラボ では多幸感で会場を包...",
+      "category": "collab",
+      "tags": [
+        "ハチワレ"
+      ]
+    },
     {
       "id": "news-7067e3e6379f",
       "title": "映画『 ちいかわ 』興収100億円突破 『コナン』ペース維持の大ヒット",

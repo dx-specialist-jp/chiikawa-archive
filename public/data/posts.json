@@ -1,7 +1,33 @@
 {
-  "lastUpdated": "2026-10-07T15:17:58.946Z",
-  "totalPosts": 1092,
+  "lastUpdated": "2026-10-08T05:07:15.621Z",
+  "totalPosts": 1094,
   "posts": [
+    {
+      "id": "post-2108041575850987545",
+      "tweetId": "2108041575850987545",
+      "url": "https://x.com/ngnchiikawa/status/2108041575850987545",
+      "publishedAt": "2026-10-08T03:05:00.000Z",
+      "summary": "＼『ちいかわクリスマスマーケット』開催決定／ 2026年11月24日(火)〜 豊砂公園（イオンモール幕張新都心前）にて初開催！ 限定オリジナルグッズや 会場限定のかわいいフードも販売予定！ 詳しい情報は引用元のアカウント @chiikawa_xmas をフォローしてね🎅🎄 #ちいかわ",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUBRfnWbsAANBf_.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2108041624198828226",
+      "tweetId": "2108041624198828226",
+      "url": "https://x.com/ngnchiikawa/status/2108041624198828226",
+      "publishedAt": "2026-10-08T03:01:49.000Z",
+      "summary": "＼『ちいかわクリスマスマーケット』開催決定／ この冬、ちいかわたちと過ごす特別なクリスマスがやってくる🎄✨ 光・映像・音に包まれるクリスマスツリー＆ビッグバルーン、 ここだけの限定グッズや会場限定フードも！ 11/24(火)開催スタート🚩 チケットは10/15(木)正午〜先行申込開始！",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2107803725901554171",
       "tweetId": "2107803725901554171",
@@ -15013,6 +15039,13 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-08",
+      "count": 2,
+      "categories": [
+        "goods"
+      ]
+    },
     {
       "date": "2026-10-07",
       "count": 2,
