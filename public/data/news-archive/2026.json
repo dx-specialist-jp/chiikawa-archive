@@ -1,7 +1,87 @@
 {
   "year": "2026",
-  "totalArticles": 2409,
+  "totalArticles": 2416,
   "articles": [
+    {
+      "id": "news-a883dad9f212",
+      "title": "今夏 発売 の最新カメラレンズプロテクターほか、「 ちいかわ 」デザインのスマホグッズが反則級に ...",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/walkerplus/life/walkerplus-1430220",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-23T13:01:10.000Z",
+      "summary": "現在、iFace日本公式サイトにて予約受付中で、 発売 開始は2026年8月下旬の予定。「 ちいかわマーケット 」や全国の「 ちいかわらんど 」、全国の雑貨店、家電量販店 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-a8c77bd1b545",
+      "title": "「 ちいかわ 」が興収100億円を突破 人気漫画の初映画化、現実社会投影した深い物語話題（写真 ...",
+      "url": "https://www.sankei.com/article/20260823-KW4NTX4TFVID3PYHAGTTKPL6JM/photo/CM5EAYMYK5JCHNTSKOMSKL7724/",
+      "source": "sankei.com",
+      "publishedAt": "2026-08-23T12:56:55.000Z",
+      "summary": "林真理子 ... コラボ 中止 「人に火を付けた」発言が物議",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-22d9d68f4d74",
+      "title": "(画像3/4) 映画「 ちいかわ 」興行収入100億円突破 公開から約1ヶ月で大台 - モデルプレス",
+      "url": "https://mdpr.jp/photo/detail/20407594",
+      "source": "mdpr.jp",
+      "publishedAt": "2026-08-23T12:49:46.000Z",
+      "summary": "イベント も開催. 2026.07.26 16:56. モデルプレス ちいかわ ×東京スカイツリーの コラボ 詳細決定 “ぬい撮り”フォトスポットに限定グッズ続々. 2026.06.19 18:06.",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-402f8a92526f",
+      "title": "84歳おばあちゃん 大好きな“ ちいかわ ” コラボ でココイチに行くと…圧倒的な爆食姿に「食材も喜ん ...",
+      "url": "https://news.yahoo.co.jp/articles/c4660af4cc71f9bd8cb8f0a611fa9fc6428941b7",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-23T12:34:57.000Z",
+      "summary": "※編集部注:外部配信先ではハイパーリンクや図表などの画像を全部閲覧できない場合があります。その際はLIMO内でご確認ください。 大好きな「 ちいかわ 」 コラボ 中 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-56dcbd04e354",
+      "title": "映画『 ちいかわ 』興収100億円突破 『コナン』ペース維持の大ヒット（ORICON NEWS）",
+      "url": "https://topics.smt.docomo.ne.jp/article/oricon/entertainment/oricon-2475206",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-08-23T12:07:02.000Z",
+      "summary": "ちいかわ ×ジャポニカの コラボ 学習帳がレトロかわいい！表紙にアニメのワン ... きゃりーぱみゅぱみゅ、15周年 イベント に木村カエラやFRUITS ZIPPERらが ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-0e39ddab20db",
+      "title": "『映画 ちいかわ 』の登場キャラ・セイレーンを「レゴ」で再現 “動かせる”ギミック搭載 ... - 佐賀新聞",
+      "url": "https://www.saga-s.co.jp/articles/-/1776284",
+      "source": "saga-s.co.jp",
+      "publishedAt": "2026-08-23T11:58:36.000Z",
+      "summary": "漫画「さがドーン」コミックス 発売 記念、佐賀市で イベント 江藤新平と鍋島直正が主人公 作者",
+      "category": "goods",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-48bcf2c5978c",
+      "title": "【キャンドゥ】なかなか買えない「 ちいかわ 」グッズが100円ショップに！『 ちいかわ 救急 ...",
+      "url": "https://limo.media/articles/-/135364",
+      "source": "limo.media",
+      "publishedAt": "2026-08-23T11:26:44.000Z",
+      "summary": "ちいかわ ; 【キャンドゥ】なかなか買えない「 ちいかわ 」グッズが100円ショップに！『 ちいかわ 救急ばんそうこう』 映画で活躍する ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-8b618b387388",
       "title": "大人もほしい…!! ちいかわ ×ジャポニカの コラボ 学習帳がレトロかわいい！表紙にアニメのワン ...",
