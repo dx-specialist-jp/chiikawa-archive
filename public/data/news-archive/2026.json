@@ -1,7 +1,29 @@
 {
   "year": "2026",
-  "totalArticles": 2444,
+  "totalArticles": 2446,
   "articles": [
+    {
+      "id": "news-1e435f7ce5c2",
+      "title": "『 ちいかわ 』の破天荒キャラ「うさぎ」、キラリと光る「実はガチ有能」エピソード - ふたまん＋",
+      "url": "https://futaman.futabanet.jp/articles/-/132126",
+      "source": "futaman.futabanet.jp",
+      "publishedAt": "2026-08-24T03:58:59.000Z",
+      "summary": "ちいかわ 人魚 ... 『 ちいかわ 』映画 コラボ カフェが開催決定! 原作好きなら分かる“攻めすぎ ...",
+      "category": "other",
+      "tags": [
+        "うさぎ"
+      ]
+    },
+    {
+      "id": "news-bd7ed98a3a0e",
+      "title": "77歳・糸井重里『 ちいかわ 』毎日イラスト描く 上達にネットざわつく「目が上手くなってる」",
+      "url": "https://www.nack5.co.jp/oricon/2475693/",
+      "source": "nack5.co.jp",
+      "publishedAt": "2026-08-24T03:43:06.000Z",
+      "summary": "LINE. オリコンニュースORICON NEWS. 77歳 糸井重里『 ちいかわ 』毎日イラスト ...",
+      "category": "other",
+      "tags": []
+    },
     {
       "id": "news-5eca9c3fe95d",
       "title": "「 ちいかわ 焼き」 期間限定 フレーバーが8月31日より各店舗にて順次 発売 ！モモンガ",
