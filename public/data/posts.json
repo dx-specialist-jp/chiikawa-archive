@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-10-09T15:04:08.615Z",
-  "totalPosts": 1095,
+  "lastUpdated": "2026-10-10T14:19:37.377Z",
+  "totalPosts": 1097,
   "posts": [
+    {
+      "id": "post-2108857120460562750",
+      "tweetId": "2108857120460562750",
+      "url": "https://x.com/ngnchiikawa/status/2108857120460562750",
+      "publishedAt": "2026-10-10T09:48:12.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HUQqX3tbwAAVcXz.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2108835763756601458",
+      "tweetId": "2108835763756601458",
+      "url": "https://x.com/ngnchiikawa/status/2108835763756601458",
+      "publishedAt": "2026-10-10T03:00:01.000Z",
+      "summary": "＼ ＼ \\ / ／ ／ 🌺夏が終わってもまだまだ上映中🎬🌺 ／ ／ / \\ ＼ ＼ 『#映画ちいかわ 人魚の島のひみつ』 たくさんの方に劇場に足を運んで頂き感謝の気持ちでいっぱいです。 秋がきたって #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HT7thT_asAE-F61.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2108497701805654514",
       "tweetId": "2108497701805654514",
@@ -15052,6 +15077,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-10",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-10-09",
       "count": 1,
