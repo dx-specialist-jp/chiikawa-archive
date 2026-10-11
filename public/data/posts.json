@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-10-10T14:19:37.377Z",
-  "totalPosts": 1097,
+  "lastUpdated": "2026-10-11T14:45:05.839Z",
+  "totalPosts": 1099,
   "posts": [
+    {
+      "id": "post-2109246479005306984",
+      "tweetId": "2109246479005306984",
+      "url": "https://x.com/ngnchiikawa/status/2109246479005306984",
+      "publishedAt": "2026-10-11T11:35:23.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HUWMfhYagAAzVWV.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2109245912946180182",
+      "tweetId": "2109245912946180182",
+      "url": "https://x.com/ngnchiikawa/status/2109245912946180182",
+      "publishedAt": "2026-10-11T11:00:02.000Z",
+      "summary": "『#映画ちいかわ 人魚の島のひみつ』 自動制御ペンライト演出付き応援上映🌟 ／⠀ 🎟️チケット発売中！ 10/16(金) 19時〜 10/17(土)・10/18(日) 16時～ ＼ ※各劇場HPで販売中 ⠀ 🏝️実施劇場（全国5都道府県7劇場） 北海道：TOHOシネマズすすきの",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUV917FboAA6nXi.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2108857120460562750",
       "tweetId": "2108857120460562750",
@@ -15077,6 +15102,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-11",
+      "count": 2,
+      "categories": [
+        "manga",
+        "goods"
+      ]
+    },
     {
       "date": "2026-10-10",
       "count": 2,
