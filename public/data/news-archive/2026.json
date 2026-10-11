@@ -1,7 +1,70 @@
 {
   "year": "2026",
-  "totalArticles": 2497,
+  "totalArticles": 2502,
   "articles": [
+    {
+      "id": "news-102c72a5ad5e",
+      "title": "「 ちいかわ 」マスコット、ぬいぐるみなど一部グッズが数量限定で再販決定！ 島二郎やセイレーン",
+      "url": "https://www.inside-games.jp/article/img/2026/08/25/186700/1771473.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-25T07:57:28.000Z",
+      "summary": "しまむらで「 ちいかわ 」グッズが8月26日 発売 ！ぐでっとしたデザインのマイ ... アコモデと「パペットスンスン」が初 コラボ ！本物そっくりのドーナツや ...",
+      "category": "goods",
+      "tags": [
+        "セイレーン",
+        "ぬいぐるみ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-712f1c29b1ad",
+      "title": "しまむらで「 ちいかわ 」アパレルが8月26日 発売 ！毛量が増えた「くりまんじゅう」のルームウェア",
+      "url": "https://news.infoseek.co.jp/article/inside_186731/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-08-25T07:54:24.000Z",
+      "summary": "しまむらにて、「 ちいかわ 」のグッズが8月26日より 発売 されます。同日17時よりしまむらパーク（オンラインストア）で.",
+      "category": "collab",
+      "tags": [
+        "くりまんじゅう"
+      ]
+    },
+    {
+      "id": "news-67281b2c7701",
+      "title": "9/15（火）『映画 ちいかわ 人魚の島のひみつ』 \"また会う日まで\"お見送り上映会実施のお知らせ",
+      "url": "https://www.smt-cinema.com/sp/site/saitama/news/event/detail/096247.html",
+      "source": "smt-cinema.com",
+      "publishedAt": "2026-08-25T07:53:02.000Z",
+      "summary": "『映画 ちいかわ 人魚の島のひみつ』 “また会う日まで”お見送り上映会の ... イベント の予定は、急遽変更になる場合がございます。あらかじめご了承 ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-b07802fb46e0",
+      "title": "しまむらで「 ちいかわ 」アパレルが8月26日 発売 ！毛量が増えた「くりまんじゅう」のルームウェア",
+      "url": "https://news.yahoo.co.jp/articles/5ceaf4ed9afb9c63723cb5a70524326a73b4853c",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-25T07:45:45.000Z",
+      "summary": "しまむらで「 ちいかわ 」アパレルが8月26日 発売 ！毛量が増えた「くり ... 「 ちいかわ 焼き」 期間限定 フレーバーが8月31日より各店舗にて順次 発売 ...",
+      "category": "collab",
+      "tags": [
+        "くりまんじゅう"
+      ]
+    },
+    {
+      "id": "news-5d8d846548eb",
+      "title": "しまむらで「 ちいかわ 」アパレルが8月26日 発売 ！毛量が増えた「くりまんじゅう」のルームウェア",
+      "url": "https://www.inside-games.jp/article/2026/08/25/186731.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-25T07:43:21.000Z",
+      "summary": "しまむらで「 ちいかわ 」アパレルが8月26日 発売 ！毛量が増えた「くり ... アコモデと「パペットスンスン ...",
+      "category": "collab",
+      "tags": [
+        "くりまんじゅう"
+      ]
+    },
     {
       "id": "news-7f1d24a86265",
       "title": "蜷川実花、「 ちいかわ 」にドはまり “人生初の推し活”で見せたガチすぎる行動力に驚き「たまらん ...",
