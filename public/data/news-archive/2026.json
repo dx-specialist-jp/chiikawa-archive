@@ -1,7 +1,33 @@
 {
   "year": "2026",
-  "totalArticles": 2502,
+  "totalArticles": 2504,
   "articles": [
+    {
+      "id": "news-b264035156c4",
+      "title": "TOHOシネマズ7劇場にて『映画 ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き ...",
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen0923.html",
+      "source": "tohotheater.jp",
+      "publishedAt": "2026-08-25T08:23:37.000Z",
+      "summary": "イベント . TOHOシネマズ7劇場にて『映画 ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれ ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-b75b1449f869",
+      "title": "TOHOシネマズ7劇場にて『映画 ちいかわ 人魚の島のひみつ』なんとかなれーッ！発声可能 応援 ...",
+      "url": "https://www.tohotheater.jp/event/chiikawa-ouen0911.html",
+      "source": "tohotheater.jp",
+      "publishedAt": "2026-08-25T08:08:21.000Z",
+      "summary": "イベント . TOHOシネマズ7劇場にて『映画 ちいかわ 人魚の島のひみつ』なんとかなれーッ！発声可能 応援上映 ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
     {
       "id": "news-102c72a5ad5e",
       "title": "「 ちいかわ 」マスコット、ぬいぐるみなど一部グッズが数量限定で再販決定！ 島二郎やセイレーン",
