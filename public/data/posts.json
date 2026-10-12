@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-10-11T14:45:05.839Z",
-  "totalPosts": 1099,
+  "lastUpdated": "2026-10-12T14:02:51.681Z",
+  "totalPosts": 1101,
   "posts": [
+    {
+      "id": "post-2109624808191471795",
+      "tweetId": "2109624808191471795",
+      "url": "https://x.com/ngnchiikawa/status/2109624808191471795",
+      "publishedAt": "2026-10-12T12:38:43.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HUbklLragAEzmCa.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2109618799792341350",
+      "tweetId": "2109618799792341350",
+      "url": "https://x.com/ngnchiikawa/status/2109618799792341350",
+      "publishedAt": "2026-10-12T09:00:02.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第36話 フジテレビ系列「めざましテレビ」内にて 10月13日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUavI7-aAAAj1nm.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2109246479005306984",
       "tweetId": "2109246479005306984",
@@ -15102,6 +15127,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-12",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-10-11",
       "count": 2,
