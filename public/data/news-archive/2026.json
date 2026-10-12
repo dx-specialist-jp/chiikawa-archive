@@ -1,7 +1,32 @@
 {
   "year": "2026",
-  "totalArticles": 2504,
+  "totalArticles": 2506,
   "articles": [
+    {
+      "id": "news-6e5de1bf7331",
+      "title": "『 ちいかわ ぽけっと』POP UP STORE開幕！ 公式グッズ第3弾「恐竜」「アリス」も 発売 | AppBank",
+      "url": "https://www.appbank.net/2026/08/25/iphone-news/3086442.php",
+      "source": "appbank.net",
+      "publishedAt": "2026-08-25T08:27:21.000Z",
+      "summary": "ちいかわ 」初のスマートフォンアプリ『 ちいかわ ぽけっと（ちいぽけ）』の公式グッズ第3弾を 発売 するとともに、『 ちいかわ ... 名古屋PARCO 西館5F イベント ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-38eaa68094fe",
+      "title": "『映画 ちいかわ 』のジグソーパズル《カレーを作ろう》が予約受付中。完成させると",
+      "url": "https://dengekionline.com/article/202608/85378",
+      "source": "dengekionline.com",
+      "publishedAt": "2026-08-25T08:24:32.000Z",
+      "summary": "カレーを作ろう ジグソーパズル500ピース』がエンスカイから9月4日に 発売 ... 『FINAL FANTASY XI』との コラボイベント をはじめ、最新情報や企画記事を ...",
+      "category": "anime",
+      "tags": [
+        "食品",
+        "映画"
+      ]
+    },
     {
       "id": "news-b264035156c4",
       "title": "TOHOシネマズ7劇場にて『映画 ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き ...",
