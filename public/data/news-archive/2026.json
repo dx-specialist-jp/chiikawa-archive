@@ -1,7 +1,73 @@
 {
   "year": "2026",
-  "totalArticles": 2527,
+  "totalArticles": 2533,
   "articles": [
+    {
+      "id": "news-01391307c8b4",
+      "title": "『 ちいかわ 』ハッピーバッグ2027が予約開始！ ひつじグッズ満載の福袋を予約し ... - 電撃オンライン",
+      "url": "https://dengekionline.com/article/202608/85629",
+      "source": "dengekionline.com",
+      "publishedAt": "2026-08-26T15:19:56.000Z",
+      "summary": "※こちらの商品は店頭 発売 する可能性がございます。その場合は詳細 ... 『FINAL FANTASY XI』との コラボイベント をはじめ、最新情報や企画記事を ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-b839e17a0ffc",
+      "title": "【秋田駅ビル トピコ】「 ちいかわ 」×「東京ばな奈」のポップアップストアがOPEN。初登場のエコ ...",
+      "url": "https://prtimes.jp/main/html/rd/p/000002088.000025606.html",
+      "source": "prtimes.jp",
+      "publishedAt": "2026-08-26T01:51:15.000Z",
+      "summary": "グッズ展開、 コラボ カフェ、企業 コラボ など幅広く展開しており、講談社から書籍「 ちいかわ なんかちいさくてかわいいやつ」が8巻まで 発売 中。 ... 期間限定 登場！",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-0f541aaf92a8",
+      "title": "『 ちいかわ 』グッズ再販開始でネットざわつく「受注生産にして欲しい～」「6分で売り切れ」 2枚目",
+      "url": "https://www.oricon.co.jp/news/2476095/photo/2/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-08-26T01:21:13.000Z",
+      "summary": "『 ちいかわ 』グッズ再販開始 2枚目 ／ 『 ちいかわ 』グッズ再販開始でネットざわつく「受注生産にして欲しい～」「6分で売り切れ」",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-6108bc97853f",
+      "title": "映画 ちいかわ 人魚の島のひみつ：セイレーンに抱きしめられる ちいかわ たち 「anan」表紙に 付録 ...",
+      "url": "https://mainichikirei.jp/article/20260825dog00m100004000a.html",
+      "source": "mainichikirei.jp",
+      "publishedAt": "2026-08-26T00:42:10.000Z",
+      "summary": "アリィーと コラボ 3アイテムが21日限定 発売 プレゼントキャンペーンも ... ファッションブランド「emmi」のWELLNESS＆TRAININGシリーズ 発売 記念 イベント に来場 ...",
+      "category": "anime",
+      "tags": [
+        "セイレーン",
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-e289f4515d2c",
+      "title": "ちいかわ 』グッズ再販開始でネットざわつく「受注生産にして欲しい〜」「6分で売り切れ - 佐賀新聞",
+      "url": "https://www.saga-s.co.jp/articles/-/1777914",
+      "source": "saga-s.co.jp",
+      "publishedAt": "2026-08-25T23:28:41.000Z",
+      "summary": "映画『 ちいかわ 』 新商品 発表!あす14日から 発売 島二郎 セイ… 『 ちいかわ ... イベント",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-dcb51928dc45",
+      "title": "『 ちいかわ 』ルームウェアやスリッパ、ふとんカバーなど「 ちいかわ 」たちに囲まれて眠れる ...",
+      "url": "https://news.denfaminicogamer.jp/news/2608253n",
+      "source": "news.denfaminicogamer.jp",
+      "publishedAt": "2026-08-25T19:46:49.000Z",
+      "summary": "『 ちいかわ 』ルームウェアやスリッパ、ふとんカバーなど「 ちいかわ 」たちに囲まれて眠れるアイテムが 発売 。 ... コラボ が発表！8月27日から 期間限定 で 2026 ...",
+      "category": "other",
+      "tags": []
+    },
     {
       "id": "news-5f5a850c1971",
       "title": "しまむらで「 ちいかわ 」グッズが 発売 ！ぐでっとしたデザインのマイナンバーカードケースと",
