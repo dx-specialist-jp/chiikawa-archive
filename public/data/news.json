@@ -1,7 +1,45 @@
 {
-  "lastUpdated": "2026-10-13T23:39:10.689Z",
+  "lastUpdated": "2026-10-14T04:02:13.086Z",
   "totalArticles": 2000,
   "articles": [
+    {
+      "id": "news-a2116d99cba6",
+      "title": "「 ちいかわ ベーカリー」2周年記念グッズ、10月15日 発売 ！コロネなマスコット全8種 - 朝日新聞",
+      "url": "https://www.asahi.com/and/entertainment/16962314",
+      "source": "asahi.com",
+      "publishedAt": "2026-10-14T01:13:59.000Z",
+      "summary": "ちいかわ たちがコロネになったマスコットが登場「 ちいかわ ... 「 ちいかわ ベーカリー」2周年記念グッズ、10月15日 発売 ！コロネなマスコット ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ",
+        "パン"
+      ]
+    },
+    {
+      "id": "news-bea97aa71554",
+      "title": "「 ちいかわ ベーカリー」2周年記念グッズ、10月15日 発売 ！コロネなマスコット全8種",
+      "url": "https://www.cinemacafe.net/article/2026/10/14/113294.html",
+      "source": "cinemacafe.net",
+      "publishedAt": "2026-10-14T00:05:10.000Z",
+      "summary": "「 ちいかわ ベーカリー」2周年記念グッズ、10月15日 発売 ！コロネなマスコット全8種. 「 ちいかわ ベーカリー」より、2周年を記念した「コロネなマスコット」や ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ",
+        "パン"
+      ]
+    },
+    {
+      "id": "news-67fba0a02404",
+      "title": "『 ちいかわ 』最新話更新（10/13）。シーサーの少し強引な免許返納（物理）。結果は…!?",
+      "url": "https://dengekionline.com/article/202610/90866",
+      "source": "dengekionline.com",
+      "publishedAt": "2026-10-13T23:30:48.000Z",
+      "summary": "『 ちいかわ 』最新話更新（10/13）。シーサーの少し強引な免許返納（物理）。結果は…!? コミック最新刊9巻は2026年11月20日 発売 予定！",
+      "category": "other",
+      "tags": [
+        "シーサー"
+      ]
+    },
     {
       "id": "news-05445c3b0fc2",
       "title": "アニメ「 ちいかわ 」カップスープ2種類が 期間限定 で登場！キラキラシール付き - キャララボ",
@@ -22541,39 +22579,6 @@
       "summary": "期間限定 オープン！話題沸騰中の「 ちいかわ バナナプリンケーキ」や特別 ... ムーミンとシュガーバターの木が コラボ ！ムーミンのキュートなオリジナル ...",
       "category": "goods",
       "tags": []
-    },
-    {
-      "id": "news-fb881ff5687f",
-      "title": "55歳・なだぎ武『 ちいかわ 』グッズ大量購入 写真投稿でツッコミ殺到「沼が加速し過ぎているー！」",
-      "url": "https://www.fukuishimbun.co.jp/articles/-/2684549",
-      "source": "fukuishimbun.co.jp",
-      "publishedAt": "2026-08-27T12:52:34.000Z",
-      "summary": "しまむらで 発売 された『 ちいかわ 』 コラボ 商品を購入し、写真を投稿すると ... 企画",
-      "category": "goods",
-      "tags": []
-    },
-    {
-      "id": "news-560787dfd08f",
-      "title": "55歳・なだぎ武『 ちいかわ 』グッズ大量購入 写真投稿でツッコミ殺到「沼が加速し過ぎているー！」",
-      "url": "https://www.oricon.co.jp/news/2476479/",
-      "source": "oricon.co.jp",
-      "publishedAt": "2026-08-27T12:49:23.000Z",
-      "summary": "しまむらで 発売 された『 ちいかわ 』 コラボ 商品を購入し、写真を投稿すると ... 『 ちい ...",
-      "category": "goods",
-      "tags": []
-    },
-    {
-      "id": "news-86406fdf07e3",
-      "title": "ちいかわ たちが食べるあの味を再現！モンテール「むちゃうまプリン」スイーツが9月限定 発売",
-      "url": "https://realsound.jp/book/2026/08/post-2504672.html",
-      "source": "realsound.jp",
-      "publishedAt": "2026-08-27T12:39:49.000Z",
-      "summary": "期間限定 で 発売 される。 【写真】モンテール×「 ちいかわ 」 コラボ 商品. 両商品 ... イベント",
-      "category": "goods",
-      "tags": [
-        "お菓子",
-        "限定"
-      ]
     }
   ]
 }
