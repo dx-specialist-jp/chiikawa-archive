@@ -1,7 +1,58 @@
 {
-  "lastUpdated": "2026-10-13T19:01:46.376Z",
-  "totalPosts": 1105,
+  "lastUpdated": "2026-10-15T16:32:17.357Z",
+  "totalPosts": 1109,
   "posts": [
+    {
+      "id": "post-2110725484376150242",
+      "tweetId": "2110725484376150242",
+      "url": "https://x.com/ngnchiikawa/status/2110725484376150242",
+      "publishedAt": "2026-10-15T13:32:25.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HUrNo4lbMAAfJW_.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2110666980336542186",
+      "tweetId": "2110666980336542186",
+      "url": "https://x.com/ngnchiikawa/status/2110666980336542186",
+      "publishedAt": "2026-10-15T09:00:04.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第37話 フジテレビ系列「めざましテレビ」内にて 10月16日(金)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUqL4NHa4AAAncW.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2110666890041503964",
+      "tweetId": "2110666890041503964",
+      "url": "https://x.com/ngnchiikawa/status/2110666890041503964",
+      "publishedAt": "2026-10-15T03:04:09.000Z",
+      "summary": "╭━━━━━━━━━━━━╮ 『ちいかわクリスマスマーケット』 先行チケット応募スタート🚩 ╰━━━━━ｖ━━━━━━╯ 🌲開催期間：11/24(火)~12/25(金) 📍豊砂公園 （イオンモール幕張新都心前） ☑️抽選締切：10/25(日)23:59",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2110666931745550402",
+      "tweetId": "2110666931745550402",
+      "url": "https://x.com/ngnchiikawa/status/2110666931745550402",
+      "publishedAt": "2026-10-15T02:15:39.000Z",
+      "summary": "／ ✈️ちいかわ×ANA✈️ プレスリリース🌟 10月23日（金）より、発売開始📣 コラボレーショングッズ 情報解禁しました💙✨ 羽田空港には『ちいかわ×ANA』仕様のお店が登場🎉 ＼ 個性豊かな仲間たちとともに、さまざまな困難を乗り越えていくちいかわたち。",
+      "category": "collab",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2110009739740647860",
       "tweetId": "2110009739740647860",
@@ -15182,6 +15233,16 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-15",
+      "count": 4,
+      "categories": [
+        "manga",
+        "anime",
+        "goods",
+        "collab"
+      ]
+    },
     {
       "date": "2026-10-13",
       "count": 4,
