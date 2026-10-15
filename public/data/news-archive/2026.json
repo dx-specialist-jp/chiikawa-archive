@@ -1,7 +1,66 @@
 {
   "year": "2026",
-  "totalArticles": 2606,
+  "totalArticles": 2611,
   "articles": [
+    {
+      "id": "news-49a5082fec4f",
+      "title": "オリコンニュース：［きょうから］『 ちいかわ ぽけっと』「お月見」 イベント 開始 ちい ... - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20260828/orc/00m/200/198000c",
+      "source": "mainichi.jp",
+      "publishedAt": "2026-08-28T10:35:56.000Z",
+      "summary": "ちいかわ たちの新衣装が一斉登場、シーサーがもらえる イベント も. 2026 ... 「 ちいかわ 」が初の船旅と コラボ 「 ちいかわ とのんびり船旅」8",
+      "category": "event",
+      "tags": []
+    },
+    {
+      "id": "news-6ac63322dca6",
+      "title": "行くかっ 祝いの焼肉！「 ちいかわ 」卓を囲む微笑ましいデザインなど6種が「Talking ODM」に追加",
+      "url": "https://news.yahoo.co.jp/articles/ec8eda0d455fabf7702fa05568d9ab2ad46db7e1",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-08-28T10:13:11.000Z",
+      "summary": "アニメ「 ちいかわ 」新作ぷっくりごほうびシールが 発売 ！集合デザインや、 ちいかわ ＆むちゃうマンなどさまざま収録 「アニメ ちいかわ 」の楽しくて可愛い ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-689ca3a25138",
+      "title": "TOHOシネマズ4劇場にて『映画 ちいかわ 人魚の島のひみつ』“また会う日まで”お見送り付き上映会 ...",
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-omiokuri202609.html",
+      "source": "tohotheater.jp",
+      "publishedAt": "2026-08-28T08:59:15.000Z",
+      "summary": "イベント . TOHOシネマズ4劇場にて『映画 ちいかわ 人魚の島のひみつ』“また会う日まで”お見送り ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-96435b0efecf",
+      "title": "しまむら・シャンブルにて「 ちいかわ 」グッズが 発売 ！セイレーン編原作アートを使用した",
+      "url": "https://www.inside-games.jp/article/img/2026/08/28/186883/1773201.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-08-28T07:42:09.000Z",
+      "summary": "シャンブルにて「 ちいかわ 」グッズが 発売 ... 新商品 が本日8月28日11時 ...",
+      "category": "collab",
+      "tags": [
+        "セイレーン"
+      ]
+    },
+    {
+      "id": "news-5b1776812ee6",
+      "title": "『映画 ちいかわ 人魚の島のひみつ』マスコット・ぬいぐるみが8月28日18時から受注開始 ...",
+      "url": "https://www.cinemacafe.net/article/2026/08/28/112137.html",
+      "source": "cinemacafe.net",
+      "publishedAt": "2026-08-28T07:16:48.000Z",
+      "summary": "新商品 が本日8月28日11時より販売開始 アニメ「 ちいかわ 」新作ぷっくり ... RANKING. A24映画『バックルームズ』×URBAN RESEARCH、 コラボ アイテム 発売 T ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ",
+        "映画",
+        "人魚の島"
+      ]
+    },
     {
       "id": "news-a317faf15910",
       "title": "ちいかわ カプセルステッキ 10月 発売 ! 組み立て式の全高13cm - コラボ カフェ",
