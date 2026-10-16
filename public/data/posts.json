@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-10-15T16:32:17.357Z",
-  "totalPosts": 1109,
+  "lastUpdated": "2026-10-16T16:17:28.698Z",
+  "totalPosts": 1111,
   "posts": [
+    {
+      "id": "post-2111083717955555598",
+      "tweetId": "2111083717955555598",
+      "url": "https://x.com/ngnchiikawa/status/2111083717955555598",
+      "publishedAt": "2026-10-16T13:15:55.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HUwTcx_aYAEFzgy.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2111082530048995513",
+      "tweetId": "2111082530048995513",
+      "url": "https://x.com/ngnchiikawa/status/2111082530048995513",
+      "publishedAt": "2026-10-16T09:30:02.000Z",
+      "summary": "【✨1週間限定配信✨】 第36話〜第39話 「ふしぎな杖」編(全4話) ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HUvcVcraEAAV8gq.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2110725484376150242",
       "tweetId": "2110725484376150242",
@@ -15233,6 +15258,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-16",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-10-15",
       "count": 4,
