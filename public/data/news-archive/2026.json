@@ -1,7 +1,37 @@
 {
   "year": "2026",
-  "totalArticles": 2701,
+  "totalArticles": 2704,
   "articles": [
+    {
+      "id": "news-741959d75a39",
+      "title": "100均に山ほど売ってる ちいかわ グッズには誰も見向きもしないのはどういう違いがあるの？",
+      "url": "https://togetter.com/li/2739322?page=2",
+      "source": "togetter.com",
+      "publishedAt": "2026-08-30T19:12:56.000Z",
+      "summary": "@ponmenoko 100均の ちいかわ グッズは、 何回も新バージョンで 発売 されたり、大量に生産して再入荷したりと、非常に満足度の高いサービスで、 欲しいユーザー ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-786561fccc6d",
+      "title": "「 ちいかわ 」×「東京ばな奈」バッグセットが全国通販決定 エコバッグは店頭単品販売もスタート",
+      "url": "https://news.livedoor.com/topics/detail/32199402/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-08-30T18:37:11.000Z",
+      "summary": "ちいかわ と東京ばな奈の コラボ 商品が9月1日より 発売 される予定だ。バナナプリンケーキ入りのエコバッグ",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-8e78723dd1f5",
+      "title": "「 ちいかわ 」×「東京ばな奈」バッグセットが全国通販決定 エコバッグは店頭単品販売もスタート",
+      "url": "https://realsound.jp/book/2026/08/post-2505777.html",
+      "source": "realsound.jp",
+      "publishedAt": "2026-08-30T18:20:34.000Z",
+      "summary": "「 ちいかわ 」と「東京ばな奈」の コラボ 商品『 ちいかわ バナナプリンケーキ エコバッグセット』『 ちいかわ ×東京ばな奈 トートバッグセット』が9月1日より公式 ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-dfcf71cc4a11",
       "title": "『映画 ちいかわ 』特典シールに、UVレジンでマルカンを付けて…… 目からウロコの完成品に「真似 ...",
