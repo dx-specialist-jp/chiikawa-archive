@@ -32,14 +32,18 @@ jobs:
         env:
           RSSHUB_URL: ${{ vars.RSSHUB_URL }}
           RSSHUB_ACCESS_KEY: ${{ secrets.RSSHUB_ACCESS_KEY }}
-        run: node scripts/fetch-posts.mjs
+        run: |
+          set -o pipefail
+          node scripts/fetch-posts.mjs 2>&1 | tee /tmp/fetch-posts.log
 
       - name: Fetch latest news via Google Alerts RSS
         id: fetch_news
         continue-on-error: true
         env:
           GOOGLE_ALERTS_RSS_URL: ${{ vars.GOOGLE_ALERTS_RSS_URL }}
-        run: node scripts/fetch-news.mjs
+        run: |
+          set -o pipefail
+          node scripts/fetch-news.mjs 2>&1 | tee /tmp/fetch-news.log
 
       - name: Sync approved gallery submissions
         id: fetch_gallery
@@ -48,7 +52,9 @@ jobs:
           TALLY_API_KEY: ${{ secrets.TALLY_API_KEY }}
           TALLY_IMAGE_FORM_ID: ${{ vars.TALLY_IMAGE_FORM_ID }}
           TALLY_COMMENT_FORM_ID: ${{ vars.TALLY_COMMENT_FORM_ID }}
-        run: node scripts/fetch-gallery.mjs
+        run: |
+          set -o pipefail
+          node scripts/fetch-gallery.mjs 2>&1 | tee /tmp/fetch-gallery.log
 
       - name: Check fetch results
         if: steps.fetch_posts.outcome == 'failure' && steps.fetch_news.outcome == 'failure'
@@ -69,13 +75,41 @@ jobs:
           TITLE="⚠️ データ更新フェッチ失敗を検知"
           EXISTING=$(gh issue list --repo "$REPO" --search "in:title \"$TITLE\"" --state open --json number --jq '.[0].number')
 
+          # 失敗したスクリプトの「❌ エラー:」行を拾い、Issue だけ見れば
+          # 原因（タイムアウトか認証エラーか等）が分かるようにする
+          line() {
+            local name="$1" outcome="$2" log="/tmp/$3.log" detail=""
+            if [ "$outcome" = "failure" ] && [ -f "$log" ]; then
+              detail=$(grep -m1 '❌' "$log" || true)
+            fi
+            if [ -n "$detail" ]; then
+              echo "${name}: ${outcome} — ${detail}"
+            else
+              echo "${name}: ${outcome}"
+            fi
+          }
+
           # 3本とも continue-on-error で走らせているため、失敗はここでしか表に出ない
           if [ "$POSTS_OUTCOME" = "failure" ] || [ "$NEWS_OUTCOME" = "failure" ] || [ "$GALLERY_OUTCOME" = "failure" ]; then
-            BODY="fetch-posts.mjs: ${POSTS_OUTCOME}
-          fetch-news.mjs: ${NEWS_OUTCOME}
-          fetch-gallery.mjs: ${GALLERY_OUTCOME}
+            # Issue 作成が1回目の失敗、以降の「再発」コメント1件が1回の失敗にあたる
+            STREAK=1
+            if [ -n "$EXISTING" ]; then
+              # --paginate はページごとに結果を出すので、件数ではなく行数で数える
+              SEEN=$(gh api "repos/${REPO}/issues/${EXISTING}/comments" --paginate \
+                --jq '.[] | select(.body | startswith("再発を検知しました")) | .id' | wc -l || echo 0)
+              STREAK=$(( ${SEEN:-0} + 2 ))
+            fi
 
+            BODY="$(line fetch-posts.mjs "$POSTS_OUTCOME" fetch-posts)
+          $(line fetch-news.mjs "$NEWS_OUTCOME" fetch-news)
+          $(line fetch-gallery.mjs "$GALLERY_OUTCOME" fetch-gallery)
+
+          連続失敗: ${STREAK} 回目
           実行ログ: ${RUN_URL}"
+
+            # continue-on-error だと実行自体は緑のままなので、ここで注意を出しておく
+            echo "::warning::データ更新フェッチが失敗しました（連続 ${STREAK} 回目）。詳細は Issue を確認してください。"
+
             if [ -z "$EXISTING" ]; then
               gh issue create --repo "$REPO" --title "$TITLE" --body "$BODY"
             else

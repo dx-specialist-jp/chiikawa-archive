@@ -4,6 +4,8 @@
  * 環境変数:
  *   RSSHUB_URL        - RSSHub のベース URL（省略時: https://rsshub.app）
  *   RSSHUB_ACCESS_KEY - RSSHub の ACCESS_KEY（省略可）
+ *   RSSHUB_RETRY_BASE_MS - 再試行間隔の基数ミリ秒（省略時: 15000。テスト用）
+ *   POSTS_DATA_DIR    - posts.json の出力先（省略時: public/data。テスト用）
  */
 
 import { writeFile, readFile } from "fs/promises";
@@ -14,12 +16,18 @@ import { fetchTweetDetails } from "./lib/syndication.mjs";
 import { toSummary } from "./lib/post-text.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, "..", "public", "data");
+const DATA_DIR = process.env.POSTS_DATA_DIR ?? join(__dirname, "..", "public", "data");
 const OFFICIAL_X_USERNAME = "ngnchiikawa";
 
 const RSSHUB_URL = process.env.RSSHUB_URL;
 const RSSHUB_BASE = (RSSHUB_URL ?? "https://rsshub.app").replace(/\/$/, "");
 const RSSHUB_ACCESS_KEY = process.env.RSSHUB_ACCESS_KEY ?? "";
+
+// コールドスタート（README 想定最大 60 秒）を越えても拾えるように余裕を持たせる
+const FEED_TIMEOUT_MS = 90000;
+const FEED_RETRIES = 2;
+// 再試行間隔の基数（attempt 回目はこの attempt 倍待つ）。テストから短縮するために環境変数で上書きできる
+const FEED_RETRY_BASE_MS = Number(process.env.RSSHUB_RETRY_BASE_MS ?? 15000);
 
 function toJstDateStr(isoStr) {
   return new Date(isoStr).toLocaleDateString("sv", { timeZone: "Asia/Tokyo" });
@@ -52,16 +60,44 @@ async function fetchRssFeed(username) {
   const url = buildFeedUrl(username);
   console.log(`📡 RSS 取得中: ${RSSHUB_BASE}/twitter/user/${username}`);
 
-  const res = await fetch(url, {
-    headers: { "User-Agent": "chiikawa-archive/1.0" },
-    signal: AbortSignal.timeout(90000),
-  });
+  let lastError;
 
-  if (!res.ok) {
-    throw new Error(`RSSHub 応答エラー: ${res.status} ${res.statusText}`);
+  // Render 無料プランはスリープからの復帰が遅く、1回目がタイムアウトしても
+  // 裏で起動が進んでいることがある。ここで投げると次の実行（ 4 時間後）まで
+  // 更新が止まるため、間隔を空けて再試行する。
+  for (let attempt = 0; attempt <= FEED_RETRIES; attempt++) {
+    if (attempt > 0) {
+      const waitMs = FEED_RETRY_BASE_MS * attempt;
+      console.log(`🔁 ${Math.round(waitMs / 1000)} 秒後に再試行します（${attempt}/${FEED_RETRIES}）`);
+      await new Promise((r) => setTimeout(r, waitMs));
+    }
+
+    let res;
+    try {
+      res = await fetch(url, {
+        headers: { "User-Agent": "chiikawa-archive/1.0" },
+        signal: AbortSignal.timeout(FEED_TIMEOUT_MS),
+      });
+    } catch (e) {
+      lastError = e;
+      console.warn(`⚠️ 接続失敗: ${e.message}`);
+      continue;
+    }
+
+    if (res.ok) return parseRssItems(await res.text());
+
+    // 4xx は ACCESS_KEY 誤りなど設定起因で、再試行しても直らない
+    if (res.status < 500) {
+      throw new Error(`RSSHub 応答エラー: ${res.status} ${res.statusText}`);
+    }
+
+    lastError = new Error(`RSSHub 応答エラー: ${res.status} ${res.statusText}`);
+    console.warn(`⚠️ ${lastError.message}`);
   }
 
-  return parseRssItems(await res.text());
+  throw new Error(
+    `RSSHub への接続に ${FEED_RETRIES + 1} 回失敗しました（最後のエラー: ${lastError.message}）`
+  );
 }
 
 function parseRssItems(xml) {

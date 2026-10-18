@@ -382,9 +382,9 @@ Tallyフォームのフィールド仕様（変更する場合は `scripts/fetch
 
 **トリガー**: cron（JST 1:00 / 5:00 / 9:00 / 13:00 / 17:00 / 21:00、4時間ごと）または手動実行
 
-1. `scripts/fetch-posts.mjs` — RSSHub 経由でX投稿を取得（タイムアウト 90 秒）
+1. `scripts/fetch-posts.mjs` — RSSHub 経由でX投稿を取得（タイムアウト 90 秒 × 最大3回、間隔 15 秒・30 秒）
 2. `scripts/fetch-news.mjs` — Google Alerts RSS からニュースを取得
-3. 両方失敗した場合はワークフローをエラー終了。片方でも失敗した場合は GitHub Issue を自動作成/コメント、復旧時は自動クローズ
+3. 両方失敗した場合はワークフローをエラー終了。片方でも失敗した場合は GitHub Issue を自動作成/コメント、復旧時は自動クローズ。Issue にはスクリプトが出した `❌ エラー:` 行と連続失敗回数を載せ、実行ログを開かなくても原因が分かるようにしている
 4. `public/data/` に変更があればコミット・プッシュ
 5. 変更があれば `deploy.yml` が連鎖実行される
 
@@ -432,7 +432,7 @@ X投稿の取得には自前の RSSHub インスタンスを使用。
 | `TWITTER_AUTH_TOKEN` | X.com の `auth_token` クッキー値 |
 | `ACCESS_KEY` | `RSSHUB_ACCESS_KEY` と同じ値 |
 
-> **注意**: Render 無料プランはスリープあり。コールドスタート最大 60 秒のため、`fetch-posts.mjs` のタイムアウトは 90 秒に設定している。  
+> **注意**: Render 無料プランはスリープあり。コールドスタート最大 60 秒のため、`fetch-posts.mjs` のタイムアウトは 90 秒に設定している。1回目がタイムアウトしても裏で起動が進んでいることがあるため、15 秒・30 秒空けて最大3回まで再試行する（4xx は設定ミスなので再試行しない）。  
 > `auth_token` は X のログインセッションが変わると無効になるため、定期的な更新が必要。
 
 ---
@@ -582,7 +582,8 @@ node scripts/reclassify-news.mjs --write    # news.json を書き換える
 | 症状 | 原因と対処 |
 |------|-----------|
 | X投稿が更新されない | `auth_token` が失効している可能性。Render のダッシュボードで環境変数を更新する。フェッチが失敗すると GitHub Issue が自動作成されるので、まずそれを確認する |
-| RSSHub が 504 エラー | Render のコールドスタート。`update-data.yml` の `continue-on-error: true` により次回のスケジュールで自動リトライされる |
+| RSSHub が 504 エラー | Render のコールドスタート。`fetch-posts.mjs` が最大3回再試行し、それでも駄目なら `continue-on-error: true` により次回のスケジュールで自動リトライされる |
+| RSSHub が無応答のまま（TLS は繋がるが HTTP が返らない） | Render 上のコンテナが起動失敗またはクラッシュしている。再試行では復旧しないので、Render ダッシュボードで `chiikawa-rsshub` のステータスとログを確認し、必要なら手動再起動する。`TWITTER_AUTH_TOKEN` 失効時も起動に失敗することがある |
 | ニュースが取れない | Google Alerts の RSS URL が変わっている可能性。Google Alerts で再設定して `GOOGLE_ALERTS_RSS_URL` を更新 |
 | ギャラリーが更新されない | 3本のフェッチはいずれも `continue-on-error` で走るため、失敗しても他は進む。`Update Data` が自動作成する Issue に `fetch-gallery.mjs: failure` が出ていないか確認する |
 | デプロイが失敗する | `actions/deploy-pages` の一時的な障害の場合が多い。`retry-deploy.yml` が自動で最大3回リトライする。3回失敗した場合は自動作成される Issue と [GitHub Status](https://www.githubstatus.com/) を確認 |
