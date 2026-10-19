@@ -1,7 +1,120 @@
 {
   "year": "2026",
-  "totalArticles": 2732,
+  "totalArticles": 2741,
   "articles": [
+    {
+      "id": "news-822a352a9c80",
+      "title": "映画『 ちいかわ 』興収122億円突破 『コナン』超えのペースに!新たな特典配布決定",
+      "url": "https://www.oricon.co.jp/news/2477269/photo/2/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-08-31T11:49:15.000Z",
+      "summary": "試写会、登壇 イベント 、サインチェキなどプレゼント！ プレゼント特集 ... 発売 . 2026-08-29 13:12. 『HUNTER×HUNTER』一番くじ 発売 . 8. 『ポケモン』新作 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-d604d6ca4b9f",
+      "title": "「 ちいかわ 」特別 コラボ 花火が横浜での“再打ち上げ”9月に決定 7月に中止 2枚目の写真・画像",
+      "url": "https://www.cinemacafe.net/article/img/2026/08/31/112200/829718.html",
+      "source": "cinemacafe.net",
+      "publishedAt": "2026-08-31T11:04:24.000Z",
+      "summary": "ちいかわ 」特別 コラボ 花火が、9月5日（土） ... イベント ちいかわ",
+      "category": "collab",
+      "tags": [
+        "横浜"
+      ]
+    },
+    {
+      "id": "news-00c198bf30c2",
+      "title": "「 ちいかわ 」×「東京ばな奈」 コラボ 商品が全国通販！キラキラした瞳のエコバッグ - エキサイト",
+      "url": "https://www.excite.co.jp/news/article/Inside_187022/",
+      "source": "excite.co.jp",
+      "publishedAt": "2026-08-31T10:21:28.000Z",
+      "summary": "ゲームニュースランキング. 1. 「 ちいかわ 焼き」 期間限定 フレーバーが順次 発売 ！ ... 「遊戯王」と ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-3bb87afce2e3",
+      "title": "【きょうから】「 ちいかわ 焼き」秋季限定の味が登場 くりまんじゅうのマロン味など ... - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2477000",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-08-31T10:20:26.000Z",
+      "summary": "くりこが運営する「 ちいかわ 焼き」はきょう31日より、新しい味の「 ちいかわ 焼き」を 期間限定 で 発売 する。 ... コラボ Mrs. GREEN APPLE、雑誌メディア「計7 ...",
+      "category": "goods",
+      "tags": [
+        "くりまんじゅう",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-a2474884a999",
+      "title": "『映画 ちいかわ 』入場者特典第4弾はチャームミニフィギュア - アニメイトタイムズ",
+      "url": "https://www.animatetimes.com/news/details.php?id=1788154131",
+      "source": "animatetimes.com",
+      "publishedAt": "2026-08-31T10:15:54.000Z",
+      "summary": "（金）より大ヒット公開中の『映画 ちいかわ 人魚 ... 2026/07/24 発売 . 【音楽】『映画 ちいかわ 人魚の島のひみつ』オリジナル ...",
+      "category": "anime",
+      "tags": [
+        "フィギュア",
+        "映画",
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-79cad5402702",
+      "title": "【きょうから】「 ちいかわ 焼き」秋季限定の味が登場 くりまんじゅうのマロン味など季節感 ...",
+      "url": "https://www.sanyonews.jp/article/1980889",
+      "source": "sanyonews.jp",
+      "publishedAt": "2026-08-31T10:05:52.000Z",
+      "summary": "くりこが運営する「 ちいかわ 焼き」はきょう31日より、新しい味の「 ちいかわ 焼き」を 期間限定 で 発売 する。 ... ジェラート ピケ×ポケモン、 コラボ 第3弾 ピッピ＆ ...",
+      "category": "goods",
+      "tags": [
+        "くりまんじゅう",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-b83794aba735",
+      "title": "【きょうから】「 ちいかわ 焼き」秋季限定の味が登場 くりまんじゅうのマロン味など ... - 福井新聞",
+      "url": "https://www.fukuishimbun.co.jp/articles/-/2687004",
+      "source": "fukuishimbun.co.jp",
+      "publishedAt": "2026-08-31T10:05:16.000Z",
+      "summary": "きょう31日より、新しい味の「 ちいかわ 焼き」を 期間限定 で 発売 ... 企画",
+      "category": "goods",
+      "tags": [
+        "くりまんじゅう",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-070e6a899e08",
+      "title": "映画『 ちいかわ 』入場者特典第4弾は島二郎、セイレーン、ヒトハ、フタバのチャームミニ ...",
+      "url": "https://www.famitsu.com/article/202608/86122",
+      "source": "famitsu.com",
+      "publishedAt": "2026-08-31T10:01:07.000Z",
+      "summary": "『映画 ちいかわ 人魚の島のひみつ』の入場者特典第4弾として、島二郎、セイレーン、ヒトハ、フタバのチャームミニフィギュアが登場決定。9月5日より配布 ...",
+      "category": "anime",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-02f939022d6b",
+      "title": "【きょうから】「 ちいかわ 焼き」秋季限定の味が登場 くりまんじゅうのマロン味など ... - 徳島新聞",
+      "url": "https://www.topics.or.jp/articles/-/1486576",
+      "source": "topics.or.jp",
+      "publishedAt": "2026-08-31T09:59:38.000Z",
+      "summary": "くりこが運営する「 ちいかわ 焼き」はきょう31日より、新しい味の「 ちいかわ 焼き」を 期間限定 で 発売 する。 【ほか写真多数】秋の味わいが満載！モモンガ ...",
+      "category": "goods",
+      "tags": [
+        "くりまんじゅう",
+        "限定"
+      ]
+    },
     {
       "id": "news-b5c56c3984fe",
       "title": "映画『 ちいかわ 』興収122億円突破 『コナン』超えのペースに！新たな特典配布決定",
