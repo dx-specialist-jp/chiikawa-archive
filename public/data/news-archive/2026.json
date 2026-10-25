@@ -1,7 +1,72 @@
 {
   "year": "2026",
-  "totalArticles": 2804,
+  "totalArticles": 2810,
   "articles": [
+    {
+      "id": "news-1ecb9efb5ca8",
+      "title": "しまむらで「 ちいかわ 」グッズがオンライン販売！ワンポイント刺繍が可愛いソックス - インサイド",
+      "url": "https://www.inside-games.jp/article/2026/09/01/187101.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-09-01T21:55:13.000Z",
+      "summary": "発売 ！絵文字のようなフェイス型のプリンさん、猫さんなど全8種. フィギュア ... コラボ ！「Mrs. GREEN APPLE」デザインが9月下旬に抽選販売. フィギュア ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-c8df898defa5",
+      "title": "ちいかわ のことを全く知らない状態で鑑賞しましたが、前知識がなくても... - 映画.com",
+      "url": "https://eiga.com/movie/105109/review/06913306/",
+      "source": "eiga.com",
+      "publishedAt": "2026-09-01T21:53:09.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ。波風龍雄さんの映画レビュー（ ... イベント カレンダー. その他. 俳優",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-e5e42d5aafe7",
+      "title": "くら寿司で 1万 8000円分食べたのに… ちいかわ 景品が「出ない」困惑の声 - ライブドアニュース",
+      "url": "https://news.livedoor.com/article/detail/32211200/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-09-01T21:36:49.000Z",
+      "summary": "くら寿司× ちいかわコラボ の景品ゲームをめぐり困惑の声が広がっている ... ちいかわ との コラボ 部屋着 発売 NEW",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-9cf374c2ab06",
+      "title": "「 ちいかわ 」×モンテール コラボ 「むちゃうまプリン」をイメージしたシュークリーム&エクレアが ...",
+      "url": "https://www.excite.co.jp/news/article/Inside_187110/",
+      "source": "excite.co.jp",
+      "publishedAt": "2026-09-01T20:11:17.000Z",
+      "summary": "「 ちいかわ 」×モンテール コラボ 「むちゃうまプリン」をイメージしたシュークリーム&エクレアが9月30日までの 期間限定 で 発売 . インサイド. 2026年09月01日(火) 20 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-ad6cc34c4e7a",
+      "title": "しまむらで「 ちいかわ 」グッズがオンライン販売！ワンポイント刺繍が可愛いソックス",
+      "url": "https://news.yahoo.co.jp/articles/fa376cada16c6d5157339997186cc5ff8a3f8d5e",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-01T19:16:33.000Z",
+      "summary": "コラボ 商品が全国通販！キラキラした瞳のエコバッグ、トートバッグ ... 「 ちいかわ 焼き」 期間限定 フレーバーが順次 発売 ！モモンガ、くりまんじゅう ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-ebb06f2854d4",
+      "title": "ちいかわ とハチワレの「ペロペロチョコ」不二家から 台紙は全12種 - ナタリー",
+      "url": "https://natalie.mu/comic/news/687576",
+      "source": "natalie.mu",
+      "publishedAt": "2026-09-01T19:09:51.000Z",
+      "summary": "ちいかわ ×CITENの コラボ コレクション、 ちいかわ たちが顔を覗かせるトートバッグなど ... 毎日 発売 ...",
+      "category": "other",
+      "tags": [
+        "ハチワレ",
+        "お菓子"
+      ]
+    },
     {
       "id": "news-e4f8b049d61a",
       "title": "くら寿司× ちいかわコラボ でフィギュアが出ない理由を広報が説明 - ライブドアニュース",
