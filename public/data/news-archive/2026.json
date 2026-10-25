@@ -1,7 +1,31 @@
 {
   "year": "2026",
-  "totalArticles": 2811,
+  "totalArticles": 2813,
   "articles": [
+    {
+      "id": "news-91354061ada6",
+      "title": "くら寿司× ちいかわ で「フィギュア」出ないとの投稿相次ぐ 「カプセル補充」方法はどうなって ...",
+      "url": "https://article.auone.jp/87863640-5512-417a-b3e9-8473b747fd10",
+      "source": "article.auone.jp",
+      "publishedAt": "2026-09-01T23:26:01.000Z",
+      "summary": "回転寿司チェーン「くら寿司」が開催している「 ちいかわ 」との コラボ キャンペーンをめぐり、皿5枚ごとに1…",
+      "category": "collab",
+      "tags": [
+        "フィギュア"
+      ]
+    },
+    {
+      "id": "news-4600cb79f93d",
+      "title": "くら寿司×「 ちいかわ 」 コラボ 第2弾 「湯呑み」実物 “武器”を持って「ヤーッ！！」 モモンガ",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/otonanswer/life/otonanswer-389558",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-01T22:48:26.000Z",
+      "summary": "くら寿司×「 ちいかわ 」 コラボ 第2弾 「湯呑み」実物 “武器”を持って「ヤーッ！！」 モモンガ、ラッコたちもいた！（オトナンサー） 回転寿司（ずし） ...",
+      "category": "collab",
+      "tags": [
+        "モモンガ"
+      ]
+    },
     {
       "id": "news-c7d3616ef69e",
       "title": "くら寿司×「 ちいかわ 」 コラボ 第2弾 「湯呑み」実物 “武器”を持って「ヤーッ！！」 モモンガ",
