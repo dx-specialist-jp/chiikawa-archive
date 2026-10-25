@@ -1,7 +1,235 @@
 {
-  "lastUpdated": "2026-10-16T16:17:28.698Z",
-  "totalPosts": 1111,
+  "lastUpdated": "2026-10-25T05:16:01.520Z",
+  "totalPosts": 1127,
   "posts": [
+    {
+      "id": "post-2113656083860656383",
+      "tweetId": "2113656083860656383",
+      "url": "https://x.com/ngnchiikawa/status/2113656083860656383",
+      "publishedAt": "2026-10-23T15:37:34.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HVU3AGlbEAAOwmp.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2113634970761867272",
+      "tweetId": "2113634970761867272",
+      "url": "https://x.com/ngnchiikawa/status/2113634970761867272",
+      "publishedAt": "2026-10-23T12:00:02.000Z",
+      "summary": "🏝️.˚⊹ 映画では観られなかった あの日の思い出が描かれた🎞️ 『#映画ちいかわ 人魚の島のひみつ』 入場者特典第7弾！ 「ナガノ氏描き下ろしクリアカード」（全４種） 10月24日（土）より配布開始✨ ※ランダム配布のため種類をお選び頂く事は出来ません。",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVUAUXwbYAEKa9o.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2113634923630436544",
+      "tweetId": "2113634923630436544",
+      "url": "https://x.com/ngnchiikawa/status/2113634923630436544",
+      "publishedAt": "2026-10-23T09:30:04.000Z",
+      "summary": "【✨1週間限定配信✨】 第41話〜第43話 第123話〜第125話 「郎」編(全6話) ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVTfdrvbsAAYwsa.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2113258853274210491",
+      "tweetId": "2113258853274210491",
+      "url": "https://x.com/ngnchiikawa/status/2113258853274210491",
+      "publishedAt": "2026-10-22T09:00:06.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第42話 フジテレビ系列「めざましテレビ」内にて 10月23日(金)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVOPAfzbcAAsHk4.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2113259044471484604",
+      "tweetId": "2113259044471484604",
+      "url": "https://x.com/ngnchiikawa/status/2113259044471484604",
+      "publishedAt": "2026-10-22T02:00:00.000Z",
+      "summary": "＼📢発売まであと2日📢／ 『#ちいぽけ』公式グッズ第4弾が、 いよいよ明後日10/24(土) 11:00より『ちいかわぽけっとグッズストア』（オンラインストア）に登場💌 今回は、「🍤🍙お弁当衣装🍙🍤」と「🛍️💐お店屋さん衣装💐🛍️」をモチーフにしたグッズを発売します✨ 楽しみにお待ちください！",
+      "category": "goods",
+      "tags": [
+        "ちいぽけ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2112866792985280822",
+      "tweetId": "2112866792985280822",
+      "url": "https://x.com/ngnchiikawa/status/2112866792985280822",
+      "publishedAt": "2026-10-21T11:21:13.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HVJpJgbasAAWGEi.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112865868690739375",
+      "tweetId": "2112865868690739375",
+      "url": "https://x.com/ngnchiikawa/status/2112865868690739375",
+      "publishedAt": "2026-10-21T08:00:01.000Z",
+      "summary": "『#映画ちいかわ 人魚の島のひみつ』 ＼㊗️大ヒット御礼✨第3回開催決定！／ 🌟なんとかなれーッ！発声可能応援上映📢 📅10月30日(金) 19時〜 📍全国8都道府県12劇場で一斉開催 🌟自動制御ペンライト演出付き応援上映🙌 📅11月6日(金) 19時〜 📍全国5都道府県7劇場で一斉開催 ▼詳細はこちら",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVIkVCMagAAFjVa.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112537943600722426",
+      "tweetId": "2112537943600722426",
+      "url": "https://x.com/ngnchiikawa/status/2112537943600722426",
+      "publishedAt": "2026-10-20T13:34:29.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HVE-D-Na4AAVWNi.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112534852767723738",
+      "tweetId": "2112534852767723738",
+      "url": "https://x.com/ngnchiikawa/status/2112534852767723738",
+      "publishedAt": "2026-10-20T09:00:02.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第41話「郎の練習／攻略サイト」 ちいかわとハチワレ、ラーメンの練習！？ 郎のラーメンは覚えることがいっぱい！？ ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVD72IgaAAAoYF2.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112534995911024735",
+      "tweetId": "2112534995911024735",
+      "url": "https://x.com/ngnchiikawa/status/2112534995911024735",
+      "publishedAt": "2026-10-20T03:00:20.000Z",
+      "summary": "📣10月カプセルトイ新情報！ #映画ちいかわ 人魚の島のひみつ ふりふりヘッドフィギュア①②が登場🏝️ 島衣装のちいかわたちと セイレーンと島二郎のあたまがふりふりゆれる🎵 ①全4種 1回500円 ②全4種 1回500円 🌺詳細🌺 #カプセルトイ",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ",
+        "カプセルトイ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "セイレーン",
+        "島二郎"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2112865934310613222",
+      "tweetId": "2112865934310613222",
+      "url": "https://x.com/ngnchiikawa/status/2112865934310613222",
+      "publishedAt": "2026-10-20T03:00:00.000Z",
+      "summary": "＼セイレーンと島二郎がふたたび登場✨／ グリーティングエリアでは『#映画ちいかわ 人魚の島のひみつ』に登場するセイレーンや島二郎に会えるチャンス📸✨ 島衣装のちいかわ、ハチワレ、うさぎも登場🌺 前回会えた方も、まだ会えていない方も、 この機会をお見逃しなく💨 11月1日(日)～11月19日(木)",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ",
+        "セイレーン",
+        "島二郎"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2112182585090798034",
+      "tweetId": "2112182585090798034",
+      "url": "https://x.com/ngnchiikawa/status/2112182585090798034",
+      "publishedAt": "2026-10-19T14:02:25.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HU_63WMaIAAKzal.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112181685135765971",
+      "tweetId": "2112181685135765971",
+      "url": "https://x.com/ngnchiikawa/status/2112181685135765971",
+      "publishedAt": "2026-10-19T09:00:29.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第41話 フジテレビ系列「めざましテレビ」内にて 10月20日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HU-yQLnaYAALYTq.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112058123896967233",
+      "tweetId": "2112058123896967233",
+      "url": "https://x.com/ngnchiikawa/status/2112058123896967233",
+      "publishedAt": "2026-10-19T05:00:00.000Z",
+      "summary": "『#映画ちいかわ 人魚の島のひみつ』 🏝️.˚⊹ 大ヒット上映中✨ 【10月24日(土)より】 入場者特典第7弾 配布決定👏 「ナガノ氏描き下ろしクリアカード」（全4種） ※ランダム配布のため種類をお選び頂く事は出来ません。",
+      "category": "anime",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HU9dp2MbIAAq076.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2112181670925492493",
+      "tweetId": "2112181670925492493",
+      "url": "https://x.com/ngnchiikawa/status/2112181670925492493",
+      "publishedAt": "2026-10-18T23:00:03.000Z",
+      "summary": "週の始まり月曜日✨ あったかいものを食べて 元気にスタートしよう🍜 #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HU8o6JNaQAAkybl.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2111759998724579617",
+      "tweetId": "2111759998724579617",
+      "url": "https://x.com/ngnchiikawa/status/2111759998724579617",
+      "publishedAt": "2026-10-18T10:00:02.000Z",
+      "summary": "＼ちいかわジェット／ ANAの特別デザイン機 「ちいかわジェット」 就航を前に格納庫でお披露目🎉 「ちいかわジェット」は 2026年10月19日(月)より就航開始！ ちいかわたちと一緒に、空の旅を楽しもう✈ 🔍詳細こちら #ちいかわ #ANA",
+      "category": "other",
+      "tags": [
+        "ANA"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2111083717955555598",
       "tweetId": "2111083717955555598",
@@ -15258,6 +15486,60 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-24",
+      "count": 1,
+      "categories": [
+        "manga"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "count": 2,
+      "categories": [
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "count": 2,
+      "categories": [
+        "anime",
+        "goods"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "count": 4,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "count": 4,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "count": 1,
+      "categories": [
+        "other"
+      ]
+    },
     {
       "date": "2026-10-16",
       "count": 2,
