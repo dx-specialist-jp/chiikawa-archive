@@ -1,7 +1,35 @@
 {
-  "lastUpdated": "2026-10-25T05:16:01.520Z",
-  "totalPosts": 1127,
+  "lastUpdated": "2026-10-26T18:25:41.248Z",
+  "totalPosts": 1129,
   "posts": [
+    {
+      "id": "post-2114705587342913551",
+      "tweetId": "2114705587342913551",
+      "url": "https://x.com/ngnchiikawa/status/2114705587342913551",
+      "publishedAt": "2026-10-26T09:00:02.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第51話 フジテレビ系列「めざましテレビ」内にて 10月27日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVi1ZNTasAAyAJD.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2114705615469859036",
+      "tweetId": "2114705615469859036",
+      "url": "https://x.com/ngnchiikawa/status/2114705615469859036",
+      "publishedAt": "2026-10-26T07:30:00.000Z",
+      "summary": "❄️ オンラインストア先行予約販売決定 ❄️ ​ 人気キャラクター「ちいかわ」とのコラボレーション✨​ ​ \"さむ～い雪の日も楽しもう！\"をテーマにした冬アイテムが登場！​ ​ 11/2(月)よりオンラインストア先行予約販売スタート🎉​ ​ 詳細はこちら👉​",
+      "category": "collab",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HViMMHxaIAA9yQ3.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2113656083860656383",
       "tweetId": "2113656083860656383",
@@ -15486,6 +15514,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-26",
+      "count": 2,
+      "categories": [
+        "anime",
+        "collab"
+      ]
+    },
     {
       "date": "2026-10-24",
       "count": 1,

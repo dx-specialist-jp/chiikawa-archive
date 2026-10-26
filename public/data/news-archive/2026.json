@@ -1,7 +1,122 @@
 {
   "year": "2026",
-  "totalArticles": 2831,
+  "totalArticles": 2841,
   "articles": [
+    {
+      "id": "news-99f1d0e31ed8",
+      "title": "【 ちいかわ ベーカリー】12月を楽しくするアドベントカレンダー登場！ | アニメージュプラス",
+      "url": "https://animageplus.jp/articles/detail/67673/2/1/1",
+      "source": "animageplus.jp",
+      "publishedAt": "2026-09-02T10:02:09.000Z",
+      "summary": "「 ちいかわ ベーカリー」「 ちいかわ ベーカリー ポップアップショップ」「 ちいかわ ベーカリー OSAKA」にて、「 ちいかわ ベーカリー アドベントカレンダー」が 発売 ...",
+      "category": "anime",
+      "tags": [
+        "パン",
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-713b4faff5b0",
+      "title": "「 ちいかわ ベーカリー」アドベントカレンダー、焼き菓子や紅茶＆サンタ帽子のパン型 ...",
+      "url": "https://www.fashion-press.net/news/150637",
+      "source": "fashion-press.net",
+      "publishedAt": "2026-09-02T09:50:19.000Z",
+      "summary": "サンリオピューロランドのハロウィン イベント に”モンスター姿”のキャラクター、ラブブと コラボ .",
+      "category": "other",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-b36562eb6297",
+      "title": "《糸井重里、なだぎ武もハマった》映画「 ちいかわ 」120億円突破 子供が号泣し - 文春オンライン",
+      "url": "https://bunshun.jp/denshiban/articles/b14780",
+      "source": "bunshun.jp",
+      "publishedAt": "2026-09-02T09:35:42.000Z",
+      "summary": "コラボ 商品が溢れる一大コンテンツに成長した。 セブンイレブンとの コラボ 商品も. 待望の映画化となった本作で描かれるのは、 ちいかわ とその仲間が、とある島 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-779b64064951",
+      "title": "【 ちいかわ 】「 ちいかわ ベーカリー」初のアドベントカレンダーが登場！ サンタ帽パンの限定 ...",
+      "url": "https://lasisa.net/post/158741",
+      "source": "lasisa.net",
+      "publishedAt": "2026-09-02T09:29:15.000Z",
+      "summary": "期間限定 で実施されます。商品は11月下旬以降順次発送される予定です ... “限定アクキー” 付きドリンクやKINTO コラボ ボトル、9月に順次 発売 ♪. ライフ ...",
+      "category": "goods",
+      "tags": [
+        "パン",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-336f354cab81",
+      "title": "ルームウェア、ポーチ・ケースなど「 ちいかわ 」と「CITEN」が コラボ 9月15日 発売 1枚目の写真 ...",
+      "url": "https://www.cinemacafe.net/article/img/2026/09/02/112261/830278.html",
+      "source": "cinemacafe.net",
+      "publishedAt": "2026-09-02T09:26:06.000Z",
+      "summary": "ケースなど「 ちいかわ 」と「CITEN」が コラボ 9月15日 発売 1枚目の写真",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-5073aee9358b",
+      "title": "『 ちいかわ 』最新9巻が予約開始（11/20 発売 ）。特装版は《なんか書けて飾れるポストカード ...",
+      "url": "https://dengekionline.com/article/202609/86382",
+      "source": "dengekionline.com",
+      "publishedAt": "2026-09-02T09:16:37.000Z",
+      "summary": "『映画 ちいかわ 人魚の島のひみつ』も大ヒット公開中の人気作『 ちいかわ 』で、ファン待望のコミック最新刊が 発売 決定！ ... 『ウィズダフネ』×『FF11』 コラボ ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-6a838d509773",
+      "title": "【 ちいかわ ベーカリー】12月を楽しくするアドベントカレンダー登場！ | アニメージュプラス",
+      "url": "https://animageplus.jp/articles/detail/67673",
+      "source": "animageplus.jp",
+      "publishedAt": "2026-09-02T09:15:38.000Z",
+      "summary": "ちいかわ ベーカリー アドベントカレンダー」が 発売 される。 『 ちいかわ 』は、イラストレーターのナガノ氏が連載開始したX（旧Twitter）に投稿している人気 ...",
+      "category": "anime",
+      "tags": [
+        "パン",
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-945dbfa3c7aa",
+      "title": "ちいかわ ベーカリー アドベントカレンダー 9月2日18時より先行販売! - コラボ カフェ",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-bakery-advent-calendar-2026/?amp=1",
+      "source": "collabo-cafe.com",
+      "publishedAt": "2026-09-02T09:09:52.000Z",
+      "summary": "ムック本 ... ちいかわ × 不二家 ペロペロチョコが9月8日より全国 発売 ! 期間 : 2026年 ...",
+      "category": "collab",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-ea83bed37983",
+      "title": "「 ちいかわ 」のアドベントカレンダー 発売 、 ちいかわ たちとクリスマスをカウントダウン",
+      "url": "https://news.yahoo.co.jp/articles/38196b39963e6dab284253ea2ac70d4743aaf599",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-02T09:01:04.000Z",
+      "summary": "ちいかわ ベーカリー、 ちいかわ ベーカリーポップアップショップ、 ちいかわ ... 「 ちいかわ 」のアドベントカレンダー 発売 、 ちいかわ たちとクリスマスを ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-0679e20a23bb",
+      "title": "ルームウェア、ポーチ・ケースなど「 ちいかわ 」と「CITEN」が コラボ 9月15日 発売",
+      "url": "https://woman.excite.co.jp/article/lifestyle/rid_Cinemacafe_112261/",
+      "source": "woman.excite.co.jp",
+      "publishedAt": "2026-09-02T05:20:22.000Z",
+      "summary": "ケースなど「 ちいかわ 」と「CITEN」が コラボ 9月15日 発売 ... 公開中の『映画 ちいかわ 人魚の島のひみつ』が大きな反響を呼んでいる「 ちい ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-ac7517b56c05",
       "title": "くら寿司× ちいかわ で「フィギュア」出ないとの投稿相次ぐ 「カプセル補充」方法はどうなって ...",
