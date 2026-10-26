@@ -1,7 +1,52 @@
 {
   "year": "2026",
-  "totalArticles": 2813,
+  "totalArticles": 2817,
   "articles": [
+    {
+      "id": "news-8ee92008af57",
+      "title": "【 ちいかわ 】セブンで買えた！「島へようこそグミ」 - シティリビングWeb",
+      "url": "https://city.living.jp/citymate/citymate273/mate_shopping/1762982/",
+      "source": "city.living.jp",
+      "publishedAt": "2026-09-02T00:55:04.000Z",
+      "summary": "ちいかわ の「島へようこそグミ」をご存知ですか？ 8月24日に 発売 されたばかりで、 ちいかわ ランドで入荷すると一瞬で完売した幻のグミ。",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-91aca6136838",
+      "title": "【 ちいかわ ×東京ばな奈】大好評の「バッグセット」全国で 発売 開始！“エコバッグの単品”1200円も ...",
+      "url": "https://news.yahoo.co.jp/articles/f108303b2e8111091cde397b51aebc2bc6b3e999",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-02T00:14:35.000Z",
+      "summary": "ちいかわ 」のコラボレーション商品が、2026年9月1日（火）より 発売 されます。 【画像】「 ちいかわ 」×「東京ばな奈」 コラボ 商品を見る！（画像8枚） コラボ ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-79f8135e7781",
+      "title": "『映画 ちいかわ 』興収200億円突破も射程圏内か…「コナン超えペース」を支える“不穏すぎる ...",
+      "url": "https://www.jprime.jp/articles/-/43343?display=b",
+      "source": "jprime.jp",
+      "publishedAt": "2026-09-02T00:11:02.000Z",
+      "summary": "【4年ぶりの学習院 イベント 】愛子さまは管弦楽団の会合にお忍びサプライズ参加！… ... ちいかわ ×ANA ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-0c54d1e0b9d0",
+      "title": "「 ちいかわ 」「ハチワレ」の顔を再現、棒付きチョコレート9・8より 発売 台紙デザインは全12種",
+      "url": "https://www.yamagata-np.jp/oricon/photo.php?id=2477531",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-09-01T23:46:45.000Z",
+      "summary": "「 ちいかわ 」「ハチワレ」の顔を再現、棒付きチョコレート9 8より 発売 ... イベント 情報 県内の イベント 情報を掲載しています",
+      "category": "goods",
+      "tags": [
+        "ハチワレ",
+        "お菓子"
+      ]
+    },
     {
       "id": "news-91354061ada6",
       "title": "くら寿司× ちいかわ で「フィギュア」出ないとの投稿相次ぐ 「カプセル補充」方法はどうなって ...",
