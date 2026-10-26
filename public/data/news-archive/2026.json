@@ -1,7 +1,103 @@
 {
   "year": "2026",
-  "totalArticles": 2841,
+  "totalArticles": 2850,
   "articles": [
+    {
+      "id": "news-af540f335bb0",
+      "title": "「 ちいかわ ベーカリー アドベントカレンダー」登場！！：時事ドットコム",
+      "url": "https://www.jiji.com/jc/article?k=000000320.000086964&g=prt",
+      "source": "jiji.com",
+      "publishedAt": "2026-09-02T13:06:24.000Z",
+      "summary": "新商品 ... グッズ展開、 コラボ カフェ、企業 コラボ など幅広く展開しており、 講談社から書籍「 ちいかわ なんか小さくてかわいいやつ」が8巻まで 発売 中。",
+      "category": "goods",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-07413f335075",
+      "title": "【 ちいかわ 】「3日間だけ同棲したい」キャラクターランキング！ 2位「 ちいかわ 」 - TRILL",
+      "url": "https://trilltrill.jp/articles/4992818",
+      "source": "trilltrill.jp",
+      "publishedAt": "2026-09-02T12:43:45.000Z",
+      "summary": "しまむら. 【 ちいかわ 】「3日間だけ同棲したい」キャラクターランキング！ 2位「 ちいかわ 」、1位は？【2026年 ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-9c29def2b504",
+      "title": "「 ちいかわ 」のアドベントカレンダー 発売 、 ちいかわ たちとクリスマスをカウントダウン - ナタリー",
+      "url": "https://natalie.mu/comic/news/687782",
+      "source": "natalie.mu",
+      "publishedAt": "2026-09-02T12:14:41.000Z",
+      "summary": "「 ちいかわ 」のアドベントカレンダー 発売 、 ちいかわ たちとクリスマスをカウントダウン ... ちいかわ ×CITENの コラボ コレクション、 ちいかわ たちが顔を覗かせる ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-b965e2a5d767",
+      "title": "くら寿司 ちいかわコラボ で「フィギュア出ない」騒動を調査へ - 東スポWEB",
+      "url": "https://www.tokyo-sports.co.jp/articles/-/401658",
+      "source": "tokyo-sports.co.jp",
+      "publishedAt": "2026-09-02T12:10:02.000Z",
+      "summary": "くら寿司 ちいかわコラボ で「フィギュア出ない」騒動を調査へ. 2026年9月2日 ... タレコミ募集中!! プロレス大賞. イベント /プレゼント/お知らせ. 東スポ ...",
+      "category": "collab",
+      "tags": [
+        "フィギュア"
+      ]
+    },
+    {
+      "id": "news-5397b5679748",
+      "title": "「どこかで見たような感じに描いてみました」某コーヒーチェーンが映画「 ちいかわ 」と コラボ ...",
+      "url": "https://togetter.com/li/2740498",
+      "source": "togetter.com",
+      "publishedAt": "2026-09-02T11:19:53.000Z",
+      "summary": "ちいかわコラボ した際には是非セイレーンちゃんパッケージを採用して貰い ... 世界最大級 ...",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-1799cad4a775",
+      "title": "『 ちいかわ 』と「ジャポニカ学習帳」が コラボ ！『 ちいかわ 』の世界観が表紙＆中面で楽しめる ...",
+      "url": "https://eeo.today/media/2026/09/02/389966/",
+      "source": "eeo.today",
+      "publishedAt": "2026-09-02T11:13:19.000Z",
+      "summary": "『 ちいかわ 』と「ジャポニカ学習帳」が コラボ ！『 ちいかわ 』の世界観が表紙＆中面で楽しめるレトロかわいい学習帳が 発売 . 人気アニメ『 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-fcd87a750537",
+      "title": "ちいかわコラボ のエコバッグ 発売 ！ 「人気凄そう」「めっちゃかわいい」 - Infoseek 楽天",
+      "url": "https://news.infoseek.co.jp/article/allabout_162831/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-09-02T10:36:24.000Z",
+      "summary": "「即完しそう」東京ばな奈、 ちいかわコラボ のエコバッグ 発売 ！ 「人気凄そう」「めっちゃかわいい」. オールアバウト 2026年9月2日 18時55分. 東京ばな奈から ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-d3aa65da7623",
+      "title": "ちいかわコラボ のエコバッグ 発売 ！ 「人気凄そう」「めっちゃかわいい」（All About NEWS）",
+      "url": "https://topics.smt.docomo.ne.jp/article/allaboutnews/trend/allaboutnews-162831",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-02T10:08:17.000Z",
+      "summary": "Google Fitbit Air限定版の 発売 記念 イベント 開催 ポケモンファン必見 ... 「即完しそう」東京ばな奈、 ちいかわコラボ のエコバッグ 発売 ！ 「人気凄そう ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-39ada0def221",
+      "title": "「 ちいかわ ×CITEN」 コラボ グッズが 発売 決定 全6型バッグ・ポーチなどに ... - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/64126133b963963cd131cb013501a34f3da33dae",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-02T10:07:20.000Z",
+      "summary": "「 ちいかわ ×CITEN」 コラボ グッズが 発売 決定⇨全6型バッグ. 「 ちいかわ 」「CITEN（シテン）」スペシャルコレクション. 「 ちいかわ 」と、ユナイテッドアローズが ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-99f1d0e31ed8",
       "title": "【 ちいかわ ベーカリー】12月を楽しくするアドベントカレンダー登場！ | アニメージュプラス",
