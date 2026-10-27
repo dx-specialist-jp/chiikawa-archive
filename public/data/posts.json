@@ -1,7 +1,48 @@
 {
-  "lastUpdated": "2026-10-26T18:25:41.248Z",
-  "totalPosts": 1129,
+  "lastUpdated": "2026-10-27T14:07:56.170Z",
+  "totalPosts": 1132,
   "posts": [
+    {
+      "id": "post-2115051534606303272",
+      "tweetId": "2115051534606303272",
+      "url": "https://x.com/ngnchiikawa/status/2115051534606303272",
+      "publishedAt": "2026-10-27T12:02:36.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HVosKM_b0AE1-jd.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2115050428690055575",
+      "tweetId": "2115050428690055575",
+      "url": "https://x.com/ngnchiikawa/status/2115050428690055575",
+      "publishedAt": "2026-10-27T09:00:05.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第51話「虫、ギチギチ／危なかった・・・な」 ちいかわ、討伐に苦戦！？ 討伐を終え、ハチワレと合流すると… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HVn-9tpbcAAKHqo.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2115050363078496257",
+      "tweetId": "2115050363078496257",
+      "url": "https://x.com/ngnchiikawa/status/2115050363078496257",
+      "publishedAt": "2026-10-27T02:08:02.000Z",
+      "summary": "＼🌱#ちいかわ 新グッズ登場🌱／ 新商品は 公式通販「#ちいかわマーケット」でも 11/6(金)11時より 発売いたします🎅 クリスマスなKiramekkoや 動くぬいぐるみが登場🎄 「まじかるちいかわ」強くなったふたり、「ちいかわラーメン豚」新商品も🖤🍥 🔻詳細はリプライをCHECK🔻",
+      "category": "goods",
+      "tags": [
+        "ちいかわマーケット"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2114705587342913551",
       "tweetId": "2114705587342913551",
@@ -15514,6 +15555,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-10-27",
+      "count": 3,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-10-26",
       "count": 2,
