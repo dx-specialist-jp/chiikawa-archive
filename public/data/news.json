@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-10-26T23:38:03.770Z",
+  "lastUpdated": "2026-10-27T04:11:14.334Z",
   "totalArticles": 2000,
   "articles": [
+    {
+      "id": "news-8c058aa0d4b0",
+      "title": "【栄】 ちいかわ ぽけっと POP UP名古屋が11/13開幕｜整理券 | NAGOYAJIN",
+      "url": "https://nagoyajin.nagoya/sakae-chiikawa-pocket-popup-parco-20261113/",
+      "source": "nagoyajin.nagoya",
+      "publishedAt": "2026-10-27T01:55:41.000Z",
+      "summary": "ちいかわ ぽけっと POP UP STORE」が、2026年11月13日(金)〜11月29日(日)に名古屋PARCO 西館5F イベント スペースで開かれます。営業は10:00〜20:00（最終日は ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-6de7b11c9700",
+      "title": "ちいかわ プリズンポテト サワークリームオニオン味 - ファミリーマート",
+      "url": "https://www.family.co.jp/goods/charakuji/4755791.html",
+      "source": "family.co.jp",
+      "publishedAt": "2026-10-27T01:04:42.000Z",
+      "summary": "ちいかわ プリズンポテト サワークリームオニオン味 ... 酸味と甘味がヤミつきになる濃厚サワークリーム味のポテトスナックです。 ※店舗により 発売 日",
+      "category": "other",
+      "tags": []
+    },
     {
       "id": "news-faf00df06ac2",
       "title": "棚卸に伴う出荷停止のお知らせ | ちいかわマーケット 公式グッズショップ",
@@ -22446,31 +22468,6 @@
       "summary": "「即完しそう」東京ばな奈、 ちいかわコラボ のエコバッグ 発売 ！ 「人気凄そう ... ファストフードやスイーツなど、 新商品 の 発売 情報や、誰かに教えたく ...",
       "category": "collab",
       "tags": []
-    },
-    {
-      "id": "news-485dda3d7179",
-      "title": "うさぎのお顔“はんぺん”や、チョコにグミも！食欲の秋は「 ちいかわ 」と - ｄメニューニュース",
-      "url": "https://topics.smt.docomo.ne.jp/article/animeanime/entertainment/animeanime-102596",
-      "source": "topics.smt.docomo.ne.jp",
-      "publishedAt": "2026-09-02T13:32:42.000Z",
-      "summary": "食欲の秋は「 ちいかわ 」と☆（アニメ！アニメ！）『 ちいかわ 』の 新商品 として、 ちいかわ ... ちいかわ サンドはんぺん」は現在 発売 中で、「ちびさく ...",
-      "category": "other",
-      "tags": [
-        "うさぎ",
-        "お菓子"
-      ]
-    },
-    {
-      "id": "news-b573dec048d6",
-      "title": "「 ちいかわ 」大型展覧会「CHIIKAWA DAYS」が中国・上海に上陸！限定エリア&テーマグッズにも ...",
-      "url": "https://animeanime.jp/article/2026/09/02/102600.html",
-      "source": "animeanime.jp",
-      "publishedAt": "2026-09-02T13:20:52.000Z",
-      "summary": "また正式オープンに先駆け、9月5日には限定スペシャル イベント が開かれる。 「CHIIKAWA DAYS 上海」. 『 ちいかわ 』は、イラストレーターのナガノが描くX（旧 ...",
-      "category": "event",
-      "tags": [
-        "限定"
-      ]
     }
   ]
 }
