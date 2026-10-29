@@ -1,7 +1,82 @@
 {
   "year": "2026",
-  "totalArticles": 2912,
+  "totalArticles": 2919,
   "articles": [
+    {
+      "id": "news-96d53e7bf2b5",
+      "title": "ちいかわ 』新グッズ発表でネットざわつく「とてもレアでは！？」「証明写真のやつも ... - 徳島新聞",
+      "url": "https://www.topics.or.jp/articles/-/1488557",
+      "source": "topics.or.jp",
+      "publishedAt": "2026-09-03T16:00:29.000Z",
+      "summary": "漫画『 ちいかわ 』の新グッズが、4日午前11時より「 ちいかわマーケット 」で 発売 されることが決定した。ヘアクリップやマグカップ、巾着、トートバッグなど種類 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-2abcbf68736d",
+      "title": "くら寿司、「 ちいかわ 」 コラボ グッズの不適切な取り扱いめぐり謝罪 事実関係を調査「法的措置も…",
+      "url": "https://cont.t-com.ne.jp/entame/930891_1.html",
+      "source": "cont.t-com.ne.jp",
+      "publishedAt": "2026-09-03T15:48:56.000Z",
+      "summary": "「『 ちいかわ 』 コラボ 施策に関する一部SNS投稿について」と題した文書を掲載 ... 『Fate／EXTRA Record』無事に来年1月28日 発売 2度の 発売 延期経て【最新映像＆ ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-654c1baccbff",
+      "title": "ちいかわ 』ハマる糸井重里77歳、漫画を模写でネットざわつく「チョイスがこの話！」「すご！",
+      "url": "https://www.sankei.com/article/20260903-BHMFLD5BRFJ67BPKQ7SPUUW5BE/?outputType=theme_oriconnews",
+      "source": "sankei.com",
+      "publishedAt": "2026-09-03T15:35:20.000Z",
+      "summary": "くら寿司、「 ちいかわ 」 コラボ グッズの不適切な取り扱いめぐり謝罪 事実関係 ... イベント 芸能その他/「週払い可」私にも祝金20万円/週1～OK/初心者 ...",
+      "category": "manga",
+      "tags": [
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-546273c1f0e3",
+      "title": "不二家から「 ちいかわ 」「ハチワレ」の顔の形をした棒付きチョコが 発売 - マイナビ子育て",
+      "url": "https://kosodate.mynavi.jp/articles/45901",
+      "source": "kosodate.mynavi.jp",
+      "publishedAt": "2026-09-03T15:34:38.000Z",
+      "summary": "ちいかわ ペロペロチョコ」を、全国で 発売 ... 期間限定発売",
+      "category": "goods",
+      "tags": [
+        "ハチワレ",
+        "お菓子"
+      ]
+    },
+    {
+      "id": "news-5dc2e0c5e123",
+      "title": "くら寿司×「 ちいかわ 」 コラボ の「湯呑み」がもらえるキャンペーン第2弾は本日9月4日より開催",
+      "url": "https://news.yahoo.co.jp/articles/f0d0e917ab372a02f08d504888fd2986cd361110",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-03T15:25:42.000Z",
+      "summary": "くら寿司は、「 ちいかわ 」と コラボ したプレゼントキャンペーン第2弾を本日9月4日から開催する。 くら寿司では、イラストレーター",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-d2cca914ae72",
+      "title": "77歳で ちいかわ にハマった糸井重里、ナガノのくま＆島二郎描きネット反響「すごい ... - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2477975",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-09-03T15:20:43.000Z",
+      "summary": "イベント 第2弾開催「最高の時間をお届けします！」 ONE N' ONLYも出演【コメント全文】 『FF7』リメイク完結編、来年4月8日 発売 ... コラボ 発表にファン ...",
+      "category": "anime",
+      "tags": []
+    },
+    {
+      "id": "news-5a15da11fdff",
+      "title": "「ボンボンドロップシール」がロフトネットストアで抽選販売！ ちいかわ 、サンリオ文字の合計16 ...",
+      "url": "https://s.inside-games.jp/article/img/2026/09/03/187212/1775954.html",
+      "source": "s.inside-games.jp",
+      "publishedAt": "2026-09-03T15:06:12.000Z",
+      "summary": "しまむらで「ミッフィー」グッズが9月5日 発売 !袖口のワン ... 『ワンピース カード ...",
+      "category": "event",
+      "tags": []
+    },
     {
       "id": "news-26190774cda4",
       "title": "「リボン付けた姿がかわいい～！」 心ときめくデザインの「 ちいかわ 実用アイテム」3選【2026年 ...",
