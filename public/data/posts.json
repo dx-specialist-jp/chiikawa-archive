@@ -1,7 +1,34 @@
 {
-  "lastUpdated": "2026-10-30T20:30:45.289Z",
-  "totalPosts": 1136,
+  "lastUpdated": "2026-10-31T14:24:12.987Z",
+  "totalPosts": 1138,
   "posts": [
+    {
+      "id": "post-2116498444085014807",
+      "tweetId": "2116498444085014807",
+      "url": "https://x.com/ngnchiikawa/status/2116498444085014807",
+      "publishedAt": "2026-10-31T11:52:06.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HV9QHXcaAAAvHVK.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2116497979330949205",
+      "tweetId": "2116497979330949205",
+      "url": "https://x.com/ngnchiikawa/status/2116497979330949205",
+      "publishedAt": "2026-10-31T10:00:02.000Z",
+      "summary": "🦇--------------------------🦇 ｡.･:☆Happy Halloween☆:･.｡ 🦇--------------------------🦇 Boo!!👻 仮装をしてみんなでお菓子をもらいに行こう🎃🍬 #ちいぽけ #ちいかわぽけっと #ハロウィン",
+      "category": "other",
+      "tags": [
+        "ちいぽけ",
+        "ちいかわぽけっと",
+        "ハロウィン"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HV4I7mSboAAHlz-.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2116214579390984343",
       "tweetId": "2116214579390984343",
@@ -15607,9 +15634,10 @@
   "calendarData": [
     {
       "date": "2026-10-31",
-      "count": 1,
+      "count": 3,
       "categories": [
-        "manga"
+        "manga",
+        "other"
       ]
     },
     {
