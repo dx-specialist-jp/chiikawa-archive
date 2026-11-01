@@ -1,7 +1,83 @@
 {
   "year": "2026",
-  "totalArticles": 3010,
+  "totalArticles": 3017,
   "articles": [
+    {
+      "id": "news-63f0ebd4a267",
+      "title": "「この世のバグ」 イベント で ちいかわ のコスプレ→予想外の“とんでもない姿”に「同じ人 ...",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3983579/2/",
+      "source": "nlab.itmedia.co.jp",
+      "publishedAt": "2026-09-05T05:52:39.000Z",
+      "summary": "。投稿は記事執筆時点で491万回以上表示され、13万件以上の“いいね”を獲得しています。 イベント で ちいかわ ... 「この世のバグ」 イベント で ちいかわ のコスプレ→ ...",
+      "category": "event",
+      "tags": []
+    },
+    {
+      "id": "news-3ce1c44d8338",
+      "title": "『 ちいかわ 』サントラ未収録の”あの歌”がついに公開「助かりますわ」「これを待ってたんだ ...",
+      "url": "https://www.chunichi.co.jp/article/1306902",
+      "source": "chunichi.co.jp",
+      "publishedAt": "2026-09-05T05:52:04.000Z",
+      "summary": "◇『映画 ちいかわ 』入場者特典「第4弾」 島二郎ら重要キャラのフィギュアにファン大パニック. 求人情報. ゲームテスター/ 発売 前プレイ/20〜30代活躍/土日祝休 ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-19f29d75b688",
+      "title": "「しまむら× ちいかわ 」の新作から“ ちいかわ ガチ勢”ライターがおすすめを厳選！2品を実物レビュー",
+      "url": "https://lp.p.pia.jp/article/news/511942/index.html",
+      "source": "lp.p.pia.jp",
+      "publishedAt": "2026-09-05T05:24:47.000Z",
+      "summary": "ちいかわ 】ガチ勢がおすすめ２選♪（ウレぴあ総研）2026年8月26日（水）、ファッションセンターしまむらから、大人気の「 ちいかわ 」の新作グッズが 発売 ... 新商品 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-96a3d0428a88",
+      "title": "映画「 ちいかわ 」第4弾特典は島二郎・セイレーンら全4種！興収122億円、夏休み映画として異色 ...",
+      "url": "https://limo.media/articles/-/137191",
+      "source": "limo.media",
+      "publishedAt": "2026-09-05T05:17:12.000Z",
+      "summary": "阪急と「 ちいかわ 」が コラボ していた当時の光景を振り返った投稿が、X上で話題になっています。 『まどマギ ...",
+      "category": "anime",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-dd2480560242",
+      "title": "ジェイソン・モモア「 ちいかわ 」抱っこがかわいすぎ！笑顔の来日ショットに歓喜の声",
+      "url": "https://www.cinematoday.jp/news/N0156733",
+      "source": "cinematoday.jp",
+      "publishedAt": "2026-09-05T05:06:33.000Z",
+      "summary": "ちいかわ ... 実写版『ストリートファイター』キャストが凱旋 イベント 「最高の気分だよ！」 ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-09def608fd0b",
+      "title": "「 ちいかわ 」の愛らしいアートをさりげなくデザイン 「CITEN」よりルームウェア、バッグ",
+      "url": "https://cho-animedia.jp/article/2026/09/05/62897.html",
+      "source": "cho-animedia.jp",
+      "publishedAt": "2026-09-05T05:05:01.000Z",
+      "summary": "イベント ... グッズ展開、 コラボ カフェ、企業 コラボ など幅広く展開しており、講談社から書籍「 ちいかわ なんか小さくてかわいいやつ」が8巻まで 発売 中。",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-b7efccd2a663",
+      "title": "想いを直撃！ 『映画 ちいかわ 人魚の島のひみつ』及川啓監督インタビュー | anan",
+      "url": "https://ananweb.jp/categories/entertainment/106746",
+      "source": "ananweb.jp",
+      "publishedAt": "2026-09-05T04:32:06.000Z",
+      "summary": "Check! No.2509掲載. シェアライフ 2026. 2026年08月26日 発売 . 誰かと ... 』との コラボ など関連 イベント にも注目！ 平子雄一による展覧会「HUMAN AND ...",
+      "category": "anime",
+      "tags": [
+        "映画",
+        "人魚の島"
+      ]
+    },
     {
       "id": "news-80440b70cf1b",
       "title": "ちいかわ がサンリオキャラクターズなどに変身！日本空港ビルデング「GPSBOX＆Kiramekko ...",
