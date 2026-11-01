@@ -1,7 +1,115 @@
 {
   "year": "2026",
-  "totalArticles": 3000,
+  "totalArticles": 3010,
   "articles": [
+    {
+      "id": "news-80440b70cf1b",
+      "title": "ちいかわ がサンリオキャラクターズなどに変身！日本空港ビルデング「GPSBOX＆Kiramekko ...",
+      "url": "https://trilltrill.jp/articles/5001876",
+      "source": "trilltrill.jp",
+      "publishedAt": "2026-09-05T03:23:37.000Z",
+      "summary": "100均 ... ちいかわ やmofusandとサンリオキャラクターズ、ウルトラマンが コラボ した ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-c6744bb2ec4d",
+      "title": "おやすみ前に耳を温める温熱カバー「 ちいかわ みみぽぽ」新 発売 ！ | Charalab（キャララボ）",
+      "url": "https://charalab.com/142384/",
+      "source": "charalab.com",
+      "publishedAt": "2026-09-05T03:10:42.000Z",
+      "summary": "おやすみ前に耳を温める温熱カバー「 ちいかわ みみぽぽ」新 発売 ！ ライター ... 「 ちいかわ 」×「くら寿司」 コラボ ！湯呑みや寿司皿が先着でもらえる ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-775297caa10c",
+      "title": "『映画 ちいかわ 』応援上映の“楽しみ方”紹介動画に映画ファン歓喜 ラッコの「イーヤーダー」や ...",
+      "url": "https://news.nicovideo.jp/watch/nw19742325?news_ref=watch_70_nw19584850",
+      "source": "news.nicovideo.jp",
+      "publishedAt": "2026-09-05T03:04:55.000Z",
+      "summary": "イーヤーダー！」と独特のリズムで叫び即座にモモンガとうさぎにツッコまれる場面や、 発売 ... コラボ コレクション、2026年9月12日より 発売 . 2026/09/05 11 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-f22baa922f03",
+      "title": "「この世のバグ」 イベント で ちいかわ のコスプレ→予想外の“とんでもない姿”に「同じ人 ...",
+      "url": "https://news.yahoo.co.jp/articles/804dc80aafe02460e31a2b702154f10d29023e96",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-05T03:03:18.000Z",
+      "summary": "イベント で ちいかわ のコスプレをすると…… 画像を投稿したのは、Xユーザーの「まぁさん」（@neko_tan2828）さん。普段は日常の投稿や、コスプレ ...",
+      "category": "event",
+      "tags": []
+    },
+    {
+      "id": "news-f18ca2369687",
+      "title": "【GPSBOX＆Kiramekko】羽田空港にPOPUP開催！ ちいかわ やmofusandが大集合",
+      "url": "https://animageplus.jp/articles/detail/67695/2/1/1",
+      "source": "animageplus.jp",
+      "publishedAt": "2026-09-05T01:58:58.000Z",
+      "summary": "サービス価格：1個 2420円（税込） ※写真 ... 【 ちいかわ ×サンリオキャラクターズ】かわいい コラボ アイテムに ... 2025.10 ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-0bde1c2bf318",
+      "title": "漫画『 ちいかわ 』最新9巻は11月20日 発売 パラレルワールド編など収録！特装版の内容発表",
+      "url": "https://www.niigata-nippo.co.jp/articles/-/901264",
+      "source": "niigata-nippo.co.jp",
+      "publishedAt": "2026-09-05T01:19:30.000Z",
+      "summary": "漫画『 ちいかわ なんか小さくてかわいいやつ』のコミックス最新９巻が11月20日に 発売 ... 主催 イベント イベント",
+      "category": "manga",
+      "tags": [
+        "漫画"
+      ]
+    },
+    {
+      "id": "news-5ad49070e0c2",
+      "title": "「 ちいかわ 」グッズ700点、フォトスポットも 郡山にポップアップストア - 福島民友新聞社",
+      "url": "https://www.minyu-net.com/news/detail/2026090509431154457",
+      "source": "minyu-net.com",
+      "publishedAt": "2026-09-05T01:00:24.000Z",
+      "summary": "人気キャラクター「 ちいかわ 」のポップアップストアが４日、郡山市のアティ郡山４階でオープンした。かわ ...",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-932b91bb250c",
+      "title": "「 ちいかわ 」の愛らしいアートをさりげなくデザイン 「CITEN」よりルームウェア、バッグ",
+      "url": "https://news.yahoo.co.jp/articles/3f181cbd0770771a9eb93b0da067d885f0f05651",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-05T00:13:01.000Z",
+      "summary": "グッズ展開、 コラボ カフェ、企業 コラボ など幅広く展開しており、講談社から書籍「 ちいかわ なんか小さくてかわいいやつ」が8巻まで 発売 中。また、2022年4月 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-dc66113cff0b",
+      "title": "ちいかわ 』 新商品 のデザインにネット衝撃「遊び心があって良い」「これで、ごはん食べたら幸せ",
+      "url": "https://www.oricon.co.jp/news/2478244/photo/9/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-04T23:32:17.000Z",
+      "summary": "『 ちいかわ 』 新商品 のデザインにネット衝撃「遊び心があって良い ... ちいかわ 』最新9巻は11月 発売",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-b8e47a5caea5",
+      "title": "『 ちいかわ 』 新商品 のデザインにネット衝撃「遊び心があって良い」「これで - 産経ニュース",
+      "url": "https://www.sankei.com/article/20260904-NY6CXFW7DFJDPFVO6JFPULAB44/photo/2Y4PIW6SGVKDHIGDWATF3HXLGM/",
+      "source": "sankei.com",
+      "publishedAt": "2026-09-04T22:17:05.000Z",
+      "summary": "ちいかわ 』 新商品 ... コメダ珈琲店×午後の紅茶が初 コラボ “ミルクティー”の味わいを再現したフラッペが登場 ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-a18a2d01643e",
       "title": "パジャマ姿の“ ちいかわ ”たちをデザイン！ さくっ、じゅわ～食感の「ちびさく」シリーズ9．7 発売",
