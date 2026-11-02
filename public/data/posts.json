@@ -1,7 +1,49 @@
 {
-  "lastUpdated": "2026-10-31T14:24:12.987Z",
-  "totalPosts": 1138,
+  "lastUpdated": "2026-11-02T17:58:37.286Z",
+  "totalPosts": 1141,
   "posts": [
+    {
+      "id": "post-2117267546357584383",
+      "tweetId": "2117267546357584383",
+      "url": "https://x.com/ngnchiikawa/status/2117267546357584383",
+      "publishedAt": "2026-11-02T14:48:14.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HWILnC2bgAAPsLy.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2117262686891430231",
+      "tweetId": "2117262686891430231",
+      "url": "https://x.com/ngnchiikawa/status/2117262686891430231",
+      "publishedAt": "2026-11-02T09:00:31.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第57話 フジテレビ系列「めざましテレビ」内にて 11月3日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HWG4g79aIAAaSrj.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2117262724518588751",
+      "tweetId": "2117262724518588751",
+      "url": "https://x.com/ngnchiikawa/status/2117262724518588751",
+      "publishedAt": "2026-11-02T04:00:00.000Z",
+      "summary": "⌖⋱\\🎄今年も登場🍞 /⋰⌖° ちいかわ・ハチワレ・うさぎ サンタ姿のお顔パン 今年のちいかわベーカリーのX’masは 11/13(金)〜12/27(日)と期間が長め✨ X’mas限定グッズやハチワレ豪華パンも🎁 👇詳細はこちら #ちいかわ #ちいかわベーカリーXmas",
+      "category": "goods",
+      "tags": [
+        "ちいかわベーカリーXmas"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2116498444085014807",
       "tweetId": "2116498444085014807",
@@ -15632,6 +15674,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-02",
+      "count": 3,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-10-31",
       "count": 3,
