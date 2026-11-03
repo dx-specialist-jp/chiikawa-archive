@@ -1,7 +1,77 @@
 {
   "year": "2026",
-  "totalArticles": 3058,
+  "totalArticles": 3065,
   "articles": [
+    {
+      "id": "news-f59871a32667",
+      "title": "くら寿司『 ちいかわ 』湯呑み、配布開始から2日で終了 寿司皿は実施前に中止",
+      "url": "https://www.oricon.co.jp/news/2478562/full/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-05T18:39:28.000Z",
+      "summary": "くら寿司「 ちいかわ 」 コラボ 「ビッくらポン」景品の一部 （C）ORICON NewS ... ケアセラベビー お客様の熱いお声にお応えして再 発売 ！ （PR）ロート ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-01b853971b3e",
+      "title": "くら寿司「 ちいかわ 」中止騒動はナガノ氏への裏切りか - ｄメニューニュース",
+      "url": "https://topics.smt.docomo.ne.jp/article/zak2/entertainment/zak2-OLMEKY47IJBVHBD2BLKGR77BLU?page=4",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-05T18:36:03.000Z",
+      "summary": "「ぐらんぶる」大胆デザインの 新商品 が 発売 . アニメ！アニメ！9/5(土)19:00. くら寿司、従業 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-ce90caf88c21",
+      "title": "くら寿司が「 ちいかわ 」 コラボ 景品を従業員が横領していたと発表 - ライブドアニュース",
+      "url": "https://news.livedoor.com/topics/detail/32251161/",
+      "source": "news.livedoor.com",
+      "publishedAt": "2026-09-05T18:32:14.000Z",
+      "summary": "くら寿司「 ちいかわ 」 コラボ 「ビッくらポン」景品の一部. くら寿司 ちいかわ ... マツダ3刷新 236万円から新 発売 NEW",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-b310f81e922f",
+      "title": "くら寿司「 ちいかわ 」中止騒動はナガノ氏への裏切りか（3/4ページ） - zakⅡ",
+      "url": "https://www.zakzak.co.jp/article/20260905-OLMEKY47IJBVHBD2BLKGR77BLU/3/",
+      "source": "zakzak.co.jp",
+      "publishedAt": "2026-09-05T18:30:52.000Z",
+      "summary": "回転ずしチェーン「くら寿司」は、人気キャラクター「 ちいかわ 」との コラボ キャンペーンを9月6日の営業開始時から中止すると発表した。",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-5a6a0abdf4c8",
+      "title": "【豊橋市】くら寿司×「 ちいかわ 」 コラボ キャンペーンが急遽中止に 9月6日(日)より全企画を ...",
+      "url": "https://toyohashi-tahara.goguynet.jp/2026/09/05/kurazushi-5/",
+      "source": "toyohashi-tahara.goguynet.jp",
+      "publishedAt": "2026-09-05T17:43:17.000Z",
+      "summary": "【豊橋市】くら寿司×「 ちいかわ 」 コラボ キャンペーンが急遽中止に 9月6日(日)より全企画を取りやめに。 イベント 中止 くら寿司 ちいかわ",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-aaafe908225d",
+      "title": "ちいかわ 」 コラボ 中止 従業員による不正行為判明で（画像）（1/9枚目） - ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/limage/2609/05/2000001201/10005338",
+      "source": "itmedia.co.jp",
+      "publishedAt": "2026-09-05T17:09:09.000Z",
+      "summary": "ちいかわコラボ キャンペーン（出典：くら寿司）.",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-8ab65af371d7",
+      "title": "ちいかわ 」 コラボ 中止 従業員による不正行為判明で（画像）（5/9枚目） - ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/limage/2609/05/2000001201/10005342",
+      "source": "itmedia.co.jp",
+      "publishedAt": "2026-09-05T17:01:07.000Z",
+      "summary": "くら寿司、「 ちいかわ 」 コラボ 中止 従業員による不正行為判明で. 5 / 9. 拡大表示. オリジナル寿司皿のプレゼント.",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-258c59c183fc",
       "title": "くら寿司が「 ちいかわ 」 コラボ 中止発表、従業員の景品横領発覚で フリマサイトに大量出品",
