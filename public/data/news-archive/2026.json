@@ -1,7 +1,69 @@
 {
   "year": "2026",
-  "totalArticles": 3065,
+  "totalArticles": 3071,
   "articles": [
+    {
+      "id": "news-25b20ff2ae60",
+      "title": "くら寿司「 ちいかわ 」 コラボ キャンペーンを中止 従業員が景品を横領しフリマサイトで売却か",
+      "url": "https://newsdig.tbs.co.jp/articles/-/2923840",
+      "source": "newsdig.tbs.co.jp",
+      "publishedAt": "2026-09-06T00:05:21.000Z",
+      "summary": "回転ずし大手のくら寿司は、人気キャラクター「 ちいかわ 」との コラボ キャンペーンを中止すると発表しました。従業員が景品を横領しフリマサイトで売却した ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-8e951d8a3c6e",
+      "title": "くら寿司「 ちいかわ 」 コラボ キャンペーンを中止 従業員が景品を横領しフリマサイトで売却か",
+      "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2923840?display=1",
+      "source": "newsdig.tbs.co.jp",
+      "publishedAt": "2026-09-05T23:48:06.000Z",
+      "summary": "「くら寿司」が中止したのは人気キャラクター「 ちいかわ 」との コラボ キャンペーンです。 キャラクターのマグネットや湯呑みなどを景品として提供していましたが ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-305a0d778ffc",
+      "title": "くら寿司 「 ちいかわ 」の コラボ 景品を従業員が横領 キャンペーン中止 | 関西のニュース - カンテレ",
+      "url": "https://www.ktv.jp/news/articles/?id=29378",
+      "source": "ktv.jp",
+      "publishedAt": "2026-09-05T22:41:49.000Z",
+      "summary": "今月5日、くら寿司は「 ちいかわ 」との コラボ ... イベント",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-a6fbcfcbcbf6",
+      "title": "くら寿司『 ちいかわ 』 コラボ 、終了対象の全6施策を発表 限定メニューや店内装飾も - 山形新聞",
+      "url": "https://www.yamagata-np.jp/oricon/print.php?id=2478564",
+      "source": "yamagata-np.jp",
+      "publishedAt": "2026-09-05T22:17:16.000Z",
+      "summary": "ybc. くら寿司『 ちいかわ 』 コラボ 、終了対象の全6施策を発表 限定メニューや店内 ...",
+      "category": "collab",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-6f7d5c2d0a63",
+      "title": "くら寿司「 ちいかわ 」 コラボ キャンペーンを中止 従業員が景品を横領しフリマサイトで売却か",
+      "url": "https://www.youtube.com/watch?v=jCF09tSNb8w",
+      "source": "youtube.com",
+      "publishedAt": "2026-09-05T20:07:28.000Z",
+      "summary": "回転ずし大手のくら寿司は、人気キャラクター「 ちいかわ 」との コラボ キャンペーンを中止すると発表しました。従業員が景品を横領したためとしています。",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-7ea4628b0983",
+      "title": "ちいかわ 』 新商品 のデザインにネット衝撃「遊び心があって良い」「これで、ごはん食べたら幸せ",
+      "url": "https://www.oricon.co.jp/news/2478244/photo/2/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-05T18:51:31.000Z",
+      "summary": "『 ちいかわ 』 新商品 の ... 今、読まれている記事. 長嶋一茂、ハワイの別荘を初公開. くら寿司、『 ちいかわ 』 コラボ 中止. 芦田愛菜 薬屋のひとりごと姿衝撃 ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-f59871a32667",
       "title": "くら寿司『 ちいかわ 』湯呑み、配布開始から2日で終了 寿司皿は実施前に中止",
