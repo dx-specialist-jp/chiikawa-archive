@@ -1,7 +1,27 @@
 {
   "year": "2026",
-  "totalArticles": 3082,
+  "totalArticles": 3084,
   "articles": [
+    {
+      "id": "news-5dc1dd57d609",
+      "title": "【従業員が横領か】くら寿司が「 ちいかわ 」 コラボ キャンペーン中止…フリマサイトでグッズ転売 ...",
+      "url": "https://newsdig.tbs.co.jp/articles/mbs/2924081",
+      "source": "newsdig.tbs.co.jp",
+      "publishedAt": "2026-09-06T09:58:27.000Z",
+      "summary": "【従業員が横領か】くら寿司が「 ちいかわ 」 コラボ キャンペーン中止…フリマ ... イベント . オリジナルコンテンツ: アナウンサー",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-f59ae8642065",
+      "title": "「 ちいかわ 」 コラボ 中止のくら寿司 割引に賛否両論「誰に向けたお詫び？」「行ってこようかな」",
+      "url": "https://www.sponichi.co.jp/entertainment/news/2026/09/06/articles/20260906s00041000159000c.html",
+      "source": "sponichi.co.jp",
+      "publishedAt": "2026-09-06T09:29:35.000Z",
+      "summary": "「 ちいかわ 」 コラボ 中止のくら寿司 割引に賛否両論「誰に向けたお詫び ... 映画「踊る大捜査線」完成報告 イベント 中止 主演",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-451455cebcb4",
       "title": "くら寿司「 ちいかわ 」 コラボ が従業員不正で中止：問われる人手不足時代の店舗管理 - アゴラ",
