@@ -1,7 +1,34 @@
 {
-  "lastUpdated": "2026-11-02T17:58:37.286Z",
-  "totalPosts": 1141,
+  "lastUpdated": "2026-11-04T19:30:41.980Z",
+  "totalPosts": 1143,
   "posts": [
+    {
+      "id": "post-2117987373917393154",
+      "tweetId": "2117987373917393154",
+      "url": "https://x.com/ngnchiikawa/status/2117987373917393154",
+      "publishedAt": "2026-11-04T14:28:34.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HWSaSbjaQAATTm0.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2117986865605423357",
+      "tweetId": "2117986865605423357",
+      "url": "https://x.com/ngnchiikawa/status/2117986865605423357",
+      "publishedAt": "2026-11-03T09:00:06.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第57話「草むしり検定／古本」 ちいかわが資格！？ハチワレが見つけた本は… ハチワレ、古本屋で買ったのは… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "古本屋"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HWMCGyVbQAABAo_.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2117267546357584383",
       "tweetId": "2117267546357584383",
@@ -15674,6 +15701,20 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-04",
+      "count": 1,
+      "categories": [
+        "manga"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "count": 1,
+      "categories": [
+        "anime"
+      ]
+    },
     {
       "date": "2026-11-02",
       "count": 3,
