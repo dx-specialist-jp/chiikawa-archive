@@ -1,7 +1,53 @@
 {
   "year": "2026",
-  "totalArticles": 3113,
+  "totalArticles": 3117,
   "articles": [
+    {
+      "id": "news-a41207b1960b",
+      "title": "くら寿司、『 ちいかわ 』 コラボ 中止／名探偵プリキュア！次回予告に衝撃【9",
+      "url": "https://www.oricon.co.jp/special/76301/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-06T23:10:21.000Z",
+      "summary": "くら寿司「 ちいかわ 」 コラボ 「ビッくらポン」景品の一部. くら寿司、『 ちい ... 新商品 のデザインにネット衝撃「遊び心があって良い」「これで、ごはん ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-e4c950b46a17",
+      "title": "【9/8 発売 】「 ちいかわ 」がペロペロチョコに！ 全部買いたい……不二家との コラボ 全12種が登場",
+      "url": "https://www.asahi.com/and/w/article/16863540",
+      "source": "asahi.com",
+      "publishedAt": "2026-09-06T22:58:39.000Z",
+      "summary": "【9/8 発売 】「 ちいかわ 」がペロペロチョコに！ 全部買いたい……不二家との ... 今回の コラボ で登場するのは、人気キャラクター「 ちいかわ 」と「ハチワレ ...",
+      "category": "collab",
+      "tags": [
+        "お菓子"
+      ]
+    },
+    {
+      "id": "news-1a2018c8a763",
+      "title": "【9/8 発売 】「 ちいかわ 」がペロペロチョコに！ 不二家との コラボ 全12種が登場 … - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/e1f9f529382c9ed6d7bdc0694fad479f9c55b0b5",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-06T22:40:17.000Z",
+      "summary": "【9/8 発売 】「 ちいかわ 」がペロペロチョコに！ 不二家との コラボ 全12種が ... 今回の コラボ で登場するのは、人気キャラクター「 ちいかわ 」と「ハチワレ ...",
+      "category": "collab",
+      "tags": [
+        "お菓子"
+      ]
+    },
+    {
+      "id": "news-8dbf4c414139",
+      "title": "「 ちいかわ 」コミックス最新9巻が11月20日に 発売 特装版には豪華ポストカードブック付属",
+      "url": "https://eiga.com/l/wNx8W",
+      "source": "eiga.com",
+      "publishedAt": "2026-09-06T22:09:06.000Z",
+      "summary": "ちいかわ なんか小さくてかわいいやつ」の最新 9巻が11月20日に 発売 ... アニメ イベント カレンダー",
+      "category": "manga",
+      "tags": [
+        "漫画"
+      ]
+    },
     {
       "id": "news-9eaf6d37438b",
       "title": "くら寿司 ちいかわコラボ 中止で全品10％オフも入店せずに…予約キャンセルも相次ぐ",
