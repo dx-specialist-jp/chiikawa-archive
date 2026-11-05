@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-11-04T19:30:41.980Z",
-  "totalPosts": 1143,
+  "lastUpdated": "2026-11-05T19:51:42.464Z",
+  "totalPosts": 1145,
   "posts": [
+    {
+      "id": "post-2118332266174968192",
+      "tweetId": "2118332266174968192",
+      "url": "https://x.com/ngnchiikawa/status/2118332266174968192",
+      "publishedAt": "2026-11-05T13:19:03.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HWXT92Aa0AA0RHw.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2118329109369778206",
+      "tweetId": "2118329109369778206",
+      "url": "https://x.com/ngnchiikawa/status/2118329109369778206",
+      "publishedAt": "2026-11-05T09:00:02.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第58話 フジテレビ系列「めざましテレビ」内にて 11月6日(金)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HWWVRFqakAEcnDf.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2117987373917393154",
       "tweetId": "2117987373917393154",
@@ -15701,6 +15726,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-05",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-11-04",
       "count": 1,
