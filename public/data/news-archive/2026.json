@@ -1,7 +1,193 @@
 {
   "year": "2026",
-  "totalArticles": 3152,
+  "totalArticles": 3170,
   "articles": [
+    {
+      "id": "news-1b5e603d75ee",
+      "title": "くら寿司『 ちいかわ 』 コラボ 、終了対象の全6施策を発表 限定メニューや店内装飾も - 福井新聞",
+      "url": "https://www.fukuishimbun.co.jp/articles/gallery/2691788",
+      "source": "fukuishimbun.co.jp",
+      "publishedAt": "2026-09-07T19:49:54.000Z",
+      "summary": "くら寿司『 ちいかわ 』 コラボ 、終了対象の全6施策を発表 限定メニューや店内 ... 企画",
+      "category": "collab",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-7d5bd8a37924",
+      "title": "くら寿司「 ちいかわ 」 コラボ 中止問題 ウラ側には一体・・・？ 従業員の景品横領疑惑や非売品の ...",
+      "url": "https://news.yahoo.co.jp/articles/54ad851d81ce9bf76c40086b7bec7e286a9744bc",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-07T18:48:44.000Z",
+      "summary": "大手回転ずしチェーンのくら寿司が実施していた人気キャラクター「 ちいかわ 」との コラボ キャンペーンが中止になった問題で、波紋が広がっています。",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-ee077fe11049",
+      "title": "くら寿司「 ちいかわ 」 コラボ 、非売品”のぼり旗”がフリマサイトに… 出品の削除申請と警察相談も",
+      "url": "https://www.youtube.com/watch?v=ltwRz7qccW0",
+      "source": "youtube.com",
+      "publishedAt": "2026-09-07T18:07:19.000Z",
+      "summary": "ちいかわ 」が掲載されている店舗装飾品の「のぼり旗」がフリマサイトに出品されていたことがわかりました。「のぼり旗」は コラボ キャンペーンを告知するもの ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-2af9ffb1f224",
+      "title": "“ ちいかわコラボ 中止”くら寿司、中止後“初日の景品”が話題「こういうのでいいんだよ」「意外と ...",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3997457/",
+      "source": "nlab.itmedia.co.jp",
+      "publishedAt": "2026-09-07T17:20:55.000Z",
+      "summary": "ちいかわコラボちいかわコラボ 中止 くら寿司では8月21日から9月30日まで、人気キャラクター「 ちいかわ ... イベント の運営サポート(会場手配",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-10267ea287ba",
+      "title": "「くら寿司」“ ちいかわコラボ ”中止 従業員の横領発覚…大量出品も - TVer",
+      "url": "https://tver.jp/episodes/epeprz58gw",
+      "source": "tver.jp",
+      "publishedAt": "2026-09-07T17:13:28.000Z",
+      "summary": "「日テレNEWS NNN」9月7日(月) 18:23「「くら寿司」“ ちいかわコラボ ”中止 従業員の横領発覚…大量出品も」を無料で見るならTVer（ティーバー）！",
+      "category": "anime",
+      "tags": [
+        "アニメ"
+      ]
+    },
+    {
+      "id": "news-d5530f9ea288",
+      "title": "「くら寿司」“ ちいかわコラボ ”中止 従業員の横領発覚…大量出品も | au Webポータル",
+      "url": "https://article.auone.jp/f079deb4-61ba-48bf-9ba7-ba2dc58bb9d2",
+      "source": "article.auone.jp",
+      "publishedAt": "2026-09-07T17:11:00.000Z",
+      "summary": "【画像】くら寿司「 ちいかわ 」 コラボ キャンペーン中止を発表 従業員の景品横領が発覚 『news eve…",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-8e5345d4c35c",
+      "title": "望月理恵 くら寿司“ ちいかわコラボ ”中止に「10％値下げされたからといって…モヤモヤする気持ち」",
+      "url": "https://www.sponichi.co.jp/entertainment/news/2026/09/07/kiji/20260907s00041000142000c.html",
+      "source": "sponichi.co.jp",
+      "publishedAt": "2026-09-07T16:55:56.000Z",
+      "summary": "00）に出演。くら寿司が従業員の不正行為が判明したため人気キャラクター「 ちいかわ 」との コラボ キャンペーンを中止し、お詫びとして9月6 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-187bb24ae0ee",
+      "title": "くら寿司「 ちいかわ 」 コラボ 中止問題 ウラ側には一体・・・？ 従業員の景品横領疑惑や非売品の ...",
+      "url": "https://www.asahi.co.jp/webnews/pages/abc_62423.html",
+      "source": "asahi.co.jp",
+      "publishedAt": "2026-09-07T16:53:43.000Z",
+      "summary": "「 ちいかわ 」 コラボ 中止で波紋…従業員が景品横領か. 「 ちいかわ 」 コラボ が ... イベント 大阪で開催 09/05 19:21 海水浴場で３４歳男性が行方不明 飲酒 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-e45c94e5f3f3",
+      "title": "「大人がとったりするんや」くら寿司『 ちいかわ 』 コラボ 中止 従業員が景品横領 フリマサイトに ...",
+      "url": "https://tver.jp/episodes/epgahb5wea",
+      "source": "tver.jp",
+      "publishedAt": "2026-09-07T16:20:34.000Z",
+      "summary": "コラボ キャンペーン。 ちいかわ は映画の興行収入が122億円を突破するなど、幅広い世代から愛されている人気キャラクターで、くら寿司ではフィギュアや「 ちいかわ ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-6da99c16e8ef",
+      "title": "くら寿司「 ちいかわ 」 コラボ 中止 従業員による景品横領が発覚か ６日から２日間全品１０％割引に",
+      "url": "https://www.youtube.com/watch?v=gQ12NcLibYU",
+      "source": "youtube.com",
+      "publishedAt": "2026-09-07T15:36:59.000Z",
+      "summary": "ちいかわ 」との コラボ キャンペーンを先月２１日から今月３０日までの間予定していましたが、５日中止すると発表しました。 くら寿司によりますと、 コラボ ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-1de0632844bf",
+      "title": "くら寿司\" ちいかわ ” コラボ が中止 従業員が景品を横領？ のぼりがフリマサイトに？ 過去にも ...",
+      "url": "https://www.youtube.com/watch?v=TOmXjGSON44",
+      "source": "youtube.com",
+      "publishedAt": "2026-09-07T15:32:03.000Z",
+      "summary": "くら寿司\" ちいかわ ” コラボ が中止 従業員が景品を横領？ のぼりがフリマサイトに？ 過去にもトラブルが . @abc6ch80 likes9.2K views6 hours ago",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-6d4c3f28543c",
+      "title": "ちいかわ 作者・ナガノ氏の“くら寿司愛”投稿に反響集まる「泣けてくる」「こんなに ... - Infoseek 楽天",
+      "url": "https://news.infoseek.co.jp/topics/oricon_2478811/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-09-07T15:13:42.000Z",
+      "summary": "くら寿司は5日、公式サイトを更新し、開催中の『 ちいかわ 』 コラボ キャンペーンを6日の営業開始時から中止すると発表した【トピックス】",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-0e1c9ce862b2",
+      "title": "「 ちいかわ 」 コラボ 中止のくら寿司 従業員が横領・売却か 企業に不可欠“キャラ コラボ ”なぜ【N ...",
+      "url": "https://newsdig.tbs.co.jp/articles/-/2927506",
+      "source": "newsdig.tbs.co.jp",
+      "publishedAt": "2026-09-07T15:08:21.000Z",
+      "summary": "くら寿司で行われていた“ ちいかわ ” コラボ が中止になってしまいました。従業員がグッズを横領し、フリマサイトで売却した疑いがあるようです。",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-1433accda090",
+      "title": "「 ちいかわ 」表情いろいろなタオルハンカチ登場！“おいしすぎるよッ「水」…ッ”マスコットも 2枚 ...",
+      "url": "https://s.animeanime.jp/article/img/2026/09/07/102749/928580.html",
+      "source": "s.animeanime.jp",
+      "publishedAt": "2026-09-07T14:48:44.000Z",
+      "summary": "『 ちいかわ 』の 新商品 として、新作タオルハンカチをはじめ「juice up0.4（ゲルインキボールペン）」と「フリクションボール3スリム（消せる ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ"
+      ]
+    },
+    {
+      "id": "news-217af0e285ac",
+      "title": "9月7日夕方の最新ニュース くら寿司「 ちいかわ 」 コラボ 、非売品”のぼり旗”がフリマサイトに ...",
+      "url": "https://www.youtube.com/watch?v=OUl_-qNoojA",
+      "source": "youtube.com",
+      "publishedAt": "2026-09-07T14:48:37.000Z",
+      "summary": "0:02 くら寿司「 ちいかわ 」 コラボ 、非売品”のぼり旗”がフリマサイトに… 出品の削除申請と警察相談も0:58 女性宅スマホで盗撮したか 消防士長の男性を懲戒 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-0cd6216489cc",
+      "title": "くら寿司「 ちいかわ 」 コラボ 中止問題 フリマに“のぼり旗”出品 - テレ朝NEWS",
+      "url": "https://news.tv-asahi.co.jp/news_society/articles/000531674.html",
+      "source": "news.tv-asahi.co.jp",
+      "publishedAt": "2026-09-07T14:40:51.000Z",
+      "summary": "大手回転ずしチェーンのくら寿司は、人気キャラクター「 ちいかわ 」との コラボ キャンペーンを1つの店舗で従業員による景品の横領が発覚したため、5日に中止すると ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-f71db14e82cf",
+      "title": "「大人がとったりするんや」くら寿司『 ちいかわ 』 コラボ 中止 従業員が景品横領 フリマサイトに ...",
+      "url": "https://news.yahoo.co.jp/articles/cfaa1b7a3a9b1330dd2f84aa750459d0556ad761",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-07T14:19:37.000Z",
+      "summary": "回転ずし大手のくら寿司（ずし）は、人気キャラクター「 ちいかわ 」との コラボ キャンペーンを中止すると発表しました。 従業員による景品の横領が発覚 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-76eceec8f118",
+      "title": "くら寿司「 ちいかわ 」 コラボ で非売品「のぼり旗」がフリマサイトに出品される くら寿司がフリマ ...",
+      "url": "https://www.asahi.co.jp/webnews/pages/abc_62420.html",
+      "source": "asahi.co.jp",
+      "publishedAt": "2026-09-07T14:13:48.000Z",
+      "summary": "くら寿司は人気キャラクター「 ちいかわ 」との コラボ キャンペーンを、１つの店舗で従業員による景品の横領が発覚したため５日、中止すると発表しました。 その後 ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-0ab4b05663bb",
       "title": "「くら寿司」“ ちいかわコラボ ”中止 従業員の横領発覚…大量出品も - 日テレNEWS NNN",
