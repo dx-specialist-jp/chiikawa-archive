@@ -1,7 +1,69 @@
 {
   "year": "2026",
-  "totalArticles": 3177,
+  "totalArticles": 3183,
   "articles": [
+    {
+      "id": "news-2c6e1896f321",
+      "title": "しまむら、『 ちいかわ 』 コラボ あすから 発売 Xで呼びかけ「休業の店舗」注意喚起も - 福井新聞",
+      "url": "https://www.fukuishimbun.co.jp/articles/-/2693566",
+      "source": "fukuishimbun.co.jp",
+      "publishedAt": "2026-09-08T05:22:45.000Z",
+      "summary": "ちいかわ 』 コラボ （商品一覧） 7日の投稿で「9/9（水）全国のファッションセンターしまむらにて『映画 ちいかわ ... しまむら、『 ちいかわ 』 コラボ あすから 発売 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-d9114fd312fa",
+      "title": "しまむらが「映画 ちいかわ 」グッズに購入制限を発表―メモや付箋、クリアファイルなど仕事 ...",
+      "url": "https://www.inside-games.jp/article/img/2026/09/08/187399/1776951.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-09-08T05:13:04.000Z",
+      "summary": "サントリー×「映画 ちいかわ 」 コラボ 第2弾！ しまむらで「映画 ちいかわ 」グッズが9月9日 発売 ！ 「mofusand」めじるしアクセサリー第2弾が再販！",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-0efb4d421ad0",
+      "title": "くら寿司現役従業員「 ちいかわコラボ 」景品は「いつもより管理ルールが厳重だったが店舗 ...",
+      "url": "https://www.fnn.jp/articles/-/1110085",
+      "source": "fnn.jp",
+      "publishedAt": "2026-09-08T04:48:57.000Z",
+      "summary": "先月21日から大手回転寿司チェーン「くら寿司」で始まった人気キャラクター「 ちいかわ 」との コラボ キャンペーンが突然中止となった。その理由は、従業員が ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-3e8e42f50599",
+      "title": "『 ちいかわ 』 新商品 にネットざわつく「これ全部揃えたい」「まじで悩む」 | オリコンニュース ...",
+      "url": "https://www.oricon.co.jp/news/2478967/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-08T04:22:59.000Z",
+      "summary": "漫画『 ちいかわ 』の 新商品 が、公式通販「 ちいかわマーケット 」で11日午前11時より 発売 されることが決定した。『B6コミックマンスリーダイアリー 2027（全2 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-3987a60f44f7",
+      "title": "『 ちいかわ 』 新商品 にネットざわつく「これ全部揃えたい」「まじで悩む」 | | オリコンニュース",
+      "url": "https://www.saga-s.co.jp/articles/-/1787336",
+      "source": "saga-s.co.jp",
+      "publishedAt": "2026-09-08T03:47:30.000Z",
+      "summary": "漫画『 ちいかわ 』の 新商品 が、公式通販「 ちいかわマーケット 」で11日午前11時より 発売 されることが決定した。 ... イベント",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-43099da541cf",
+      "title": "画像・写真 | 『 ちいかわ 』 新商品 にネットざわつく「これ全部揃えたい」「まじで悩む」 5枚目",
+      "url": "https://www.oricon.co.jp/news/2478967/photo/5/",
+      "source": "oricon.co.jp",
+      "publishedAt": "2026-09-08T03:12:38.000Z",
+      "summary": "『 ちいかわ 』 新商品 にネットざわつく「これ全部揃えたい」「まじで悩む ... イベント 企画運用の営業職 実務未経験OK!経験のある方は優遇! イベント の ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-2aca8123d8af",
       "title": "｢ ちいかわ ミュージカル｣発言で平原綾香が炎上…最もイラつかせたのは｢沼って1カ月で製作側に回 ...",
