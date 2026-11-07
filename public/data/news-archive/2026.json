@@ -1,7 +1,49 @@
 {
   "year": "2026",
-  "totalArticles": 3173,
+  "totalArticles": 3177,
   "articles": [
+    {
+      "id": "news-2aca8123d8af",
+      "title": "｢ ちいかわ ミュージカル｣発言で平原綾香が炎上…最もイラつかせたのは｢沼って1カ月で製作側に回 ...",
+      "url": "https://toyokeizai.net/articles/-/957158?page=3",
+      "source": "toyokeizai.net",
+      "publishedAt": "2026-09-08T01:27:34.000Z",
+      "summary": "折しも9月5日には、くら寿司が従業員の不正行為を理由に「 ちいかわ 」 コラボ の中止を発表していた。その前後とあって、ファンの神経はとがっていた ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-6e686004aa1e",
+      "title": "くら寿司“ ちいかわコラボ ”中止 従業員が「景品横領」…フリマサイトに “問われる罪”3つの可能性",
+      "url": "https://article.auone.jp/edf51896-69e6-4086-8be9-0ef5fe45c0a6",
+      "source": "article.auone.jp",
+      "publishedAt": "2026-09-08T00:40:22.000Z",
+      "summary": "【動画で見る】くら寿司で従業員が「景品横領」…“ ちいかわコラボ ”を中止 従業員の罪は？ 回転ずし大手…",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-591b13aa706b",
+      "title": "「 ちいかわ 」表情いろいろなタオルハンカチ登場！“おいしすぎるよッ「水」…ッ”マスコットも",
+      "url": "https://animeanime.jp/article/2026/09/07/102749.html",
+      "source": "animeanime.jp",
+      "publishedAt": "2026-09-07T22:49:28.000Z",
+      "summary": "『 ちいかわ 』の 新商品 の新作タオルハンカチは現在 発売 中。「juice up0.4（ゲルインキボールペン）」と「フリクションボール3スリム（消せるボールペン）」は9月 ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ"
+      ]
+    },
+    {
+      "id": "news-28cab9839d50",
+      "title": "横領発覚で中止「 ちいかわコラボ 」でファン不満 くら寿司、お詫びの10％引きに「これじゃない」",
+      "url": "https://www.j-cast.com/2026/09/07517728.html?p=all",
+      "source": "j-cast.com",
+      "publishedAt": "2026-09-07T22:03:16.000Z",
+      "summary": "「 ちいかわ 」 コラボ キャンペーンは、今回で4回目になる。今後も続けるか ... 格闘技 イベント 「BreakingDown」（ブレイキングダウン＝BD）の元選手で ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-21b42619c495",
       "title": "【くら寿司】従業員が「景品横領」…“ ちいかわコラボ ”を中止 従業員の罪は？ - YouTube",
