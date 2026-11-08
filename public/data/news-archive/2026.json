@@ -1,7 +1,17 @@
 {
   "year": "2026",
-  "totalArticles": 3190,
+  "totalArticles": 3191,
   "articles": [
+    {
+      "id": "news-cab5268f7b77",
+      "title": "「いい加減にしろ」JR東海の ちいかわコラボ グッズ、“通常では回収不可能な数”の転売発覚「くら ...",
+      "url": "https://news.yahoo.co.jp/articles/ff2acfed7e16f8c55470054c97f57039455388be",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-08T11:57:34.000Z",
+      "summary": "JR東海と「 ちいかわ 」が コラボ したキャンペーン「東海道新幹線ツツウラウラ旅」の限定特典について、「普通のファンでは回収不可能な数が転売されている」と ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-eabcdcd185f5",
       "title": "しまむら、『 ちいかわ 』 コラボ あすから 発売 Xで呼びかけ「休業の店舗」注意喚起も",
