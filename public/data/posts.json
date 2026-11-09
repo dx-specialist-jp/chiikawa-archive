@@ -1,7 +1,48 @@
 {
-  "lastUpdated": "2026-11-07T14:45:57.443Z",
-  "totalPosts": 1149,
+  "lastUpdated": "2026-11-09T22:14:15.413Z",
+  "totalPosts": 1152,
   "posts": [
+    {
+      "id": "post-2119790294732517880",
+      "tweetId": "2119790294732517880",
+      "url": "https://x.com/ngnchiikawa/status/2119790294732517880",
+      "publishedAt": "2026-11-09T13:52:44.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HWsCCWpbQAAWjUx.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2119720982713962823",
+      "tweetId": "2119720982713962823",
+      "url": "https://x.com/ngnchiikawa/status/2119720982713962823",
+      "publishedAt": "2026-11-09T09:00:23.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第78話 フジテレビ系列「めざましテレビ」内にて 11月10日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HWq7pd2a0AAu0lN.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2119721005371609390",
+      "tweetId": "2119721005371609390",
+      "url": "https://x.com/ngnchiikawa/status/2119721005371609390",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
+      "summary": "🏝️.˚⊹ 年内の入場者特典 第8弾から12弾を一挙解禁！ 『#映画ちいかわ 人魚の島のひみつ』 入場者特典第8弾は 11月14日(土)より配布開始✨ 「エアーびんよよ」 第9弾～第11弾は 「チャームミニフィギュア」 「ごきげんセイレーン♪」の リバイバル配布！ そして第12弾は",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "セイレーン"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2119068998621106674",
       "tweetId": "2119068998621106674",
@@ -15777,6 +15818,15 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-09",
+      "count": 3,
+      "categories": [
+        "manga",
+        "anime",
+        "goods"
+      ]
+    },
     {
       "date": "2026-11-07",
       "count": 1,
