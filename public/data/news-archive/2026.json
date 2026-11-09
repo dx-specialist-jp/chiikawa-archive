@@ -1,7 +1,91 @@
 {
   "year": "2026",
-  "totalArticles": 3209,
+  "totalArticles": 3216,
   "articles": [
+    {
+      "id": "news-45bca6c8f714",
+      "title": "『 ちいかわ 』映画の「人魚の島」編より怖いかも……ってコト！？ コミックス9巻「パラレル ...",
+      "url": "https://realsound.jp/book/2026/09/post-2515789.html",
+      "source": "realsound.jp",
+      "publishedAt": "2026-09-08T21:40:56.000Z",
+      "summary": "ちいかわ 』第9巻 発売 決定。アニメ ... そのほかにもシーサーや鎧さん、オデなども少し変わった見た目となっている。 新商品 .",
+      "category": "manga",
+      "tags": [
+        "映画",
+        "漫画",
+        "人魚の島"
+      ]
+    },
+    {
+      "id": "news-2e8f3926c995",
+      "title": "【今日から】しまむら×「映画 ちいかわ 」 コラボ ちいかわ 、ハチワレ、うさぎ - オトナンサー",
+      "url": "https://otonanswer.jp/post/391179/",
+      "source": "otonanswer.jp",
+      "publishedAt": "2026-09-08T21:33:05.000Z",
+      "summary": "新商品 最新記事. 【バーガーキング】対象セット5種が“300円 ... くら寿司×「 ちいかわ 」 コラボ 第2弾 「湯呑み」実物 “武器”を持って「ヤーッ ...",
+      "category": "collab",
+      "tags": [
+        "ハチワレ",
+        "うさぎ",
+        "映画"
+      ]
+    },
+    {
+      "id": "news-b85337e1f698",
+      "title": "しまむらで「映画 ちいかわ 」グッズが 発売 ！メモや付箋、クリアファイルなど仕事・勉強のワン ...",
+      "url": "https://www.inside-games.jp/article/img/2026/09/08/187436/1776951.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-09-08T21:32:06.000Z",
+      "summary": "ちいかわ 」グッズが 発売 ！メモや付箋、クリアファイルなど仕事 勉強のワンシーンを ちいかわ ... サントリー×「映画 ちいかわ 」 コラボ 第2弾！ ちいかわ ボトル ...",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-45a7d85014ae",
+      "title": "しまむらで「映画 ちいかわ 」グッズが 発売 ！メモや付箋、クリアファイルなど仕事・勉強のワン ...",
+      "url": "https://news.yahoo.co.jp/articles/4f927a949f822c11b68fe4b04180c959e92ea147",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-08T21:28:47.000Z",
+      "summary": "しまむらで「映画 ちいかわ 」グッズが 発売 ！メモや付箋、クリア ... くら寿司の「 ちいかわ 」 コラボ 中止へ…従業員による不正行為が判明、湯呑みや ...",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-91359a8c385f",
+      "title": "「 ちいかわ 」はなぜここまで売れた？映画122億円、SNS発から6年で巨大化した「 ちい ... - JBpress",
+      "url": "https://jbpress.ismedia.jp/articles/-/96895",
+      "source": "jbpress.ismedia.jp",
+      "publishedAt": "2026-09-08T21:05:18.000Z",
+      "summary": "コンビニや回転ずし、航空会社までの至る所に、キャラクターの「 ちいかわ 」「ハチワレ」「うさぎ」が現れます。公式ショップ「 ちいかわらんど 」は全国に広がり、 ...",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-a4c68faafa66",
+      "title": "また｢ ちいかわ ｣が人を狂わせた？ マックに続き､くら寿司も コラボ で問題 ... - 東洋経済オンライン",
+      "url": "https://toyokeizai.net/articles/-/957290",
+      "source": "toyokeizai.net",
+      "publishedAt": "2026-09-08T17:39:53.000Z",
+      "summary": "ちいかわ ｣との コラボ 中止を発表。人気 ... 7 住友ファーマが 発売 した世界初iPS細胞由来のパーキ… 塚崎 朝子; 8 秋田 ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-4a6b3cade92e",
+      "title": "くら寿司「 ちいかわ 」景品着服で コラボ 中止… 従業員は「10年以下の拘禁刑」「多額賠償」の可能 ...",
+      "url": "https://www.ben54.jp/news/3893",
+      "source": "ben54.jp",
+      "publishedAt": "2026-09-08T17:32:44.000Z",
+      "summary": "大手寿司チェーン「くら寿司」は今月5日、人気キャラクター「 ちいかわ 」との コラボ キャンペーンの実施に関して従業員の不正行為が判明したとして、同 ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-df15a9c81637",
       "title": "しまむら、『 ちいかわ 』 コラボ あすから 発売 Xで呼びかけ「休業の店舗」注意喚起も",
