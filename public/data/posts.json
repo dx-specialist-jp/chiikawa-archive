@@ -1,7 +1,33 @@
 {
-  "lastUpdated": "2026-11-09T22:14:15.413Z",
-  "totalPosts": 1152,
+  "lastUpdated": "2026-11-10T12:17:51.116Z",
+  "totalPosts": 1154,
   "posts": [
+    {
+      "id": "post-2120127454442619359",
+      "tweetId": "2120127454442619359",
+      "url": "https://x.com/ngnchiikawa/status/2120127454442619359",
+      "publishedAt": "2026-11-10T12:12:29.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HWw0rnDaEAADv2r.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2120127029878407445",
+      "tweetId": "2120127029878407445",
+      "url": "https://x.com/ngnchiikawa/status/2120127029878407445",
+      "publishedAt": "2026-11-10T09:00:45.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第78話「カメラ買っちゃった」 ハチワレ、 念願のカメラを購入！ ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HWwFPF1bgAAhdf-.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2119790294732517880",
       "tweetId": "2119790294732517880",
@@ -15818,6 +15844,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-10",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-11-09",
       "count": 3,
