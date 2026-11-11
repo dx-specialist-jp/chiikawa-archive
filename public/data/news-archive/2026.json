@@ -1,7 +1,59 @@
 {
   "year": "2026",
-  "totalArticles": 3270,
+  "totalArticles": 3275,
   "articles": [
+    {
+      "id": "news-bf8306c85d9d",
+      "title": "くら寿司｢2期連続減益見込み｣と業績が停滞する中で起きた｢ ちいかわコラボ 中止｣という誤算",
+      "url": "https://news.infoseek.co.jp/topics/toyokeizai_20260910_957515/",
+      "source": "news.infoseek.co.jp",
+      "publishedAt": "2026-09-09T23:18:53.000Z",
+      "summary": "くら寿司｢2期連続減益見込み｣と業績が停滞する中で起きた｢ ちいかわコラボ 中止｣という誤算 ... 湖池屋 復興支援のポテチ 新商品 写真",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-379602ecea4d",
+      "title": "今年も「 ちいかわ ベーカリー」にハロウィンをテーマにしたパンが登場！！ - PR TIMES",
+      "url": "https://prtimes.jp/main/html/rd/p/000000323.000086964.html",
+      "source": "prtimes.jp",
+      "publishedAt": "2026-09-09T23:13:52.000Z",
+      "summary": "期間限定 で 発売 します。 □「 ちいかわ ベーカリー」公式サイト：https ... ちいかわ ベーカリーにモモンガと古本屋の 新商品 が登場！! 2026年6月22日 20時 ...",
+      "category": "goods",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-e6293971388f",
+      "title": "「 ちいかわ 」×「CITEN」ルームウェアやバッグ、ポーチなど全6アイテムが登場！ - キャララボ",
+      "url": "https://charalab.com/142585/",
+      "source": "charalab.com",
+      "publishedAt": "2026-09-09T23:10:44.000Z",
+      "summary": "ちいかわ 」のスペシャルコレクションを 発売 します。今回 ... イベント 開催！ 2021/06/22",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-c8345ac8fc83",
+      "title": "【判明】くら寿司「 ちいかわ 」 コラボ 中止で10％割引キャンペーン実施も一部で適用漏れ 対象客に ...",
+      "url": "https://news.ntv.co.jp/n/ytv/category/society/yt6bbbd96c3118458289ef4c13fbf0f1c5",
+      "source": "news.ntv.co.jp",
+      "publishedAt": "2026-09-09T22:26:43.000Z",
+      "summary": "くら寿司は、従業員による景品の横領が判明したことを受け、6日の営業開始から「 ちいかわ 」 コラボ キャンペーンを中止しました。 ... イベント",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-2bf367e159b4",
+      "title": "【判明】くら寿司「 ちいかわ 」 コラボ 中止で10％割引キャンペーン実施も一部で適用漏れ 対象客に ...",
+      "url": "https://news.ntv.co.jp/category/society/yt6bbbd96c3118458289ef4c13fbf0f1c5",
+      "source": "news.ntv.co.jp",
+      "publishedAt": "2026-09-09T22:26:36.000Z",
+      "summary": "くら寿司は9日、「 ちいかわ 」との コラボ キャンペーン中止に伴い、6日と7日の2日間限定で実施した「全品10％割引」について、一部の店舗で割引が適用されてい ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-615d8d01a39c",
       "title": "〈波紋〉くら寿司の｢ ちいかわコラボ 中止｣騒動､9月実施｢1皿110円への値下げ｣効果も帳消しになり ...",
