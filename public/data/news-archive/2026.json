@@ -1,7 +1,20 @@
 {
   "year": "2026",
-  "totalArticles": 3275,
+  "totalArticles": 3276,
   "articles": [
+    {
+      "id": "news-5a0bbac76952",
+      "title": "「これは…争奪戦の予感…‼︎」しまむらの“映画 ちいかわ グッズ”に反響。セイレーン ... - TRILL",
+      "url": "https://trilltrill.jp/articles/5013362",
+      "source": "trilltrill.jp",
+      "publishedAt": "2026-09-10T00:00:38.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ』との コラボ グッズが 発売 ... 新商品",
+      "category": "collab",
+      "tags": [
+        "セイレーン",
+        "映画"
+      ]
+    },
     {
       "id": "news-bf8306c85d9d",
       "title": "くら寿司｢2期連続減益見込み｣と業績が停滞する中で起きた｢ ちいかわコラボ 中止｣という誤算",

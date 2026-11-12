@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-11-11T22:33:22.736Z",
-  "totalPosts": 1156,
+  "lastUpdated": "2026-11-12T06:19:35.722Z",
+  "totalPosts": 1159,
   "posts": [
+    {
+      "id": "post-2120727145727304161",
+      "tweetId": "2120727145727304161",
+      "url": "https://x.com/ngnchiikawa/status/2120727145727304161",
+      "publishedAt": "2026-11-12T03:07:48.000Z",
+      "summary": "˚· . 🏥ちいかわクリニック💉. ·˚ 11月27日(金)から 『ちいかわクリニック』の開催が決定しました💓 ーーーーー 📍東京キャラクターストリート いちばんプラザ 🗓2026年11月27日(金)〜12月24日(木) 📍ギンザミライミュージアム 🗓2026年11月27日(金)〜12月27日(日) 📍名古屋PARCO 東館 B1F PARCO",
+      "category": "event",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HW5J94rbQAAXoo-.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2120727160029913157",
+      "tweetId": "2120727160029913157",
+      "url": "https://x.com/ngnchiikawa/status/2120727160029913157",
+      "publishedAt": "2026-11-12T03:07:20.000Z",
+      "summary": "♡┈┈┈┈┈♡┈┈┈┈┈♡ 🏥ちいかわクリニック💉 動画公開 ♡┈┈┈┈┈♡┈┈┈┈┈♡ ▽YouTubeにて告知動画を公開中💓 『ちいかわクリニック』 11月27日(金)より開催🩺 🔍詳細はこちら #ちいかわクリニック",
+      "category": "anime",
+      "tags": [
+        "ちいかわクリニック"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
+    {
+      "id": "post-2120738222217310335",
+      "tweetId": "2120738222217310335",
+      "url": "https://x.com/ngnchiikawa/status/2120738222217310335",
+      "publishedAt": "2026-11-12T03:06:55.000Z",
+      "summary": "＼💊#ちいかわクリニック 開催💊／ 第1弾グッズは 公式通販「#ちいかわマーケット」＆「ちいかわくじ」でも 11/27(金)11時より 発売いたします💉 オンラインくじ限定グッズ ＆ ちいかわマーケット限定ノベルティ＆企画も🫀 🔻詳細はリプライをCHECK🔻",
+      "category": "goods",
+      "tags": [
+        "ちいかわクリニック",
+        "ちいかわマーケット"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2120548221714125073",
       "tweetId": "2120548221714125073",
@@ -15866,8 +15910,11 @@
   "calendarData": [
     {
       "date": "2026-11-12",
-      "count": 1,
+      "count": 4,
       "categories": [
+        "event",
+        "anime",
+        "goods",
         "manga"
       ]
     },
