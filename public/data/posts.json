@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-11-12T06:19:35.722Z",
-  "totalPosts": 1159,
+  "lastUpdated": "2026-11-12T16:40:23.560Z",
+  "totalPosts": 1161,
   "posts": [
+    {
+      "id": "post-2120885260368097332",
+      "tweetId": "2120885260368097332",
+      "url": "https://x.com/ngnchiikawa/status/2120885260368097332",
+      "publishedAt": "2026-11-12T14:23:44.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HW7l5ombkAAtXRS.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2120884862551011571",
+      "tweetId": "2120884862551011571",
+      "url": "https://x.com/ngnchiikawa/status/2120884862551011571",
+      "publishedAt": "2026-11-12T09:00:06.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第79話 フジテレビ系列「めざましテレビ」内にて 11月13日(金)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HW6YZOkbUAAbO1S.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2120727145727304161",
       "tweetId": "2120727145727304161",
@@ -15910,12 +15935,12 @@
   "calendarData": [
     {
       "date": "2026-11-12",
-      "count": 4,
+      "count": 6,
       "categories": [
-        "event",
+        "manga",
         "anime",
-        "goods",
-        "manga"
+        "event",
+        "goods"
       ]
     },
     {
