@@ -1,7 +1,53 @@
 {
   "year": "2026",
-  "totalArticles": 3352,
+  "totalArticles": 3356,
   "articles": [
+    {
+      "id": "news-59b99073bf4b",
+      "title": "「 ちいかわ 」ハチワレ、うさぎがおばけに ハロウィーンがやってきた！季節限定グリやグッズが ...",
+      "url": "https://cho-animedia.jp/article/2026/09/11/63058.html",
+      "source": "cho-animedia.jp",
+      "publishedAt": "2026-09-11T09:40:57.000Z",
+      "summary": "ちいかわ ... 期間限定 コンテンツを楽しめる。 ニュース イベント . 注目記事. あなたの色は ...",
+      "category": "goods",
+      "tags": [
+        "ハチワレ",
+        "うさぎ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-c4fbb390e301",
+      "title": "ちいかわ でもおなじみ「呼び込み君」のリニューアル版 発売 、もちろんポポーポポポポ も収録",
+      "url": "https://news.joysound.com/article/689029",
+      "source": "news.joysound.com",
+      "publishedAt": "2026-09-11T09:35:30.000Z",
+      "summary": "人気アニメ「 ちいかわ 」にはメインキャラクターの ちいかわ ... 超特急QR」でもおなじみのアイテムで、番組と「呼び込み君」の コラボ アイテムも 発売 されている。",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-6d3366e9a395",
+      "title": "ちいかわ でもおなじみ「呼び込み君」のリニューアル版 発売 、もちろんポポーポポポポ も収録",
+      "url": "https://natalie.mu/music/news/689029",
+      "source": "natalie.mu",
+      "publishedAt": "2026-09-11T09:10:25.000Z",
+      "summary": "超特急QR」でもおなじみのアイテムで、番組と「呼び込み君」の コラボ アイテムも 発売 されている。 ... 「呼び込み君」のリニューアル版 発売 「稜海」や「 ちいかわ 」 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-5d00d14ddedf",
+      "title": "ちいかわ 』映画の名シーン新グッズにネット衝撃「顔が好きすぎる」「めっちゃヤバい",
+      "url": "https://topics.smt.docomo.ne.jp/article/oricon/entertainment/oricon-2479718",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-11T08:50:09.000Z",
+      "summary": "ちいかわらんど 」で 発売 されることが決定した。 ... 紺野ぶるま くら寿司「 ちいかわ 」 コラボ ...",
+      "category": "goods",
+      "tags": [
+        "映画"
+      ]
+    },
     {
       "id": "news-661210a9fdf7",
       "title": "「 ちいかわ 」で超話題！ 愛知のロングセラー銘菓『しるこサンド』に“半生”バージョンがあるらしい",
