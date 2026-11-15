@@ -1,7 +1,82 @@
 {
   "year": "2026",
-  "totalArticles": 3371,
+  "totalArticles": 3378,
   "articles": [
+    {
+      "id": "news-242adee02872",
+      "title": "「歌える人すご」『映画 ちいかわ 』、“あの曲”がカラオケ新曲ランキングにランクイン！ファン騒然 ...",
+      "url": "https://www.chunichi.co.jp/article/1309871",
+      "source": "chunichi.co.jp",
+      "publishedAt": "2026-09-11T21:59:44.000Z",
+      "summary": "◇「検索候補欄で コラボ する日が来るなんて」『映画 ちいかわ 』「イヤミスの ... 首都圏の イベント 情報. Previous. タウントレック",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-cf92877c7231",
+      "title": "くら寿司「 ちいかわコラボ 」中止にSNS怒り、従業員の不正に「厳正に対処」 JR東海でも転売疑惑 ...",
+      "url": "https://pinzuba.news/articles/-/17805",
+      "source": "pinzuba.news",
+      "publishedAt": "2026-09-11T21:35:02.000Z",
+      "summary": "概要:人気キャラクター「 ちいかわ 」との コラボ 企画をめぐり、相次いでトラブルが発生しています。くら寿司では従業員による不正行為によって コラボ が中止に ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-876f5be69efe",
+      "title": "「3回並んだ」SNSで話題！個数制限ありの ちいかわ ガチャを回してきた！ - TRILL",
+      "url": "https://trilltrill.jp/articles/5022720",
+      "source": "trilltrill.jp",
+      "publishedAt": "2026-09-11T21:31:03.000Z",
+      "summary": "ちいかわ 人魚の島のひみつ」から、たべものいっぱいマスコットが 発売 中！ ... 新商品",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-770b9a361eba",
+      "title": "【2026年秋】東京ばな奈の注目 コラボ ＆新作5選｜ ちいかわ ・ぶにゃんこ・じゃがボルダ",
+      "url": "https://report.iko-yo.net/articles/33510/digest",
+      "source": "report.iko-yo.net",
+      "publishedAt": "2026-09-11T21:12:05.000Z",
+      "summary": "スーパーで買える芋栗スイーツ＆お菓子まとめ16選 全国. 【2026年秋】東京ばな奈の注目 コラボ ＆新作5選 ちいかわ",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-e28b3be01796",
+      "title": "描いても似ない「 ちいかわ 」唯一無二の魅力、「デフォルメとリアル」の絶妙なバランスが生む ...",
+      "url": "https://jbpress.ismedia.jp/articles/-/96963",
+      "source": "jbpress.ismedia.jp",
+      "publishedAt": "2026-09-11T21:05:44.000Z",
+      "summary": "目の前にメモ帳とペンを用意し、耳と目と鼻と口だけという、至ってシンプルな造形の ちいかわ ... コラボ 不正、AI監視だけでは防げない従業員による景品横流し、内 ...",
+      "category": "other",
+      "tags": []
+    },
+    {
+      "id": "news-854e3d3b2dc8",
+      "title": "「お一人様1点まで」購入制限あり！【CITEN・ ちいかわ 】 コラボ 爆誕！「オフホワイトなんてすぐ ...",
+      "url": "https://yomuno.jp/posts/141994",
+      "source": "yomuno.jp",
+      "publishedAt": "2026-09-11T20:02:18.000Z",
+      "summary": "ちいかわらんど 」「Talking」にて 発売 されます。 「 ちいかわ 」のかわいさを「CITEN」らしい日常着に. SNSやアニメを通じて幅広い世代から愛される「 ちいかわ ...",
+      "category": "collab",
+      "tags": []
+    },
+    {
+      "id": "news-f8927f4adecc",
+      "title": "「 ちいかわ 」セイレーンから逃げろ～！ゼンマイフィギュア登場 フエラムネ＆キャラクター型絵本 ...",
+      "url": "https://news.yahoo.co.jp/articles/4e21afef3825e47e24c4cc57c281a9a3e5e89bde",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-11T19:52:17.000Z",
+      "summary": "好きなキャラクターを、いつでも一緒に持ち歩こう。 『 ちいかわ 』 新商品 の「フエラムネ」は、9月11日より ちいかわマーケット 、 ちいかわらんど にて 発売 中で、 ...",
+      "category": "goods",
+      "tags": [
+        "セイレーン",
+        "フィギュア"
+      ]
+    },
     {
       "id": "news-0161c47452fc",
       "title": "「ボンボンドロップシール」 ちいかわ の新作が 9月 25日 発売 ！寿司モチーフや“Chiikawa Baby ...",
