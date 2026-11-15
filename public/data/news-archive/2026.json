@@ -1,7 +1,78 @@
 {
   "year": "2026",
-  "totalArticles": 3378,
+  "totalArticles": 3384,
   "articles": [
+    {
+      "id": "news-4a6e728df211",
+      "title": "ちいかわ パーク、ハロウィーン仕様に！ “おばけな”オリジナル商品など数量限定販売",
+      "url": "https://news.yahoo.co.jp/articles/1165d076a70eb03cbcf13d47b786a405cb7d7bb6",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-12T05:22:00.000Z",
+      "summary": "ちいかわ パークは、イラストレーター ナガノが描くX発の漫画作品「 ちいかわ ... ルームウェア、ポーチ ケースなど「 ちいかわ 」と「CITEN」が コラボ 9月15日 発売 .",
+      "category": "goods",
+      "tags": [
+        "限定"
+      ]
+    },
+    {
+      "id": "news-ba02c89a8706",
+      "title": "55歳で ちいかわ にハマったなだぎ武、『 ちいかわ ベーカリー』で ちいかわ パン購入も ... - 福井新聞",
+      "url": "https://www.fukuishimbun.co.jp/articles/-/2696890",
+      "source": "fukuishimbun.co.jp",
+      "publishedAt": "2026-09-12T04:35:19.000Z",
+      "summary": "コラボ でも初日から参戦するなど、熱心な“ちい活”の様子を投稿していたなだぎが、「 ちいかわ ... 企画",
+      "category": "other",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-d8892e9c876e",
+      "title": "【入場特典リスト 9月最新版】「ユーフォ最終楽章」は箔押しカード配布 「映画 ちいかわ 」新特典 ...",
+      "url": "https://anime.eiga.com/news/column/tokuten_list/127429/",
+      "source": "anime.eiga.com",
+      "publishedAt": "2026-09-12T00:59:25.000Z",
+      "summary": "各特典の詳細は、各作品や イベント の公式サイトをご確認ください。 ▽9月5日～ □「映画 ちいかわ 人魚の島のひみつ」 第4弾入場特典「チャームミニフィギュア」",
+      "category": "anime",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-eebdfa6f71dc",
+      "title": "「ボンボンドロップシール」 ちいかわ の新作が9月25日 発売 ！寿司モチーフや“Chiikawa Baby”など ...",
+      "url": "https://article.auone.jp/0d88749d-70cb-4aad-99db-079dd948ae73",
+      "source": "article.auone.jp",
+      "publishedAt": "2026-09-12T00:12:53.000Z",
+      "summary": "サントリー×「映画 ちいかわ 」 コラボ 第2弾がアツい！ ちいかわ ボトルデザイン ... 水おいしすぎマスコットやギラギラおかおステッカーほか 新商品 が9月18日 発売 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-fb63775409a6",
+      "title": "55歳で ちいかわ にハマったなだぎ武、『 ちいかわ ベーカリー』で ちいかわ パン購入も…まさかの ...",
+      "url": "https://www.sanyonews.jp/article/1987751",
+      "source": "sanyonews.jp",
+      "publishedAt": "2026-09-11T22:43:14.000Z",
+      "summary": "先月に映画をきっかけに「 ちいかわ 」にハマったことを明かしており、話題となった「くら寿司」との コラボ でも初日から参戦するなど、熱心な“ちい活”の様子を投稿 ...",
+      "category": "other",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-934c2284dbcb",
+      "title": "ちいかわ とハチワレの顔をかたどった可愛いペロペロチョコが全国で 発売 中 - dニュース",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/oshitimes/trend/oshitimes-131764",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-11T22:04:09.000Z",
+      "summary": "ちいかわ とハチワレの顔をかたどった可愛いペロペロチョコが全国で 発売 中（推しタイムズ）現在大ヒット上映中の映画 ちいかわ 人魚の島のひみつでますます ...",
+      "category": "goods",
+      "tags": [
+        "ハチワレ",
+        "お菓子"
+      ]
+    },
     {
       "id": "news-242adee02872",
       "title": "「歌える人すご」『映画 ちいかわ 』、“あの曲”がカラオケ新曲ランキングにランクイン！ファン騒然 ...",
