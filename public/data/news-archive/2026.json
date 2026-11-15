@@ -1,7 +1,89 @@
 {
   "year": "2026",
-  "totalArticles": 3364,
+  "totalArticles": 3371,
   "articles": [
+    {
+      "id": "news-0161c47452fc",
+      "title": "「ボンボンドロップシール」 ちいかわ の新作が 9月 25日 発売 ！寿司モチーフや“Chiikawa Baby ...",
+      "url": "https://news.yahoo.co.jp/articles/9100b0256a24ba77c32ebc71e5b5bb8a94d6aa45/images/000",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-11T16:16:42.000Z",
+      "summary": "「ボンボンドロップシール」 ちいかわ の新作が9月25日 発売 ！寿司 ... サントリー×「映画 ちいかわ 」 コラボ 第2弾がアツい！ ちいかわ ボトルデザイン ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-747014256a4c",
+      "title": "「 ちいかわ 」セイレーンから逃げろ～！ゼンマイフィギュア登場 フエラムネ&キャラクター型絵本 ...",
+      "url": "https://cho-animedia.jp/article/2026/09/11/63060.html",
+      "source": "cho-animedia.jp",
+      "publishedAt": "2026-09-11T15:43:02.000Z",
+      "summary": "好きなキャラクターを、いつでも一緒に持ち歩こう。 『 ちいかわ 』 新商品 の「フエラムネ」は、9月11日より ちいかわマーケット 、 ちいかわらんど にて 発売 中で ...",
+      "category": "goods",
+      "tags": [
+        "セイレーン",
+        "フィギュア"
+      ]
+    },
+    {
+      "id": "news-4e217d8f9fab",
+      "title": "「 ちいかわ 」ハチワレ、うさぎがおばけに ハロウィーンがやってきた！季節限定グリやグッズが ...",
+      "url": "https://animeanime.jp/article/2026/09/11/102837.html",
+      "source": "animeanime.jp",
+      "publishedAt": "2026-09-11T15:09:19.000Z",
+      "summary": "期間限定 コンテンツを楽しめる。 ニュース イベント . 注目記事. 「 ちいかわ ...",
+      "category": "goods",
+      "tags": [
+        "ハチワレ",
+        "うさぎ",
+        "限定"
+      ]
+    },
+    {
+      "id": "news-79f439a3a2a7",
+      "title": "「ボンボンドロップシール」 ちいかわ の新作が9月25日 発売 ！寿司モチーフや“Chiikawa Baby”など ...",
+      "url": "https://news.yahoo.co.jp/articles/9100b0256a24ba77c32ebc71e5b5bb8a94d6aa45",
+      "source": "news.yahoo.co.jp",
+      "publishedAt": "2026-09-11T15:08:37.000Z",
+      "summary": "Chiikawa Baby ボンボンドロップシール□ ちいかわらんど ボンボンドロップシール「ボンボンドロップシール ちいかわ 」の新作は ちいかわマーケット （オンライン） ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-fb85fd126c1d",
+      "title": "ちいかわ ポップアップストア in 大阪 泉北髙島屋 9月24日より開催! - コラボ カフェ",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-popup-store-semboku-takashimaya-2026/",
+      "source": "collabo-cafe.com",
+      "publishedAt": "2026-09-11T14:50:36.000Z",
+      "summary": "新作 ... 2026年9月24日(木) 発売 の 新商品 として、「おいしすぎるよッ「水」…",
+      "category": "collab",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-79fd637c01ba",
+      "title": "「ボンボンドロップシール」 ちいかわ の新作が9月25日 発売 ！寿司モチーフや“Chiikawa Baby”など ...",
+      "url": "https://www.inside-games.jp/article/img/2026/09/11/187631/1779406.html",
+      "source": "inside-games.jp",
+      "publishedAt": "2026-09-11T13:15:20.000Z",
+      "summary": "ちいかわ 寿司」「Chiikawa Baby」「 ちいかわらんど 」の3種類。 「ボンボンドロップシール」 ちいかわ の新作が9月25日 発売 ... イベント",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-157118e983da",
+      "title": "「 ちいかわ 」セイレーンから逃げろ～！ゼンマイフィギュア登場 フエラムネ&キャラクター型絵本 ...",
+      "url": "https://s.animeanime.jp/article/img/2026/09/11/102844/930211.html",
+      "source": "s.animeanime.jp",
+      "publishedAt": "2026-09-11T13:09:08.000Z",
+      "summary": "新商品 として、「フエラムネ」のほか『映画 ちいかわ 人魚 ... 「フエラムネ」は順次 発売 中で、「逃げろ～プカプカゼンマイフィギュア」は9月18日、「だいすき ちい ...",
+      "category": "goods",
+      "tags": [
+        "セイレーン",
+        "フィギュア"
+      ]
+    },
     {
       "id": "news-f50e296edba5",
       "title": "平原綾香「 ちいかわ 愛」投稿でなぜ批判？ ネットが過熱する“コネ・私物化”へのアレルギー",
