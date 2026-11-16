@@ -1,7 +1,45 @@
 {
-  "lastUpdated": "2026-11-15T15:28:17.429Z",
-  "totalPosts": 1163,
+  "lastUpdated": "2026-11-16T18:05:16.882Z",
+  "totalPosts": 1166,
   "posts": [
+    {
+      "id": "post-2122285425649914039",
+      "tweetId": "2122285425649914039",
+      "url": "https://x.com/ngnchiikawa/status/2122285425649914039",
+      "publishedAt": "2026-11-16T11:07:30.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HXPfV2TaYAAIVWq.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2122284801738825787",
+      "tweetId": "2122284801738825787",
+      "url": "https://x.com/ngnchiikawa/status/2122284801738825787",
+      "publishedAt": "2026-11-16T09:00:02.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第85話 フジテレビ系列「めざましテレビ」内にて 11月17日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXO-y0nbAAAUbQX.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2122284880885346598",
+      "tweetId": "2122284880885346598",
+      "url": "https://x.com/ngnchiikawa/status/2122284880885346598",
+      "publishedAt": "2026-11-15T15:00:03.000Z",
+      "summary": "⚡️フラッシュ撮影でイラストが変わる…!?⚡️ 『#ちいかわ なんか小さくてかわいいやつ』 待望のコミックス⑨巻通常版・特装版 いよいよ11/20（金）ごろ発売開始⏳ これを記念して本日11/16（月）からの1週間 札幌・名古屋・大阪・博多の4都市に",
+      "category": "manga",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": null
+    },
     {
       "id": "post-2121946495964549195",
       "tweetId": "2121946495964549195",
@@ -15959,6 +15997,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-16",
+      "count": 3,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-11-15",
       "count": 1,
