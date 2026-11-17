@@ -1,7 +1,47 @@
 {
-  "lastUpdated": "2026-11-16T18:05:16.882Z",
-  "totalPosts": 1166,
+  "lastUpdated": "2026-11-17T23:24:23.067Z",
+  "totalPosts": 1169,
   "posts": [
+    {
+      "id": "post-2122685672809246800",
+      "tweetId": "2122685672809246800",
+      "url": "https://x.com/ngnchiikawa/status/2122685672809246800",
+      "publishedAt": "2026-11-17T13:37:56.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HXVLXaebIAAfJ_K.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2122683740367503748",
+      "tweetId": "2122683740367503748",
+      "url": "https://x.com/ngnchiikawa/status/2122683740367503748",
+      "publishedAt": "2026-11-17T09:00:32.000Z",
+      "summary": "【✨1週間限定見逃し配信中✨】 第85話「スイッチ」 ちいかわとハチワレとうさぎ、 ナゾのスイッチを発見し… ▼YouTube ▼TVer #ちいかわ #アニメちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ",
+        "うさぎ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXUIWoebEAAZI1S.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2122683822781481390",
+      "tweetId": "2122683822781481390",
+      "url": "https://x.com/ngnchiikawa/status/2122683822781481390",
+      "publishedAt": "2026-11-16T22:07:19.000Z",
+      "summary": "【特装版の付録は】 11月20日(金)発売の『#ちいかわ 』最新9巻。 その特装版付録は「なんか書けて飾れるポストカードブック」！ 付録の一部をモーニング公式サイトで公開しました。 詳細はこちら↓ 今回も素敵な付録に仕上がりました。 一家に一冊、いかがですか？",
+      "category": "manga",
+      "tags": [],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXR2XXVbsAATdI_.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2122285425649914039",
       "tweetId": "2122285425649914039",
@@ -15997,6 +16037,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-17",
+      "count": 3,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-11-16",
       "count": 3,
