@@ -1,7 +1,53 @@
 {
   "year": "2026",
-  "totalArticles": 3438,
+  "totalArticles": 3442,
   "articles": [
+    {
+      "id": "news-6f9a0adea8e0",
+      "title": "サントリー×「映画 ちいかわ 」 コラボ 第2弾開始！ ちいかわ ボトルデザインの「グラス型ジップ ...",
+      "url": "https://s.inside-games.jp/article/img/2026/09/14/187687/1777158.html",
+      "source": "s.inside-games.jp",
+      "publishedAt": "2026-09-13T18:17:29.000Z",
+      "summary": "サントリー×「映画 ちいかわ 」 コラボ 第2弾開始！ ちいかわ ボトル; 9月上旬より 発売 の ちいかわ ボトル. /. ゲームデバッガー/無理なく続けやすい ...",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-e9a25bd5cb72",
+      "title": "サントリー×「映画 ちいかわ 」 コラボ 第2弾開始！ ちいかわ ボトルデザインの「グラス型ジップ ...",
+      "url": "https://s.inside-games.jp/article/img/2026/09/14/187687/1777160.html",
+      "source": "s.inside-games.jp",
+      "publishedAt": "2026-09-13T17:19:56.000Z",
+      "summary": "サントリーと「映画 ちいかわ 」 コラボ キャンペーン第2弾が9月14日より開始！条件達成で「グラス型ジップバッグ」をプレゼント。 9月上旬より 発売 の ちいかわ ...",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-da6d11e94401",
+      "title": "サントリー×「映画 ちいかわ 」 コラボ 第2弾開始！ ちいかわ ボトルデザインの「グラス型ジップ ...",
+      "url": "https://topics.smt.docomo.ne.jp/amp/article/insidegames/trend/insidegames-187687",
+      "source": "topics.smt.docomo.ne.jp",
+      "publishedAt": "2026-09-13T16:16:21.000Z",
+      "summary": "ちいかわ 」 コラボ 第2弾開始！ ちいかわ ... ※店舗によって実施時期が異なる場合があります。",
+      "category": "collab",
+      "tags": [
+        "映画"
+      ]
+    },
+    {
+      "id": "news-566b29083f11",
+      "title": "「今度はかっぱと ちいかわ ？」かっぱ寿司の“ コラボ キャンペーンへのお願い”に「ほぼ意味が無いの ...",
+      "url": "https://article.auone.jp/a915b16e-81f6-4cc6-9a33-ec9b8c4d7f03",
+      "source": "article.auone.jp",
+      "publishedAt": "2026-09-13T16:15:26.000Z",
+      "summary": "「今度はかっぱと ちいかわ ？」かっぱ寿司の“ コラボ キャンペーンへのお願い”に「ほぼ意味が無いのでは」の声 ... かっぱ寿司公式X（旧Twitter）アカウントは9月10日 ...",
+      "category": "collab",
+      "tags": []
+    },
     {
       "id": "news-7f133b02ade7",
       "title": "【今週 発売 】バンダイ食玩 新商品 全9種まとめ!「 ちいかわ 」わっふれ～む新作や『ガンダム』にふ ...",
