@@ -1,7 +1,61 @@
 {
   "year": "2026",
-  "totalArticles": 3461,
+  "totalArticles": 3466,
   "articles": [
+    {
+      "id": "news-0313b3194b75",
+      "title": "「 ちいかわ 」初のスマホアプリ『 ちいかわ ぽけっと』mini POP UP STOREが全国各地で開催！",
+      "url": "https://charalab.com/142808/",
+      "source": "charalab.com",
+      "publishedAt": "2026-09-14T12:21:38.000Z",
+      "summary": "「オシャレ魔女 ラブ and ベリー」東京タワーの限定 コラボイベント 開催！ ... 「おそ松さん×タワレコ」 コラボ グッズ 発売 ！表参道",
+      "category": "event",
+      "tags": [
+        "ポップアップ"
+      ]
+    },
+    {
+      "id": "news-8d1580bd3334",
+      "title": "ファミマで「 ちいかわ わっふれ～む3」が9月15日より販売開始！ワッフルには ... - 電撃ホビーウェブ",
+      "url": "https://hobby.dengeki.com/news/3158510/",
+      "source": "hobby.dengeki.com",
+      "publishedAt": "2026-09-14T05:17:31.000Z",
+      "summary": "グッズ展開、 コラボ カフェ、企業 コラボ など幅広く展開しており、書籍『 ちいかわ なんか小さくてかわいいやつ』が8巻まで 発売 中。 ... TOP",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-d7c0419fb741",
+      "title": "【 ちいかわ 】 新商品 ジュエリースイングチャームがかわいすぎる｜シティリビングWeb",
+      "url": "https://city.living.jp/citymate/citymate332/mate_shopping/1767840/",
+      "source": "city.living.jp",
+      "publishedAt": "2026-09-14T05:01:16.000Z",
+      "summary": "【サンリオ×相撲協会】異色 コラボ ！サンリオキャラがお相撲さんに!? 2026/7/23 【 ちいかわ 】 ...",
+      "category": "goods",
+      "tags": []
+    },
+    {
+      "id": "news-f8bdb987222f",
+      "title": "ちいかわ プライズ でかつよ・あのこBIGぬいぐるみ 9月より登場!",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-dekatsuyo-anoko-big-nuigurumi-prize-2026/?amp=1",
+      "source": "collabo-cafe.com",
+      "publishedAt": "2026-09-14T03:54:35.000Z",
+      "summary": "ムック本 ... ちいかわ ...",
+      "category": "goods",
+      "tags": [
+        "ぬいぐるみ"
+      ]
+    },
+    {
+      "id": "news-5519bec93ce8",
+      "title": "「 ちいかわ ランド」が秋の装いにチェンジ！ 9月末からハロウィン仕様の装飾＆グッズが登場！",
+      "url": "https://www.toy-people.com/jp/?p=114347",
+      "source": "toy-people.com",
+      "publishedAt": "2026-09-14T03:51:50.000Z",
+      "summary": "今回登場する コラボ グッズには、伊藤潤二氏が本 イベント のために特別に描き ... NEW ERA ×『 ちいかわ 』 コラボ コレクションが登場！キャップからゴルフ ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-3347e69d4b7c",
       "title": "【2026年9月～10月】 ちいかわ ベーカリー・八天堂ほか パンブランド秋限定新作まとめ - えん食べ",
