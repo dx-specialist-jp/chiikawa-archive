@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-11-18T17:02:34.033Z",
-  "totalPosts": 1170,
+  "lastUpdated": "2026-11-19T12:36:58.842Z",
+  "totalPosts": 1172,
   "posts": [
+    {
+      "id": "post-2123295934033658176",
+      "tweetId": "2123295934033658176",
+      "url": "https://x.com/ngnchiikawa/status/2123295934033658176",
+      "publishedAt": "2026-11-18T22:51:43.000Z",
+      "summary": "【本日発売🎊】 #モーニング 51号、表紙は「でっかわ」！！！ 飾ってもかわいい一冊になりました。 そして巻中カラーで『#ちいかわ 』描き下ろし漫画が読めます。 巻末のアンケートを使って感想をお寄せください！ 紙の雑誌を手に入れられるのは１週間限定、お早めに〜！",
+      "category": "manga",
+      "tags": [
+        "モーニング"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXcTtOjaQAAOukI.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2123008398920909306",
       "tweetId": "2123008398920909306",
@@ -11,6 +26,21 @@
       "tags": [],
       "characters": [],
       "photoUrl": "https://pbs.twimg.com/media/HXZwgD-bkAAqp5D.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2123296034822742292",
+      "tweetId": "2123296034822742292",
+      "url": "https://x.com/ngnchiikawa/status/2123296034822742292",
+      "publishedAt": "2026-11-18T09:01:58.000Z",
+      "summary": "⭐️お知らせ⭐️ 🔻#ちいかわクリニック Xダブルプレゼントキャンペーン🔻 応募者全員に「ドクター／ナースからのアドバイス」＆ 抽選で5名様に「ノベルティ全種セット」をプレゼント🎁 ✅〆11/27(金)23:59 ① @chiikawa_market をフォロー ② この投稿をリポスト ③ ここから応募 →",
+      "category": "other",
+      "tags": [
+        "ちいかわクリニック"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXZVy4TbwAAmiBw.jpg?format=jpg&name=large"
     },
     {
       "id": "post-2122685672809246800",
@@ -16048,10 +16078,18 @@
   ],
   "calendarData": [
     {
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "count": 1,
       "categories": [
         "manga"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "count": 2,
+      "categories": [
+        "manga",
+        "other"
       ]
     },
     {
