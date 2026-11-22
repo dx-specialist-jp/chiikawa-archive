@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-11-21T21:30:37.519Z",
-  "totalPosts": 1180,
+  "lastUpdated": "2026-11-22T16:01:20.915Z",
+  "totalPosts": 1182,
   "posts": [
+    {
+      "id": "post-2124495400262635700",
+      "tweetId": "2124495400262635700",
+      "url": "https://x.com/ngnchiikawa/status/2124495400262635700",
+      "publishedAt": "2026-11-22T13:29:09.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HXu5THsa4AEVoNM.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2124494735469690934",
+      "tweetId": "2124494735469690934",
+      "url": "https://x.com/ngnchiikawa/status/2124494735469690934",
+      "publishedAt": "2026-11-22T03:00:00.000Z",
+      "summary": "🌟:._.:*~*:._.:*~*:._.:*~*:._.:*~🌟 『ちいかわクリスマスマーケット』 開催まであと𝟐日🎄 🌟:._.:*~*:._.:*~*:._.:*~*:._.:*~🌟 ハチワレと三ツ星もおそろいの帽子をかぶって お出迎えの準備もOK🎅 11/24(火)から開催スタート🚩 公式サイトはこちら ▶︎",
+      "category": "goods",
+      "tags": [],
+      "characters": [
+        "ちいかわ",
+        "ハチワレ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXd5Sb6aUAAL2-x.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2124156927181791413",
       "tweetId": "2124156927181791413",
@@ -16181,9 +16205,10 @@
   "calendarData": [
     {
       "date": "2026-11-22",
-      "count": 1,
+      "count": 3,
       "categories": [
-        "manga"
+        "manga",
+        "goods"
       ]
     },
     {
