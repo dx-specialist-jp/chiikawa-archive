@@ -1,7 +1,41 @@
 {
   "year": "2026",
-  "totalArticles": 3578,
+  "totalArticles": 3581,
   "articles": [
+    {
+      "id": "news-b6c4401a4990",
+      "title": "元ＳＫＥ４８・須田亜香里、帽子×「 ちいかわ 」×デニムパンツのファッションがお似合い ...",
+      "url": "https://hochi.news/articles/20260915-OHT1T51310.html",
+      "source": "hochi.news",
+      "publishedAt": "2026-09-16T11:39:49.000Z",
+      "summary": "この投稿には「くりまんじゅう、息子も大好き」「可愛い ちいかわ と可愛い亜香里ちゃんとの コラボ お宝だね ラフな亜香里ちゃんも最高だよ」「ラフな ...",
+      "category": "other",
+      "tags": [
+        "パン"
+      ]
+    },
+    {
+      "id": "news-dbe8b5fcbf47",
+      "title": "「 ちいかわ くりまんじゅうだらけくじ」©nagano - シネマカフェ cinemacafe.net",
+      "url": "https://www.cinemacafe.net/article/img/2026/09/16/112646/833720.html",
+      "source": "cinemacafe.net",
+      "publishedAt": "2026-09-16T11:30:44.000Z",
+      "summary": "ちいかわマーケット ちいかわ くじ」において",
+      "category": "event",
+      "tags": [
+        "くりまんじゅう"
+      ]
+    },
+    {
+      "id": "news-bb74924ac3fc",
+      "title": "ちいかわ パークがハロウィーン仕様に グリーティング＆ゴースト ちいかわ グッズも 発売 | チバテレ ...",
+      "url": "https://www.chiba-tv.com/plus/detail/2026092015392",
+      "source": "chiba-tv.com",
+      "publishedAt": "2026-09-16T11:28:23.000Z",
+      "summary": "ちいかわ パークがハロウィーン仕様に グリーティング＆ゴースト ちいかわ グッズも 発売 ... 【 新商品 ！】チュバチュバワンダーランドに子育てグッズが登場 ...",
+      "category": "goods",
+      "tags": []
+    },
     {
       "id": "news-3e0ebfe5871d",
       "title": "映画『 ちいかわ 』セイレーン＋『ダイソー』のアイテムで手作りジオラマ！⇒「天才や」「発想が ...",
