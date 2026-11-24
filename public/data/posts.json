@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-11-22T16:01:20.915Z",
-  "totalPosts": 1182,
+  "lastUpdated": "2026-11-24T02:47:52.698Z",
+  "totalPosts": 1184,
   "posts": [
+    {
+      "id": "post-2124874810572566772",
+      "tweetId": "2124874810572566772",
+      "url": "https://x.com/ngnchiikawa/status/2124874810572566772",
+      "publishedAt": "2026-11-23T14:36:47.000Z",
+      "category": "manga",
+      "tags": [],
+      "characters": [],
+      "photoUrl": "https://pbs.twimg.com/media/HX0SXdNawAAfMIx.jpg?format=jpg&name=large"
+    },
+    {
+      "id": "post-2124874611536093461",
+      "tweetId": "2124874611536093461",
+      "url": "https://x.com/ngnchiikawa/status/2124874611536093461",
+      "publishedAt": "2026-11-23T09:00:05.000Z",
+      "summary": "⭐️明日放送⭐️ TVアニメちいかわ第107話 フジテレビ系列「めざましテレビ」内にて 11月24日(火)7時38分ごろ放送予定💕 (放送終了後に「めざましテレビ」のYouTube、FOD、TVerにて1週間限定見逃し配信あり／第1〜5話はしばらくの間無料で配信します) お楽しみに♪ #アニメちいかわ #ちいかわ",
+      "category": "anime",
+      "tags": [
+        "アニメちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HXzB6-cbYAA0lUf.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2124495400262635700",
       "tweetId": "2124495400262635700",
@@ -16203,6 +16228,14 @@
     }
   ],
   "calendarData": [
+    {
+      "date": "2026-11-23",
+      "count": 2,
+      "categories": [
+        "manga",
+        "anime"
+      ]
+    },
     {
       "date": "2026-11-22",
       "count": 3,
