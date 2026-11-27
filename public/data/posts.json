@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-11-27T00:23:21.947Z",
-  "totalPosts": 1190,
+  "lastUpdated": "2026-11-27T13:34:31.758Z",
+  "totalPosts": 1191,
   "posts": [
+    {
+      "id": "post-2126226731686416827",
+      "tweetId": "2126226731686416827",
+      "url": "https://x.com/ngnchiikawa/status/2126226731686416827",
+      "publishedAt": "2026-11-27T03:00:03.000Z",
+      "summary": "🏝️.˚⊹ 『#映画ちいかわ 人魚の島のひみつ』 入場者特典第9弾！ 「チャームミニフィギュア」（全４種） 【第4弾のリバイバル配布】 11月28日（土）より配布開始✨ ※ランダム配布のため、種類をお選びいただくことはできません。",
+      "category": "goods",
+      "tags": [
+        "映画ちいかわ"
+      ],
+      "characters": [
+        "ちいかわ"
+      ],
+      "photoUrl": "https://pbs.twimg.com/media/HYGKc9RacAAnjCa.jpg?format=jpg&name=large"
+    },
     {
       "id": "post-2125986362369433847",
       "tweetId": "2125986362369433847",
@@ -16310,8 +16325,9 @@
   "calendarData": [
     {
       "date": "2026-11-27",
-      "count": 1,
+      "count": 2,
       "categories": [
+        "goods",
         "manga"
       ]
     },
